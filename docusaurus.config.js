@@ -90,7 +90,7 @@ export default {
             items: [
               {
                 label: 'Changelog',
-                to: '/docs/developer-documentation/changelog',
+                to: '/docs/changelog',
               },
             ],
           },
