@@ -1,0 +1,33 @@
+name: Create release on GitHub
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release-version-on-github:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install Node.js dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Format check
+        run: yarn format
+
+      - name: Lint check
+        run: yarn lint
+
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: yarn semantic-release

@@ -1,0 +1,100 @@
+{
+  "name": "docs",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Fair Data Innovations Hub <info@fairdataihub.org> (https://fairdataihub.org)",
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "dev": "docusaurus start",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "prepare": "run-script-os",
+    "prepare:win32": "husky install",
+    "prepare:darwin:linux": "husky install && chmod ug+x .husky/*  && chmod ug+x .git/hooks/*",
+    "lint": "eslint --ignore-path .gitignore \"./**/*.+(ts|js|jsx|tsx)\"",
+    "format": "prettier --ignore-path .gitignore \"./**/*.+(ts|js|jsx|tsx|md)\" --write",
+    "semantic-release": "semantic-release"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint --cache --fix",
+    "*.{js,jsx,css,md}": "prettier --write"
+  },
+  "dependencies": {
+    "@docusaurus/core": "3.0.0",
+    "@docusaurus/preset-classic": "3.0.0",
+    "@emotion/react": "11.11.1",
+    "@emotion/styled": "11.11.0",
+    "@iconify/react": "4.1.1",
+    "@mdx-js/react": "^3.0.0",
+    "@mui/material": "5.11.1",
+    "@notionhq/client": "2.2.13",
+    "@svgr/webpack": "8.1.0",
+    "axios": "1.5.1",
+    "clsx": "2.0.0",
+    "docusaurus-plugin-umami": "^2.0.0",
+    "docusaurus-theme-frontmatter": "^1.3.0",
+    "express": "4.18.2",
+    "file-loader": "6.2.0",
+    "prism-react-renderer": "^2.1.0",
+    "prop-types": "15.8.1",
+    "react": "18.2.0",
+    "react-cookie": "5.0.0",
+    "react-dom": "18.2.0",
+    "react-lottie": "1.2.3",
+    "react-player": "2.13.0",
+    "url-loader": "4.1.1",
+    "uuid": "9.0.1"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "7.22.15",
+    "@commitlint/cli": "17.8.0",
+    "@commitlint/config-conventional": "17.8.0",
+    "@docusaurus/module-type-aliases": "3.0.0",
+    "@docusaurus/types": "3.0.0",
+    "@fairdataihub/config": "2.2.3",
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/commit-analyzer": "11.0.0",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "9.2.1",
+    "@semantic-release/npm": "11.0.0",
+    "@semantic-release/release-notes-generator": "12.0.0",
+    "autoprefixer": "10.4.11",
+    "eslint": "8.51.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-import": "2.28.1",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react": "7.33.2",
+    "husky": "8.0.3",
+    "lint-staged": "14.0.1",
+    "megasanjay-devmoji": "^1.2.1",
+    "postcss": "8.4.31",
+    "prettier": "3.0.3",
+    "prettier-plugin-tailwindcss": "0.5.6",
+    "pretty-quick": "3.1.3",
+    "run-script-os": "^1.1.6",
+    "semantic-release": "22.0.5",
+    "tailwindcss": "3.1.8"
+  },
+  "engines": {
+    "node": ">=18.0.0 "
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

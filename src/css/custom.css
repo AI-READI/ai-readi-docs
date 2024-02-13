@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* You can override the default Infima variables here. */
+/* Pick the relevant colors here: https://docusaurus.io/docs/styling-layout#styling-your-site-with-infima */
+:root {
+  --ifm-color-primary-lightest: #2c85dd;
+  --ifm-color-primary-lighter: #2075ca;
+  --ifm-color-primary-light: #1f70c2;
+  --ifm-color-primary: #1c66b0;
+  --ifm-color-primary-dark: #195c9e;
+  --ifm-color-primary-darker: #185796;
+  --ifm-color-primary-darkest: #14477b;
+  --ifm-link-color: #2e7a99;
+
+  --ifm-toc-link-color: #94a3b8;
+
+  --ifm-menu-color: #6b7280;
+  --ifm-menu-color-background-active: #e7fdfd;
+
+  --plum-color: #ba0d49;
+
+  --hr-color: #e8f0f7;
+  --feedback-yes-color: #2c85dd;
+  --feedback-no-color: var(--plum-color);
+
+  --footer-background-color: #fafafa;
+
+  --ifm-line-height-base: 1.75;
+  --ifm-font-family-base: 'Inter', sans-serif;
+}
+
+/* dark theme variables */
+html[data-theme='dark'] {
+  --ifm-color-primary-lightest: #ffffff;
+  --ifm-color-primary-lighter: #c5e2ff;
+  --ifm-color-primary-light: #b1d8ff;
+  --ifm-color-primary: #8ac4ff;
+  --ifm-color-primary-dark: #63b0ff;
+  --ifm-color-primary-darker: #4fa6ff;
+  --ifm-color-primary-darkest: #1489ff;
+
+  --ifm-heading-color: #fff;
+
+  /* --ifm-link-color: #ff227e; */
+
+  --ifm-toc-link-color: #ced2d8;
+
+  --ifm-menu-color: #e2dfdf;
+  /* --ifm-menu-color-active: #f0287c; */
+  --ifm-menu-color-background-active: #383838;
+
+  --ifm-code-background: #605c5c;
+
+  --plum-color: #e4467d;
+
+  --hr-color: #334155;
+  --feedback-yes-color: #38b8b1;
+}
+
+/* All the relevant class names can be found here: https://docusaurus.io/docs/styling-layout#theme-class-names */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.theme-doc-markdown,
+.pagination-nav__label,
+.pagination-nav__sublabel,
+.theme-edit-this-page,
+.theme-last-updated,
+.theme-doc-toc-desktop {
+  /* @apply !font-inter; */
+}
+
+.theme-doc-markdown img,
+.theme-doc-markdown video {
+  @apply my-5 shadow-lg shadow-teal-800/50;
+}
+
+.theme-doc-markdown .feedback-divider {
+  border-color: var(--hr-color);
+  @apply rounded-lg border border-solid;
+}
+
+.theme-doc-markdown .feedback-button,
+.cookie-button {
+  @apply flex w-full cursor-pointer appearance-none flex-row items-center justify-evenly rounded-lg border-2 border-solid bg-transparent px-6 py-1 text-lg font-semibold transition-all hover:-translate-y-px hover:shadow-md active:translate-y-0 active:shadow-none;
+}
+
+.theme-doc-markdown .feedback-button-yes,
+.cookie-button-yes {
+  @apply border-[color:var(--feedback-yes-color)] text-[color:var(--feedback-yes-color)] hover:shadow-[color:var(--feedback-yes-color)];
+}
+
+.theme-doc-markdown .feedback-button-no {
+  @apply border-[color:var(--feedback-no-color)] text-[color:var(--feedback-no-color)] hover:shadow-[color:var(--feedback-no-color)];
+}
+
+[aria-label='animation'] {
+  @apply m-0 !important;
+}
+
+.table-of-contents__link--active {
+  /* color: var(--plum-color) !important; */
+}
+
+.theme-last-updated {
+  @apply not-italic;
+}
+
+.hero__subtitle {
+  color: var(--ifm-heading-color) !important;
+}
+
+.markdown h1:first-child {
+  @apply text-2xl sm:text-[32px] mt-4 pb-2;
+}
+
+.markdown > h2 {
+  @apply text-2xl;
+}
+
+.footer--dark {
+  @apply !bg-black;
+}
+
+.footer__title,
+.footer__item,
+.footer__copyright {
+  @apply font-inter;
+}
+
+.token-line,
+code {
+  @apply font-fira-code;
+}
+
+.breadcrumbs__link {
+  @apply text-sm;
+}
+
+.breadcrumbs__item.breadcrumbs__item--active > a {
+  @apply bg-green-100;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
