@@ -76,7 +76,7 @@ export default {
             position: 'right',
           },
           {
-            href: 'https://aireadi.org/contact-us',
+            href: 'https://aireadi.org/contact',
             label: 'Contact Us',
             position: 'right',
           },
@@ -136,7 +136,7 @@ export default {
       },
       image:
         // eslint-disable-next-line max-len
-        'https://kalai.fairdataihub.org/api/generate?title=Documentation&description=&app=ai-readi&org=ai-readi',
+        'https://kalai.fairdataihub.org/api/generate?title=AI-READI%20Documentation&description=&app=ai-readi&org=ai-readi',
       metadata: [
         {
           name: 'keywords',
