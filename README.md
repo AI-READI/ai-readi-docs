@@ -39,8 +39,16 @@ content here
 
 ## :gem: Acknowledgements
 
-A special thank you to Vercel for hosting this documentation.
+This project is funded by the NIH under award number 1OT2OD032644. The content is solely the responsibility of the authors and does not necessarily represent the official views of the NIH.
 
-<a href="https://vercel.com/?utm_source=fairdataihub&utm_campaign=oss" target="_blank">
-  <img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"  width="auto"/>
+---
+
+<br />
+
+<div align="center">
+
+<a href="https://aireadi.org">
+  <img src="https://github.com/AI-READI/AI-READI-logo/raw/main/logo/png/option2.png" height="200" />
 </a>
+
+</div>
