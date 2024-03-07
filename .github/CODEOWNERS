@@ -1,1 +1,5 @@
-- @megasanjay
+<!-- prettier-ignore -->
+* @megasanjay
+/docs/ @bvhpatel @megasanjay
+/versioned_docs/ @bvhpatel
+/.github/ @megasanjay
