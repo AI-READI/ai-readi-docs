@@ -92,7 +92,7 @@ export default {
             items: [
               {
                 label: 'Changelog',
-                to: '/docs/changelog',
+                to: '/docs/1/changelog',
               },
             ],
           },
