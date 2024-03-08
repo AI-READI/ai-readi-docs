@@ -8,7 +8,7 @@ const darkCodeTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 export default {
-  title: 'AI-READI Docs',
+  title: 'Documentation for the AI-READI Dataset',
   // eslint-disable-next-line max-len
   tagline:
     // eslint-disable-next-line max-len
@@ -19,7 +19,7 @@ export default {
   onBrokenMarkdownLinks: 'warn',
   favicon: '/favicon.png',
   organizationName: 'ai-readi',
-  projectName: 'AI-READI Docs',
+  projectName: 'AI-READI Dataset Docs',
 
   presets: [
     [
@@ -59,7 +59,7 @@ export default {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'AI-READI Docs',
+        title: 'AI-READI Dataset Docs',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -117,7 +117,7 @@ export default {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} FAIR Data Innovations Hub.`,
+        copyright: `Copyright © ${new Date().getFullYear()} AI-READI.`,
       },
       colorMode: {
         respectPrefersColorScheme: false,
