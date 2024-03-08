@@ -28,7 +28,7 @@ export default function DocsVersionDropdownNavbarItem({
     const versionDoc =
       activeDocContext.alternateDocVersions[version.name] ?? getVersionMainDoc(version);
     return {
-      label: `${version.label === 'Upcoming 🚧' ? '' : 'v.'}${version.label}`,
+      label: `${version.label === 'Upcoming 🚧' ? '' : 'Dataset v'}${version.label}`,
       to: versionDoc.path,
       isActive: () => version === activeDocContext.activeVersion,
       onClick: () => savePreferredVersionName(version.name),
@@ -44,7 +44,7 @@ export default function DocsVersionDropdownNavbarItem({
           message: 'Versions',
           description: 'The label for the navbar versions dropdown on mobile view',
         })
-      : `${dropdownVersion.label === 'Upcoming 🚧' ? '' : 'v.'}${dropdownVersion.label}`;
+      : `${dropdownVersion.label === 'Upcoming 🚧' ? '' : 'Dataset v'}${dropdownVersion.label}`;
   const dropdownTo =
     mobile && items.length > 1 ? undefined : getVersionMainDoc(dropdownVersion).path;
   // We don't want to render a version dropdown with 0 or 1 item. If we build
