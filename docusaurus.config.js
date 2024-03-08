@@ -31,9 +31,11 @@ export default {
           editUrl: 'https://github.com/ai-readi/ai-readi-docs/edit/main/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          lastVersion: 'current',
           versions: {
             current: {
-              label: `Upcoming 🚧`,
+              label: `1`,
+              path: '1',
             },
           },
         },
