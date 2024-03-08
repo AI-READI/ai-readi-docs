@@ -24,7 +24,7 @@ function HomepageHeader() {
         <p className="hero__subtitle text-xl">{siteConfig.tagline}</p>
 
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs/getting-started/intro">
+          <Link className="button button--secondary button--lg" to="/docs/about">
             View the Documentation
           </Link>
 
