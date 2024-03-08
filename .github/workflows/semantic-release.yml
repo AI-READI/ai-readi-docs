@@ -27,7 +27,8 @@ jobs:
       - name: Lint check
         run: yarn lint
 
-      - name: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn semantic-release
+      # todo: disabling release for now
+      # - name: Release
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: yarn semantic-release
