@@ -1,14 +1,17 @@
 ---
 sidebar_position: 99
 title: Changelog
-image: https://kalai.fairdataihub.org/api/generate?title=Changelog&description=&app=ai-readi-docs&org=ai-readi
 ---
 
-## 0.0.1 (2021-10-01)
+All notable changes to this documentation will be documented in this file.
+
+The format is based on [Keep a Changelog v1.0.0](https://keepachangelog.com/en/1.0.0/).
+
+## 1.0.0 (2024-04-01)
 
 ### Added
 
-- Some info about the dataset
+- First version of the documentation associated with the AI-READI dataset v1.0
 
 import PageFeedback from '@site/src/components/PageFeedback';
 
