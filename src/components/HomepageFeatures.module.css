@@ -15,7 +15,7 @@
 
 .snapshot {
   transform: skewY(6deg);
-  width: 70rem;
+  max-width: 70rem;
   padding: 3rem 5rem 3rem 5rem;
   background: #fff;
   border: 2px solid #e0f2fe;
@@ -59,4 +59,29 @@
   width: 60px;
   height: 60px;
   color: #0284c7;
+}
+
+.stat {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1.5rem; /* Equivalent to sm:gap-6 in Tailwind */
+}
+
+@media (max-width: 50rem) {
+  .stat {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 50rem) {
+  .stat {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 60rem) {
+  .details {
+    flex-wrap: wrap;
+  }
 }
