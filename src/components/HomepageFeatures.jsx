@@ -1,90 +1,49 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
-import clsx from 'clsx';
-import Lottie from 'react-lottie';
+import { Icon } from '@iconify/react';
 import styles from './HomepageFeatures.module.css';
 
-import increaseAnimationData from './lotties/column1lottie.json';
-import rewardAnimationData from './lotties/column2lottie.json';
-import complyAnimationData from './lotties/column3lottie.json';
-
-const FeatureList = [
+const contentSection = [
   {
-    title: 'Increase',
-    animationOptions: {
-      loop: true,
-      autoplay: true,
-      animationData: increaseAnimationData,
-      rendererSettings: {
-        preserveAspectRatio: 'xMidYMid slice',
-      },
-    },
-    description: <>subtitle 1</>,
+    header: 'Generating data',
+    text:
+      'AI-READI is the data generation project of  the National ' +
+      'Institutes  of Health funded Bridge2AI Program.',
+    icon: 'streamline:ai-generate-variation-spark-solid',
   },
   {
-    title: 'Get',
-    animationOptions: {
-      loop: true,
-      autoplay: true,
-      animationData: rewardAnimationData,
-      rendererSettings: {
-        preserveAspectRatio: 'xMidYMid slice',
-      },
-    },
-    description: <>subtitle 3</>,
+    header: 'Search data',
+    text:
+      'The AI-READI project seeks to create and share a flagship' +
+      ' ethically-sourced of type 2 diabetes.',
+    icon: 'fluent:box-search-16-regular',
   },
   {
-    title: 'Comply',
-    animationOptions: {
-      loop: true,
-      autoplay: true,
-      animationData: complyAnimationData,
-      rendererSettings: {
-        preserveAspectRatio: 'xMidYMid slice',
-      },
-    },
-    description: <>subtitle 3</>,
+    header: 'Share data',
+    text: `The data will be optimized for the analysis that could provide critical insights.`,
+    icon: 'carbon:text-link-analysis',
   },
 ];
 
-// eslint-disable-next-line react/prop-types
-function Feature({ animationOptions, title, description }) {
-  if (title === 'Findable') {
-    return (
-      <div className={clsx('col col--3 flex flex-col items-center justify-center')}>
-        <div className="flex justify-center items-center py-4 mb-[2.1rem]">
-          <Lottie options={animationOptions} height={165} width={200} />
-        </div>
-        <div className="text--center padding-horiz--md">
-          <h3>{title}</h3>
-          <p>{description}</p>
-        </div>
-      </div>
-    );
-  }
-  return (
-    <div className={clsx('col col--3')}>
-      <div className="flex justify-center py-4">
-        <Lottie options={animationOptions} height={200} width={200} />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
-
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row justify-evenly">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
+    <section className={styles.second}>
+      <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+        Generating data to boost future AI-driven research in diabetes
+      </h1>
+      <div className={styles.details}>
+        {contentSection.map((stat) => (
+          <div key={stat.header} className={styles.elements}>
+            <div>
+              <Icon icon={stat.icon} className={styles.icon} />
+            </div>
+            <div className="flex flex-col">
+              <div className="font-bold text-2xl mb-2">{stat.header}</div>
+              <p className="tex-lg"> {stat.text}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
