@@ -40,7 +40,7 @@ export default function HomepageFeatures() {
             </div>
             <div className="flex flex-col">
               <div className="font-bold text-2xl mb-2">{stat.header}</div>
-              <p className="tex-lg"> {stat.text}</p>
+              <p className="text-md"> {stat.text}</p>
             </div>
           </div>
         ))}
