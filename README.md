@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="static/img/logo.svg" alt="logo" width="200" height="auto" />
+  <img src="https://fairdataihub.org/images/hero/aireadi-logo.png" alt="logo" width="200" height="auto" />
 
   <h1>AI-READI Documentation</h1>
 
