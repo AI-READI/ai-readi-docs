@@ -13,7 +13,7 @@ function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero', styles.heroBanner)}>
-      <div className="container py-20">
+      <div className={styles.section}>
         <div className="flex justify-center">
           <div className="rounded-full bg-white w-max mb-10 flex items-center justify-center">
             <img
@@ -29,12 +29,12 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
 
         <div className={styles.buttons}>
-          <Link className="button py-4 px-6 bg-sky-400 button--lg" to="/docs/1/about">
+          <Link className="button py-4 px-6 bg-sky-600 button--lg" to="/docs/1/about">
             View the Documentation
           </Link>
 
           <Link
-            className="button bg-sky-400 py-4 px-6  button--lg"
+            className="button bg-sky-600 py-4 px-6  button--lg"
             to="https://staging.fairhub.io/"
           >
             Download the Dataset
@@ -49,11 +49,10 @@ export default function Home() {
   return (
     <Layout title="" description="Documentation for the AI-READI dataset">
       <HomepageHeader />
-
-      <main>
+      <div>
         <SnapshotAnalysis />
-        <HomepageFeatures />
-      </main>
+      </div>
+      <HomepageFeatures />
     </Layout>
   );
 }
