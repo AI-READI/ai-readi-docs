@@ -50,13 +50,14 @@ export default function HomepageFeatures() {
     <section className={styles.second}>
       <div>
         <h1 className="hero__title tracking-tight sm:text-3xl text-center">
-          Generating data to boost future AI-driven research in diabetes
+          Generating Data to Boost Future AI-driven Research in Type 2 Diabetes
         </h1>
         <p className="mt-12 text-2xl max-w-[110rem] font-medium text-slate-600">
           This is the documentation for the AI-READI dataset called Flagship Dataset of Type 2
           Diabetes from the AI-READI Project. AI-READI is the data generation project of the
-          National Institutes of Health funded Bridge2AI Program. AI-READI is the data generation
-          project of the National Institutes of Health funded Bridge2AI Program.
+          National Institutes of Health funded Bridge2AI Program. One of the major goals of AI-READI
+          is to collect and share a multimodal, AI-ready dataset for studying salutogenesis in Type
+          2 Diabetes Mellitus (T2DM)
         </p>
       </div>
 
