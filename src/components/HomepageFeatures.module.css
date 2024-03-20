@@ -1,8 +1,15 @@
-.features {
-  /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));*/
-  transform: scaleY(0.9945) skewY(-6deg) scaleY(1.0055);
+.second {
+  clip-path: polygon(0% 11rem, 100% 0rem, 100% 100%, 0% 100%);
   background: #e0f2fe;
-  padding: 17rem 0 17rem 0;
+  padding: 20rem 5rem 10rem 5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.features {
+  padding: 10rem 0 10rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,9 +21,8 @@
 }
 
 .snapshot {
-  transform: skewY(6deg);
-  max-width: 70rem;
-  padding: 3rem 5rem 3rem 5rem;
+  max-width: 80rem;
+  padding: 3rem 2rem 3rem 2rem;
   background: #fff;
   border: 2px solid #e0f2fe;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -27,14 +33,6 @@
   transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
-}
-
-.second {
-  margin: 7em 0 10em 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  padding: 6rem;
 }
 
 .details {
@@ -64,7 +62,11 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  gap: 1.5rem; /* Equivalent to sm:gap-6 in Tailwind */
+  gap: 3rem; /* Equivalent to sm:gap-6 in Tailwind */
+}
+
+.finalSection {
+  padding: 10rem;
 }
 
 @media (max-width: 50rem) {

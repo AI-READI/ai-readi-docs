@@ -6,34 +6,38 @@ import styles from './HomepageFeatures.module.css';
 
 const StatsList = [
   {
-    heading: '4,000',
-    text: 'Participants anticipated in the study',
+    heading: '204',
+    text: 'Participants from 3 data collection types',
   },
   {
-    heading: '15+',
-    text: 'Data types to be collected (vitals, electrocardiogram, etc.)',
+    heading: '4',
+    text: 'Ethnicities represented',
   },
   {
-    heading: '8',
-    text: `Research institutions involved`,
+    heading: '4',
+    text: `Health states`,
+  },
+  {
+    heading: '2',
+    text: `Biological sexes`,
   },
 ];
 
 export default function SnapshotAnalysis() {
   return (
-    <section className={styles.features}>
-      <div className={styles.snapshot}>
+    <section>
+      <div>
         <h1 className="mb-2 text-3xl font-bold tracking-tight sm:text-3xl">
           Snapshot of the AI-READI project
         </h1>
 
         <p className="mb-12 text-xl font-medium text-slate-600">
-          Some key numbers from the project
+          Key numbers from the current version of the dataset (v1.0)
         </p>
 
         <div className={styles.stat}>
           {StatsList.map((stat) => (
-            <dl className="max-w-[25rem]" key={stat.heading}>
+            <dl className="max-w-[15rem]" key={stat.text}>
               <dt className="text-5xl font-bold text-sky-600">{stat.heading}</dt>
 
               <dd className="text-lg font-medium m-0 text-gray-700">{stat.text}</dd>

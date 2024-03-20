@@ -6,7 +6,6 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import SnapshotAnalysis from '../components/SnapshotAnalysis';
 import HomepageFeatures from '../components/HomepageFeatures';
 
 function HomepageHeader() {
@@ -34,10 +33,10 @@ function HomepageHeader() {
           </Link>
 
           <Link
-            className="button bg-sky-600 py-4 px-6  button--lg"
+            className="button bg-sky-600 py-4 px-6 min-w-[17.5rem] button--lg"
             to="https://staging.fairhub.io/"
           >
-            Download the Dataset
+            Access to Dataset
           </Link>
         </div>
       </div>
@@ -49,9 +48,6 @@ export default function Home() {
   return (
     <Layout title="" description="Documentation for the AI-READI dataset">
       <HomepageHeader />
-      <div>
-        <SnapshotAnalysis />
-      </div>
       <HomepageFeatures />
     </Layout>
   );
