@@ -57,7 +57,7 @@ export default function HomepageFeatures() {
           Diabetes from the AI-READI Project. AI-READI is the data generation project of the
           National Institutes of Health funded Bridge2AI Program. One of the major goals of AI-READI
           is to collect and share a multimodal, AI-ready dataset for studying salutogenesis in Type
-          2 Diabetes Mellitus (T2DM)
+          2 Diabetes Mellitus.
         </p>
       </div>
 
