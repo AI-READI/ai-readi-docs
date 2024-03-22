@@ -53,7 +53,7 @@ export default function HomepageFeatures() {
           Generating Data to Boost Future AI-driven Research in Type 2 Diabetes
         </h1>
         <p
-          className="mt-6 pl-[2rem] pr-2 mb-4 text-xl max-w-[60rem] text-justify
+          className="mt-6 pl-[2rem] pr-9 mb-4 text-xl max-w-[70rem] text-justify
         font-medium text-slate-600"
         >
           This is the documentation for the AI-READI dataset called Flagship Dataset of Type 2
