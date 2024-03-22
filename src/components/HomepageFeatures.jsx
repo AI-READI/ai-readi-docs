@@ -7,20 +7,20 @@ import styles from './HomepageFeatures.module.css';
 const StatsList = [
   {
     heading: '204',
-    text: 'Participants from 3 data collection types',
+    text: 'Participants from three data collection types',
   },
   {
-    heading: '4',
-    text: `Equal distribution of health states`,
+    heading: '15',
+    text: `Data modalities collected`,
   },
   {
-    heading: '4',
-    text: 'Ethnicities represented from the participants',
+    heading: '67,869',
+    text: 'Total number of data files',
   },
 
   {
-    heading: '2',
-    text: `Equal distribution of biological sexes`,
+    heading: '255',
+    text: `GB dataset size`,
   },
 ];
 
@@ -52,7 +52,10 @@ export default function HomepageFeatures() {
         <h1 className="hero__title tracking-tight sm:text-3xl text-center">
           Generating Data to Boost Future AI-driven Research in Type 2 Diabetes
         </h1>
-        <p className="mt-12 text-2xl max-w-[110rem] font-medium text-slate-600">
+        <p
+          className="mt-6 pl-[2rem] pr-2 mb-4 text-xl max-w-[60rem] text-justify
+        font-medium text-slate-600"
+        >
           This is the documentation for the AI-READI dataset called Flagship Dataset of Type 2
           Diabetes from the AI-READI Project. AI-READI is the data generation project of the
           National Institutes of Health funded Bridge2AI Program. One of the major goals of AI-READI
@@ -63,7 +66,7 @@ export default function HomepageFeatures() {
 
       <div className={styles.snapshot}>
         <h1 className="mb-2 text-3xl font-bold tracking-tight sm:text-3xl">
-          Snapshot of the AI-READI project
+          Snapshot of the AI-READI dataset
         </h1>
 
         <p className="mb-12 text-xl font-medium text-slate-600">
@@ -72,7 +75,7 @@ export default function HomepageFeatures() {
 
         <div className={styles.stat}>
           {StatsList.map((stat) => (
-            <dl className="max-w-[17rem]" key={stat.text}>
+            <dl className="max-w-[17rem] flex flex-col gap-[1rem]" key={stat.text}>
               <dt className="text-5xl font-bold text-sky-600">{stat.heading}</dt>
 
               <dd className="text-lg font-medium m-0 text-gray-700">{stat.text}</dd>

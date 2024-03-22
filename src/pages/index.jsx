@@ -36,7 +36,7 @@ function HomepageHeader() {
             className="button bg-sky-600 py-4 px-6 min-w-[17.5rem] button--lg"
             to="https://staging.fairhub.io/"
           >
-            Access to Dataset
+            Access to the Dataset
           </Link>
         </div>
       </div>
