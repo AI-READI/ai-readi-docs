@@ -17,7 +17,7 @@ export default {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: '/favicon.png',
+  favicon: 'https://fairdataihub.org/images/hero/aireadi-logo.png',
   organizationName: 'ai-readi',
   projectName: 'AI-READI Dataset Docs',
 
@@ -64,7 +64,7 @@ export default {
         title: 'AI-READI Dataset Docs',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'https://fairdataihub.org/images/hero/aireadi-logo.png',
         },
         hideOnScroll: true,
         items: [

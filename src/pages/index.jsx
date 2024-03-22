@@ -11,28 +11,32 @@ import HomepageFeatures from '../components/HomepageFeatures';
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
+    <header className={clsx('hero', styles.heroBanner)}>
+      <div className={styles.section}>
         <div className="flex justify-center">
-          <div className="rounded-full bg-white p-6 w-max mb-10 flex items-center justify-center">
-            <img src="img/logo.svg" alt="FAIR BioRS Logo" width="100px" height="100px" />
+          <div className="rounded-full bg-white w-max mb-10 flex items-center justify-center">
+            <img
+              src="https://fairdataihub.org/images/hero/aireadi-logo.png"
+              alt="aireadi logo"
+              width="100px"
+              height="100px"
+            />
           </div>
         </div>
 
-        <h1 className="hero__title text-4xl">{siteConfig.title}</h1>
-
-        <p className="hero__subtitle text-xl">{siteConfig.tagline}</p>
+        <h1 className="hero__title tracking-tight sm:text-4xl">{siteConfig.title}</h1>
+        <p className="hero__subtitle">{siteConfig.tagline}</p>
 
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs/1/about">
+          <Link className="button py-4 px-6 bg-sky-600 button--lg" to="/docs/1/about">
             View the Documentation
           </Link>
 
           <Link
-            className="button button--secondary button--lg"
-            to="https://github.com/ai-readi/ai-readi-docs"
+            className="button bg-sky-600 py-4 px-6 min-w-[17.5rem] button--lg"
+            to="https://staging.fairhub.io/"
           >
-            View Github Repository
+            Access to the Dataset
           </Link>
         </div>
       </div>
@@ -44,10 +48,7 @@ export default function Home() {
   return (
     <Layout title="" description="Documentation for the AI-READI dataset">
       <HomepageHeader />
-
-      <main>
-        <HomepageFeatures />
-      </main>
+      <HomepageFeatures />
     </Layout>
   );
 }

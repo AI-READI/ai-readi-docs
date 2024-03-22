@@ -1,11 +1,90 @@
-.features {
-  display: flex;
+.second {
+  clip-path: polygon(0% 11rem, 100% 0rem, 100% 100%, 0% 100%);
+  background: #e0f2fe;
+  padding: 20rem 5rem 10rem 5rem;
   align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.features {
+  padding: 10rem 0 10rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .featureSvg {
   height: 200px;
   width: 200px;
+}
+
+.snapshot {
+  max-width: 80rem;
+  padding: 3rem 2rem 3rem 2rem;
+  background: #fff;
+  border: 2px solid #e0f2fe;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+  border-radius: 0.75rem;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+}
+
+.details {
+  display: flex;
+  max-width: 100rem;
+  margin: 0 auto;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.elements {
+  text-align: left;
+  max-width: 30rem;
+  display: flex;
+  gap: 1em;
+  flex-direction: row;
+  padding: 3rem 0 2rem 0;
+}
+.paragraph {
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  color: #0284c7;
+}
+
+.stat {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 3rem; /* Equivalent to sm:gap-6 in Tailwind */
+}
+
+.finalSection {
+  padding: 10rem;
+}
+
+@media (max-width: 50rem) {
+  .stat {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 50rem) {
+  .stat {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 60rem) {
+  .details {
+    flex-wrap: wrap;
+  }
 }
