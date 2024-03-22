@@ -7,7 +7,7 @@ import styles from './HomepageFeatures.module.css';
 const StatsList = [
   {
     heading: '204',
-    text: 'Participants from three data collection types',
+    text: 'Participants from three data collection sites',
   },
   {
     heading: '15',
@@ -56,11 +56,11 @@ export default function HomepageFeatures() {
           className="mt-6 pl-[2rem] pr-9 mb-4 text-xl max-w-[70rem] text-justify
         font-medium text-slate-600"
         >
-          This is the documentation for the AI-READI dataset called Flagship Dataset of Type 2
-          Diabetes from the AI-READI Project. AI-READI is the data generation project of the
-          National Institutes of Health funded Bridge2AI Program. One of the major goals of AI-READI
-          is to collect and share a multimodal, AI-ready dataset for studying salutogenesis in Type
-          2 Diabetes Mellitus.
+          This is the documentation for the AI-READI dataset called &quot;Flagship Dataset of Type 2
+          Diabetes from the AI-READI Project&quot;. AI-READI is one of the data generation project
+          of the National Institutes of Health funded Bridge2AI Program. One of the major goals of
+          AI-READI is to collect and share a multimodal, AI-ready dataset for studying salutogenesis
+          in Type 2 Diabetes Mellitus.
         </p>
       </div>
 
