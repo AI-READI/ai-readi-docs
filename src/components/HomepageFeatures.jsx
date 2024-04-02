@@ -49,7 +49,7 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.second}>
       <div>
-        <h1 className="hero__title tracking-tight sm:text-3xl text-center">
+        <h1 className="header hero__title tracking-tight sm:text-3xl text-center">
           Generating Data to Boost Future AI-driven Research in Type 2 Diabetes
         </h1>
         <p
@@ -65,11 +65,11 @@ export default function HomepageFeatures() {
       </div>
 
       <div className={styles.snapshot}>
-        <h1 className="mb-2 text-3xl font-bold tracking-tight sm:text-3xl">
+        <h1 className="snapshot mb-2 text-3xl font-bold tracking-tight sm:text-3xl">
           Snapshot of the AI-READI dataset
         </h1>
 
-        <p className="mb-12 text-xl font-medium text-slate-600">
+        <p className="snapshot mb-12 text-xl font-medium text-slate-600">
           Key numbers from the current version of the dataset (v1.0)
         </p>
 

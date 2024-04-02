@@ -124,6 +124,10 @@ h6,
   color: var(--ifm-heading-color) !important;
 }
 
+.hero__title {
+  color: var(--ifm-heading-color) !important;
+}
+
 .markdown h1:first-child {
   @apply text-2xl sm:text-[32px] mt-4 pb-2;
 }
@@ -164,4 +168,13 @@ code {
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme='dark'] .hero__title,
+html[data-theme='dark'] .hero__subtitle,
+html[data-theme='dark'] .snapshot {
+  color: #444650 !important;
+}
+html[data-theme='dark'] .button {
+  color: var(--ifm-heading-color);
 }
