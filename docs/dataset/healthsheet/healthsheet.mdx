@@ -383,6 +383,60 @@ In medical domains, researchers usually take a dataset and appropriate it for a 
 5. Are there recommended data splits (e.g., training, development/validation, testing)? Are there units of data to consider, whatever the task? If so, please provide a description of these splits, explaining the rationale behind them. Please provide the answer for both the preliminary dataset and the current version or any sub-version that is widely used.
 
     The current version of the dataset comes with recommended data splits. Because sex, race, and ethnicity data are not being released with the public version of the dataset, the project team has prepared data splits into proportions (70%/15%/15%) that can be used for subsequent training/validation/testing where the validation and test sets are balanced for sex, race/ethnicity and diabetes status (with and without diabetes).
+1. Is there an explicit label or target associated with each data instance? Please respond for both the preliminary dataset and the current version.
+
+    a.  If yes:
+
+      1. What are the labels provided?
+
+      2. Who performed the labeling? For example, was the labeling done by a clinician, ML researcher, university or hospital?
+
+    b.  What labeling strategy was used?
+
+      1. Gold standard label available in the data (e.g. cancers validated by biopsies)
+
+      2. Proxy label computed from available data:
+
+          1. Which label definition was used? (e.g. Acute Kidney Injury has multiple definitions)
+
+          2. Which tables and features were considered to compute the label?
+
+      3. Which proportion of the data has gold standard labels?
+
+   c. Human-labeled data
+
+      1. How many labellers were considered?
+
+      2. What is the demographic of the labellers? (countries of residence, of origin, number of years of experience, age, gender, race, ethnicity, …)
+
+      3.  What guidelines did they follow?
+
+      4. How many labellers provide a label per instance?
+
+         If multiple labellers per instance:
+
+         1. What is the rater agreement? How was disagreement handled?
+         2. Are all labels provided, or summaries (e.g. maximum vote)?
+
+     5. Is there any subjective source of information that may lead to inconsistencies in the responses? (e.g: multiple people answering a survey having different interpretation of scales, multiple clinicians using scores, or notes)
+
+     6. On average, how much time was required to annotate each instance?
+
+     7. Were the raters compensated for their time? If so, by whom and what amount? What was the compensation strategy (e.g. fixed number of cases, compensated per hour, per cases per hour)?
+
+   No specific labeling was performed in the dataset, as the dataset is a hypothesis-agnostic dataset aimed at facilitating multiple potential downstream AI/ML applications.
+
+2. What are the human level performances in the applications that the dataset is supposed to address?
+	N/A
+
+3. Is the software used to preprocess/clean/label the instances available? If so, please provide a link or other access point.
+   N/A – no labeling was performed
+4. Is there any guideline that the future researchers are recommended to follow when creating new labels / defining new tasks?
+   No, we do not have formal guidelines in place.
+
+5. Are there recommended data splits (e.g., training, development/validation, testing)? Are there units of data to consider, whatever the task? If so, please provide a description of these splits, explaining the rationale behind them. Please provide the answer for both the preliminary dataset and the current version or any sub-version that is widely used.
+
+    The current version of the dataset comes with recommended data splits. Because sex, race, and ethnicity data are not being released with the public version of the dataset, the project team has prepared data splits into proportions (70%/15%/15%) that can be used for subsequent training/validation/testing where the validation and test sets are balanced for sex, race/ethnicity and diabetes status (with and without diabetes).
 
 ## Collection Process
 
