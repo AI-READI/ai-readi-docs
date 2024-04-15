@@ -172,7 +172,10 @@ function WearableGlucoseMonitor() {
               <td> </td>
               <td> </td>
               <td> event_type</td>
-              <td> Estimated Glucose Value</td>
+              <td>
+                {' '}
+                Estimated Glucose Value<sub className="align-top">2</sub>
+              </td>
               <td>“EGV” </td>
             </tr>
             <tr>
@@ -242,7 +245,7 @@ function WearableGlucoseMonitor() {
           </p>
           <p>
             <span className="font-bold text-sm">
-              EGV<sub className="align-top">1</sub>
+              EGV<sub className="align-top">2</sub>
             </span>
             : Estimated Glucose Value. An “EGV event” essentially captures any significant data
             point or occurrence tracked by the CGM system in relation to estimated glucose levels.
