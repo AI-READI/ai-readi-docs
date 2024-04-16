@@ -99,15 +99,14 @@ function WearableGlucoseMonitor() {
               <td>1</td>
             </tr>
             <tr>
-              <td> </td>
-              <td rowSpan="2"> time_window</td>
-              <td> value</td>
+              <td rowSpan="2"> </td>
+              <td rowSpan="2"> </td>
+              <td> time_window / value</td>
               <td> Value of time window</td>
               <td>5</td>
             </tr>
             <tr>
-              <td> </td>
-              <td> unit </td>
+              <td> time_window / unit </td>
               <td>Unit of time window </td>
               <td>
                 {' '}
@@ -154,7 +153,7 @@ function WearableGlucoseMonitor() {
               <td rowSpan="2"> body</td>
               <td rowSpan="2"> effective_time_frame</td>
               <td>
-                time_interval <sub className="align-top">1</sub>:start_date_time{' '}
+                time_interval <sub className="align-top">1</sub> / start_date_time{' '}
               </td>
               <td>Time of CGM reading </td>
               <td>
@@ -162,7 +161,7 @@ function WearableGlucoseMonitor() {
               </td>
             </tr>
             <tr>
-              <td> time_interval:end_date_time </td>
+              <td> time_interval / end_date_time </td>
               <td>Time of CGM reading </td>
               <td>
                 <q>2023-08-08T21:15:10Z</q>{' '}
