@@ -1,0 +1,110 @@
+---
+sidebar_position: 2
+title: Retinal OCT
+
+---
+
+# Retinal Optical Coherence Tomography
+
+## Overview of Data Domain
+
+General Information:
+
+Optical Coherence Tomography (OCT) is a non-invasive diagnostic technique that renders an in vivo cross-sectional view of the retina. OCT utilizes a concept known as interferometry to create a cross-sectional map of the retina that is accurate to within at least 10-15 microns. This technique provides detailed, cross-sectional images of the various layers of the retina with high resolution, enabling clinicians to diagnose and monitor a wide range of retinal diseases and conditions.
+
+How OCT of the retina works and its significance:
+
+1. **Imaging Process**: OCT of the retina utilizes a low-coherence light source, usually near-infrared light, to capture cross-sectional images of the retina. The light is split into two arms, with one directed towards the retina (sample arm) and the other towards a reference mirror. The reflected light from both arms is then recombined and analyzed to generate an interference pattern.
+
+2. **The retina consists of several layers**, including: internal limiting membrane, the retinal nerve fiber layer, ganglion cell layer, inner plexiform layer, inner nuclear layer, outer plexiform layer, outer nuclear layer, external limiting membrane,  photoreceptor layer (containing rods and cones), retinal pigment epithelium (RPE), and Bruch’s membrane. OCT of the retina provides detailed visualization of these layers, allowing clinicians to assess their thickness, integrity, and any abnormalities. Choriocapillaris and choroidal stroma are also visible layers in OCT.
+
+
+<RetinalOCT />
+
+DICOM tags:
+
+| Group/Element  | TAG Description | VR | VM |  Length|Value  |
+|----------|----------|----------|----------|----------|----------|
+|	 (0010,0020)	 | 	Patient ID	 | LO | 1 |  4| eg. 1001 (value will differ)|
+|	(0008,0060)		 | Modality 	 |  CS | 1 |4 | OPT |
+|	(0008,0070)		 | Manufacturer	 |  LO|  1| 22 | Heidelberg Engineering |
+|	(0008,1090)		 |  Manufacturer Model Name | LO | 1 |  10|Spectralisus |
+|	(0018,1030)		 | 	Protocol Name  | LO | 1 | 24 | spectralis onh rc hr oct|
+|	 (0020,0062)	 | Image Laterality	 | CS | 1 |  2|R/L |
+|	(0028,0008)		 | Number Of Frames	 |US  |1  | 2 |27 |
+|	(0022,0035)		 | Depth Spatial Resolution	 |FL  |1  | 4 |7 |
+|	(0028,0010)	   | Rows	 |US  |1  | 2 | 496|
+|	(0028,0011)	   | Columns	 |US  |1  | 2 |768 |
+|	(0028,0100)		 | Bits Allocated	 |US  |1  | 2 |8 |
+|	(0022,0039)		 | Ophthalmic Image Orientation	 |CS  |1  | 6 |LINEAR |
+
+
+**Posterior pole Macula high-resolution OCT**
+
+DICOM tags:
+
+
+| Group/Element  | TAG Description | VR | VM |  Length|Value  |
+|----------|----------|----------|----------|----------|----------|
+|	 (0010,0020)	 | 	Patient ID	 | LO | 1 |  4| eg. 1001 (value will differ)|
+|	(0008,0060)		 | Modality 	 |  CS | 1 |4 | OPT |
+|	(0008,0070)		 | Manufacturer	 |  LO|  1| 22 | Heidelberg Engineering |
+|	(0008,1090)		 |  Manufacturer Model Name | LO | 1 |  10|Spectralisus |
+|	(0018,1030)		 | 	Protocol Name  | LO | 1 | 24 | spectralis onh rc hr oct|
+|	 (0020,0062)	 | Image Laterality	 | CS | 1 |  2|R/L |
+|	(0028,0008)		 | Number Of Frames	 |US  |1  | 2 |60 |
+|	(0022,0035)		 | Depth Spatial Resolution	 |FL  |1  | 4 |7 |
+|	(0028,0010)	   | Rows	 |US  |1  | 2 | 496|
+|	(0028,0011)	   | Columns	 |US  |1  | 2 |768 |
+|	(0028,0100)		 | Bits Allocated	 |US  |1  | 2 |8 |
+|	(0022,0039)		 | Ophthalmic Image Orientation	 |CS  |1  | 6 |LINEAR |
+
+3D OCT-1 Maestro2 (Topcon Healthcare)
+
+Link:
+https://drive.google.com/file/d/1iThsd7u37Wr5VYl8lSV3PgxKoiAwrlNb/view
+
+
+Scan pattern: **3D Wide (H) 12x9mm OCT scan**, Scan resolution 512x128
+
+| Group/Element  | TAG Description | VR | VM |  Length|Value  |
+|----------|----------|----------|----------|----------|----------|
+|	 (0010,0020)	 | 	Patient ID	 | LO | 1 |  4| eg. 1001 (value will differ)|
+|	(0008,0060)		 | Modality 	 |  CS | 1 |4 | OPT |
+|	(0008,0070)		 | Manufacturer	 |  LO|  1| 6 | Topcon |
+|	(0008,1090)		 |  Manufacturer Model Name | LO | 1 |  16|3DOCT-1Maestro2 |
+|	(0018,1030)		 | 	Protocol Name  | LO | 1 | 22 | maestro2 3d wide oct|
+|	 (0020,0062)	 | Image Laterality	 | CS | 1 |  2|R/L |
+|	(0028,0008)		 | Number Of Frames	 |US  |1  | 4 |128 |
+|	(0022,0035)		 | Depth Spatial Resolution	 |FL  |1  | 4 |6 |
+|	(0028,0010)	   | Rows	 |US  |1  | 2 | 885|
+|	(0028,0011)	   | Columns	 |US  |1  | 2 |512 |
+|	(0028,0100)		 | Bits Allocated	 |US  |1  | 2 |8 |
+|	(0022,0039)		 | Ophthalmic Image Orientation	 |CS  |1  | 6 |LINEAR |
+
+
+Scan pattern: **3D Macula 6x6mm OCT scan**
+
+**DICOM tags**:
+
+| Group/Element  | TAG Description | VR | VM |  Length|Value  |
+|----------|----------|----------|----------|----------|----------|
+|	 (0010,0020)	 | 	Patient ID	 | LO | 1 |  4| eg. 1001 (value will differ)|
+|	(0008,0060)		 | Modality 	 |  CS | 1 |6 | OPT |
+|	(0008,0070)		 | Manufacturer	 |  LO|  1| 16 | Topcon |
+|	(0008,1090)		 |  Manufacturer Model Name | LO | 1 |  22|3DOCT-1Maestro2 |
+|	(0018,1030)		 | 	Protocol Name  | LO | 1 | 2 | maestro2 3d macula oct|
+|	 (0020,0062)	 | Image Laterality	 | CS | 1 |  4|R/L |
+|	(0028,0008)		 | Number Of Frames	 |US  |1  | 4 |128 |
+|	(0022,0035)		 | Depth Spatial Resolution	 |FL  |1  | 2 |6 |
+|	(0028,0010)	   | Rows	 |US  |1  | 2 | 885|
+|	(0028,0011)	   | Columns	 |US  |1  | 2 |512 |
+|	(0028,0100)		 | Bits Allocated	 |US  |1  | 2 |6 |
+|	(0022,0039)		 | Ophthalmic Image Orientation	 |CS  |1  |  |LINEAR |
+
+
+
+import PageFeedback from '@site/src/components/PageFeedback';
+import RetinalOCT from '@site/src/components/RetinalOCT';
+
+<PageFeedback />
