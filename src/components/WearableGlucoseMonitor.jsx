@@ -18,14 +18,14 @@ function WearableGlucoseMonitor() {
             <tr>
               <th> </th>
               <th> </th>
-              <th> </th>
+              <th colSpan={2}> </th>
               <th> Description</th>
               <th> Example</th>
             </tr>
             <tr>
               <td>root</td>
               <td> header</td>
-              <td> uuid</td>
+              <td colSpan={2}> uuid</td>
               <td> Universally Unique IDentifier</td>
               <td>
                 {' '}
@@ -35,7 +35,7 @@ function WearableGlucoseMonitor() {
             <tr>
               <td> </td>
               <td> </td>
-              <td> creation_date_time</td>
+              <td colSpan={2}> creation_date_time</td>
               <td> Time of CGM reading</td>
               <td>
                 <q>2023-08-08T21:15:10+00:00</q>{' '}
@@ -44,7 +44,7 @@ function WearableGlucoseMonitor() {
             <tr>
               <td> </td>
               <td> </td>
-              <td>patient_id </td>
+              <td colSpan={2}>patient_id </td>
               <td> Identification number of patient</td>
               <td>
                 {' '}
@@ -54,7 +54,7 @@ function WearableGlucoseMonitor() {
             <tr>
               <td> </td>
               <td>schema_id </td>
-              <td>namespace </td>
+              <td colSpan={2}>namespace </td>
               <td>The namespace of the schema to disambiguate schemas with conflicting names </td>
               <td>
                 {' '}
@@ -64,7 +64,7 @@ function WearableGlucoseMonitor() {
             <tr>
               <td> </td>
               <td> </td>
-              <td>name </td>
+              <td colSpan={2}>name </td>
               <td>Name of schema </td>
               <td>
                 <q>blood-glucose</q>{' '}
@@ -73,40 +73,40 @@ function WearableGlucoseMonitor() {
             <tr>
               <td> </td>
               <td> </td>
-              <td> version</td>
+              <td colSpan={2}> version</td>
               <td> Version of schema</td>
               <td>3 </td>
             </tr>
             <tr>
               <td> </td>
-              <td> modality</td>
-              <td> </td>
+              <td>modality </td>
+              <td colSpan={2}> </td>
               <td>
                 {' '}
                 This modality involves a small, wearable sensor that measures glucose levels in the
                 interstitial fluid just beneath the skin
               </td>
               <td>
-                {' '}
                 <q>sensed</q>{' '}
               </td>
             </tr>
             <tr>
               <td> </td>
-              <td>acquisition_rate </td>
-              <td>number_of_times </td>
+              <td> acquisition_rate</td>
+              <td colSpan={2}>number_of_times </td>
               <td> Frequency of reading in a specific time window</td>
               <td>1</td>
             </tr>
             <tr>
               <td rowSpan="2"> </td>
               <td rowSpan="2"> </td>
-              <td> time_window / value</td>
+              <td rowSpan="2"> time_window</td>
+              <td>value </td>
               <td> Value of time window</td>
               <td>5</td>
             </tr>
             <tr>
-              <td> time_window / unit </td>
+              <td> unit</td>
               <td>Unit of time window </td>
               <td>
                 {' '}
@@ -116,7 +116,7 @@ function WearableGlucoseMonitor() {
             <tr>
               <td> </td>
               <td>external_datasheets </td>
-              <td>datasheet_type</td>
+              <td colSpan={2}>datasheet_type</td>
               <td rowSpan="2">
                 The term <q>IRI </q>stands for Internationalized Resource Identifier, a unique
                 sequence of characters used to identify a resource. In this context,
@@ -134,7 +134,7 @@ function WearableGlucoseMonitor() {
             <tr>
               <td> </td>
               <td> </td>
-              <td> datasheet_reference </td>
+              <td colSpan={2}> datasheet_reference </td>
               <td>
                 <q>iri-of-cgm-device</q>{' '}
               </td>
@@ -142,7 +142,7 @@ function WearableGlucoseMonitor() {
             <tr>
               <td> </td>
               <td>timezone* </td>
-              <td> </td>
+              <td colSpan={2}> </td>
               <td>Participant’s time zone </td>
               <td>
                 {' '}
@@ -152,16 +152,17 @@ function WearableGlucoseMonitor() {
             <tr>
               <td rowSpan="2"> body</td>
               <td rowSpan="2"> effective_time_frame</td>
-              <td>
-                time_interval <sub className="align-top">1</sub> / start_date_time{' '}
+              <td rowSpan={2}>
+                time_interval <sub className="align-top">1</sub>
               </td>
-              <td>Time of CGM reading </td>
+              <td>start_date_time </td>
+              <td>Time of CGM reading</td>
               <td>
-                <q>2023-08-08T21:15:10Z</q>
+                <q>2023-08-08T21:15:10Z</q>{' '}
               </td>
             </tr>
             <tr>
-              <td> time_interval / end_date_time </td>
+              <td> end_date_time</td>
               <td>Time of CGM reading </td>
               <td>
                 <q>2023-08-08T21:15:10Z</q>{' '}
@@ -170,7 +171,7 @@ function WearableGlucoseMonitor() {
             <tr>
               <td> </td>
               <td> </td>
-              <td> event_type</td>
+              <td colSpan={2}> event_type</td>
               <td>
                 {' '}
                 Estimated Glucose Value<sub className="align-top">2</sub>
@@ -180,7 +181,7 @@ function WearableGlucoseMonitor() {
             <tr>
               <td> </td>
               <td> </td>
-              <td>source_service_id </td>
+              <td colSpan={2}>source_service_id </td>
               <td>Glucose sensor ID </td>
               <td>
                 <q>AB12345678</q>{' '}
@@ -189,7 +190,7 @@ function WearableGlucoseMonitor() {
             <tr>
               <td> </td>
               <td>blood_glucose </td>
-              <td> unit</td>
+              <td colSpan={2}> unit</td>
               <td> Unit of CGM reading</td>
               <td>
                 {' '}
@@ -200,14 +201,14 @@ function WearableGlucoseMonitor() {
             <tr>
               <td> </td>
               <td> </td>
-              <td> value**</td>
+              <td colSpan={2}> value**</td>
               <td> Value of CGM reading</td>
               <td> 138</td>
             </tr>
             <tr>
               <td> </td>
               <td>transmitter_time</td>
-              <td> unit</td>
+              <td colSpan={2}> unit</td>
               <td>Unit of transmitter timeg</td>
               <td>
                 {' '}
@@ -217,17 +218,17 @@ function WearableGlucoseMonitor() {
             <tr>
               <td> </td>
               <td> </td>
-              <td>value </td>
+              <td colSpan={2}>value </td>
               <td> Value of transmitter time</td>
               <td>7573</td>
             </tr>
             <tr>
               <td> </td>
               <td>transmitter_id</td>
-              <td> </td>
+              <td colSpan={2}> </td>
               <td>Transmitter ID</td>
               <td>
-                <q>123ABC</q>
+                <q>123ABC</q>{' '}
               </td>
             </tr>
           </table>
