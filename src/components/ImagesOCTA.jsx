@@ -71,7 +71,7 @@ function ImagesOCTA() {
             associated retinal 6 photography files, 6 structural oct files, 12 flow cube (processed
             and raw) files, and 6 heightmap segmentation files and 24 en face images)
           </p>
-          <b>Flow cube</b>
+          <strong>Flow cube</strong>
           <table>
             <tr>
               <th>Protocol Name </th>
@@ -109,7 +109,7 @@ function ImagesOCTA() {
             have the same dimensions.
           </p>
 
-          <b>Segmentation</b>
+          <strong>Segmentation</strong>
           <table>
             <tr>
               <th>Protocol Name </th>
@@ -138,7 +138,7 @@ function ImagesOCTA() {
               <td> 432</td>
             </tr>
           </table>
-          <b>En Face images</b>
+          <strong>En Face images</strong>
           <table>
             <tr>
               <th> Protocol Name</th>
@@ -165,7 +165,7 @@ function ImagesOCTA() {
           </table>
           <h2>Example images</h2>
           <div className="text-sm">
-            <b>Figure 1. Topcon, Maestro2,</b>
+            <strong>Figure 1. Topcon, Maestro2,</strong>
             Maestro2-Mac 6x6-360x360-(rep3)-OCTA, own source (UCSD), en face (superficial, deep,
             outer retina and choriocapillaris) and OCT B-scan.
             <img src={Figure1a} alt="" />
@@ -173,21 +173,21 @@ function ImagesOCTA() {
           </div>
 
           <div className="text-sm">
-            <b>Figure 2. Topcon, Triton,</b>
+            <strong>Figure 2. Topcon, Triton,</strong>
             Triton-Macula 6x6-OCTA, own source (UCSD), en face slabs (superficial, deep, outer
             retina, choriocapillaris) and Angio OCT B-scan.
             <img src={Figure2a} alt="" />
             <img src={Figure2b} alt="" />
           </div>
           <div className="text-sm">
-            <b>Figure 3. Topcon, Triton,</b>
+            <strong>Figure 3. Topcon, Triton,</strong>
             Triton-Macula 12x12-OCTA, own source (UCSD), OCT flow cube and structural B-scan and
             en-face images.
             <img src={Figure3a} alt="" />
             <img src={Figure3b} alt="" />
           </div>
           <h2>Data Processing</h2>
-          <b>File format</b>
+          <strong>File format</strong>
           <p>
             The file format is in
             <a href="https://en.wikipedia.org/wiki/DICOM">
@@ -197,7 +197,7 @@ function ImagesOCTA() {
             and related information.
           </p>
           <h2>Data Standard </h2>
-          <b>Flow Cube</b>
+          <strong>Flow Cube</strong>
           <p>
             For all files in flow_cube in retinal_octa, the exported files from the devices were
             formatted according to the NEMA DICOM standards on
@@ -211,7 +211,7 @@ function ImagesOCTA() {
             the tags that are categorized as <a href={type1}>Type 1</a> (Tag and value both needed)
             and <a href={type2}>Type 2</a> (tag needed value can be empty) were evaluated and filled
             in accordingly.
-            <b>Segmentation</b>
+            <strong>Segmentation</strong>
             <p>
               For all files in segmentation in retinal_octa, the exported files from the devices
               were formatted according to the NEMA DICOM standards on
@@ -235,7 +235,7 @@ function ImagesOCTA() {
               were evaluated and filled in accordingly.
             </p>
           </p>
-          <b>File processing</b>
+          <strong>File processing</strong>
           <p>
             Files were processed to comply with the NEMA DICOM standards listed above through
             removing, adding, editing tags and values.
@@ -248,7 +248,7 @@ function ImagesOCTA() {
             In addition to ensuring files are NEMA compliant, further processing in the following
             were done to ensure consistency across the files:
           </p>
-          <b>Flow Cube</b>
+          <strong>Flow Cube</strong>
           <table>
             <tr>
               <th>DICOM Tag Number</th>
@@ -293,7 +293,7 @@ function ImagesOCTA() {
               <td> Removal, Unnecessary information and inconsistent across devices</td>
             </tr>
           </table>
-          <b>Segmentation</b>
+          <strong>Segmentation</strong>
           <table>
             <tr>
               <th>DICOM Tag Number</th>
