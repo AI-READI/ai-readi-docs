@@ -4,7 +4,7 @@ import React from 'react';
 // eslint-disable-next-line react/prop-types
 
 function FairPrinciples() {
-  return (
+return (
     <html lang="en">
       <body>
         <div>
@@ -172,6 +172,196 @@ function FairPrinciples() {
                 is no longer available for some reason on FAIRhub.{' '}
               </td>
             </tr>
+
+
+             <tr>
+    <td className="align-top">I1. (Meta)data use a formal, accessible, shared
+      and broadly
+      applicable language for knowledge representation. </td>
+    <td className="align-top">
+      <p>To fulfill this principle, make data available in file formats and/or
+        schemas that are readable by both humans and machines and are standard
+        for the corresponding data type.</p>
+      <p>Similarly, if metadata is provided in standalone files, ensure that
+        they are in file formats and/or schemas readable by both humans and
+        machines and are standard for the corresponding metadata.</p>
+    </td>
+    <td ><p>The data files in the AI-READI dataset are in formal, accessible,
+      shared and broadly applicable language
+      for knowledge representation for each
+      data type (e.g. DICOM for images).
+      This is described in the AI-READI dataset
+      documentation at docs.aireadi.org. </p>
+      <p>The AI-READI dataset includes metadata files prescribed by the CDS
+        which specifies certain metadata files such as
+        README.md and Healthsheet.md
+        that are readable by humans and in standard format
+        for such metadata files.
+        Moreover, the same information is also included in
+        machine-friendly format
+        such as the dataset_descritption.json and
+        study_description.json metadata
+        files. All of these follow the accepted format for such knowledge
+        representation.
+        More details are provided in the CDS specification documentation.</p></td>
+  </tr>
+   <tr>
+     <td>I2. (Meta)data use vocabularies that follow FAIR principles</td>
+     <td>To fulfill this principle, ensure that the vocabularies used in the
+       metadata are themselves FAIR, i.e. the vocabulary is controlled,
+       well-documented in a suitable format, and resolvable through a standard
+       protocol using a globally unique and persistent identifier. Ontologies
+       defined in the “Web Ontology Language” (OWL) and shared via a publicly
+       accessible registry (e.g. BioPortal for
+       life science ontologies) are examples
+       of formally represented, accessible, mapped, and shared knowledge
+       representations in a broadly applicable language for knowledge
+       representation, that are also compliant
+       with the Findability requirements of
+       FAIR, since BioPortal provides a machine-accessible search interface.
+     </td>
+     <td className="align-top">
+       The AI-READI dataset includes
+       machine-friendly metadata files prescribed
+       by the CDS that use vocabularies that follow the FAIR principles as they
+       use popular schemas such as the DataCite schema and the
+       ClinicalTrials.gov schema.
+     </td>
+   </tr>
+   <tr>
+     <td>I3. (Meta)data include qualified references to other (meta)data</td>
+     <td>
+       To fulfill this principle, include in the
+       metadata qualified reference
+       (i.e. reference that explains the nature of
+       the relationship) to external
+       resources (datasets, software, documentation,
+       etc.) that are needed to use,
+       understand, or reproduce the data
+     </td>
+     <td>
+       The AI-READI dataset includes a dataset_description.json metadata
+       file as per the CDS which has a field to include qualified reference
+       to other (meta)data. More details are provided in the
+       <a href="https://cds-specification.readthedocs.io/en/v0.1.0/">
+         CDS specification documentation</a>
+     </td>
+   </tr>
+    <tr>
+     <td>
+       R1. (Meta)data are richly described with a plurality of accurate
+       and relevant attributes
+     </td>
+     <td>
+       To fulfill this principle, provide not only metadata
+       required for discovery
+       of the data but also for reusing the data and for
+       understanding the
+       context associated with the data. Some points to take
+       into consideration
+       (non-exhaustive list):
+       <ul>
+         <li>
+           Describe the scope of your data: for what purpose was
+           it generated/collected
+         </li>
+         <li>
+           Mention any particularities or limitations
+           about the data that other users should be aware of.
+         </li>
+         <li>
+           Specify the date of generation/collection of
+           the data, the lab conditions, who prepared the data, the parameter
+           settings, the name and version of the software used.
+         </li>
+         <li>Is it raw or processed data?</li>
+         <li>
+           Ensure that all variable names are explained or self-explanatory
+           (i.e., defined in the research field’s controlled vocabulary).
+         </li>
+         <li>Clearly specify and document the version of the archived
+           and/or reused data.
+         </li>
+       </ul>
+      </td>
+     <td className="align-top">
+       The AI-READI dataset is richly
+       described with a plurality of accurate
+       and relevant attributes through the various metadata provided. This is
+       detailed in the description provided for Principle F2.
+     </td>
+   </tr>
+   <tr>
+     <td>R1.1. (Meta)data are released with a clear and accessible data usage language.
+     </td>
+     <td>
+       To fulfill this principle, clearly provide the license terms i.e. the
+       condition under which the data can be used in human and machine readable
+       format. Typically, sharing the data on a suitable repository (F1) should
+       fulfill this principle as most repository include the license as part of
+       the repository metadata
+     </td>
+     <td>
+       The AI-READI dataset is released under a custom license which is clearly
+       described in a LICENSE.txt file included in the dataset. Additionally, the
+       license is also mentioned in various metadata associated with the dataset,
+       including its documentation available at <a href="http://docs.aireadi.org">
+         docs.aireadi.org</a> and the  dataset’s landing page on FAIRhub.
+     </td>
+   </tr>
+    <tr>
+     <td className="align-top">R1.2. (Meta)data are associated
+       with detailed provenance.</td>
+     <td>To fulfill this principle, provide provenance information in your
+       metadata including: where the data came from (i.e., clear story of
+       origin/history, see R1), who to cite and/or how you wish to be
+       acknowledged. Include a description of the workflow that led to
+       your data: Who generated or collected it? How has it been processed?
+       Has it been published before? Does it contain data from someone else
+       that you may have transformed or completed? What funding/resources?
+       Who owns the data?</td>
+     <td className="align-top">The AI-READI dataset includes
+       various metadata files prescribed by the CDS, such as README.md,
+       Healthsheet.md, dataset_description.json,
+       study_description.json all of which include detailed provenance
+       information. The dataset’s landing page also includes the same
+       provenance metadata and so does the dataset documentation
+       available at <a href="http://docs.aireadi.org">docs.aireadi.org</a>.</td>
+   </tr>
+    <tr>
+     <td className="align-top">R1.3. (Meta)data meet domain-relevant
+       community standards.</td>
+     <td>To fulfill this principle do the following as applicable:
+        <ul>
+          <li>organize data file in a standard directory structure</li>
+        </ul>
+       <ul>
+         <li>Name files and directories
+           following a consistent naming convention</li>
+       </ul>
+        <ul>
+          <li>Provide data and metadata in domain relevant format (even if it
+            means duplicating on F2 and R1.2). For the metadata, follow any
+            community-agreed minimal information requirements for your data
+            type. For a list of such standards, consult FAIRsharing</li>
+        </ul>
+      </td>
+     <td className="align-top">The AI-READI dataset is structured according
+       to the CDS, which imposes
+       a standard folder structure, naming convention for
+       directories, and metadata
+       files that follow community standards. More details are provided in the <a
+         href="https://cds-specification.readthedocs.io/en/v0.1.0/">
+         CDS specification documentation</a> .
+
+      <p>All the data files in the AI-READI dataset are in format
+        that meet domain-relevant
+        community standards (e.g., DICOM for images).
+        This is described in detail in the dataset documentation
+        available at <a href="http://docs.aireadi.org">docs.aireadi.org</a>.
+     </p>
+     </td>
+   </tr>
           </table>
         </div>
       </body>
