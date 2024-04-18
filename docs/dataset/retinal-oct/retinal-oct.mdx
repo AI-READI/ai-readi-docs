@@ -1,14 +1,13 @@
 ---
 sidebar_position: 2
 title: Retinal OCT
-
 ---
 
 # Retinal Optical Coherence Tomography
 
 ## Overview of Data Domain
 
-General Information:
+### General Information
 
 Optical Coherence Tomography (OCT) is a non-invasive diagnostic technique that renders an in vivo cross-sectional view of the retina. OCT utilizes a concept known as interferometry to create a cross-sectional map of the retina that is accurate to within at least 10-15 microns. This technique provides detailed, cross-sectional images of the various layers of the retina with high resolution, enabling clinicians to diagnose and monitor a wide range of retinal diseases and conditions.
 
@@ -16,95 +15,400 @@ How OCT of the retina works and its significance:
 
 1. **Imaging Process**: OCT of the retina utilizes a low-coherence light source, usually near-infrared light, to capture cross-sectional images of the retina. The light is split into two arms, with one directed towards the retina (sample arm) and the other towards a reference mirror. The reflected light from both arms is then recombined and analyzed to generate an interference pattern.
 
-2. **The retina consists of several layers**, including: internal limiting membrane, the retinal nerve fiber layer, ganglion cell layer, inner plexiform layer, inner nuclear layer, outer plexiform layer, outer nuclear layer, external limiting membrane,  photoreceptor layer (containing rods and cones), retinal pigment epithelium (RPE), and Bruch’s membrane. OCT of the retina provides detailed visualization of these layers, allowing clinicians to assess their thickness, integrity, and any abnormalities. Choriocapillaris and choroidal stroma are also visible layers in OCT.
+2. **The retina consists of several layers**, including: internal limiting membrane, the retinal nerve fiber layer, ganglion cell layer, inner plexiform layer, inner nuclear layer, outer plexiform layer, outer nuclear layer, external limiting membrane, photoreceptor layer (containing rods and cones), retinal pigment epithelium (RPE), and Bruch's membrane. OCT of the retina provides detailed visualization of these layers, allowing clinicians to assess their thickness, integrity, and any abnormalities. Choriocapillaris and choroidal stroma are also visible layers in OCT.
 
+<figure>
+  <img src="/img/retinal-oct/fig1.jpg" />
+  <figcaption>
+    Figure 1. Retinal layers in normal, healthy eye imaged with Hedeilberg Spectralis.
+  </figcaption>
+</figure>
 
-<RetinalOCT />
+1. **Diagnosis and Monitoring**: OCT of the retina is widely used in ophthalmology for diagnosing identify structural changes in the retina, such as fluid accumulation, and monitoring various retinal conditions, such as age-related macular degeneration (AMD), diabetic retinopathy, retinal vein occlusion, macular edema, and glaucoma.
 
-DICOM tags:
+2. **Treatment Guidance**: OCT of the retina plays a crucial role in guiding treatment decisions for retinal diseases. For example, it helps ophthalmologists determine the need for interventions such as intravitreal injections, laser therapy, or surgical procedures. By monitoring changes in retinal morphology over time, clinicians can assess the efficacy of treatment and adjust management strategies accordingly.
 
-| Group/Element  | TAG Description | VR | VM |  Length|Value  |
-|----------|----------|----------|----------|----------|----------|
-|	 (0010,0020)	 | 	Patient ID	 | LO | 1 |  4| eg. 1001 (value will differ)|
-|	(0008,0060)		 | Modality 	 |  CS | 1 |4 | OPT |
-|	(0008,0070)		 | Manufacturer	 |  LO|  1| 22 | Heidelberg Engineering |
-|	(0008,1090)		 |  Manufacturer Model Name | LO | 1 |  10|Spectralisus |
-|	(0018,1030)		 | 	Protocol Name  | LO | 1 | 24 | spectralis onh rc hr oct|
-|	 (0020,0062)	 | Image Laterality	 | CS | 1 |  2|R/L |
-|	(0028,0008)		 | Number Of Frames	 |US  |1  | 2 |27 |
-|	(0022,0035)		 | Depth Spatial Resolution	 |FL  |1  | 4 |7 |
-|	(0028,0010)	   | Rows	 |US  |1  | 2 | 496|
-|	(0028,0011)	   | Columns	 |US  |1  | 2 |768 |
-|	(0028,0100)		 | Bits Allocated	 |US  |1  | 2 |8 |
-|	(0022,0039)		 | Ophthalmic Image Orientation	 |CS  |1  | 6 |LINEAR |
+3. Optical Coherence Tomography (OCT) plays a crucial role in the detection and management of **glaucoma**, a progressive optic nerve disease characterized by damage to the optic nerve and loss of peripheral vision. OCT provides detailed, quantitative assessments of the retinal nerve fiber layer (RNFL) and the optic nerve head (ONH), aiding in the early diagnosis, monitoring, and management of glaucoma.
 
+   - **RNFL Thickness Measurement**: OCT allows for precise measurement of
+     the thickness of the RNFL, which consists of axons of retinal ganglion cells.
+     Thinning of the RNFL is a hallmark sign of glaucoma and can occur before visual
+     field defects are detectable by conventional perimetry. OCT enables clinicians to
+     quantitatively assess RNFL thickness around the optic nerve head and along the
+     peripapillary region, helping in early detection of glaucoma and monitoring
+     disease progression over time.
 
-**Posterior pole Macula high-resolution OCT**
+   - **Optic Nerve Head Assessment**: OCT provides detailed imaging of the
+     optic nerve head, including measurements of rim area , cup-to-disc ratio, and
+     neuroretinal rim thickness. Changes in these parameters can indicate structural
+     damage to the optic nerve associated with glaucoma. OCT scans also allow
+     clinicians to visualize and quantify the presence of optic disc hemorrhages, which
+     are often associated with glaucomatous optic nerve damage.
 
-DICOM tags:
+## Overview of AI-READI Optical Coherence Tomography (OCT)
 
+| Manufacturer | Manufacturer's Model (device) | Protocol Name                | Anatomic Regions\* | Width | Height      | Number of frames | Notes                                                                                           |
+| ------------ | ----------------------------- | ---------------------------- | ------------------ | ----- | ----------- | ---------------- | ----------------------------------------------------------------------------------------------- |
+| Heidelberg   | Spectralis                    | Spec-ONH-RC-HR-OCT           | Optic Disc         | 496   | 768         | 27               |                                                                                                 |
+| Heidelberg   | Spectralis                    | Spec-MAC-HR-OCT              | Macula             | 496   | 768 or 1536 | 61               | Two versions of the protocols were used for the pilot but in the future 496, 1536 will be used. |
+| Topcon       | Maestro2                      | Maestro2-3D-Wide             | Macula             | 885   | 512         | 128              |                                                                                                 |
+| Topcon       | Maestro2                      | Maestro2-3D-Macula           | Macula             | 885   | 512         | 128              |                                                                                                 |
+| Topcon       | Maestro2                      | Maestro2-Mac-6x6             | Macula             | 885   | 360         | 60               | 6 files have different dimensions (885, 320, 320)                                               |
+| Topcon       | Triton                        | Triton-3D(H)+Radial 12x9-OCT | Optic Disc         | 992   | 512         | 256              |                                                                                                 |
+| Topcon       | Triton                        | Triton-Macula 6x6-OCTA       | Macula             | 992   | 320         | 320              |                                                                                                 |
+| Topcon       | Triton                        | Triton-Macula 12x12-OCTA     | Macula             | 992   | 512         | 512              |                                                                                                 |
 
-| Group/Element  | TAG Description | VR | VM |  Length|Value  |
-|----------|----------|----------|----------|----------|----------|
-|	 (0010,0020)	 | 	Patient ID	 | LO | 1 |  4| eg. 1001 (value will differ)|
-|	(0008,0060)		 | Modality 	 |  CS | 1 |4 | OPT |
-|	(0008,0070)		 | Manufacturer	 |  LO|  1| 22 | Heidelberg Engineering |
-|	(0008,1090)		 |  Manufacturer Model Name | LO | 1 |  10|Spectralisus |
-|	(0018,1030)		 | 	Protocol Name  | LO | 1 | 24 | spectralis onh rc hr oct|
-|	 (0020,0062)	 | Image Laterality	 | CS | 1 |  2|R/L |
-|	(0028,0008)		 | Number Of Frames	 |US  |1  | 2 |60 |
-|	(0022,0035)		 | Depth Spatial Resolution	 |FL  |1  | 4 |7 |
-|	(0028,0010)	   | Rows	 |US  |1  | 2 | 496|
-|	(0028,0011)	   | Columns	 |US  |1  | 2 |768 |
-|	(0028,0100)		 | Bits Allocated	 |US  |1  | 2 |8 |
-|	(0022,0039)		 | Ophthalmic Image Orientation	 |CS  |1  | 6 |LINEAR |
+\*More information on individual files, please refer to manifest.csv within the retinal_oct folder
 
-3D OCT-1 Maestro2 (Topcon Healthcare)
+## Example images
+
+<figure>
+  <img src="/img/retinal-oct/fig2.jpg" />
+  <figcaption>Figure 2. ONH Heidelberg Spectralis (Spec-ONH-RC-HR-OCT).</figcaption>
+</figure>
+
+A radial line-scan pattern is part of the ONH-RC scan protocol and allows for
+assessing the thickness of the neuro-retinal rim based on the detection of the disk
+margin. From each B-Scan, the shortest distance from Bruch's membrane opening (BMO) to
+the ILM is determined and indicated by a cyan arrow in the B-Scan. The analysis is
+therefore called BMO-based minimum rim width (BMO-MRW). It considers the variable
+geometry of the neural tissue as it exits the eye via the optic nerve head. BMO-MRW
+data can be classified based on a reference database according to Garway-Heath sectors
+as well as globally.
+
+<figure>
+  <img src="/img/retinal-oct/fig3.png" />
+  <figcaption>
+    Figure 3. Posterior pole Macula high-resolution OCT (Spec-PPole Mac-HR-61 lines-OCT) Heidelberg
+    Spectralis
+  </figcaption>
+</figure>
+
+The PPoleH scan is a volume scan which is placed on the posterior pole of the eye and
+which is aligned to the individual Fovea-to-BMO-center axis. Posterior pole horizontal
+high resolution Macula OCT scan pattern, own source (UCSD)
+
+<figure>
+  <img src="/img/retinal-oct/fig4.png" />
+  <figcaption> Figure 4. Topcon, Maestro2, Maestro2-3D Wide(H) 12x9-OCT </figcaption>
+</figure>
+
+<figure>
+  <img src="/img/retinal-oct/fig5.png" />
+  <figcaption> Figure 5. Topcon, Maestro2, Maestro2-3D Macula 6x6-OCT </figcaption>
+</figure>
+
+<figure>
+  <img src="/img/retinal-oct/fig6a.png" />
+  <img src="/img/retinal-oct/fig6b.png" />
+  <figcaption>
+    Figure 6. Topcon, Maestro2, Maestro2-Mac 6x6-360x360-(rep3)-OCTA, own source (UCSD), en face
+    (superficial, deep, outer retina and choriocapillaris) and OCT B-scan.
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="/img/retinal-oct/fig7a.png" />
+  <img src="/img/retinal-oct/fig7b.png" />
+  <figcaption>Figure 7. Topcon, Triton, Triton-3D(H)+Radial 12x9-OCT, own source (UCSD)</figcaption>
+</figure>
+
+<figure>
+  <img src="/img/retinal-oct/fig8a.png" />
+  <img src="/img/retinal-oct/fig8b.png" />
+  <figcaption>
+    Figure 8. Topcon, Triton, Triton-Macula 6x6-OCTA, own source (UCSD), en face slabs (superficial,
+    deep, outer retina, choriocapillaris) and Angio OCT B-scan
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="/img/retinal-oct/fig9a.png" />
+  <img src="/img/retinal-oct/fig9b.png" />
+  <figcaption>
+    Figure 9. Topcon, Triton, Triton-Macula 12x12-OCTA, own source (UCSD,) structural B-scan and
+    en-face images.
+  </figcaption>
+</figure>
+
+## Data Processing
+
+### File format
+
+The file format is in [DICOM (Digital Imaging and Communications in Medicine)](https://en.wikipedia.org/wiki/DICOM) which is a technical standard for the digital storage and transmission of medical images and related information.
+
+### Data Standard
+
+For all files in retinal_photography, the exported files from the devices were formatted according to the NEMA DICOM standards on [Ophthalmic Tomography Image](https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.52). The detailed information about the tags and values could be found in the hyperlink.
+All mandatory modules (M) were included, and within the mandatory modules, the tags that are categorized as [Type 1](https://dicom.nema.org/medical/dicom/current/output/chtml/part05/sect_7.4.html#:~:text=The%20Data%20Element%20Type%20of,only%20mandatory%20under%20certain%20conditions) (Tag and value both needed) and [Type 2](https://dicom.nema.org/medical/dicom/current/output/chtml/part05/sect_7.4.3.html) (tag needed value can be empty) were evaluated and filled in accordingly.
+
+### File Processing
+
+Files were processed to comply with the NEMA DICOM standards on [Ophthalmic Tomography Image](https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.52) through removing, adding, editing tags and values.
+Note that tags that are not listed in [Ophthalmic Tomography Image](https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.52) and did not provide additional information are removed for consistency and clarity.
+In addition to ensuring files are NEMA compliant, further processing in the following were done to ensure consistency across the files:
+
+<table>
+  <thead>
+    <tr>
+      <th>DICOM Tag Number</th>
+      <th>DICOM Tag Name</th>
+      <th>Values</th>
+      <th>Action, Rationale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> (0010,0010) </td>
+      <td> Patient Name</td>
+      <td> Blank</td>
+      <td> Removal, Patient information</td>
+    </tr>
+    <tr>
+      <td> (0010,0030) </td>
+      <td> Patient Birth Date</td>
+      <td> Blank</td>
+      <td> Removal, Patient information</td>
+    </tr>
+    <tr>
+      <td> (0010,0040)</td>
+      <td> Patient Sex</td>
+      <td> A unified value of “M”</td>
+      <td> Removal, Patient information removed</td>
+    </tr>
+    <tr>
+      <td>(0008,0090)</td>
+      <td>Referring Physician Name </td>
+      <td> Blank</td>
+      <td> Removal, Unnecessary information and inconsistent across devices</td>
+    </tr>
+    <tr>
+      <td> (0020, 0010)</td>
+      <td> Study ID </td>
+      <td> Blank </td>
+      <td> Removal, Unnecessary information and inconsistent across devices</td>
+    </tr>
+    <tr>
+      <td> (0008, 0050)</td>
+      <td> Accession Number </td>
+      <td> Blank</td>
+      <td> Removal, Unnecessary information and inconsistent across devices</td>
+    </tr>
+    <tr>
+      <td> (0008, 2218)</td>
+      <td> Anatomic Region Sequence </td>
+      <td> Blank </td>
+      <td> Removal, Unnecessary information and inconsistent across devices</td>
+    </tr>
+    <tr>
+      <td> (0022, 0015)</td>
+      <td>Anatomic Region Sequence</td>
+      <td> e.g., 5665001, SCT, Retina </td>
+      <td rowSpan="2">
+        Harmonized, up-to-date information. Based on [dicom.nema.org](
+        https://dicom.nema.org/medical/dicom/current/output/chtml/part16/PS3.16.html) DICOM PS3.16
+        2024b - Content Mapping Resource B.DCMR Context Groups (Normative)
+      </td>
+    </tr>
+    <tr>
+      <td> (0022, 0015)</td>
+      <td>Acquisition Device Type Code Sequence </td>
+      <td> e.g., 392012008, SCT, Optical Coherence Tomography Scanner</td>
+    </tr>
+    <tr>
+      <td> (5200, 9229)</td>
+      <td> Shared Functional Groups Sequence</td>
+      <td>
+        Includes these tags within the correct nested structure: - &gt;(0008, 1140) Referenced Image
+        Sequence - &gt;(0008, 9124) Derivation Image Sequence - &gt;(0020, 9071) Frame Anatomy
+        Sequence - &gt;(0020, 9116)* Plane Orientation Sequence - &gt;(0028, 9110)* Pixel Measures
+        Sequence
+      </td>
+      <td>
+        Harmonized, Based on this information the nested structures were organized:
+        [dicon.nema.org](https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.16.html#sect_C.7.6.16.1.1),
+        [dicon.innolitics.com](https://dicom.innolitics.com/ciods/ophthalmic-tomography-image/ophthalmic-tomography-image-multi-frame-functional-groups/52009229)
+      </td>
+    </tr>
+    <tr>
+      <td>&gt;(0008, 9124)</td>
+      <td> DerivationImageSequence </td>
+      <td> e.g., empty </td>
+      <td> Addition,Tag is added for NEMA compliance (Type 2 tag needed value can be empty)</td>
+    </tr>
+    <tr>
+      <td>&gt;(0008, 0000)</td>
+      <td> Group Length </td>
+      <td> e.g., 596 </td>
+      <td> Removed, Unnecessary information</td>
+    </tr>
+    <tr>
+      <td>&gt;(5200, 9230)</td>
+      <td> Group Length </td>
+      <td> e.g., 596 </td>
+      <td> Removed, Unnecessary information</td>
+    </tr>
+    <tr>
+      <td>&gt;(0040, 0000)</td>
+      <td> Per Frame Functional Groups Sequence </td>
+      <td>
+        e.g., include these tags within the nested structure - &gt;(0020, 9111) Frame Content
+        Sequence - &gt;(0020, 9113) Plane Position Sequence - &gt;(0022, 0031) Ophthalmic Frame
+        Location Sequence - &gt;(0020, 9116)* Plane Orientation Sequence - &gt;(0028, 9110)* Pixel
+        Measures Sequence
+      </td>
+      <td>
+        Harmonized, Based on this information the nested structures were organized:
+        [diconm.nema.org](https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.16.html#sect_C.7.6.16.1.2)
+        [dicom.innolitics.com](https://dicom.innolitics.com/ciods/ophthalmic-tomography-image/ophthalmic-tomography-image-multi-frame-functional-groups/52009230)
+      </td>
+    </tr>
+    <tr>
+      <td>&gt;(0020, 0000)</td>
+      <td> Group Length </td>
+      <td> e.g., 596 </td>
+      <td> Removed, Unnecessary information</td>
+    </tr>
+    <tr>
+      <td>(0020, 9222)</td>
+      <td> Dimension Index Sequence</td>
+      <td>
+        e.g., includes tags listed below (0020, 9164), (0020, 9165), (0020,9167) within the nested
+        structure
+      </td>
+      <td> Harmonized, consistency</td>
+    </tr>
+    <tr>
+      <td>&gt;(0020, 9164)</td>
+      <td> Dimension Organization UID</td>
+      <td> e.g., 2.16.840.1.11 4517.10.5. 3.1.90706312 02401180 9124012 </td>
+      <td rowSpan="3">
+        Harmonized,Consistency and Accurate information Values `00209056`, `00209057`, `00209111`
+        these are pointing to the values of tags within the same file
+      </td>
+    </tr>
+    <tr>
+      <td>&gt;(0020, 9165)</td>
+      <td>Dimension Index Pointer </td>
+      <td> e.g., 00209056,00209057</td>
+    </tr>
+    <tr>
+      <td>&gt;(0020, 9167)</td>
+      <td>Functional Group Pointer</td>
+      <td> e.g., 00209111</td>
+    </tr>
+    <tr>
+      <td>(0022, 000D)</td>
+      <td>Pupil Dilated</td>
+      <td> e.g., YES/NO</td>
+      <td> Addition,Missing value</td>
+    </tr>
+    <tr>
+      <td>(0022, 0058)</td>
+      <td>Mydriatic Agent Sequence</td>
+      <td> e.g., empty</td>
+      <td> Addition, Missing tag (tag is needed if Pupil Dilated is YES)</td>
+    </tr>
+    <tr>
+      <td>(0022, 000E)</td>
+      <td>Degree Of Dilation</td>
+      <td> e.g., empty</td>
+      <td> Addition, Missing tag (tag is needed if Pupil Dilated is YES)</td>
+    </tr>
+    <tr>
+      <td>(0018, 1030)</td>
+      <td>Protocol Name</td>
+      <td> e.g., spectralis onh rc hr oct</td>
+      <td> Addition, Better information delivery</td>
+    </tr>
+  </tbody>
+</table>
+
+\*Note that tags that are not listed in [Ophthalmic Tomography Image IOD Modules](https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.52) and did not provide additional information are removed for consistency and clarity.
+
+&gt; indicates that this is a nested structure within the tag above (e.g., ( 0020, 9164 ) is a within (0020, 9222))
+
+\*(0020, 9116) Plane Orientation Sequence, (0028, 9110) Pixel Measures Sequence exists in either Shared Functional Groups Sequence and Per Frame Functional Groups Sequence.
+
+## Metadata Example
+
+#### DICOM tags:
+
+| Group/Element | TAG Description              | VR  | VM  | Length | Value                        |
+| ------------- | ---------------------------- | --- | --- | ------ | ---------------------------- |
+| (0010,0020)   | Patient ID                   | LO  | 1   | 4      | eg. 1001 (value will differ) |
+| (0008,0060)   | Modality                     | CS  | 1   | 4      | OPT                          |
+| (0008,0070)   | Manufacturer                 | LO  | 1   | 22     | Heidelberg Engineering       |
+| (0008,1090)   | Manufacturer Model Name      | LO  | 1   | 10     | Spectralisus                 |
+| (0018,1030)   | Protocol Name                | LO  | 1   | 24     | spectralis onh rc hr oct     |
+| (0020,0062)   | Image Laterality             | CS  | 1   | 2      | R/L                          |
+| (0028,0008)   | Number Of Frames             | US  | 1   | 2      | 27                           |
+| (0022,0035)   | Depth Spatial Resolution     | FL  | 1   | 4      | 7                            |
+| (0028,0010)   | Rows                         | US  | 1   | 2      | 496                          |
+| (0028,0011)   | Columns                      | US  | 1   | 2      | 768                          |
+| (0028,0100)   | Bits Allocated               | US  | 1   | 2      | 8                            |
+| (0022,0039)   | Ophthalmic Image Orientation | CS  | 1   | 6      | LINEAR                       |
+
+### Posterior pole Macula high-resolution OCT
+
+#### DICOM tags:
+
+| Group/Element | TAG Description              | VR  | VM  | Length | Value                        |
+| ------------- | ---------------------------- | --- | --- | ------ | ---------------------------- |
+| (0010,0020)   | Patient ID                   | LO  | 1   | 4      | eg. 1001 (value will differ) |
+| (0008,0060)   | Modality                     | CS  | 1   | 4      | OPT                          |
+| (0008,0070)   | Manufacturer                 | LO  | 1   | 22     | Heidelberg Engineering       |
+| (0008,1090)   | Manufacturer Model Name      | LO  | 1   | 10     | Spectralisus                 |
+| (0018,1030)   | Protocol Name                | LO  | 1   | 24     | spectralis onh rc hr oct     |
+| (0020,0062)   | Image Laterality             | CS  | 1   | 2      | R/L                          |
+| (0028,0008)   | Number Of Frames             | US  | 1   | 2      | 60                           |
+| (0022,0035)   | Depth Spatial Resolution     | FL  | 1   | 4      | 7                            |
+| (0028,0010)   | Rows                         | US  | 1   | 2      | 496                          |
+| (0028,0011)   | Columns                      | US  | 1   | 2      | 768                          |
+| (0028,0100)   | Bits Allocated               | US  | 1   | 2      | 8                            |
+| (0022,0039)   | Ophthalmic Image Orientation | CS  | 1   | 6      | LINEAR                       |
+
+### 3D OCT-1 Maestro2 (Topcon Healthcare)
 
 Link:
 https://drive.google.com/file/d/1iThsd7u37Wr5VYl8lSV3PgxKoiAwrlNb/view
 
-
 Scan pattern: **3D Wide (H) 12x9mm OCT scan**, Scan resolution 512x128
 
-| Group/Element  | TAG Description | VR | VM |  Length|Value  |
-|----------|----------|----------|----------|----------|----------|
-|	 (0010,0020)	 | 	Patient ID	 | LO | 1 |  4| eg. 1001 (value will differ)|
-|	(0008,0060)		 | Modality 	 |  CS | 1 |4 | OPT |
-|	(0008,0070)		 | Manufacturer	 |  LO|  1| 6 | Topcon |
-|	(0008,1090)		 |  Manufacturer Model Name | LO | 1 |  16|3DOCT-1Maestro2 |
-|	(0018,1030)		 | 	Protocol Name  | LO | 1 | 22 | maestro2 3d wide oct|
-|	 (0020,0062)	 | Image Laterality	 | CS | 1 |  2|R/L |
-|	(0028,0008)		 | Number Of Frames	 |US  |1  | 4 |128 |
-|	(0022,0035)		 | Depth Spatial Resolution	 |FL  |1  | 4 |6 |
-|	(0028,0010)	   | Rows	 |US  |1  | 2 | 885|
-|	(0028,0011)	   | Columns	 |US  |1  | 2 |512 |
-|	(0028,0100)		 | Bits Allocated	 |US  |1  | 2 |8 |
-|	(0022,0039)		 | Ophthalmic Image Orientation	 |CS  |1  | 6 |LINEAR |
-
+| Group/Element | TAG Description              | VR  | VM  | Length | Value                        |
+| ------------- | ---------------------------- | --- | --- | ------ | ---------------------------- |
+| (0010,0020)   | Patient ID                   | LO  | 1   | 4      | eg. 1001 (value will differ) |
+| (0008,0060)   | Modality                     | CS  | 1   | 4      | OPT                          |
+| (0008,0070)   | Manufacturer                 | LO  | 1   | 6      | Topcon                       |
+| (0008,1090)   | Manufacturer Model Name      | LO  | 1   | 16     | 3DOCT-1Maestro2              |
+| (0018,1030)   | Protocol Name                | LO  | 1   | 22     | maestro2 3d wide oct         |
+| (0020,0062)   | Image Laterality             | CS  | 1   | 2      | R/L                          |
+| (0028,0008)   | Number Of Frames             | US  | 1   | 4      | 128                          |
+| (0022,0035)   | Depth Spatial Resolution     | FL  | 1   | 4      | 6                            |
+| (0028,0010)   | Rows                         | US  | 1   | 2      | 885                          |
+| (0028,0011)   | Columns                      | US  | 1   | 2      | 512                          |
+| (0028,0100)   | Bits Allocated               | US  | 1   | 2      | 8                            |
+| (0022,0039)   | Ophthalmic Image Orientation | CS  | 1   | 6      | LINEAR                       |
 
 Scan pattern: **3D Macula 6x6mm OCT scan**
 
 **DICOM tags**:
 
-| Group/Element  | TAG Description | VR | VM |  Length|Value  |
-|----------|----------|----------|----------|----------|----------|
-|	 (0010,0020)	 | 	Patient ID	 | LO | 1 |  4| eg. 1001 (value will differ)|
-|	(0008,0060)		 | Modality 	 |  CS | 1 |6 | OPT |
-|	(0008,0070)		 | Manufacturer	 |  LO|  1| 16 | Topcon |
-|	(0008,1090)		 |  Manufacturer Model Name | LO | 1 |  22|3DOCT-1Maestro2 |
-|	(0018,1030)		 | 	Protocol Name  | LO | 1 | 2 | maestro2 3d macula oct|
-|	 (0020,0062)	 | Image Laterality	 | CS | 1 |  4|R/L |
-|	(0028,0008)		 | Number Of Frames	 |US  |1  | 4 |128 |
-|	(0022,0035)		 | Depth Spatial Resolution	 |FL  |1  | 2 |6 |
-|	(0028,0010)	   | Rows	 |US  |1  | 2 | 885|
-|	(0028,0011)	   | Columns	 |US  |1  | 2 |512 |
-|	(0028,0100)		 | Bits Allocated	 |US  |1  | 2 |6 |
-|	(0022,0039)		 | Ophthalmic Image Orientation	 |CS  |1  |  |LINEAR |
-
-
+| Group/Element | TAG Description              | VR  | VM  | Length | Value                        |
+| ------------- | ---------------------------- | --- | --- | ------ | ---------------------------- |
+| (0010,0020)   | Patient ID                   | LO  | 1   | 4      | eg. 1001 (value will differ) |
+| (0008,0060)   | Modality                     | CS  | 1   | 6      | OPT                          |
+| (0008,0070)   | Manufacturer                 | LO  | 1   | 16     | Topcon                       |
+| (0008,1090)   | Manufacturer Model Name      | LO  | 1   | 22     | 3DOCT-1Maestro2              |
+| (0018,1030)   | Protocol Name                | LO  | 1   | 2      | maestro2 3d macula oct       |
+| (0020,0062)   | Image Laterality             | CS  | 1   | 4      | R/L                          |
+| (0028,0008)   | Number Of Frames             | US  | 1   | 4      | 128                          |
+| (0022,0035)   | Depth Spatial Resolution     | FL  | 1   | 2      | 6                            |
+| (0028,0010)   | Rows                         | US  | 1   | 2      | 885                          |
+| (0028,0011)   | Columns                      | US  | 1   | 2      | 512                          |
+| (0028,0100)   | Bits Allocated               | US  | 1   | 2      | 6                            |
+| (0022,0039)   | Ophthalmic Image Orientation | CS  | 1   | 6      | LINEAR                       |
 
 import PageFeedback from '@site/src/components/PageFeedback';
-import RetinalOCT from '@site/src/components/RetinalOCT';
 
 <PageFeedback />
