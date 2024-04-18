@@ -22,11 +22,6 @@ function ImagesOCTA() {
   const heightmap = 'https://www.dicomstandard.org/news-dir/current/docs/sups/sup240.pdf';
   return (
     <html lang="en">
-      <head>
-        <style>{`
-
-        `}</style>
-      </head>
       <body>
         <div className="relative mt-4 w-full">
           <table>
