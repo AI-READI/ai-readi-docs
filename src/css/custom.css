@@ -128,14 +128,6 @@ h6,
   color: var(--ifm-heading-color) !important;
 }
 
-.markdown h1:first-child {
-  @apply text-2xl sm:text-[32px] mt-4 pb-2;
-}
-
-.markdown > h2 {
-  @apply text-2xl;
-}
-
 .footer--dark {
   @apply !bg-black;
 }
