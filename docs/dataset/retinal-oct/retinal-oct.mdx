@@ -219,10 +219,13 @@ In addition to ensuring files are NEMA compliant, further processing in the foll
       <td> (5200, 9229)</td>
       <td> Shared Functional Groups Sequence</td>
       <td>
-        Includes these tags within the correct nested structure: - &gt;(0008, 1140) Referenced Image
-        Sequence - &gt;(0008, 9124) Derivation Image Sequence - &gt;(0020, 9071) Frame Anatomy
-        Sequence - &gt;(0020, 9116)* Plane Orientation Sequence - &gt;(0028, 9110)* Pixel Measures
-        Sequence
+        Includes these tags within the correct nested structure: -
+
+        &gt;(0008, 1140) Referenced Image Sequence <br />
+        &gt;(0008, 9124) Derivation Image Sequence <br />
+        &gt;(0020, 9071) Frame Anatomy Sequence <br />
+        &gt;(0020, 9116)* Plane Orientation Sequence <br />
+        &gt;(0028, 9110)* Pixel Measures Sequence <br />
       </td>
       <td>
         Harmonized, Based on this information the nested structures were organized:
@@ -252,10 +255,13 @@ In addition to ensuring files are NEMA compliant, further processing in the foll
       <td>&gt;(0040, 0000)</td>
       <td> Per Frame Functional Groups Sequence </td>
       <td>
-        e.g., include these tags within the nested structure - &gt;(0020, 9111) Frame Content
-        Sequence - &gt;(0020, 9113) Plane Position Sequence - &gt;(0022, 0031) Ophthalmic Frame
-        Location Sequence - &gt;(0020, 9116)* Plane Orientation Sequence - &gt;(0028, 9110)* Pixel
-        Measures Sequence
+        e.g., include these tags within the nested structure
+
+        &gt;(0020, 9111) Frame Content Sequence <br />
+        &gt;(0020, 9113) Plane Position Sequence <br />
+        &gt;(0022, 0031) Ophthalmic Frame Location Sequence <br />
+        &gt;(0020, 9116)* Plane Orientation Sequence <br />
+        &gt;(0028, 9110)* Pixel Measures Sequence <br />
       </td>
       <td>
         Harmonized, Based on this information the nested structures were organized:
@@ -321,6 +327,7 @@ In addition to ensuring files are NEMA compliant, further processing in the foll
       <td> e.g., spectralis onh rc hr oct</td>
       <td> Addition, Better information delivery</td>
     </tr>
+
   </tbody>
 </table>
 
@@ -331,6 +338,8 @@ In addition to ensuring files are NEMA compliant, further processing in the foll
 \*(0020, 9116) Plane Orientation Sequence, (0028, 9110) Pixel Measures Sequence exists in either Shared Functional Groups Sequence and Per Frame Functional Groups Sequence.
 
 ## Metadata Example
+
+### OCT: spectralis onh rc hr oct
 
 #### DICOM tags:
 
@@ -349,7 +358,7 @@ In addition to ensuring files are NEMA compliant, further processing in the foll
 | (0028,0100)   | Bits Allocated               | US  | 1   | 2      | 8                            |
 | (0022,0039)   | Ophthalmic Image Orientation | CS  | 1   | 6      | LINEAR                       |
 
-### Posterior pole Macula high-resolution OCT
+### OCT: spectralis ppl mc hr oct
 
 #### DICOM tags:
 
@@ -368,12 +377,7 @@ In addition to ensuring files are NEMA compliant, further processing in the foll
 | (0028,0100)   | Bits Allocated               | US  | 1   | 2      | 8                            |
 | (0022,0039)   | Ophthalmic Image Orientation | CS  | 1   | 6      | LINEAR                       |
 
-### 3D OCT-1 Maestro2 (Topcon Healthcare)
-
-Link:
-https://drive.google.com/file/d/1iThsd7u37Wr5VYl8lSV3PgxKoiAwrlNb/view
-
-Scan pattern: **3D Wide (H) 12x9mm OCT scan**, Scan resolution 512x128
+### OCT: maestro2 3d wide oct
 
 | Group/Element | TAG Description              | VR  | VM  | Length | Value                        |
 | ------------- | ---------------------------- | --- | --- | ------ | ---------------------------- |
@@ -390,7 +394,7 @@ Scan pattern: **3D Wide (H) 12x9mm OCT scan**, Scan resolution 512x128
 | (0028,0100)   | Bits Allocated               | US  | 1   | 2      | 8                            |
 | (0022,0039)   | Ophthalmic Image Orientation | CS  | 1   | 6      | LINEAR                       |
 
-Scan pattern: **3D Macula 6x6mm OCT scan**
+### OCT: maestro2 3d macula oct
 
 **DICOM tags**:
 

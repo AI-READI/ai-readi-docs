@@ -241,7 +241,7 @@ For all files in enface in retinal_octa, the exported files from the devices wer
 
 Initially exported files were fda files. They were first converted to DICOM files using the tool provided by the manufacturer, which was based on the previous version of [en face imaging standards](https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.83). These files were further formatted to ensure NEMA compliance based on [Supplement 240: Heightmap Segmentation and Revised Ophthalmic OCT En Face Image](https://www.dicomstandard.org/news-dir/current/docs/sups/sup240.pdf) (Nov 10 2023 version). The detailed information about the tags and values could be found in the hyperlink. All mandatory modules (M) were included, and within the mandatory modules, the tags that are categorized as [Type 1](https://dicom.nema.org/medical/dicom/current/output/chtml/part05/sect_7.4.html#:~:text=The%20Data%20Element%20Type%20of,only%20mandatory%20under%20certain%20conditions) (Tag and value both needed) and [Type 2](https://dicom.nema.org/medical/dicom/current/output/chtml/part05/sect_7.4.3.html) (tag needed value can be empty) were evaluated and filled in accordingly.
 
-#### File Processing
+### File Processing
 
 Files were processed to comply with the NEMA DICOM standards listed above through removing, adding, editing tags and values.
 
@@ -309,18 +309,24 @@ In addition to ensuring files are NEMA compliant, further processing in the foll
     <td>(5200, 9229) </td>
     <td> Shared Functional Groups Sequence</td>
     <td>
-      Includes these tags within the correct nested structure: &gt;(0008, 1140) Referenced Image
-      Sequence &gt;(0008, 9124) Derivation Image Sequence &gt;(0020, 9113) Plane Position Sequence
-      &gt;(0020, 9116) Plane Orientation Sequence &gt;(0040, 9096) Real World Value Mapping Sequence
+      Includes these tags within the correct nested structure:
+
+      &gt; (0008, 1140) Referenced Image Sequence <br/>
+      &gt; (0008, 9124) Derivation Image Sequence <br/>
+      &gt; (0020, 9113) Plane Position Sequence <br/>
+      &gt; (0020, 9116) Plane Orientation Sequence <br/>
+      &gt; (0040, 9096) Real World Value Mapping Sequence <br/>
     </td>
     <td> Added, up-to-date standards listed in Supplement 240 provided by NEMA.</td>
+
   </tr>
   <tr>
     <td>(5200, 9230) </td>
     <td> Per Frame Functional Groups Sequence</td>
     <td>
-      e.g., include these tags within the nested structure &gt;(0020, 9111) Frame Content Sequence
-      &gt;(0062, 000A) Segment Identification Sequence
+      e.g., include these tags within the nested structure
+      &gt; (0020, 9111) Frame Content Sequence <br/>
+      &gt; (0062, 000A) Segment Identification Sequence <br/>
     </td>
     <td> Added, up-to-date standards listed in Supplement 240 provided by NEMA.</td>
   </tr>
@@ -440,7 +446,7 @@ In addition to ensuring files are NEMA compliant, further processing in the foll
 
 ## Metadata Example
 
-Scan pattern: **OCTA 6x6 scan of the macula, Scan resolution** 360x360
+OCT: maestro2 macula 6x6 octa
 
 | Group/Element | TAG Description              | VR  | VM  | Length | Value                        |
 | ------------- | ---------------------------- | --- | --- | ------ | ---------------------------- |
@@ -525,7 +531,7 @@ EN-FACE: **maestro2 macula 6x6 octa** Outer retina vasculature flow
 | (0028,0100)   | Bits Allocated                                   | US  | 1   | 2      | 8                                           |
 | (0022,1615)   | Ophthalmic Image Type Code Sequence              | SQ  | 1   | 72     |                                             |
 
-### Flow Cube
+### FLOW CUBE: maestro2 macula 6x6 octa
 
 | Group/Element | TAG Description            | VR  | VM  | Length | Value                        |
 | ------------- | -------------------------- | --- | --- | ------ | ---------------------------- |
@@ -541,13 +547,9 @@ EN-FACE: **maestro2 macula 6x6 octa** Outer retina vasculature flow
 | (0028,0011)   | Columns                    | US  | 1   | 2      | 360                          |
 | (0028,0100)   | Bits Allocated             | US  | 1   | 2      | 8                            |
 
-### Triton DRI OCT (Topcon Healthcare)
-
 Link to the imaging protocol: https://docs.google.com/document/d/1gwpoJlYLH6jaoxQ1WDhERHRTLiJnrgk7/edit
 
-Scan pattern: 3D Wide (H) + Radial 12x9 mm 512x256 scan of the posterior pole
-
-Here's the corrected table:
+OCT: triton 3d radial oct
 
 | Group/Element | TAG Description              | VR  | VM  | Length | Value                        |
 | ------------- | ---------------------------- | --- | --- | ------ | ---------------------------- |
@@ -564,7 +566,7 @@ Here's the corrected table:
 | (0028,0100)   | Bits Allocated               | US  | 1   | 2      | 8                            |
 | (0022,0039)   | Ophthalmic Image Orientation | CS  | 1   | 6      | LINEAR                       |
 
-Scan pattern: OCTA angiography 6x6 mm
+OCT: triton macula 6x6 octa
 
 | Group/Element | TAG Description              | VR  | VM  | Length | Value                        |
 | ------------- | ---------------------------- | --- | --- | ------ | ---------------------------- |
@@ -662,7 +664,7 @@ FLOW CUBE: **triton macula 6x6 octa**
 | (0028,0011)   | Columns                 | US  | 1   | 2      | 320                          |
 | (0028,0010)   | Rows                    | US  | 1   | 2      | 992                          |
 
-Scan pattern: OCTA angiography 12x12 mm
+OCT: triton macula 12x12 octa
 
 | Group/Element | TAG Description              | VR  | VM  | Length | Value                        |
 | ------------- | ---------------------------- | --- | --- | ------ | ---------------------------- |
