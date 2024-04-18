@@ -10,6 +10,9 @@ import Figure5 from '../../static/img/retinalPhotography/Figure5.jpg';
 // eslint-disable-next-line react/prop-types
 
 function RetinalPhotography() {
+  const ybrFull =
+    'https://dicom.nema.org/medical/dicom/current/output/chtml' +
+    '/part03/sect_C.7.6.3.html#sect_C.7.6.3.1.2';
   const type1 =
     'https://dicom.nema.org/medical/dicom/current/output/chtml/part05/' +
     'sect_7.4.html#:~:text=The%20Data%20Element%20Type%20of,' +
@@ -43,6 +46,11 @@ function RetinalPhotography() {
               <a href="https://en.wikipedia.org/wiki/Fundus_photography">
                 https://en.wikipedia.org/wiki/Fundus_photography
               </a>
+            </p>
+            <p className="text-sm">
+              Color fundus photography can capture various abnormalities in diabetic retinopathy,
+              such as microaneurysms, retinal hemorrhages, cotton wool spots, hard or soft exudates,
+              and neovascularization of the disc or the retina.
             </p>
             <img className="w-[25rem] h-[20rem]" src={Figure2} alt="" />
             <p className="text-sm">
@@ -349,6 +357,33 @@ function RetinalPhotography() {
                 </td>
               </tr>
             </table>
+            <p className="text-sm">
+              *More information on individual files, please refer to manifest.csv within the
+              retinal_photography folder *Note that all color photographs&apos; photometric
+              interpretation is YBR{' '}
+              <a href={ybrFull}>
+                (YBR_FULL_422), which is primarily used with JPEG compressed bit streams or pixel
+                data in an uncompressed format
+              </a>
+              . This was defined by the manufacturers. To view color photographs in RGB using
+              pydicom, please consider using their convert_color_space function (from YBR_FULL to
+              RGB). They are automatically shown in intended color when using a viewer like
+              MicroDicom.
+            </p>
+            <p className="text-sm">
+              *Note that retinal photographs from Spectralis, Maestro2, and Triton are associated
+              with OCT or OCTA scans.
+            </p>
+            <p className="text-sm">
+              * Note that there are 6 color fundus photos generated from Maestro2-Mac
+              6x6-360x360-(rep3)-OCTA although the majority of them are IR images due to a change in
+              methods. These photos are located with the IR images to organize files consistently
+              based on the protocols.
+            </p>
+            <p className="text-sm">
+              CFP - Color fundus photo, IR - Infrared reflectance, OCT - Optical coherence
+              tomography, OCTA - Optical Coherence Tomography Angiography, UWF - Ultra-widefield
+            </p>
           </li>
         </ol>
         <ol>
