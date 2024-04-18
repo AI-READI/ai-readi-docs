@@ -1,11 +1,13 @@
 ---
 sidebar_position: 2
 title: Monofilament Testing
-
 ---
+
 # Peripheral Neuropathy / Monofilament Testing
+
 ## Overview of Data Domain
-### Monofilament  Test
+
+### Monofilament Test
 
 The monofilament test, also known as the Semmes-Weinstein monofilament test, is widely utilized as a clinical assessment tool for evaluating tactile sensitivity and detecting peripheral neuropathy (nerve damage of the extremities). During the test, a small, flexible nylon filament is applied to the sole of the feet (sites A, B and C), exerting a predetermined amount of pressure. The patient is then asked to report whether they feel the sensation. By recording the responses, healthcare providers identify areas of reduced sensitivity, which may indicate nerve damage. Scoring eight correct responses out of ten applications is typically considered normal. If a patient responds correctly to one to seven applications, it indicates reduced sensation, while no correct responses suggest absent sensation.
 
@@ -14,6 +16,7 @@ The tests are administered by trained Clinical Research Coordinators, who record
 A drawback of the monofilament test is its subjective nature, as it relies on the subject's response to the sensation rather than providing objective measurements. Additionally, variations in the application of pressure by the healthcare provider may affect the consistency and reliability of the results.
 
 ## Data Processing
+
 ### File format
 
 Peripheral neuropathy data collected during the test is entered directly into the REDCap form titled “Monofilament” using an iPad or laptop. Subsequently, data from all subjects is stored in a .csv file, along with other RedCap measurements. A .csv file, short for Comma-Separated Values, is a commonly used file format for storing tabular data in plain text, where each line represents a row of data and each value within the row is separated by a comma.
@@ -22,49 +25,82 @@ The file organization is as follows:
 
 ```
 pilot_data_root
-  clinical_data
-    procedure_occurence.csv
+└── clinical_data
+    └── procedure_occurence.csv
 ```
 
-| Domain  | Variable |Method |Data Standard/ File Extension | Open Source vs. Protected Database?|
-|----------|----------|----------|----------|----------|
-|  Peripheral neuropathy| Monofilament test| CRC- administered | REDCap|.csv | Open Source |
-
+| Domain                | Variable          | Method            | Data Standard/ File Extension | Open Source vs. Protected Database? |             |
+| --------------------- | ----------------- | ----------------- | ----------------------------- | ----------------------------------- | ----------- |
+| Peripheral neuropathy | Monofilament test | CRC- administered | REDCap                        | .csv                                | Open Source |
 
 ### Data Standards
 
 MoCA data follows the OMOP Common Data Model. [OMOP](https://www.ohdsi.org/data-standardization/) (Observational Medical Outcomes Partnership) is a collaborative effort focused on standardizing and analyzing healthcare data. Developed by the Observational Health Data Sciences and Informatics (OHDSI) community, OMOP provides a standardized data model, vocabulary, and analytics tools to enable large-scale analysis of real-world healthcare data.
+
 ### File Processing
 
 The .csv files are designed for easy opening in Python and/or Jupyter Notebooks. The data is organized per subject (person_id) and within each subject block i.e. ~40 rows, each row corresponds to a different measurement type (procedure_concept_id) for that subject.
 
 ### Metadata and Example Outputs
 
-| Data Element  | Description |Example |
-|----------|----------|----------|
-| procedure_occurrence_id |Unique Identifier for procedure record  |12 |
-| person_id | Subject ID (serves as foreign key to the OMOP Persons table)| 0000|
-| procedure_concept_id | Unique ID for each measurement type | **4047085 (for peripheral neuropathy)** |
-| procedure_date | Date of measurement | 2023-08-28 |
-| procedure_datetime | Time of measurement   |2023-08-28 00:00:00
-| procedure_end_date | Date the procedure ended |2023-08-28 |
-| procedure_end_datetime |Time the procedure ended  |  2023-08-28 00:00:00|
-| procedure_type_concept_id |Concept identifier representing the type of procedure |  32862|
-| modifier_concept_id |  Concept identifier representing any  additional information about the procedure| 0 |
-| quantity |Numeric value indicating the quantity associated with the procedure | 1 |
-| provider_id |Identifier for the healthcare provider  | 0|
-| visit_occurrence_id | Identifier for the procedure visit  |0  |
-|visit_detail_id  |Identifier for additional details about procedure visit |  0 |
-| procedure_source_value | Original value in the source data representing the procedure |Refer to the table below* |
-| procedure_source_concept_id |Concept identifier in the source data representing the procedure | 0 |
-| modifier_source_value |Original value in the source data representing any modifiers  | blank|
+| Data Element                | Description                                                                    | Example                                 |
+| --------------------------- | ------------------------------------------------------------------------------ | --------------------------------------- |
+| procedure_occurrence_id     | Unique Identifier for procedure record                                         | 12                                      |
+| person_id                   | Subject ID (serves as foreign key to the OMOP Persons table)                   | 0000                                    |
+| procedure_concept_id        | Unique ID for each measurement type                                            | **4047085 (for peripheral neuropathy)** |
+| procedure_date              | Date of measurement                                                            | 2023-08-28                              |
+| procedure_datetime          | Time of measurement                                                            | 2023-08-28 00:00:00                     |
+| procedure_end_date          | Date the procedure ended                                                       | 2023-08-28                              |
+| procedure_end_datetime      | Time the procedure ended                                                       | 2023-08-28 00:00:00                     |
+| procedure_type_concept_id   | Concept identifier representing the type of procedure                          | 32862                                   |
+| modifier_concept_id         | Concept identifier representing any additional information about the procedure | 0                                       |
+| quantity                    | Numeric value indicating the quantity associated with the procedure            | 1                                       |
+| provider_id                 | Identifier for the healthcare provider                                         | 0                                       |
+| visit_occurrence_id         | Identifier for the procedure visit                                             | 0                                       |
+| visit_detail_id             | Identifier for additional details about procedure visit                        | 0                                       |
+| procedure_source_value      | Original value in the source data representing the procedure                   | Refer to the table below\*              |
+| procedure_source_concept_id | Concept identifier in the source data representing the procedure               | 0                                       |
+| modifier_source_value       | Original value in the source data representing any modifiers                   | blank                                   |
 
-*Peripheral Neuropathy values are stored for individual Right and Left foot. For each foot, the number of sites felt and tested are recorded. For example:
+\*Peripheral Neuropathy values are stored for individual Right and Left foot. For each foot, the number of sites felt and tested are recorded. For example:
+
+<table>
+  <thead>
+    <tr>
+      <th>Order of Testing</th>
+      <th>Measurement conditions</th>
+      <th>procedure_source_value: (measured value) </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td className="b2">1</td>
+      <td>Right Foot: Number of correct responses</td>
+      <td>Right Foot - Felt:(10.0)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Right Foot: Number of sites tested</td>
+      <td>Right Foot - Tested:(10.0)</td>
+    </tr>
+    <tr>
+      <td className="b2">2</td>
+      <td>Left Foot: Number of correct responses</td>
+      <td>Left Foot - Felt:(8.0)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Left Foot: Number of sites tested</td>
+      <td>Left Foot - Tested:(10.0)</td>
+    </tr>
+  </tbody>
+</table>
+
+test
+
 <MonofilanmentTable />
 
 import PageFeedback from '@site/src/components/PageFeedback';
 import MonofilanmentTable from '@site/src/components/MonofilanmentTable';
 
 <PageFeedback />
-
-
