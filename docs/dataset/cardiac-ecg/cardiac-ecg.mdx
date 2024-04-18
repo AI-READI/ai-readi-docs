@@ -1,8 +1,8 @@
 ---
 sidebar_position: 2
 title: Cardiac ECG
-
 ---
+
 # Electrocardiogram
 
 ## Overview of Data Domain
@@ -12,103 +12,107 @@ An electrocardiogram (ECG) is a non-invasive diagnostic test that records the el
 In the AI-READI study, a 12-lead ECG procedure was conducted using the **Philips Pagewriter TC30**. Although a supine (0 degrees) or reclined (30 degrees) position was preferred for measurement, it should be noted that the data may occasionally include other positions.
 
 Limitations: Some limitations of ECG include its inability to detect all heart conditions, especially those that occur infrequently or irregularly, as well as its potential for false positives or false negatives in interpretation. Additionally, ECG recordings may be affected by factors such as body position, motion artifacts, and electrode placement, which can impact the accuracy of results.
+
 ## Data Processing
 
 ### File Format
-Data is exported from the ECG device in a proprietary compressed .xml format. Key information and waveforms are extracted and converted to the “[wfdb](https://wfdb.io/#:~:text=Waveform%20Database%20(WFDB)%20is%20a,types%20include%20ECG%20and%20EEG.)” standard, comprised of a *.dat binary file for waveforms and a *.hea ASCII file that outlines the data structure and contains annotations. Data fields that are printed on a standard ECG  paper printout are included in the annotations section of the *.hea file.
 
-The processed data is then uploaded onto Fair Data Innovations hub ([fairhub.io](http://fairhub.io). Fairhub.io is a user-friendly platform designed for securely uploading and managing research data, facilitating collaboration among researchers and ensuring compliance with FAIR data principles..
+Data is exported from the ECG device in a proprietary compressed .xml format. Key information and waveforms are extracted and converted to the [`wfdb`](<https://wfdb.io/#:~:text=Waveform%20Database%20(WFDB)%20is%20a,types%20include%20ECG%20and%20EEG.>) standard, comprised of a _.dat binary file for waveforms and a _.hea ASCII file that outlines the data structure and contains annotations. Data fields that are printed on a standard ECG paper printout are included in the annotations section of the \*.hea file.
+
+The processed data is then uploaded onto Fair Data Innovations hub ([fairhub.io](http://fairhub.io)). FAIRhub.io is a user-friendly platform designed for securely uploading and managing research data, facilitating collaboration among researchers and ensuring compliance with FAIR data principles..
 
 File organization is as follows:
 
 ```
 pilot_data_root
-  cardiac_ecg
-    manifest.tsv
-    ecg_12lead
-      philips_tc30
-        0001
-          0001_ecg_25aafb4b.hea
-       0001_ecg_25aafb4b.dat
-        0002
-           0002_ecg_27bafg4b.hea
-       0002_ecg_27bagb4b.dat
-        ... etc.
-
+└── cardiac_ecg
+    ├── manifest.tsv
+    └── ecg_12lead
+        └── philips_tc30
+            ├── 0001
+            │   └── 0001_ecg_25aafb4b.hea
+            ├── 0001_ecg_25aafb4b.dat
+            │   └── 0002
+            │       └── 0002_ecg_27bafg4b.hea
+            └── 0002_ecg_27bagb4b.dat
+                └── ... etc.
 ```
-| Domain  | Variable |Method |Data Standard/ File Extension | Open Source vs. Protected Database?|
-|----------|----------|----------|----------|----------|
-| Cardiology | ECG | device; Philips Pagewriter TC30 | .xml |Open source  |
 
+| Domain     | Variable | Method                          | Data Standard/ File Extension | Open Source vs. Protected Database? |
+| ---------- | -------- | ------------------------------- | ----------------------------- | ----------------------------------- |
+| Cardiology | ECG      | device; Philips Pagewriter TC30 | .xml                          | Open source                         |
 
 ### Data Standards
+
 The WFDB (WaveForm DataBase) standard is a comprehensive framework designed for the storage, sharing, and analysis of physiological signals, with a particular emphasis on cardiopulmonary data.
 
 For the description of the wfdb standard and python libraries to access it, please refer to https://physionet.org/content/wfdb-python/4.1.0/ and
 https://github.com/MIT-LCP/wfdb-python.
 
-PhysioNet contains other types of ECG data alongside supplementary resources to assist researchers in understanding and working with this standard. These resources include links to WFDB materials tailored for various programming languages: https://physionet.org/  and https://physionet.org/about/software/.
+PhysioNet contains other types of ECG data alongside supplementary resources to assist researchers in understanding and working with this standard. These resources include links to WFDB materials tailored for various programming languages: https://physionet.org/ and https://physionet.org/about/software/.
+
 ### File Processing
+
 The .hea and .dat files are designed for easy opening in Python and/or Jupyter Notebook, and will require installation of [wfdb](https://wfdb.readthedocs.io) library which is a library of tools for reading, writing, and processing WFDB signals and annotations.
 
-No signal processing was conducted in the raw data. If the activity monitor did not record a measurement, the corresponding field was left blank. Protected health information was removed from the data. Data fields that are printed on a standard ECG  paper printout were included; fields without public descriptions were not included.
+No signal processing was conducted in the raw data. If the activity monitor did not record a measurement, the corresponding field was left blank. Protected health information was removed from the data. Data fields that are printed on a standard ECG paper printout were included; fields without public descriptions were not included.
 
 Users are reminded that these files have not undergone physician review, meaning the diagnoses provided might be affected by noise or other discrepancies and lack medical confirmation.
 
 ### Metadata and Example Outputs
 
-| Metadata element | Description  | Example output |
-|----------|----------|----------|
-| participant_id | Participants study ID | 0000|
-| modality  |  Data domain|ECG	 |
-| wfdb_hea_filepath |File path for .hea file  |  /cardiac_ecg/ecg_12lead/ philips_tc30/ 0000/ 000_ecg_25aafb4b.hea |
-| wfdb_dat_filepath |File path for .dat file  |  /cardiac_ecg/ecg_12lead/ philips_tc30/ 0000/ 0000_ecg_25aafb4b.dat |
-| machine_text	 | ECG model information |  PageWriter TC 30 |
-| machine_detail_description	 | Detailed description of ECG device  |  Philips Medical Products 860306 A.07.07.07 |
-| device_documentation_ type_and_version	 | Details of device manual |   PhilipsECG 1.04.01 |
-|internalmeasurements_version  | Identifier for the version of the internal measurements  |  10  |
-| participant_position	 | Position of the participant while recording ECG |  0 degrees (supine)	 |
-| Rate	 | Patient heart rate or pulse |  60 |
-| PR	 | Time from P wave start to QRS complex start |  159 |
-| QRSD	 | Length of the QRS complex |  85	 |
-|QT	  |  Duration from QRS start to T wave end |  403	|
-|  QTc	| Heart rate-adjusted QT interval |  403	 |
-| P	 | Indicates atrial depolarization |  72	 |
-| QRS	 | Reflects ventricular depolarization |  48	 |
-|  T	| Represents ventricular repolarization |  76 |
-|report_description	|  ECG protocol for measurement|  Standard 12 Lead Report |
-| manufacturer |  |  Philips |Manufacturer of ECG  |
-| manufacturer	device_model | ECG device model |  PageWriter TC30 |
+| Metadata element                      | Description                                             | Example output                                                  |
+| ------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------- |
+| participant_id                        | Participants study ID                                   | 0000                                                            |
+| modality                              | Data domain                                             | ECG                                                             |
+| wfdb_hea_filepath                     | File path for .hea file                                 | /cardiac_ecg/ecg_12lead/philips_tc30/0000/000_ecg_25aafb4b.hea  |
+| wfdb_dat_filepath                     | File path for .dat file                                 | /cardiac_ecg/ecg_12lead/philips_tc30/0000/0000_ecg_25aafb4b.dat |
+| machine_text                          | ECG model information                                   | PageWriter TC 30                                                |
+| machine_detail_description            | Detailed description of ECG device                      | Philips Medical Products 860306 A.07.07.07                      |
+| device_documentation_type_and_version | Details of device manual                                | PhilipsECG 1.04.01                                              |
+| internalmeasurements_version          | Identifier for the version of the internal measurements | 10                                                              |
+| participant_position                  | Position of the participant while recording ECG         | 0 degrees (supine)                                              |
+| Rate                                  | Patient heart rate or pulse                             | 60                                                              |
+| PR                                    | Time from P wave start to QRS complex start             | 159                                                             |
+| QRSD                                  | Length of the QRS complex                               | 85                                                              |
+| QT                                    | Duration from QRS start to T wave end                   | 403                                                             |
+| QTc                                   | Heart rate-adjusted QT interval                         | 403                                                             |
+| P                                     | Indicates atrial depolarization                         | 72                                                              |
+| QRS                                   | Reflects ventricular depolarization                     | 48                                                              |
+| T                                     | Represents ventricular repolarization                   | 76                                                              |
+| report_description                    | ECG protocol for measurement                            | Standard 12 Lead Report                                         |
+| manufacturer                          | Manufacturer of ECG                                     | Philips                                                         |
+| manufacturer_device_model             | ECG device model                                        | PageWriter TC30                                                 |
 
-
-Data (.hea)
+### Data (.hea)
 
 The ASCII .hea file includes some of the same elements as the table mentioned above.
 
-| Field name |Description  |Example output |
-|----------|----------|----------|
-|  header_version| Version information | 1.0|
-|  dataset_information | Details about the data set | see docs.aireadi.org and fairhub.io|
-| dataset_usage_and_license  |  Licensing and usage information about the dataset |see docs.aireadi.org |
-|  interpretation_criteriaversion|Reflects the software version used for the interpretation criteria (0B or 0C).  |0B |
-| patient_criteriaversion |Reflects the software version used for the patient criteria (0B or 0C).  |0B |
-|  internalmeasurements_version|  Identifier for the version of the internal measurements |10 |
-| Time_axis | ECG recording speed | 25.00 mm/sec|
-| Amplitude | Vertical voltage measurement unit  | 10.00 mm/mV|
-|interpretation_comment_1  | Interpretation of the ECG report provided by the device; not reviewed by a Physician | Unconfirmed Diagnosis|
-| interpretation_comment_2 | Interpretation of the ECG report provided by the device; not reviewed by a Physician | OTHERWISE NORMAL ECG|
-|  comment_1_key | Comments generated in pairs (key) by the device; not reviewed by a Physician. |Sinus rhythm |
-|comment_1_val  |Comments generated in pairs (value) by the device; not reviewed by a Physician.  | normal P axis, V-rate  60- 99|
-|# comment_2_key  | Comments generated in pairs (key) by the device; not reviewed by a Physician. | RBBB and LAFB|
-| # comment_2_val |  Comments generated in pairs (value) by the device; not reviewed by a Physician.| QRSd >120mS, axis(-40,240)|
-| comment_3_key | Comments generated in pairs (key) by the device; not reviewed by a Physician. |Minimal ST elevation, anterior leads |
-| comment_3_val:  | Comments generated in pairs (value) by the device; not reviewed by a Physician. | ST >0.10mV, V1-V4|
+| Field name                     | Description                                                                          | Example output                       |
+| ------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------ |
+| header_version                 | Version information                                                                  | 1.0                                  |
+| dataset_information            | Details about the data set                                                           | see docs.aireadi.org and fairhub.io  |
+| dataset_usage_and_license      | Licensing and usage information about the dataset                                    | see docs.aireadi.org                 |
+| interpretation_criteriaversion | Reflects the software version used for the interpretation criteria (0B or 0C).       | 0B                                   |
+| patient_criteriaversion        | Reflects the software version used for the patient criteria (0B or 0C).              | 0B                                   |
+| internalmeasurements_version   | Identifier for the version of the internal measurements                              | 10                                   |
+| Time_axis                      | ECG recording speed                                                                  | 25.00 mm/sec                         |
+| Amplitude                      | Vertical voltage measurement unit                                                    | 10.00 mm/mV                          |
+| interpretation_comment_1       | Interpretation of the ECG report provided by the device; not reviewed by a Physician | Unconfirmed Diagnosis                |
+| interpretation_comment_2       | Interpretation of the ECG report provided by the device; not reviewed by a Physician | OTHERWISE NORMAL ECG                 |
+| comment_1_key                  | Comments generated in pairs (key) by the device; not reviewed by a Physician.        | Sinus rhythm                         |
+| comment_1_val                  | Comments generated in pairs (value) by the device; not reviewed by a Physician.      | normal P axis, V-rate 60- 99         |
+| # comment_2_key                | Comments generated in pairs (key) by the device; not reviewed by a Physician.        | RBBB and LAFB                        |
+| # comment_2_val                | Comments generated in pairs (value) by the device; not reviewed by a Physician.      | QRSd >120mS, axis(-40,240)           |
+| comment_3_key                  | Comments generated in pairs (key) by the device; not reviewed by a Physician.        | Minimal ST elevation, anterior leads |
+| comment_3_val:                 | Comments generated in pairs (value) by the device; not reviewed by a Physician.      | ST >0.10mV, V1-V4                    |
 
 ### Additional resources
-There is more than one protocol for obtaining and reporting ECG information. This study used the common 12-lead protocol which is described in several resources.
-* [General information on the ECG protocols and reading an ECG](https://en.wikipedia.org/wiki/Electrocardiography)
-* [Philips DXL ECG Algorithm Physician’s Guide](https://www.documents.philips.com/doclib/enc/fetch/2000/4504/577242/577243/577246/581601/711562/DXL_ECG_Algorithm_Physician_s_Guide_(ENG)_Ed.2.pdf) with information on the fields that are printed on an ECG report.  Please note that while the guide offers insights into ECG interpretation, it does not replace medical expertise. Always consult with a physician for accurate diagnosis and treatment recommendations.
 
+There is more than one protocol for obtaining and reporting ECG information. This study used the common 12-lead protocol which is described in several resources.
+
+- [General information on the ECG protocols and reading an ECG](https://en.wikipedia.org/wiki/Electrocardiography)
+- [Philips DXL ECG Algorithm Physician’s Guide](<https://www.documents.philips.com/doclib/enc/fetch/2000/4504/577242/577243/577246/581601/711562/DXL_ECG_Algorithm_Physician_s_Guide_(ENG)_Ed.2.pdf>) with information on the fields that are printed on an ECG report. Please note that while the guide offers insights into ECG interpretation, it does not replace medical expertise. Always consult with a physician for accurate diagnosis and treatment recommendations.
 
 import PageFeedback from '@site/src/components/PageFeedback';
 

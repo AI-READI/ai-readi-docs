@@ -1,7 +1,7 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
 import Figure3 from '../../static/img/f3.png';
-import Figure4 from '../../static/img/Figure4.png';
+import Figure4 from '../../static/img/retinal-flio/fig4.png';
 
 // eslint-disable-next-line react/prop-types
 
