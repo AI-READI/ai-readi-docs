@@ -24,7 +24,7 @@ The analysis can be done using available software, including SPCImage (Becker & 
 
 ## Overview of AI-READI Retinal Photography Data
 
-1. **Overview of available images**
+### Overview of available images
 
 | Manufacturer | Manufacturers Model Name | Laterality | Wavelength                          | Height | Width | Number of Frames |
 | ------------ | ------------------------ | ---------- | ----------------------------------- | ------ | ----- | ---------------- |
@@ -32,19 +32,66 @@ The analysis can be done using available software, including SPCImage (Becker & 
 
 Short-wavelength (498-560nm), Long-wavelength (560-720nm
 
-2.  **Example images**
+### Example images
 
-<RetinalFlioData />
+<figure>
+  <img src="/img/retinal-flio/fig1.png" />
+  <figcaption>
+    Figure 1. Demonstrating outputs of Fluorescence Lifetime Imaging Ophthalmoscopy in eyes with
+    age-related macular degeneration. These images are preprocessed, overlaid, and plotted as a
+    heatmap. FAF: fundus autofluorescence, AMD: age-related macular degeneration, SSC: short
+    spectral channel, LSC: long spectral channel. The image is used with permission from Lydia
+    Sauer, Christopher B. Komanski, Alexandra S. Vitale, Eric D. Hansen, and Paul S. Bernstein from
+    their study titled `Fluorescence Lifetime Imaging Ophthalmoscopy (FLIO) in Eyes With Pigment
+    Epithelial Detachments Due to Age-Related Macular Degeneration,` published in Invest.
+    Ophthalmol. Vis. Sci. 2019;60(8):3054-3063, [DOI:
+    https://doi.org/10.1167/iovs.19-26835](https://doi.org/10.1167/iovs.19-26835).
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="/img/retinal-flio/fig2.png" />
+  <figcaption>
+    Figure 2. Fundus autofluorescence and lifetime images from short- and long-spectral channels of
+    an eye with subretinal hyperreflective material, which is indicated using white arrows. The
+    image is used with permission from Lydia Sauer, Christopher B. Komanski, Alexandra S. Vitale,
+    Eric D. Hansen, and Paul S. Bernstein from their study titled `Fluorescence Lifetime Imaging
+    Ophthalmoscopy (FLIO) in Eyes With Pigment Epithelial Detachments Due to Age-Related Macular
+    Degeneration,` published in Invest. Ophthalmol. Vis. Sci. 2019;60(8):3054-3063,
+    [https://doi.org/10.1167/iovs.19-26835](https://doi.org/10.1167/iovs.19-26835).
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="/img/retinal-flio/fig3.png" />
+  <figcaption>
+    Figure 3. Depiction of the plotting of the recorded value for a single pixel (200, 200) over
+    time, using different frames within the pixel array of the .dcm file of an AI-READI subject
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="/img/retinal-flio/fig4.png" />
+  <figcaption>
+    Figure 4. Illustration of the plotting of a single frame from the pixel array in a .dcm file
+    from an AI-READI subject without preprocessing. This particular frame represents the frame with
+    the highest signal amplitude (frame number 215 in this case). Each pixel corresponds to a
+    captured fluorescence photon count from the corresponding point in the retina. The .dcm file can
+    be preprocessed to generate the heatmap-style figures used in the literature.
+  </figcaption>
+</figure>
 
 ## Data processing
 
 1. File Format: DICOM
 
-2. Data standards: Currently there are no SOP Classifications for FLIO in DICOM, as this is a relatively new technology. To reflect this, 1.2.840.10008.5.1.4.1.1.77.1.5.xxxxx was used as the value of SOP Class UID.
+2. Data standards
+
+   Currently there are no SOP Classifications for FLIO in DICOM, as this is a relatively new technology. To reflect this, 1.2.840.10008.5.1.4.1.1.77.1.5.xxxxx was used as the value of SOP Class UID.
 
 3. File processing
 
-One FLIO scan produces one html file and sdt file. Based on the information from files, two DICOM files (short and long wavelength, respectively) were created per scan. Private tags are used to represent values that are not defined by traditional DICOM tags. Private tags 0073100X were used to encode the information from the corresponding HTML file and private tags 0075100X were used to encode the information from the corresponding SDT file. The pixel array was extracted from the same sdt file and included in the resulting DICOM file.
+   One FLIO scan produces one html file and sdt file. Based on the information from files, two DICOM files (short and long wavelength, respectively) were created per scan. Private tags are used to represent values that are not defined by traditional DICOM tags. Private tags 0073100X were used to encode the information from the corresponding HTML file and private tags 0075100X were used to encode the information from the corresponding SDT file. The pixel array was extracted from the same sdt file and included in the resulting DICOM file.
 
 ## Metadata Example
 
@@ -112,7 +159,27 @@ DICOM Tags and values **(this represents a subset of the available tags)**
 | 0075100E | tac_lh (TAC limit high)               | 94.90196228027344      |
 | 0075100F | adc_re (ADC resolution)               | 1024                   |
 
+<table>
+  <tbody>
+    <tr>
+      <td>CFD</td>
+      <td>Constant Fraction Discriminator</td>
+    </tr>
+    <tr>
+      <td>SYN</td>
+      <td>Synchronization</td>
+    </tr>
+    <tr>
+      <td>TAC</td>
+      <td>Time-to-Amplitude</td>
+    </tr>
+    <tr>
+      <td>ADC</td>
+      <td>Analog-to-Digital Converter</td>
+    </tr>
+  </tbody>
+</table>
+
 import PageFeedback from '@site/src/components/PageFeedback';
-import RetinalFlioData from '@site/src/components/RetinalFlioData';
 
 <PageFeedback />
