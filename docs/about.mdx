@@ -1,30 +1,28 @@
 ---
 sidebar_position: 1
-title: About 
+title: About
 ---
 
 ## About this documentation
-This is the documentation for the AI-READI dataset called "Flagship Dataset of Type 2 Diabetes from the AI-READI Project". It is intended to complement the information provided on the dataset landing page on the FAIRhub data portal. It is highly suggested to read this documentation first before accessing the dataset.
+
+This is the documentation for the AI-READI dataset called **Flagship Dataset of Type 2 Diabetes from the AI-READI Project**. It is intended to complement the information provided on the dataset landing page on the FAIRhub data portal. It is highly suggested to read this documentation first before accessing the dataset.
 
 ## About the AI-READI dataset
-*Brief intro to the AI-READI project and the AI-READI dataset.*
+
+The AI-READI is a dataset consisting of data collected from individuals with and without Type 2 Diabetes Mellitus (T2DM) and harmonized across 3 data collection sites. The composition of the dataset was designed with future studies using AI/Machine Learning in mind. This included recruitment sampling procedures aimed at achieving approximately equal distribution of participants across sex, race, and diabetes severity, as well as the design of a data acquisition protocol across multiple domains (survey data, physical measurements, clinical data, imaging data, wearable device data, etc.) to enable downstream AI/ML analyses that may not be feasible with existing data sources such as claims or electronic health records data.
+
+The goal is to better understand salutogenesis (the pathway from disease to health) in T2DM. Some data that are not considered to be sensitive personal health data will be available to the public for download upon agreement with a license that defines how the data can be used. The full dataset will be accessible by entering into a data use agreement. The public dataset will include survey data, blood and urine lab results, fitness activity levels, clinical measurements (e.g. monofilament and cognitive function testing), retinal images, ECG, blood sugar levels, and environmental variables such as home air quality. The data held under controlled access include 5-digit zip code, sex, race, ethnicity, genetic sequencing data, past health records, medications, and traffic and accident reports. Of note, the overall enrollment goal is to have balanced distribution between different racial groups. As enrollment is ongoing, the pilot data release and periodic updates to data releases may not have achieved balanced distribution across groups.
 
 ## About the structure of this documentation
-There is one version of this documentation associated with each version of the AI-READI dataset. You can navigate between the different versions from the dropdown in the upper right corner. 
 
+There is one version of this documentation associated with each version of the AI-READI dataset. You can navigate between the different versions from the dropdown in the upper right corner.
 This documentation is associated with v1.0 of the dataset, which contains data from the participants of the pilot study phase. This version of the documentation is structured as follows
 
-- The "Citation" section explains how the dataset needs to be cited if used.
-
-- The "Preliminary Information" section contains information about accessing and using the dataset so you can understand what is expected from users of the dataset.
-
-- The "Overview of the Dataset" section points to high-level information about the dataset that is contained on the dataset landing page such as a summary of the AI-READI study, a description of the dataset, etc. and also provide details about each of the data types included in the dataset.
-
-- The "Dataset Structure" section starts with a high-level description of how the dataset is organized before diving into details about the structure of each of the data types contained is this dataset (how they are organized, what standards were followed, etc.).
-
-- The "Example Use Cases" section provides some examples of how the dataset can be used.
-
-- The "Resources" section provides a list of additional resources related to the dataset that could be useful for understanding and using the dataset.
+- The [`Citation`](citation) section explains how the dataset needs to be cited if used.
+- The `Preliminary Information` section contains information about accessing and using the dataset so you can understand what is expected from users of the dataset. This includes information about the license associated with the dataset and training prerequisites.
+- The `Dataset Documentation` section includes an overall description of the dataset using the Healthsheet template, and this section also provides details about each of the data domains included in the dataset. For each data domain, we have provided a general overview of the clinical context and how the data were acquired in the study, relevant individual variables, and data processing details including file formats, data standards, metadata, and example outputs.
+- The `AI-readiness` section describes additional considerations that were integrated into the study design, including consideration of FAIR principles and Ethical practices.
+- The [`Additional resources`](additional-resources) section provides a list of resources related to the dataset that could be useful for understanding and using the dataset.
 
 import PageFeedback from '@site/src/components/PageFeedback';
 
