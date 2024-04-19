@@ -33,7 +33,7 @@ function HomepageHeader() {
           </Link>
 
           <Link
-            className="button bg-sky-600 py-4 px-6 min-w-[17.5rem] button--lg"
+            className="button border border-sky-600 bg-sky-400  py-4 px-6 min-w-[17.5rem] button--lg"
             to="https://fairhub.io/datasets/1"
           >
             Access the Dataset
