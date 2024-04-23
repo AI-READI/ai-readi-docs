@@ -1,7 +1,10 @@
 .second {
-  clip-path: polygon(0% 11rem, 100% 0rem, 100% 100%, 0% 100%);
+  /*clip-path: polygon(0% 10rem, 100% 2rem, 100% 100%, 0% 100%);*/
+  clip-path: polygon(0% 9rem, 100% 0rem, 100% 100%, 0% 100%);
+  top: -3rem;
+  position: relative;
   background: #e0f2fe;
-  padding: 20rem 5rem 10rem 5rem;
+  padding: 15rem 5rem 10rem 5rem;
   align-items: center;
   display: flex;
   flex-direction: column;
