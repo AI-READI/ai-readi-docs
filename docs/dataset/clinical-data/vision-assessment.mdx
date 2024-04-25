@@ -63,13 +63,13 @@ pilot_data_root
     └── meaurement.csv
 ```
 
-### Data Standards
+#### Data Standards
 
 BCVA data follows the OMOP Common Data Model. OMOP (Observational Medical Outcomes Partnership) is a collaborative effort focused on standardizing and analyzing healthcare data. Developed by the Observational Health Data Sciences and Informatics (OHDSI) community, OMOP provides a standardized data model, vocabulary, and analytics tools to enable large-scale analysis of real-world healthcare data.
 File Processing
 The .csv files are designed for easy opening in Python and/or Jupyter Notebooks. The BCVA data is organized per subject (person_id) and within each subject block i.e. ~30 rows, each row corresponds to a different measurement type (measurement_concept_id) for that subject.
 
-### Metadata and Example Outputs
+#### Metadata and Example Outputs
 
 | Data Element                  | Description                                                                                    | Example                |
 | ----------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------- |
@@ -108,9 +108,9 @@ The .csv files are designed for easy opening in Python and/or Jupyter Notebooks.
 | 5     | Cylindrical component of left eye (OS) autorefractor measurement  | OS - Autorefractor - Cylinder | 3002343                |
 | 6     | Axis of left eye (OS) autorefractor measurement                   | OS - Autorefractor - Axis     | 3001254                |
 
-## Best Corrected Visual Acuity
+### Best Corrected Visual Acuity
 
-### File format
+#### File format
 
 The BCVA data from all subjects is stored in a .csv file, along with other RedCap measurements. A .csv file, short for Comma-Separated Values, is a commonly used file format for storing tabular data in plain text, where each line represents a row of data and each value within the row is separated by a comma.
 
@@ -123,15 +123,15 @@ pilot_data_root
 
 ```
 
-### Data Standards
+#### Data Standards
 
 BCVA data follows the OMOP Common Data Model. OMOP (Observational Medical Outcomes Partnership) is a collaborative effort focused on standardizing and analyzing healthcare data. Developed by the Observational Health Data Sciences and Informatics (OHDSI) community, OMOP provides a standardized data model, vocabulary, and analytics tools to enable large-scale analysis of real-world healthcare data.
 
-### File Processing
+#### File Processing
 
 The .csv files are designed for easy opening in Python and/or Jupyter Notebooks. The BCVA data is organized per subject (person_id) and within each subject block i.e. ~30 rows, each row corresponds to a different measurement type (procedure_source_value) for that subject.
 
-### Metadata and Example Outputs
+#### Metadata and Example Outputs
 
 | Data Element                  | Description                                                                                    | Example                |
 | ----------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------- |
@@ -172,9 +172,9 @@ BCVA values are stored in this order: Right eye (OD) Photopic, Left eye (OS) Pho
 | 7     | Snellen fraction right eye (OD) Mesopic  | VA Letter Score - Mesopic VA - OD   | 21491740               |
 | 8     | Snellen fraction left eye (OS) Mesopic   | VA Letter Score - Mesopic VA - OS   | 21491741               |
 
-## MARS Letter Contrast Sensitivity
+### MARS Letter Contrast Sensitivity
 
-### File format
+#### File format
 
 The contrast sensitivity (CS) data from all subjects is stored in .csv files, along with other RedCap measurements. A .csv file, short for Comma-Separated Values, is a commonly used file format for storing tabular data in plain text, where each line represents a row of data and each value within the row is separated by a comma.
 
@@ -188,15 +188,15 @@ pilot_data_root
     └── observation.csv
 ```
 
-### Data Standards
+#### Data Standards
 
 Contrast Sensitivity data follows the OMOP Common data Model. [OMOP](https://www.ohdsi.org/data-standardization/) (Observational Medical Outcomes Partnership) is a collaborative effort focused on standardizing and analyzing healthcare data. Developed by the Observational Health Data Sciences and Informatics (OHDSI) community, OMOP provides a standardized data model, vocabulary, and analytics tools to enable large-scale analysis of real-world healthcare data.
 
-### File Processing
+#### File Processing
 
 The .csv files are designed for easy opening in Python and/or Jupyter Notebooks. The measurement.csv data files comprises right eye and left eye LogMAR CS values for photopic and mesopic testing. The procedure_occurence.csv data files consist of the LogMAR value of final correct letter and number of missed letters prior to stopping. The observation.csv denotes the MARS form (Form 1 or Form 2) used to assess contrast sensitivity.
 
-### Metadata and Example Outputs (measurement.csv)
+#### Metadata and Example Outputs (measurement.csv)
 
 The measurement.csv is organized per subject (person_id) and within each subject block i.e. ~30 rows, each row corresponds to a different measurement type (measurement_concept_id) for that subject.
 
@@ -235,7 +235,7 @@ The measurement.csv is organized per subject (person_id) and within each subject
 | 3     | Right eye (OD) Mesopic CS  | OD: Log Contrast Sensitivity |
 | 4     | Left eye (OS) Mesopic CS   | OS: Log Contrast Sensitivity |
 
-### Metadata and Example Outputs (procedure_occurence.csv)
+#### Metadata and Example Outputs (procedure_occurence.csv)
 
 The procedure_occurence.csv data file is organized per subject (person_id) and within each subject block i.e. ~40 rows, each row corresponds to a different measurement type (procedure_concept_id) for that subject.
 
@@ -267,7 +267,7 @@ Measurement values are stored in this order: Right eye (OD) Photopic, Left eye (
 | 3                | Mesopic Right eye (OD) CS  | OD: Value of final correct letter(1.28) |
 | 4                | Mesopic Left eye (OS) CS   | OS: Value of final correct letter(1.44) |
 
-### Metadata and Example Outputs (observation.csv)
+#### Metadata and Example Outputs (observation.csv)
 
 The observation.csv data file is organized per subject (person_id) and within each subject block i.e. ~160 rows, each row corresponds to a different measurement type (observation_concept_id) for that subject.
 
