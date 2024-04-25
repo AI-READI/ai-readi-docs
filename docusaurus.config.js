@@ -211,12 +211,12 @@ export default {
           },
         },
       ],
-      // algolia: {
-      //   appId: '5C68KRW2LG',
-      //   apiKey: 'f54157cf9bcb7564a29aa0995e0eb192',
-      //   indexName: 'docs-sodaforsparc',
-      //   contextualSearch: true,
-      // },
+      algolia: {
+        appId: 'S34MKII6R9',
+        apiKey: '10ee2816a65a82a4bac6717be586b0c4',
+        indexName: 'docs-aireadi',
+        contextualSearch: true,
+      },
       umami: {
         websiteid: '65407c20-12f0-4e47-ae25-43d4447c9bc7',
         src: 'https://umami.fairdataihub.org/mushroom',
