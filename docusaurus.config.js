@@ -212,9 +212,9 @@ export default {
         },
       ],
       algolia: {
-        appId: 'S34MKII6R9',
-        apiKey: '10ee2816a65a82a4bac6717be586b0c4',
-        indexName: 'docs-aireadi',
+        appId: '4T4KZ07U83',
+        apiKey: 'b025fdc0a3429e57b6e015e322d9eb9e',
+        indexName: 'aireadi',
         contextualSearch: true,
       },
       umami: {
