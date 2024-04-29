@@ -95,7 +95,7 @@ export default function ParticipantTable() {
             fields={fields}
             data={data}
             noRecordsMessage="There are no people to display"
-            noFilteredRecordsMessage="No participant match!"
+            noFilteredRecordsMessage="No participant match with the filter result."
             topPagerVisible={false}
             bottomPagerVisible={false}
           />
