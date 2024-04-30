@@ -1,6 +1,8 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
 import FilterableTable from 'react-filterable-table';
+// eslint-disable-next-line import/no-unresolved
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 export default function Structure() {
   const data = [
@@ -131,47 +133,51 @@ export default function Structure() {
   ];
 
   return (
-    <html lang="en">
-      <head>
-        <style>
-          {`
-          .filterable-table-container{z-index:-1}
-         .filterable-table-container .close.clear-filter,
-          .form-control.pull-sm-right.pull-md-right.pull-lg-right,
-           .text-center.text-muted.record-count
-           {
-         display: none;
-         }
-          .filterable-table-container
-          .row.header-row{display:
-          flex;
-          padding:
-          1rem 0 0 1rem;
-          }
-          .form-control.filter-input {
-            font-size: medium;
-            border-color: #dadde1;
-            padding:0.5rem;
-            min-width: 30rem;
-            border-radius:4px
-          }
-      `}
-        </style>
-      </head>
-      <body>
-        <div className=" max-w-xl:max-h-[400px] overflow-auto">
-          <FilterableTable
-            namespace="People"
-            initialSort="Metadata"
-            fields={fields}
-            data={data}
-            noRecordsMessage="There are no people to display"
-            noFilteredRecordsMessage="No participant match with the filter result."
-            topPagerVisible={false}
-            bottomPagerVisible={false}
-          />
-        </div>
-      </body>
-    </html>
+    <BrowserOnly>
+      {() => (
+        <html lang="en">
+          <head>
+            <style>
+              {`
+              .filterable-table-container{z-index:-1}
+             .filterable-table-container .close.clear-filter,
+              .form-control.pull-sm-right.pull-md-right.pull-lg-right,
+               .text-center.text-muted.record-count
+               {
+             display: none;
+             }
+              .filterable-table-container
+              .row.header-row{display:
+              flex;
+              padding:
+              1rem 0 0 1rem;
+              }
+              .form-control.filter-input {
+                font-size: medium;
+                border-color: #dadde1;
+                padding:0.5rem;
+                min-width: 30rem;
+                border-radius:4px
+              }
+          `}
+            </style>
+          </head>
+          <body>
+            <div className=" max-w-xl:max-h-[400px] overflow-auto">
+              <FilterableTable
+                namespace="People"
+                initialSort="Metadata"
+                fields={fields}
+                data={data}
+                noRecordsMessage="There are no people to display"
+                noFilteredRecordsMessage="No participant match with the filter result."
+                topPagerVisible={false}
+                bottomPagerVisible={false}
+              />
+            </div>
+          </body>
+        </html>
+      )}
+    </BrowserOnly>
   );
 }
