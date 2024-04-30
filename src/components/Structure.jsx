@@ -170,7 +170,7 @@ export default function Structure() {
                 fields={fields}
                 data={data}
                 noRecordsMessage="There are no people to display"
-                noFilteredRecordsMessage="No participant match with the filter result."
+                noFilteredRecordsMessage="No match found."
                 topPagerVisible={false}
                 bottomPagerVisible={false}
               />
