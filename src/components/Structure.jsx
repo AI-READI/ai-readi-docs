@@ -120,14 +120,12 @@ export default function Structure() {
       name: 'Description',
       displayName: 'Description',
       inputFilterable: true,
-      exactFilterable: true,
       sortable: true,
     },
     {
       name: 'Example',
       displayName: 'Example',
       inputFilterable: true,
-      exactFilterable: true,
       sortable: true,
     },
   ];
@@ -165,11 +163,10 @@ export default function Structure() {
           <body>
             <div className=" max-w-xl:max-h-[400px] overflow-auto">
               <FilterableTable
-                namespace="People"
-                initialSort="Metadata"
+                initialSort="Data Element"
                 fields={fields}
                 data={data}
-                noRecordsMessage="There are no people to display"
+                noRecordsMessage="No match found."
                 noFilteredRecordsMessage="No match found."
                 topPagerVisible={false}
                 bottomPagerVisible={false}
