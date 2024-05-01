@@ -12,11 +12,7 @@ export default function ClinicalLabTable() {
         'NT-proBNP is used to diagnose and monitor heart failure, reflecting heart stress.',
       Units: 'pg/mL',
       'Unit Description': 'Picograms per milliliter (pg/mL)',
-      'Reference Interval': (
-        <a href="http://localhost:3000/docs/1/dataset/clinical-data/clinical-lab-tests#nt-probnp-reference-intervals">
-          See table below
-        </a>
-      ),
+      'Reference Interval': 'See table below called NT-proBNP Reference Intervals.',
       'Collection Method': 'Blood draw from a vein',
       LOINC: '33762-6',
       Reference: 'NORC Clinical Lab Tests',
@@ -279,11 +275,7 @@ export default function ClinicalLabTable() {
         'Enzyme linked to liver and bone health; high levels may indicate liver or bone disorders.',
       Units: 'IU/L',
       'Unit Description': 'International Units per liter (IU/L)',
-      'Reference Interval': (
-        <a href="http://localhost:3000/docs/1/dataset/clinical-data/clinical-lab-tests#alkaline-phosphatase-reference-ranges">
-          See table below
-        </a>
-      ),
+      'Reference Interval': ' See table below called Alkaline Phosphatase reference ranges.',
       'Collection Method': 'Blood draw',
       LOINC: '6768-6',
       Reference: 'NORC Clinical Lab Tests',
@@ -408,6 +400,13 @@ export default function ClinicalLabTable() {
     },
   ];
 
+  const customRender = ({ rowIndex, field }) => {
+    if (field === 'Reference Interval' && data[rowIndex][field] === 'See table below') {
+      return <a href="#nt-probnp-reference-intervals">See table below</a>;
+    }
+    return data[rowIndex][field];
+  };
+
   return (
     <BrowserOnly>
       {() => (
@@ -443,6 +442,7 @@ export default function ClinicalLabTable() {
               <FilterableTable
                 fields={fields}
                 pageSize={50}
+                render={customRender}
                 data={data}
                 pageSizes={[40, 40, 30, 50]}
                 noRecordsMessage="No match found."
