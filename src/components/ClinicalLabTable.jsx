@@ -5,8 +5,6 @@ import FilterableTable from 'react-filterable-table';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
 export default function ClinicalLabTable() {
-  // const tableReference1 = "";
-  // const tableReference2 = "";
   const data = [
     {
       Test: 'NT-proBNP',
@@ -14,7 +12,11 @@ export default function ClinicalLabTable() {
         'NT-proBNP is used to diagnose and monitor heart failure, reflecting heart stress.',
       Units: 'pg/mL',
       'Unit Description': 'Picograms per milliliter (pg/mL)',
-      'Reference Interval': 'See table below',
+      'Reference Interval': (
+        <a href="http://localhost:3000/docs/1/dataset/clinical-data/clinical-lab-tests#nt-probnp-reference-intervals">
+          See table below
+        </a>
+      ),
       'Collection Method': 'Blood draw from a vein',
       LOINC: '33762-6',
       Reference: 'NORC Clinical Lab Tests',
@@ -89,7 +91,7 @@ export default function ClinicalLabTable() {
       'Collection Method': 'Fasting blood draw',
       LOINC: '2571-8',
       Reference: 'NORC Clinical Lab Tests',
-      measurement_source_value: 'Triglycerides (mg/dL)',
+      measurement_source_value: 'Triglycerides (mg/dL)"',
     },
     {
       Test: 'HDL Cholesterol',
@@ -157,8 +159,8 @@ export default function ClinicalLabTable() {
         'Used to diagnose and monitor kidney conditions, reflecting hydration and renal function.',
       Units: '',
       'Unit Description': 'Ratio',
-      'Reference Interval': 'Male: 0.51-1.18',
-      'Collection Method': 'Blood draw',
+      'Reference Interval': '',
+      'Collection Method': 'Calculated from BUN and creatinine blood levels',
       LOINC: '',
       Reference: 'NORC Clinical Lab Tests',
       measurement_source_value: 'BUN/Creatinine ratio',
@@ -170,7 +172,7 @@ export default function ClinicalLabTable() {
       Units: 'mEq/L',
       'Unit Description': 'Milliequivalents per liter (mEq/L)',
       'Reference Interval': '135-145',
-      'Collection Method': 'Calculated from BUN and creatinine blood levels',
+      'Collection Method': 'Blood draw',
       LOINC: '2951-2',
       Reference: 'NORC Clinical Lab Tests',
       measurement_source_value: 'Sodium (mEq/L)',
@@ -209,7 +211,7 @@ export default function ClinicalLabTable() {
       'Collection Method': 'Blood draw',
       LOINC: '2028-9',
       Reference: 'NORC Clinical Lab Tests',
-      measurement_source_value: 'Carbon Dioxide, Total (mEq/L)',
+      measurement_source_value: 'Carbon Dioxide, Total (mEq/L)"',
     },
     {
       Test: 'Calcium',
@@ -243,7 +245,7 @@ export default function ClinicalLabTable() {
       'Unit Description': 'Grams per deciliter (g/dL)',
       'Reference Interval': 'N/A',
       'Collection Method': 'Calculated from blood sample analysis',
-      LOINC: '',
+      LOINC: 'N/A',
       Reference: 'NORC Clinical Lab Tests',
       measurement_source_value: 'Not found in measurement.csv',
     },
@@ -255,7 +257,7 @@ export default function ClinicalLabTable() {
       'Unit Description': 'Ratio',
       'Reference Interval': 'N/A',
       'Collection Method': 'Calculated from albumin and globulin levels',
-      LOINC: '',
+      LOINC: 'N/A',
       Reference: 'NORC Clinical Lab Tests',
       measurement_source_value: 'Not found in measurement.csv',
     },
@@ -269,7 +271,7 @@ export default function ClinicalLabTable() {
       'Collection Method': 'Blood draw',
       LOINC: '1975-2',
       Reference: 'NORC Clinical Lab Tests',
-      measurement_source_value: 'Bilirubin, Total (mg/dL)',
+      measurement_source_value: 'Bilirubin, Total (mg/dL)"',
     },
     {
       Test: 'Alkaline Phosphatase',
@@ -277,7 +279,11 @@ export default function ClinicalLabTable() {
         'Enzyme linked to liver and bone health; high levels may indicate liver or bone disorders.',
       Units: 'IU/L',
       'Unit Description': 'International Units per liter (IU/L)',
-      'Reference Interval': 'See table below',
+      'Reference Interval': (
+        <a href="http://localhost:3000/docs/1/dataset/clinical-data/clinical-lab-tests#alkaline-phosphatase-reference-ranges">
+          See table below
+        </a>
+      ),
       'Collection Method': 'Blood draw',
       LOINC: '6768-6',
       Reference: 'NORC Clinical Lab Tests',
@@ -395,7 +401,7 @@ export default function ClinicalLabTable() {
       sortable: true,
     },
     {
-      name: 'Measurement Source Value',
+      name: 'measurement_source_value',
       displayName: 'Measurement Source Value',
       inputFilterable: true,
       sortable: true,
@@ -433,13 +439,13 @@ export default function ClinicalLabTable() {
             </style>
           </head>
           <body>
-            <div className=" max-w-xl:max-h-[400px] overflow-auto">
+            <div>
               <FilterableTable
-                namespace="People"
-                initialSort="Metadata"
                 fields={fields}
+                pageSize={50}
                 data={data}
-                noRecordsMessage="There are no people to display"
+                pageSizes={[40, 40, 30, 50]}
+                noRecordsMessage="No match found."
                 noFilteredRecordsMessage="No match found."
                 topPagerVisible={false}
                 bottomPagerVisible={false}
