@@ -439,7 +439,7 @@ export default function ClinicalLabTable() {
             </style>
           </head>
           <body>
-            <div>
+            <div className=" max-w-xl:max-h-[400px] overflow-auto">
               <FilterableTable
                 fields={fields}
                 pageSize={50}
