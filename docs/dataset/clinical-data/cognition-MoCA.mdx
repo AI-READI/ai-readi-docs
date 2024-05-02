@@ -34,7 +34,7 @@ The file organization is as follows:
 ```
 pilot_data_root
 └── clinical_data
-    └── observation.csv
+    └── measurement.csv
 ```
 
 | Domain    | Variable                             | Method                      | Data Standard/ File Extension | Open Source vs. Protected Database? |
@@ -47,33 +47,35 @@ MoCA data follows the OMOP Common Data Model. [OMOP](https://www.ohdsi.org/data-
 
 ### File Processing
 
-The .csv files are designed for easy opening in Python and/or Jupyter Notebooks. The MoCA data is organized per subject (person_id) and within each subject block i.e. ~160 rows, each row corresponds to a different measurement type (observation_concept_id) for that subject.
+The .csv files are designed for easy opening in Python and/or Jupyter Notebooks. The MoCA data is organized per subject (person_id) and within each subject block i.e. ~30 rows, each row corresponds to a different measurement type (measurement_concept_id) for that subject.
 
 ### Metadata and Example Outputs
 
-| Data Element                  | Description                                                  | Example             |
-| ----------------------------- | ------------------------------------------------------------ | ------------------- |
-| observation_id                | ID number associated with the MoCA test                      | 34849               |
-| person_id                     | Subject ID (serves as foreign key to the OMOP Persons table) | 0000                |
-| observation_concept_id        | OMOP Concept ID corresponding to the MoCA test               | 36684973 (for MoCA) |
-| observation_date              | Date of the MoCA test                                        | 2023-08-10          |
-| observation_datetime          | Datetime of the MoCA test                                    | 2023-08-10 00:00:00 |
-| observation_type_concept_id   | Concept ID for the type of measurement                       | 32880               |
-| value_as_number               | MoCA test output as a number                                 | 12.0                |
-| value_as_string               | MoCA test output as a string                                 | 12                  |
-| value_as_concept_id           | Concept ID for observed value                                | 0                   |
-| qualifier_concept_id          | Concept ID for additional information                        | 0                   |
-| unit_concept_id               | Concept ID for the unit of measurement                       | 0                   |
-| provider_id                   | Identifier for healthcare provider                           | 0                   |
-| visit_occurrence_id           | Identifier for participant visit                             | 0                   |
-| visit_detail_id               | Additional visit details identifier                          | 0                   |
-| observation_source_value      | Source data representing observation value                   | Total Score         |
-| observation_source_concept_id | Concept representing observation_source_value                | 0                   |
-| unit_source_value             | Value in source data for measurement unit                    | blank               |
-| qualifier_source_value        | Value in source data for qualifier                           | blank               |
-| value_source_value            | Source data value                                            | 12                  |
-| observation_event_id          | Observation event identifier                                 | 0                   |
-| obs_event_field_concept_id    | Observation event field concept                              | 0                   |
+| Data Elements                | Description                                                                    | Example                                 |
+| --------------------------- | ------------------------------------------------------------------------------ | --------------------------------------- |
+| measurement_id       | ID number associated with the MoCA test      | 23 |
+| person_id                     | Subject ID (serves as foreign key to the OMOP Persons table)    | 0000  |
+| measurement_concept_id          | OMOP Concept ID corresponding to the MoCA test    | 36684973 (for MoCA) |
+| measurement_date                | Date of the measurement       | 2023-08-28   |
+| measurement_datetime            | Date and time of the measurement     | 2023-08-28 00:00:00|
+| measurement_time            | Time of the measurement    | blank   |
+| measurement_type_concept_id        | Concept identifier representing the type of measurement   |32880    |
+| operator_concept_id     | Concept identifier representing the operator involved in the measurement   | 0     |
+| value_as_number           |Numeric value of the measurement |12  |
+| value_as_concept_id       | Concept identifier representing the value of the measurement    | 0 |
+| unit_concept_id                   | Concept identifier representing the unit of measurement                              | 0   |
+| range_low           | Lower range of normal values for the measurement         | blank    |
+| range_high               | Upper range of normal values for the measurement    | blank    |
+| provider_id        | Identifier for the healthcare provider       | blank     |
+| visit_occurrence_id   | Identifier for the measurement visit     | 0  |
+| visit_detail_id         | Identifier for additional details about the visit     | 0  |
+| measurement_source_value   |Original value in the source data representing the measurement  |Total Score |
+| measurement_source_concept_id   | Concept identifier in the source data representing the measurement     | 0     |
+| unit_source_value   | Original value in the source data representing the unit of measurement    | blank  |
+| unit_source_concept_id   | Concept identifier in the source data representing the unit of measurement      | 0    |
+| value_source_value   | Original value in the source data representing the measurement value   | 12|
+| measurement_event_id   |Identifier for the specific event associated with the measurement    | 0  |
+| meas_event_field_concept_id   | Concept identifier representing the specific field being measured within the measurement event     | 0  |
 
 import PageFeedback from '@site/src/components/PageFeedback';
 
