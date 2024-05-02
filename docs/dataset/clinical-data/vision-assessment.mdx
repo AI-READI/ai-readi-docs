@@ -66,7 +66,7 @@ pilot_data_root
 #### Data Standards
 
 BCVA data follows the OMOP Common Data Model. OMOP (Observational Medical Outcomes Partnership) is a collaborative effort focused on standardizing and analyzing healthcare data. Developed by the Observational Health Data Sciences and Informatics (OHDSI) community, OMOP provides a standardized data model, vocabulary, and analytics tools to enable large-scale analysis of real-world healthcare data.
-File Processing
+#### File Processing
 The .csv files are designed for easy opening in Python and/or Jupyter Notebooks. The BCVA data is organized per subject (person_id) and within each subject block i.e. ~30 rows, each row corresponds to a different measurement type (measurement_concept_id) for that subject.
 
 #### Metadata and Example Outputs
@@ -129,7 +129,7 @@ BCVA data follows the OMOP Common Data Model. OMOP (Observational Medical Outcom
 
 #### File Processing
 
-The .csv files are designed for easy opening in Python and/or Jupyter Notebooks. The BCVA data is organized per subject (person_id) and within each subject block i.e. ~30 rows, each row corresponds to a different measurement type (procedure_source_value) for that subject.
+The .csv files are designed for easy opening in Python and/or Jupyter Notebooks. The BCVA data is organized per subject (person_id) and within each subject block i.e. ~30 rows, each row corresponds to a different measurement type (measurement_concept_id) for that subject.
 
 #### Metadata and Example Outputs
 
@@ -178,13 +178,12 @@ BCVA values are stored in this order: Right eye (OD) Photopic, Left eye (OS) Pho
 
 The contrast sensitivity (CS) data from all subjects is stored in .csv files, along with other RedCap measurements. A .csv file, short for Comma-Separated Values, is a commonly used file format for storing tabular data in plain text, where each line represents a row of data and each value within the row is separated by a comma.
 
-MARS contrast sensitivity data is split into 3.csv files. The file organization is as follows:
+MARS contrast sensitivity data is split into 2 .csv files. The file organization is as follows:
 
 ```
 pilot_data_root
 └── clinical_data
     ├── measurement.csv
-    ├── procedure_occurence.csv
     └── observation.csv
 ```
 
@@ -218,7 +217,7 @@ The measurement.csv is organized per subject (person_id) and within each subject
 | provider_id                   | Identifier for the healthcare provider                                                         | blank                       |
 | visit_occurrence_id           | Identifier for the measurement visit                                                           | 0                           |
 | visit_detail_id               | Identifier for additional details about the visit                                              | 0                           |
-| measurement_source_value      | Original value in the source data representing the measurement                                 | Refer to table below\*      |
+| measurement_source_value      | Original value in the source data representing the measurement                                 | Refer to tables below\*      |
 | measurement_source_concept_id | Concept identifier in the source data representing the measurement                             | 0                           |
 | unit_source_value             | Original value in the source data representing the unit of measurement                         | blank                       |
 | unit_source_concept_id        | Concept identifier in the source data representing the unit of measurement                     | 0                           |
@@ -228,38 +227,14 @@ The measurement.csv is organized per subject (person_id) and within each subject
 
 \*LogMAR CS values are stored in the following order: Right eye (OD) Photopic, Left eye (OS) Photopic, Right eye (OD) Mesopic, Left eye (OS) Mesopic
 
-| Order | Measurement conditions     | measurement_source_value     |
+| Order of Testing | Measurement conditions     | measurement_source_value     |
 | ----- | -------------------------- | ---------------------------- |
 | 1     | Right eye (OD) Photopic CS | OD: Log Contrast Sensitivity |
 | 2     | Left eye (OS) Photopic CS  | OS: Log Contrast Sensitivity |
 | 3     | Right eye (OD) Mesopic CS  | OD: Log Contrast Sensitivity |
 | 4     | Left eye (OS) Mesopic CS   | OS: Log Contrast Sensitivity |
 
-#### Metadata and Example Outputs (procedure_occurence.csv)
-
-The procedure_occurence.csv data file is organized per subject (person_id) and within each subject block i.e. ~40 rows, each row corresponds to a different measurement type (procedure_concept_id) for that subject.
-
-| Data Element                | Description                                                                    | Example                                           |
-| --------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------- |
-| procedure_occurrence_id     | Unique Identifier for procedure record                                         | 12                                                |
-| person_id                   | Subject ID (serves as foreign key to the OMOP Persons table)                   | 7029                                              |
-| procedure_concept_id        | Unique ID for each measurement type                                            | 4256483 (for final correct letter/missed letters) |
-| procedure_date              | Date of measurement                                                            | 2023-08-28                                        |
-| procedure_datetime          | Time of measurement                                                            | 2023-08-28 00:00:00                               |
-| procedure_end_date          | Date the procedure ended                                                       | 2023-08-28                                        |
-| procedure_end_datetime      | Time the procedure ended                                                       | 2023-08-28 00:00:00                               |
-| procedure_type_concept_id   | Concept identifier representing the type of procedure                          | 32862                                             |
-| modifier_concept_id         | Concept identifier representing any additional information about the procedure | 0                                                 |
-| quantity                    | Numeric value indicating the quantity associated with the procedure            | 1                                                 |
-| provider_id                 | Identifier for the healthcare provider                                         | 0                                                 |
-| visit_occurrence_id         | Identifier for the procedure visit                                             | 0                                                 |
-| visit_detail_id             | Identifier for additional details about procedure visit                        | 0                                                 |
-| procedure_source_value      | Original value in the source data representing the procedure                   | Refer to the table below\*                        |
-| procedure_source_concept_id | Concept identifier in the source data representing the procedure               | 0                                                 |
-| modifier_source_value       | Original value in the source data representing any modifiers                   | blank                                             |
-
-Measurement values are stored in this order: Right eye (OD) Photopic, Left eye (OS) Photopic, Right eye (OD) Mesopic, Left eye (OS) Mesopic. For each measurement, the value of the final correct letter and number of misses prior to stopping is recorded. For example:
-
+Besides the log CS values, the value of the final correct letter and number of misses prior to stopping is recorded. Measurement values are stored in this order: Right eye (OD) Photopic, Left eye (OS) Photopic, Right eye (OD) Mesopic, Left eye (OS) Mesopic. For example:
 <table>
   <thead>
     <tr>
