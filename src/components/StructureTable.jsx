@@ -38391,16 +38391,21 @@ export default function StructureTable() {
               .filterable-table-container
               .row.header-row:nth-child(1){display:
               flex;
-              padding:
-              1rem 2rem 2rem 1rem;
+              padding-top: 2rem;
               }
               .form-control.filter-input,
-              .form-control.pull-sm-right.pull-md-right.pull-lg-right {
+              .form-control.pull-sm-right.pull-md-right.pull-lg-right
+              {
                 font-size: medium;
                 border-color: #dadde1;
                 padding:0.5rem;
-                min-width: 10rem;
+                min-width: 20rem;
                 border-radius:4px
+              }
+              .form-control.pull-sm-right.pull-md-right.pull-lg-right {
+               min-width: 10rem;
+               height:40px;
+
               }
               .btn-next-page::marker,.btn-first-page::marker,
               .btn-numbered-page::marker,
@@ -38412,7 +38417,7 @@ export default function StructureTable() {
               .row.header-row:nth-child(2){
               margin-top: 1rem;
                 display: flex;
-                justify-content: flex-end;}
+                justify-content: flex-start;}
 
               .pagination li{
                   color: #777;
@@ -38428,9 +38433,11 @@ export default function StructureTable() {
               margin-top: var(--ifm-list-item-margin);}
         .row{margin:0;}
         .col-sm-3.filter-container{
-        margin-right:10rem;}
+        margin-right:7rem;}
 
         .text-center.text-muted.record-count{padding-top:10px;font-size:small}
+        .col-sm-5.col-sm-push-4{
+        padding-right:2rem;}
           `}
             </style>
           </head>
@@ -38442,7 +38449,7 @@ export default function StructureTable() {
                 fields={fields}
                 noRecordsMessage="No match found."
                 noFilteredRecordsMessage="No match found."
-                pageSizes={[10, 20, 30, 50, 100, 2000]}
+                pageSizes={[10, 20, 30, 50, 100, 1796]}
                 pageSize={10}
               />
             </div>
