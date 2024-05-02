@@ -38396,10 +38396,12 @@ export default function StructureTable() {
               .form-control.filter-input,
               .form-control.pull-sm-right.pull-md-right.pull-lg-right
               {
+                border: 1px solid rgb(218, 221, 225);
                 font-size: medium;
                 border-color: #dadde1;
                 padding:0.5rem;
                 min-width: 20rem;
+
                 border-radius:4px
               }
               .form-control.pull-sm-right.pull-md-right.pull-lg-right {
