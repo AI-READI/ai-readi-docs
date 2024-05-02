@@ -215,7 +215,7 @@ export default {
         appId: '4T4KZ07U83',
         apiKey: 'b025fdc0a3429e57b6e015e322d9eb9e',
         indexName: 'aireadi',
-        contextualSearch: false,
+        contextualSearch: true,
       },
       umami: {
         websiteid: '65407c20-12f0-4e47-ae25-43d4447c9bc7',
