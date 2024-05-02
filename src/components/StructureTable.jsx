@@ -38433,11 +38433,18 @@ export default function StructureTable() {
               margin-top: var(--ifm-list-item-margin);}
         .row{margin:0;}
         .col-sm-3.filter-container{
-        margin-right:7rem;}
+        margin-right:15rem;}
 
         .text-center.text-muted.record-count{padding-top:10px;font-size:small}
         .col-sm-5.col-sm-push-4{
         padding-right:2rem;}
+
+                .btn-next-page:hover,.btn-first-page:hover,
+              .btn-numbered-page:hover,
+              .btn-last-page:hover,
+              .btn-prev-more:hover,
+              .btn-next-more:hover, .btn-prev-page:hover {
+           background: #e0f2fe; cursor:pointer;  }
           `}
             </style>
           </head>
