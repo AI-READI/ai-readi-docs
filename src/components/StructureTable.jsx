@@ -26,6 +26,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'N/A - operational variable',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -47,6 +48,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'N/A - operational variable',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -68,6 +70,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'N/A - operational variable',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -89,6 +92,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '52832-3',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -110,6 +114,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'G9604',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -131,6 +136,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'N/A - operational variable',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -152,6 +158,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -173,6 +180,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -194,6 +202,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -215,6 +224,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'G9604',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -237,6 +247,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'N/A - operational variable',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -258,6 +269,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -279,6 +291,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -300,6 +313,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -321,6 +335,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'G9604',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -332,16 +347,18 @@ export default function StructureTable() {
       SRC_CODE_ID: '',
       SRC_CD_DESCRIPTION: 'Type I Diabetes',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '1, Yes|0, No',
-      TARGET_CONCEPT_ID: 201254,
-      LOCAL_CONCEPT_ID: '',
-      TARGET_CONCEPT_NAME: 'Type 1 diabetes mellitus',
-      TARGET_DOMAIN_ID: 'Condition',
-      TARGET_VOCABULARY_ID: 'SNOMED',
-      TARGET_CONCEPT_CLASS_ID: 'Disorder',
+      TARGET_CONCEPT_ID: 2005200544,
+      LOCAL_CONCEPT_ID: 2005200544,
+      TARGET_CONCEPT_NAME:
+        'Has your doctor or other health care provider ever told you that you have Type 1 diabetes mellitus',
+      TARGET_DOMAIN_ID: 'Observation',
+      TARGET_VOCABULARY_ID: 'AIREADI',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
-      TARGET_CONCEPT_CODE: 46635009,
+      TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -353,16 +370,18 @@ export default function StructureTable() {
       SRC_CODE_ID: '',
       SRC_CD_DESCRIPTION: 'Elevated A1C levels (elevated blood sugars)',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '1, Yes|0, No',
-      TARGET_CONCEPT_ID: 4152671,
-      LOCAL_CONCEPT_ID: '',
-      TARGET_CONCEPT_NAME: 'Hemoglobin A1C - diabetic control interpretation',
-      TARGET_DOMAIN_ID: 'Measurement',
-      TARGET_VOCABULARY_ID: 'SNOMED',
-      TARGET_CONCEPT_CLASS_ID: 'Observable Entity',
+      TARGET_CONCEPT_ID: 2005200547,
+      LOCAL_CONCEPT_ID: 2005200547,
+      TARGET_CONCEPT_NAME:
+        'Has your doctor or other health care provider ever told you that you have Elevated A1C levels (elevated blood sugars)',
+      TARGET_DOMAIN_ID: 'Observation',
+      TARGET_VOCABULARY_ID: 'AIREADI',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
-      TARGET_CONCEPT_CODE: 269823000,
+      TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -384,6 +403,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32146-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -405,6 +425,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32147-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -416,22 +437,24 @@ export default function StructureTable() {
       SRC_CODE_ID: '',
       SRC_CD_DESCRIPTION: 'Type II Diabetes',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '1, Yes|0, No',
-      TARGET_CONCEPT_ID: 201826,
-      LOCAL_CONCEPT_ID: '',
-      TARGET_CONCEPT_NAME: 'Type 2 diabetes mellitus',
-      TARGET_DOMAIN_ID: 'Condition',
-      TARGET_VOCABULARY_ID: 'SNOMED',
-      TARGET_CONCEPT_CLASS_ID: 'Disorder',
+      TARGET_CONCEPT_ID: 2005200545,
+      LOCAL_CONCEPT_ID: 2005200545,
+      TARGET_CONCEPT_NAME:
+        'Has your doctor or other health care provider ever told you that you have Type 2 diabetes mellitus',
+      TARGET_DOMAIN_ID: 'Observation',
+      TARGET_VOCABULARY_ID: 'AIREADI',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
-      TARGET_CONCEPT_CODE: 44054006,
+      TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
       FORM_NAME: 'screening_survey',
       FIELD_TYPE: 'text',
-      FIELD_ID: '',
+      FIELD_ID: 'mhterm_dm2',
       FIELD_ID_NUM: 1044,
       SRC_CODE: 'mh_dm_age',
       SRC_CODE_ID: '',
@@ -448,6 +471,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 423493009,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -459,16 +483,18 @@ export default function StructureTable() {
       SRC_CODE_ID: '',
       SRC_CD_DESCRIPTION: 'Pre-diabetes',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '1, Yes|0, No',
-      TARGET_CONCEPT_ID: 37018196,
-      LOCAL_CONCEPT_ID: '',
-      TARGET_CONCEPT_NAME: 'Prediabetes',
-      TARGET_DOMAIN_ID: 'Condition',
-      TARGET_VOCABULARY_ID: 'SNOMED',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Finding',
+      TARGET_CONCEPT_ID: 2005200546,
+      LOCAL_CONCEPT_ID: 2005200546,
+      TARGET_CONCEPT_NAME:
+        'Has your doctor or other health care provider ever told you that you have Prediabetes',
+      TARGET_DOMAIN_ID: 'Observation',
+      TARGET_VOCABULARY_ID: 'AIREADI',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
-      TARGET_CONCEPT_CODE: 714628002,
+      TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -481,16 +507,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION:
         'Do you take pills to control your A1C and blood glucose levels? Examples: Metformin (Glucophage, Glumetza, Fortamet, Riomet), Glucotrol, Amaryl, DiaBeta, Blynase PresTab, Micronase, Actos, Avandia, Precose, Glyset, Prandin, Starlix, Januvia, Onglyza, Tradjenta, Nesina, Invokana, Farxiga, Jardiance, Welchol, and Cyclocet',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '1, Yes|0, No',
-      TARGET_CONCEPT_ID: 4016042,
-      LOCAL_CONCEPT_ID: '',
-      TARGET_CONCEPT_NAME: 'Diabetic on oral treatment',
+      TARGET_CONCEPT_ID: 2005200548,
+      LOCAL_CONCEPT_ID: 2005200548,
+      TARGET_CONCEPT_NAME:
+        'Do you take pills to control your A1C and blood glucose levels? Examples: Metformin (Glucophage, Glumetza, Fortamet, Riomet), Glucotrol, Amaryl, DiaBeta, Blynase PresTab, Micronase, Actos, Avandia, Precose, Glyset, Prandin, Starlix, Januvia, Onglyza, Tradjenta, Nesina, Invokana, Farxiga, Jardiance, Welchol, and Cyclocet',
       TARGET_DOMAIN_ID: 'Observation',
-      TARGET_VOCABULARY_ID: 'SNOMED',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Finding',
+      TARGET_VOCABULARY_ID: 'AIREADI',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
-      TARGET_CONCEPT_CODE: 170746002,
+      TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -502,16 +530,17 @@ export default function StructureTable() {
       SRC_CODE_ID: '',
       SRC_CD_DESCRIPTION: 'Do you inject insulin to control your blood glucose levels?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '1, Yes|0, No',
-      TARGET_CONCEPT_ID: 440922,
-      LOCAL_CONCEPT_ID: '',
-      TARGET_CONCEPT_NAME: 'Diabetic on insulin',
+      TARGET_CONCEPT_ID: 2005200549,
+      LOCAL_CONCEPT_ID: 2005200549,
+      TARGET_CONCEPT_NAME: 'Do you inject insulin to control your blood glucose levels?',
       TARGET_DOMAIN_ID: 'Observation',
-      TARGET_VOCABULARY_ID: 'SNOMED',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Finding',
+      TARGET_VOCABULARY_ID: 'AIREADI',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
-      TARGET_CONCEPT_CODE: 170747006,
+      TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -522,18 +551,20 @@ export default function StructureTable() {
       SRC_CODE: 'cmtrt_glcs',
       SRC_CODE_ID: '',
       SRC_CD_DESCRIPTION:
-        'Do you use other injections to control your blood glucose levels?  Examples: Victoza, Ozempic, Symlin, Tanzeum, and Trulicity',
+        'Do you use other injections to control your blood glucose levels?� Examples: Victoza, Ozempic, Symlin, Tanzeum, and Trulicity',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '1, Yes|0, No',
-      TARGET_CONCEPT_ID: 36714369,
-      LOCAL_CONCEPT_ID: '',
-      TARGET_CONCEPT_NAME: 'Diabetic on non-insulin injectable medication',
+      TARGET_CONCEPT_ID: 2005200550,
+      LOCAL_CONCEPT_ID: 2005200550,
+      TARGET_CONCEPT_NAME:
+        'Do you use other injections to control your blood glucose levels?� Examples: Victoza, Ozempic, Symlin, Tanzeum, and Trulicity',
       TARGET_DOMAIN_ID: 'Observation',
-      TARGET_VOCABULARY_ID: 'SNOMED',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Finding',
+      TARGET_VOCABULARY_ID: 'AIREADI',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
-      TARGET_CONCEPT_CODE: 719566006,
+      TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -557,6 +588,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -578,6 +610,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -599,6 +632,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -620,6 +654,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -641,6 +676,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'G9604',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -663,6 +699,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'N/A - operational variable',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -684,6 +721,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -705,6 +743,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -726,6 +765,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -747,6 +787,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'G9604',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -768,6 +809,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '19826-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -789,6 +831,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -810,6 +853,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -831,6 +875,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -852,6 +897,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -873,6 +919,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -894,6 +941,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -916,6 +964,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'G9604',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -938,6 +987,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 277267003,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -960,6 +1010,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 397669002,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -982,6 +1033,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 125680007,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1003,6 +1055,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1024,6 +1077,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1045,6 +1099,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1066,6 +1121,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'G9604',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1089,6 +1145,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '58338-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1112,6 +1169,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '64204-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1134,6 +1192,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '65718-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1158,6 +1217,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1180,6 +1240,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '58292-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1202,6 +1263,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '58295-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1225,6 +1287,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1248,6 +1311,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1271,6 +1335,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1294,6 +1359,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1318,6 +1384,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1341,6 +1408,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1364,6 +1432,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1387,6 +1456,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1410,6 +1480,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1433,6 +1504,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1457,6 +1529,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1481,6 +1554,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1505,6 +1579,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1528,6 +1603,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1551,6 +1627,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1574,6 +1651,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1596,6 +1674,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1617,6 +1696,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1639,6 +1719,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1662,6 +1743,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1684,6 +1766,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1706,6 +1789,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1728,6 +1812,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1750,6 +1835,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1774,6 +1860,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1796,6 +1883,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1820,6 +1908,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1843,6 +1932,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '52552-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1864,6 +1954,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 391002003,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1885,6 +1976,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1906,6 +1998,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1927,6 +2020,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1949,6 +2043,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'G9604',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1959,7 +2054,7 @@ export default function StructureTable() {
       SRC_CODE: 'susmkncf',
       SRC_CODE_ID: '',
       SRC_CD_DESCRIPTION:
-        'Have you smoked at least 100 cigarettes or more in your lifetime?  (100 cigarettes = 5 packs)',
+        'Have you smoked at least 100 cigarettes or more in your lifetime?� (100 cigarettes = 5 packs)',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Yes|0, No|777, Prefer not to say',
       TARGET_CONCEPT_ID: 40766306,
@@ -1972,6 +2067,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '63581-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -1994,6 +2090,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '67740-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2016,6 +2113,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '64234-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2038,6 +2136,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2061,6 +2160,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '66548-9',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2083,6 +2183,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '69721-9',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2105,6 +2206,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '67740-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2127,6 +2229,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '74012-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2144,11 +2247,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Have you had any beer or ale in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Observable Entity',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2168,11 +2272,12 @@ export default function StructureTable() {
         'During the average week, how many 12 oz. bottles or cans of beer do you usually drink? (Number of bottles or cans per week)',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Observable Entity',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2190,11 +2295,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Have you had any wine in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Observable Entity',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2205,20 +2311,21 @@ export default function StructureTable() {
       SRC_CODE: 'suwndosfr',
       SRC_CODE_ID: '',
       SRC_CD_DESCRIPTION:
-        'During the average week, how many 5 oz. glasses of wine do you usually drink?  The average wine bottle has 5 servings. (Number of glasses per week)',
+        'During the average week, how many 5 oz. glasses of wine do you usually drink?� The average wine bottle has 5 servings. (Number of glasses per week)',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '0, Less than 1|1, 1|2, 2|3, 3|4, 4|5, 5 (1 bottle)|6, 6|7, 7|8, 8|9, 9|10, 10 (2 bottles)|11, 11|12, 12|13, 13|14, 14|15, 15 (3 bottles)|16, 16|17, 17|18, 18|19, 19|20, 20 (4 bottles)|21, 21-25 (5 bottles)|26, 26-30 (6 bottles)|31, 31-35 (7 bottles)|35, More than 36 (greater than 7 bottles)|777, Prefer not to say',
       TARGET_CONCEPT_ID: 2005200027,
       LOCAL_CONCEPT_ID: 2005200027,
       TARGET_CONCEPT_NAME:
-        'During the average week, how many 5 oz. glasses of wine do you usually drink?  The average wine bottle has 5 servings. (Number of glasses per week)',
+        'During the average week, how many 5 oz. glasses of wine do you usually drink?� The average wine bottle has 5 servings. (Number of glasses per week)',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Observable Entity',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2238,11 +2345,12 @@ export default function StructureTable() {
         'Have you had any liquor in the past year, such as brandy, whiskey, vodka, gin, schnapps, cocktails, or liqueurs?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Observable Entity',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2262,11 +2370,12 @@ export default function StructureTable() {
         'During the average week, how many 1.5 oz. of liquor do you usually drink, either as shots or in mixed cocktails? (Number of drinks per week)',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Observable Entity',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2284,11 +2393,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Do you drive after having a drink, even if it is only one drink?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Observable Entity',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2306,11 +2416,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Have you ever vaped or used e-cigarettes?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'OMOP Extension',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2330,11 +2441,12 @@ export default function StructureTable() {
         'At what age did you start vaping or using e-cigarettes? (Age started - years old)',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Finding',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2352,11 +2464,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Do you vape or use e-cigarettes now?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Finding',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2374,11 +2487,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'How many total years have you vaped or used e-cigarettes?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Finding',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2398,11 +2512,12 @@ export default function StructureTable() {
         'When you vaped or used e-cigarettes, approximately how many days in a typical week would you use it?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Attribute',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2422,11 +2537,12 @@ export default function StructureTable() {
         'Have you ever used marijuana (cannabis)? (This includes smoking marijuana, using cannabis concentrates, and edibles.)',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Finding',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2436,7 +2552,7 @@ export default function StructureTable() {
       FIELD_ID_NUM: 1187,
       SRC_CODE: 'sumrjstage',
       SRC_CODE_ID: '',
-      SRC_CD_DESCRIPTION: 'At what age did you start using marijuana? (Age started - years old)',
+      SRC_CD_DESCRIPTION: 'At what age did you start using marijuana?�(Age started - years old)',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '5, 5|6, 6|7, 7|8, 8|9, 9|10, 10|11, 11|12, 12|13, 13|14, 14|15, 15|16, 16|17, 17|18, 18|19, 19|20, 20|21, 21|22, 22|23, 23|24, 24|25, 25|26, 26|27, 27|28, 28|29, 29|30, 30|31, 31|32, 32|33, 33|34, 34|35, 35|36, 36|37, 37|38, 38|39, 39|40, 40|41, 41|42, 42|43, 43|44, 44|45, 45|46, 46|47, 47|48, 48|49, 49|50, 50|51, 51|52, 52|53, 53|54, 54|55, 55|56, 56|57, 57|58, 58|59, 59|60, 60|98, More than 60 years old|999, Prefer not to say',
       TARGET_CONCEPT_ID: 37020592,
@@ -2449,6 +2565,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '91384-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2463,14 +2580,15 @@ export default function StructureTable() {
         '1, Yes|0, No|777, Prefer not to say',
       TARGET_CONCEPT_ID: 2005200473,
       LOCAL_CONCEPT_ID: 2005200473,
-      TARGET_CONCEPT_NAME: 'Marijuana user',
+      TARGET_CONCEPT_NAME: 'Do you use marijuana now?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Finding',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2480,19 +2598,20 @@ export default function StructureTable() {
       FIELD_ID_NUM: 1189,
       SRC_CODE: 'sumrjtrt',
       SRC_CODE_ID: '',
-      SRC_CD_DESCRIPTION: 'In what form do you usually use marijuana?  (check all that apply)',
+      SRC_CD_DESCRIPTION: 'In what form do you usually use marijuana?� (check all that apply)',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Inhaled/Smoked (for example: joints, blunts, bongs, vaping, dabs)|2, Oral/Edibles (for example: oils, tinctures, beverages, capsules, sprays) |3, Topical (for example: sprays or oils) |777, Prefer not to say',
       TARGET_CONCEPT_ID: 2005200037,
       LOCAL_CONCEPT_ID: 2005200037,
-      TARGET_CONCEPT_NAME: 'In what form do you usually use marijuana?  (check all that apply)',
+      TARGET_CONCEPT_NAME: 'In what form do you usually use marijuana?� (check all that apply)',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Finding',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2510,11 +2629,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'How many total years have you used marijuana?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Finding',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2534,11 +2654,12 @@ export default function StructureTable() {
         'When you used marijuana, approximately how many days in a typical week would you use it?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Finding',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2560,6 +2681,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2581,6 +2703,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2602,6 +2725,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2623,6 +2747,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'G9604',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2645,6 +2770,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '100767-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2667,6 +2793,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '100771-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2689,6 +2816,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '100772-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2711,6 +2839,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '100773-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2733,6 +2862,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '100774-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2755,6 +2885,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '100776-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2777,6 +2908,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '100777-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2799,6 +2931,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '100778-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2821,6 +2954,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '100780-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2843,6 +2977,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '100786-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2864,6 +2999,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '100787-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2885,6 +3021,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2906,6 +3043,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2927,6 +3065,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2948,6 +3087,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'G9604',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2970,6 +3110,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -2992,6 +3133,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3014,6 +3156,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3038,6 +3181,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3060,6 +3204,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3081,6 +3226,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3102,6 +3248,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3123,6 +3270,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3144,6 +3292,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3165,6 +3314,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'G9604',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3189,6 +3339,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3211,6 +3362,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 859981000000107,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3235,6 +3387,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3259,6 +3412,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3283,6 +3437,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3306,6 +3461,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 449921000124105,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3329,6 +3485,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 401070008,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3353,6 +3510,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3375,6 +3533,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3399,6 +3558,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3420,6 +3580,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3441,6 +3602,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3462,6 +3624,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3484,6 +3647,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'G9604',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3507,6 +3671,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '68510-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3529,6 +3694,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '80457-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3551,6 +3717,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '80459-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3573,6 +3740,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 818990008,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3592,11 +3760,12 @@ export default function StructureTable() {
         'How many times a week did you eat beans (like pinto or black beans), chicken, or fish?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Observable Entity',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3616,11 +3785,12 @@ export default function StructureTable() {
         'How many times a week did you eat regular snack chips or crackers (not low-fat)?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Observable Entity',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3640,11 +3810,12 @@ export default function StructureTable() {
         'How many times a week did you eat desserts and other sweets (not the low-fat kind)?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Observable Entity',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3664,11 +3835,12 @@ export default function StructureTable() {
         'How much margarine, butter, or meat fat do you use to season vegetables or put on potatoes, bread or corn?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Observable Entity',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3686,11 +3858,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'How many servings of fruit juice did you drink each day?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Observable Entity',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3707,11 +3880,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Diet score',
       TARGET_DOMAIN_ID: 'Measurement',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'diet score',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3733,6 +3907,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3754,6 +3929,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3775,6 +3951,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3796,6 +3973,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'G9604',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3820,6 +3998,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3844,6 +4023,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3867,6 +4047,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '66082-9',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3877,7 +4058,7 @@ export default function StructureTable() {
       SRC_CODE: 'via4',
       SRC_CODE_ID: '',
       SRC_CD_DESCRIPTION:
-        'When was the last time you had your eyes examined by an eye care provider (ophthalmologist or optometrist)?',
+        'When was the last time you had your eyes examined by an eye care provider (ophthalmologist or optometrist)?�',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Within the past month (anytime less than 1 month ago)|2, Within the past year (1 month but less than 12 months ago)|3, Within the past 2 years (1 year but less than 2 years ago)|4, 2 or more years ago|777, Prefer not to say',
       TARGET_CONCEPT_ID: 40758529,
@@ -3890,6 +4071,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '55400-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3914,6 +4096,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3938,6 +4121,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3959,6 +4143,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -3980,6 +4165,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4001,6 +4187,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4022,6 +4209,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'G9604',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4044,6 +4232,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '52553-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4066,6 +4255,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4089,6 +4279,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '66680-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4113,6 +4304,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '63504-5',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4137,6 +4329,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4161,6 +4354,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4183,6 +4377,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4207,6 +4402,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4231,6 +4427,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4255,6 +4452,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4279,6 +4477,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4303,6 +4502,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4320,13 +4520,14 @@ export default function StructureTable() {
       LOCAL_CONCEPT_ID: 2005200081,
       TARGET_CONCEPT_NAME:
         "Insurance through a current or former employer or union (of yours or another family member's). This would include COBRA coverage.",
-      TARGET_DOMAIN_ID: 'Measurement',
+      TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4344,13 +4545,14 @@ export default function StructureTable() {
       LOCAL_CONCEPT_ID: 2005200082,
       TARGET_CONCEPT_NAME:
         'Insurance purchased directly from an insurance company (by you or another family member). This would include coverage purchased through an exchange or marketplace, such as HealthCare.gov',
-      TARGET_DOMAIN_ID: 'Measurement',
+      TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4367,13 +4569,14 @@ export default function StructureTable() {
       LOCAL_CONCEPT_ID: 2005200083,
       TARGET_CONCEPT_NAME:
         'Medicare, for people 65 and older, or people with certain disabilities.',
-      TARGET_DOMAIN_ID: 'Measurement',
+      TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4391,13 +4594,14 @@ export default function StructureTable() {
       LOCAL_CONCEPT_ID: 2005200084,
       TARGET_CONCEPT_NAME:
         "Medicaid, Medical Assistance (MA), the Children's Health Insurance Program (CHIP), or any kind of state or government-sponsored assistance. plan based on income or a disability.",
-      TARGET_DOMAIN_ID: 'Measurement',
+      TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4413,13 +4617,14 @@ export default function StructureTable() {
       TARGET_CONCEPT_ID: 2005200085,
       LOCAL_CONCEPT_ID: 2005200085,
       TARGET_CONCEPT_NAME: 'TRICARE or other military health care, including VA health care.',
-      TARGET_DOMAIN_ID: 'Measurement',
+      TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4435,13 +4640,14 @@ export default function StructureTable() {
       TARGET_CONCEPT_ID: 2005200087,
       LOCAL_CONCEPT_ID: 2005200087,
       TARGET_CONCEPT_NAME: 'Any other type of health insurance coverage or health coverage plan',
-      TARGET_DOMAIN_ID: 'Measurement',
+      TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4459,13 +4665,14 @@ export default function StructureTable() {
       LOCAL_CONCEPT_ID: 2005200088,
       TARGET_CONCEPT_NAME:
         'Does this mean you currently have no health insurance or health coverage plan? In answering this question, please exclude plans that pay for only one type of service (such as, nursing home care, accidents, family planning, or dental care) and plans that only provide extra cash when hospitalized).',
-      TARGET_DOMAIN_ID: 'Measurement',
+      TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4485,11 +4692,12 @@ export default function StructureTable() {
         'About how long has it been since you last saw a doctor or other health care professional about your health?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Observable Entity',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4507,11 +4715,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Was this a wellness visit, physical, or general purpose check-up?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4531,11 +4740,12 @@ export default function StructureTable() {
         'About how long has it been since you last saw a doctor or other health professional for a wellness visit, physical, or general purpose check-up?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4546,20 +4756,21 @@ export default function StructureTable() {
       SRC_CODE: 'pxahc4',
       SRC_CODE_ID: '',
       SRC_CD_DESCRIPTION:
-        'Is there a place that you USUALLY go to if you are sick and need health care?',
+        'Is there a place that you USUALLY go to if you are sick and need health care?�',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         "1, Yes|0, There is NO place|2, There is MORE THAN ONE place|777, Prefer not to say|555, Don't know",
       TARGET_CONCEPT_ID: 2005200093,
       LOCAL_CONCEPT_ID: 2005200093,
       TARGET_CONCEPT_NAME:
-        'Is there a place that you USUALLY go to if you are sick and need health care?',
+        'Is there a place that you USUALLY go to if you are sick and need health care?�',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4579,11 +4790,12 @@ export default function StructureTable() {
         "What kind of place is it/do you go to most often? A doctor's office or health center is a place where you see the same doctor or the same group of doctors every visit, where you usually need to make an appointment ahead of time, and where your medical records are on file.Urgent care centers and clinics in a drug store or grocery store are places where you do not need to make an appointment ahead of time, and do not usually see the same health care provider at each visit.",
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4603,11 +4815,12 @@ export default function StructureTable() {
         'During the past 12 months, how many times have you gone to an urgent care center or a clinic in a drug store or grocery store about your health?Urgent care centers and clinics in drug stores or grocery stores are places where you do not need to make an appointment ahead of time, and do not usually see the same health care provider at each visit. This is different from a hospital emergency room.',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4618,20 +4831,21 @@ export default function StructureTable() {
       SRC_CODE: 'pxahc7',
       SRC_CODE_ID: '',
       SRC_CD_DESCRIPTION:
-        'During the past 12 months, how many times have you gone to a hospital emergency room about your health?  *This includes emergency room visits that resulted in a hospital admission.',
+        'During the past 12 months, how many times have you gone to a hospital emergency room about your health?� *This includes emergency room visits that resulted in a hospital admission.',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         "0, None|1, 1 - 10 times|2, 11 - 19 times|3, 20 - 29 times|4, 30 - 39 times|5, 40 - 49 times|6, 50 or more times|777, Prefer not to say|555, Don't know",
       TARGET_CONCEPT_ID: 2005200096,
       LOCAL_CONCEPT_ID: 2005200096,
       TARGET_CONCEPT_NAME:
-        'During the past 12 months, how many times have you gone to a hospital emergency room about your health?  *This includes emergency room visits that resulted in a hospital admission.',
+        'During the past 12 months, how many times have you gone to a hospital emergency room about your health?� *This includes emergency room visits that resulted in a hospital admission.',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4651,11 +4865,12 @@ export default function StructureTable() {
         'During the past 12 months, have you been hospitalized overnight? (Do not include an overnight stay in the emergency room)',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4675,11 +4890,12 @@ export default function StructureTable() {
         'During the past 12 months, have you DELAYED getting medical care because of the cost?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4699,11 +4915,12 @@ export default function StructureTable() {
         'During the past 12 months, was there any time when you needed medical care, but DID NOT GET IT because of the cost?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4726,6 +4943,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '67586-8',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4748,6 +4966,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '67587-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4771,6 +4990,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'sdoh_dms_3',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4794,6 +5014,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'sdoh_dms_4',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4817,6 +5038,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'sdoh_dms_5',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4840,6 +5062,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'sdoh_dms_7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4864,6 +5087,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'sdoh_dms_6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4885,6 +5109,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4906,6 +5131,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4922,11 +5148,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'PhenX English Proficiency MetaData',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4943,11 +5170,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'PhenX Education Attainment MetaData',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4957,18 +5185,19 @@ export default function StructureTable() {
       FIELD_ID_NUM: 1307,
       SRC_CODE: 'px280301_metadata',
       SRC_CODE_ID: '',
-      SRC_CD_DESCRIPTION: 'PhenX Job Security MetaData',
+      SRC_CD_DESCRIPTION: 'PhenX Job Security MetaData�',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
       TARGET_CONCEPT_ID: 2005200104,
       LOCAL_CONCEPT_ID: 2005200104,
-      TARGET_CONCEPT_NAME: 'PhenX Job Security MetaData',
+      TARGET_CONCEPT_NAME: 'PhenX Job Security MetaData�',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4978,18 +5207,19 @@ export default function StructureTable() {
       FIELD_ID_NUM: 1308,
       SRC_CODE: 'px281401_metadata',
       SRC_CODE_ID: '',
-      SRC_CD_DESCRIPTION: 'PhenX Housing Insecurity MetaData',
+      SRC_CD_DESCRIPTION: 'PhenX Housing Insecurity MetaData�',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
       TARGET_CONCEPT_ID: 2005200105,
       LOCAL_CONCEPT_ID: 2005200105,
-      TARGET_CONCEPT_NAME: 'PhenX Housing Insecurity MetaData',
+      TARGET_CONCEPT_NAME: 'PhenX Housing Insecurity MetaData�',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -4999,18 +5229,19 @@ export default function StructureTable() {
       FIELD_ID_NUM: 1309,
       SRC_CODE: 'px280801_metadata',
       SRC_CODE_ID: '',
-      SRC_CD_DESCRIPTION: 'PhenX Prescriptions Affordability MetaData',
+      SRC_CD_DESCRIPTION: 'PhenX Prescriptions Affordability MetaData�',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
       TARGET_CONCEPT_ID: 2005200106,
       LOCAL_CONCEPT_ID: 2005200106,
-      TARGET_CONCEPT_NAME: 'PhenX Prescriptions Affordability MetaData',
+      TARGET_CONCEPT_NAME: 'PhenX Prescriptions Affordability MetaData�',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5027,11 +5258,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'PhenX Health Insurance MetaData',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5048,11 +5280,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'PhenX Health Care Access MetaData',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5069,11 +5302,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'PhenX Healthcare Discrimination MetaData',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5095,6 +5329,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5117,6 +5352,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'G9604',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5141,6 +5377,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '88123-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5165,6 +5402,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '95248-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5189,6 +5427,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '95249-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5213,6 +5452,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '95250-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5237,6 +5477,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '95251-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5261,6 +5502,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '95252-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5282,6 +5524,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5303,6 +5546,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5319,11 +5563,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'PhenX MetaData',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5345,6 +5590,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5366,6 +5612,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'G9604',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5388,6 +5635,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '66356-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5412,6 +5660,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '66357-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5436,6 +5685,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '66358-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5459,6 +5709,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '66359-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5483,6 +5734,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '66360-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5507,6 +5759,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '66361-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5531,6 +5784,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '66362-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5550,11 +5804,12 @@ export default function StructureTable() {
         'There is so much traffic on the streets that it makes it difficult or unpleasant to walk in my neighborhood. Would you say that you...',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5574,11 +5829,12 @@ export default function StructureTable() {
         'I see many people being physically active in my neighborhood doing things like walking, jogging, cycling, or playing sports and active games. Would you say that you...',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5598,11 +5854,12 @@ export default function StructureTable() {
         'There are many interesting things to look at while walking in my neighborhood. Would you say you...',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5622,11 +5879,12 @@ export default function StructureTable() {
         'How many motor vehicles in working order (e.g., cars, trucks, motorcycles) are there at your household?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5646,11 +5904,12 @@ export default function StructureTable() {
         'There are many four-way intersections in my neighborhood. Would you say that you...',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5670,11 +5929,12 @@ export default function StructureTable() {
         'The sidewalks in my neighborhood are well maintained (paved, with few cracks) and not obstructed. Would you say that you...',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5694,11 +5954,12 @@ export default function StructureTable() {
         'Places for bicycling (such as bike paths) in and around my neighborhood are well maintained and not obstructed. Would you say that you...',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5718,11 +5979,12 @@ export default function StructureTable() {
         'There is so much traffic on the streets that it makes it difficult or unpleasant to ride a bicycle in my neighborhood. Would you say that you...',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5742,11 +6004,12 @@ export default function StructureTable() {
         'The crime rate in my neighborhood makes it unsafe to go on walks during the day. Would you say that you...',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5766,11 +6029,12 @@ export default function StructureTable() {
         'There are many places to go within easy walking distance of my home. Would you say that you...',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5792,6 +6056,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5814,6 +6079,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5830,11 +6096,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'PhenX Neighborhood Environment MetaData',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5856,6 +6123,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5877,6 +6145,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'G9604',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5891,14 +6160,16 @@ export default function StructureTable() {
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
       TARGET_CONCEPT_ID: 2005200126,
       LOCAL_CONCEPT_ID: 2005200126,
-      TARGET_CONCEPT_NAME: 'How often in the past year?',
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by teachers and professors because of your race/ethnic group? How often in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5913,14 +6184,16 @@ export default function StructureTable() {
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
       TARGET_CONCEPT_ID: 2005200127,
       LOCAL_CONCEPT_ID: 2005200127,
-      TARGET_CONCEPT_NAME: 'How often in your entire life?',
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by teachers and professors because of your race/ethnic group? How often in your entire life?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5937,14 +6210,15 @@ export default function StructureTable() {
       TARGET_CONCEPT_ID: 2005200128,
       LOCAL_CONCEPT_ID: 2005200128,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        'How often have you been treated unfairly by teachers and professors because of your race/ethnic group? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5957,16 +6231,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in the past year?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200126,
-      LOCAL_CONCEPT_ID: 2005200126,
-      TARGET_CONCEPT_NAME: 'How often in the past year?',
+      TARGET_CONCEPT_ID: 2005200493,
+      LOCAL_CONCEPT_ID: 2005200493,
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by employers, bosses and supervisors because of your race/ethnic group? How often in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5979,16 +6255,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in your entire life?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200127,
-      LOCAL_CONCEPT_ID: 2005200127,
-      TARGET_CONCEPT_NAME: 'How often in your entire life?',
+      TARGET_CONCEPT_ID: 2005200494,
+      LOCAL_CONCEPT_ID: 2005200494,
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by employers, bosses and supervisors because of your race/ethnic group? How often in your entire life?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -5999,20 +6277,21 @@ export default function StructureTable() {
       SRC_CODE: 'pxrd6',
       SRC_CODE_ID: '',
       SRC_CD_DESCRIPTION:
-        'On a scale of 1-6, how stressful was this for you?    1= Not at all stressful; 6 = Extremely stressful',
+        'On a scale of 1-6, how stressful was this for you?� � 1= Not at all stressful; 6 = Extremely stressful',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, 1 - Not at all stressful|2, 2|3, 3|4, 4|5, 5|6, 6 - Extremely stressful|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200128,
-      LOCAL_CONCEPT_ID: 2005200128,
+      TARGET_CONCEPT_ID: 2005200495,
+      LOCAL_CONCEPT_ID: 2005200495,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        'How often have you been treated unfairly by employers, bosses and supervisors because of your race/ethnic group? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6025,16 +6304,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in the past year?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200126,
-      LOCAL_CONCEPT_ID: 2005200126,
-      TARGET_CONCEPT_NAME: 'How often in the past year?',
+      TARGET_CONCEPT_ID: 2005200496,
+      LOCAL_CONCEPT_ID: 2005200496,
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by your co-workers, fellow students, and colleagues because of your race/ethnic group? How often in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6047,16 +6328,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in your entire life?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200127,
-      LOCAL_CONCEPT_ID: 2005200127,
-      TARGET_CONCEPT_NAME: 'How often in your entire life?',
+      TARGET_CONCEPT_ID: 2005200497,
+      LOCAL_CONCEPT_ID: 2005200497,
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by your co-workers, fellow students, and colleagues because of your race/ethnic group? How often in your entire life?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6070,17 +6353,18 @@ export default function StructureTable() {
         'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, 1 - Not at all stressful|2, 2|3, 3|4, 4|5, 5|6, 6 - Extremely stressful|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200128,
-      LOCAL_CONCEPT_ID: 2005200128,
+      TARGET_CONCEPT_ID: 2005200498,
+      LOCAL_CONCEPT_ID: 2005200498,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        'How often have you been treated unfairly by your co-workers, fellow students, and colleagues because of your race/ethnic group? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6093,16 +6377,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in the past year?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200126,
-      LOCAL_CONCEPT_ID: 2005200126,
-      TARGET_CONCEPT_NAME: 'How often in the past year?',
+      TARGET_CONCEPT_ID: 2005200499,
+      LOCAL_CONCEPT_ID: 2005200499,
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by people in service jobs (by store clerks, waiters, bartenders, bank tellers and others) because of your race/ethnic group? How often in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6115,16 +6401,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in your entire life?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200127,
-      LOCAL_CONCEPT_ID: 2005200127,
-      TARGET_CONCEPT_NAME: 'How often in your entire life?',
+      TARGET_CONCEPT_ID: 2005200500,
+      LOCAL_CONCEPT_ID: 2005200500,
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by people in service jobs (by store clerks, waiters, bartenders, bank tellers and others) because of your race/ethnic group? How often in your entire life?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6138,17 +6426,18 @@ export default function StructureTable() {
         'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, 1 - Not at all stressful|2, 2|3, 3|4, 4|5, 5|6, 6 - Extremely stressful|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200128,
-      LOCAL_CONCEPT_ID: 2005200128,
+      TARGET_CONCEPT_ID: 2005200501,
+      LOCAL_CONCEPT_ID: 2005200501,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        'How often have you been treated unfairly by people in service jobs (by store clerks, waiters, bartenders, bank tellers and others) because of your race/ethnic group? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6161,16 +6450,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in the past year?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200126,
-      LOCAL_CONCEPT_ID: 2005200126,
-      TARGET_CONCEPT_NAME: 'How often in the past year?',
+      TARGET_CONCEPT_ID: 2005200502,
+      LOCAL_CONCEPT_ID: 2005200502,
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by strangers because of your race/ethnic group? How often in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6183,16 +6474,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in your entire life?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200127,
-      LOCAL_CONCEPT_ID: 2005200127,
-      TARGET_CONCEPT_NAME: 'How often in your entire life?',
+      TARGET_CONCEPT_ID: 2005200503,
+      LOCAL_CONCEPT_ID: 2005200503,
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by strangers because of your race/ethnic group? How often in your entire life?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6206,17 +6499,18 @@ export default function StructureTable() {
         'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, 1 - Not at all stressful|2, 2|3, 3|4, 4|5, 5|6, 6 - Extremely stressful|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200128,
-      LOCAL_CONCEPT_ID: 2005200128,
+      TARGET_CONCEPT_ID: 2005200504,
+      LOCAL_CONCEPT_ID: 2005200504,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        'How often have you been treated unfairly by strangers because of your race/ethnic group? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6229,16 +6523,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in the past year?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200126,
-      LOCAL_CONCEPT_ID: 2005200126,
-      TARGET_CONCEPT_NAME: 'How often in the past year?',
+      TARGET_CONCEPT_ID: 2005200505,
+      LOCAL_CONCEPT_ID: 2005200505,
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by people in helping jobs (by doctors, nurses, psychiatrists, case workers, dentists, school counselors, therapists, social workers and others) because of your race/ethnic group? How often in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6251,16 +6547,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in your entire life?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200127,
-      LOCAL_CONCEPT_ID: 2005200127,
-      TARGET_CONCEPT_NAME: 'How often in your entire life?',
+      TARGET_CONCEPT_ID: 2005200506,
+      LOCAL_CONCEPT_ID: 2005200506,
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by people in helping jobs (by doctors, nurses, psychiatrists, case workers, dentists, school counselors, therapists, social workers and others) because of your race/ethnic group? How often in your entire life?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6274,17 +6572,18 @@ export default function StructureTable() {
         'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, 1 - Not at all stressful|2, 2|3, 3|4, 4|5, 5|6, 6 - Extremely stressful|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200128,
-      LOCAL_CONCEPT_ID: 2005200128,
+      TARGET_CONCEPT_ID: 2005200507,
+      LOCAL_CONCEPT_ID: 2005200507,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        'How often have you been treated unfairly by people in helping jobs (by doctors, nurses, psychiatrists, case workers, dentists, school counselors, therapists, social workers and others) because of your race/ethnic group? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6297,16 +6596,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in the past year?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200126,
-      LOCAL_CONCEPT_ID: 2005200126,
-      TARGET_CONCEPT_NAME: 'How often in the past year?',
+      TARGET_CONCEPT_ID: 2005200508,
+      LOCAL_CONCEPT_ID: 2005200508,
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by neighbors because of your race/ethnic group? How often in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6319,16 +6620,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in your entire life?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200127,
-      LOCAL_CONCEPT_ID: 2005200127,
-      TARGET_CONCEPT_NAME: 'How often in your entire life?',
+      TARGET_CONCEPT_ID: 2005200509,
+      LOCAL_CONCEPT_ID: 2005200509,
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by neighbors because of your race/ethnic group? How often in your entire life?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6342,17 +6645,18 @@ export default function StructureTable() {
         'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, 1 - Not at all stressful|2, 2|3, 3|4, 4|5, 5|6, 6 - Extremely stressful|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200128,
-      LOCAL_CONCEPT_ID: 2005200128,
+      TARGET_CONCEPT_ID: 2005200510,
+      LOCAL_CONCEPT_ID: 2005200510,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        'How often have you been treated unfairly by neighbors because of your race/ethnic group? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6365,16 +6669,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in the past year?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200126,
-      LOCAL_CONCEPT_ID: 2005200126,
-      TARGET_CONCEPT_NAME: 'How often in the past year?',
+      TARGET_CONCEPT_ID: 2005200511,
+      LOCAL_CONCEPT_ID: 2005200511,
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by institutions (schools, universities, law firms, the police, the courts, the Department of Social Services, the Unemployment Office and others) because of your race/ethnic group? How often in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6387,16 +6693,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in your entire life?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200127,
-      LOCAL_CONCEPT_ID: 2005200127,
-      TARGET_CONCEPT_NAME: 'How often in your entire life?',
+      TARGET_CONCEPT_ID: 2005200512,
+      LOCAL_CONCEPT_ID: 2005200512,
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by institutions (schools, universities, law firms, the police, the courts, the Department of Social Services, the Unemployment Office and others) because of your race/ethnic group? How often in your entire life?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6410,17 +6718,18 @@ export default function StructureTable() {
         'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, 1 - Not at all stressful|2, 2|3, 3|4, 4|5, 5|6, 6 - Extremely stressful|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200128,
-      LOCAL_CONCEPT_ID: 2005200128,
+      TARGET_CONCEPT_ID: 2005200513,
+      LOCAL_CONCEPT_ID: 2005200513,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        'How often have you been treated unfairly by institutions (schools, universities, law firms, the police, the courts, the Department of Social Services, the Unemployment Office and others) because of your race/ethnic group? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6433,16 +6742,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in the past year?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200126,
-      LOCAL_CONCEPT_ID: 2005200126,
-      TARGET_CONCEPT_NAME: 'How often in the past year?',
+      TARGET_CONCEPT_ID: 2005200514,
+      LOCAL_CONCEPT_ID: 2005200514,
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by people that you thought were your friends because of your race/ethnic group? How often in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6455,16 +6766,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in your entire life?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200127,
-      LOCAL_CONCEPT_ID: 2005200127,
-      TARGET_CONCEPT_NAME: 'How often in your entire life?',
+      TARGET_CONCEPT_ID: 2005200515,
+      LOCAL_CONCEPT_ID: 2005200515,
+      TARGET_CONCEPT_NAME:
+        'How often have you been treated unfairly by people that you thought were your friends because of your race/ethnic group? How often in your entire life?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6478,17 +6791,18 @@ export default function StructureTable() {
         'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, 1 - Not at all stressful|2, 2|3, 3|4, 4|5, 5|6, 6 - Extremely stressful|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200128,
-      LOCAL_CONCEPT_ID: 2005200128,
+      TARGET_CONCEPT_ID: 2005200516,
+      LOCAL_CONCEPT_ID: 2005200516,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        'How often have you been treated unfairly by people that you thought were your friends because of your race/ethnic group? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6501,16 +6815,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in the past year?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200126,
-      LOCAL_CONCEPT_ID: 2005200126,
-      TARGET_CONCEPT_NAME: 'How often in the past year?',
+      TARGET_CONCEPT_ID: 2005200517,
+      LOCAL_CONCEPT_ID: 2005200517,
+      TARGET_CONCEPT_NAME:
+        'How often have you been accused or suspected of doing something wrong (such as stealing, cheating, not doing your share of the work, or breaking the law) because of your race/ethnic group? How often in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6523,16 +6839,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in your entire life?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200127,
-      LOCAL_CONCEPT_ID: 2005200127,
-      TARGET_CONCEPT_NAME: 'How often in your entire life?',
+      TARGET_CONCEPT_ID: 2005200518,
+      LOCAL_CONCEPT_ID: 2005200518,
+      TARGET_CONCEPT_NAME:
+        'How often have you been accused or suspected of doing something wrong (such as stealing, cheating, not doing your share of the work, or breaking the law) because of your race/ethnic group? How often in your entire life?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6546,17 +6864,18 @@ export default function StructureTable() {
         'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, 1 - Not at all stressful|2, 2|3, 3|4, 4|5, 5|6, 6 - Extremely stressful|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200128,
-      LOCAL_CONCEPT_ID: 2005200128,
+      TARGET_CONCEPT_ID: 2005200519,
+      LOCAL_CONCEPT_ID: 2005200519,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        'How often have you been accused or suspected of doing something wrong (such as stealing, cheating, not doing your share of the work, or breaking the law) because of your race/ethnic group? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6569,16 +6888,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in the past year?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200126,
-      LOCAL_CONCEPT_ID: 2005200126,
-      TARGET_CONCEPT_NAME: 'How often in the past year?',
+      TARGET_CONCEPT_ID: 2005200520,
+      LOCAL_CONCEPT_ID: 2005200520,
+      TARGET_CONCEPT_NAME:
+        'How often have people misunderstood your intentions and motives because of your race/ethnic group? How often in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6591,16 +6912,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in your entire life?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200127,
-      LOCAL_CONCEPT_ID: 2005200127,
-      TARGET_CONCEPT_NAME: 'How often in your entire life?',
+      TARGET_CONCEPT_ID: 2005200521,
+      LOCAL_CONCEPT_ID: 2005200521,
+      TARGET_CONCEPT_NAME:
+        'How often have people misunderstood your intentions and motives because of your race/ethnic group? How often in your entire life?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6614,17 +6937,18 @@ export default function StructureTable() {
         'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, 1 - Not at all stressful|2, 2|3, 3|4, 4|5, 5|6, 6 - Extremely stressful|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200128,
-      LOCAL_CONCEPT_ID: 2005200128,
+      TARGET_CONCEPT_ID: 2005200522,
+      LOCAL_CONCEPT_ID: 2005200522,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        'How often have people misunderstood your intentions and motives because of your race/ethnic group? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6637,16 +6961,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in the past year?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200126,
-      LOCAL_CONCEPT_ID: 2005200126,
-      TARGET_CONCEPT_NAME: 'How often in the past year?',
+      TARGET_CONCEPT_ID: 2005200523,
+      LOCAL_CONCEPT_ID: 2005200523,
+      TARGET_CONCEPT_NAME:
+        "How often did you want to tell someone off for being racist towards you but didn't say anything? How often in the past year?",
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6659,16 +6985,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in your entire life?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200127,
-      LOCAL_CONCEPT_ID: 2005200127,
-      TARGET_CONCEPT_NAME: 'How often in your entire life?',
+      TARGET_CONCEPT_ID: 2005200524,
+      LOCAL_CONCEPT_ID: 2005200524,
+      TARGET_CONCEPT_NAME:
+        "How often did you want to tell someone off for being racist towards you but didn't say anything? How often in your entire life?",
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6682,17 +7010,18 @@ export default function StructureTable() {
         'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, 1 - Not at all stressful|2, 2|3, 3|4, 4|5, 5|6, 6 - Extremely stressful|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200128,
-      LOCAL_CONCEPT_ID: 2005200128,
+      TARGET_CONCEPT_ID: 2005200525,
+      LOCAL_CONCEPT_ID: 2005200525,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        "How often did you want to tell someone off for being racist towards you but didn't say anything? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful",
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6705,16 +7034,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in the past year?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200126,
-      LOCAL_CONCEPT_ID: 2005200126,
-      TARGET_CONCEPT_NAME: 'How often in the past year?',
+      TARGET_CONCEPT_ID: 2005200526,
+      LOCAL_CONCEPT_ID: 2005200526,
+      TARGET_CONCEPT_NAME:
+        'How often have you been really angry about something racist that was done to you? How often in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6727,16 +7058,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in your entire life?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200127,
-      LOCAL_CONCEPT_ID: 2005200127,
-      TARGET_CONCEPT_NAME: 'How often in your entire life?',
+      TARGET_CONCEPT_ID: 2005200527,
+      LOCAL_CONCEPT_ID: 2005200527,
+      TARGET_CONCEPT_NAME:
+        'How often have you been really angry about something racist that was done to you? How often in your entire life?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6750,17 +7083,18 @@ export default function StructureTable() {
         'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, 1 - Not at all stressful|2, 2|3, 3|4, 4|5, 5|6, 6 - Extremely stressful|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200128,
-      LOCAL_CONCEPT_ID: 2005200128,
+      TARGET_CONCEPT_ID: 2005200528,
+      LOCAL_CONCEPT_ID: 2005200528,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        'How often have you been really angry about something racist that was done to you? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6773,16 +7107,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in the past year?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200126,
-      LOCAL_CONCEPT_ID: 2005200126,
-      TARGET_CONCEPT_NAME: 'How often in the past year?',
+      TARGET_CONCEPT_ID: 2005200529,
+      LOCAL_CONCEPT_ID: 2005200529,
+      TARGET_CONCEPT_NAME:
+        'How often have you been forced to take drastic steps (such as filing a grievance, filing a lawsuit, quitting your job, moving away, and other actions) to deal with some racist thing that was done towards you? How often in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6795,16 +7131,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in your entire life?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200127,
-      LOCAL_CONCEPT_ID: 2005200127,
-      TARGET_CONCEPT_NAME: 'How often in your entire life?',
+      TARGET_CONCEPT_ID: 2005200530,
+      LOCAL_CONCEPT_ID: 2005200530,
+      TARGET_CONCEPT_NAME:
+        'How often have you been forced to take drastic steps (such as filing a grievance, filing a lawsuit, quitting your job, moving away, and other actions) to deal with some racist thing that was done towards you? How often in your entire life?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6818,17 +7156,18 @@ export default function StructureTable() {
         'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, 1 - Not at all stressful|2, 2|3, 3|4, 4|5, 5|6, 6 - Extremely stressful|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200128,
-      LOCAL_CONCEPT_ID: 2005200128,
+      TARGET_CONCEPT_ID: 2005200531,
+      LOCAL_CONCEPT_ID: 2005200531,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        'How often have you been forced to take drastic steps (such as filing a grievance, filing a lawsuit, quitting your job, moving away, and other actions) to deal with some racist thing that was done towards you? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6841,16 +7180,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in the past year?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200126,
-      LOCAL_CONCEPT_ID: 2005200126,
-      TARGET_CONCEPT_NAME: 'How often in the past year?',
+      TARGET_CONCEPT_ID: 2005200532,
+      LOCAL_CONCEPT_ID: 2005200532,
+      TARGET_CONCEPT_NAME:
+        'How often have you been called a racist name? How often in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6863,16 +7204,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in your entire life?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200127,
-      LOCAL_CONCEPT_ID: 2005200127,
-      TARGET_CONCEPT_NAME: 'How often in your entire life?',
+      TARGET_CONCEPT_ID: 2005200533,
+      LOCAL_CONCEPT_ID: 2005200533,
+      TARGET_CONCEPT_NAME:
+        'How often have you been called a racist name? How often in your entire life?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6886,17 +7229,18 @@ export default function StructureTable() {
         'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, 1 - Not at all stressful|2, 2|3, 3|4, 4|5, 5|6, 6 - Extremely stressful|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200128,
-      LOCAL_CONCEPT_ID: 2005200128,
+      TARGET_CONCEPT_ID: 2005200534,
+      LOCAL_CONCEPT_ID: 2005200534,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        'How often have you been called a racist name? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6909,16 +7253,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in the past year?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200126,
-      LOCAL_CONCEPT_ID: 2005200126,
-      TARGET_CONCEPT_NAME: 'How often in the past year?',
+      TARGET_CONCEPT_ID: 2005200535,
+      LOCAL_CONCEPT_ID: 2005200535,
+      TARGET_CONCEPT_NAME:
+        'How often have you gotten into an argument or a fight about something racist that was done to you or done to another member or your race/ethnic group? How often in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6931,16 +7277,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in your entire life?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200127,
-      LOCAL_CONCEPT_ID: 2005200127,
-      TARGET_CONCEPT_NAME: 'How often in your entire life?',
+      TARGET_CONCEPT_ID: 2005200536,
+      LOCAL_CONCEPT_ID: 2005200536,
+      TARGET_CONCEPT_NAME:
+        'How often have you gotten into an argument or a fight about something racist that was done to you or done to another member or your race/ethnic group? How often in your entire life?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6954,17 +7302,18 @@ export default function StructureTable() {
         'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, 1 - Not at all stressful|2, 2|3, 3|4, 4|5, 5|6, 6 - Extremely stressful|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200128,
-      LOCAL_CONCEPT_ID: 2005200128,
+      TARGET_CONCEPT_ID: 2005200537,
+      LOCAL_CONCEPT_ID: 2005200537,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        'How often have you gotten into an argument or a fight about something racist that was done to you or done to another member or your race/ethnic group? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6977,16 +7326,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in the past year?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200126,
-      LOCAL_CONCEPT_ID: 2005200126,
-      TARGET_CONCEPT_NAME: 'How often in the past year?',
+      TARGET_CONCEPT_ID: 2005200538,
+      LOCAL_CONCEPT_ID: 2005200538,
+      TARGET_CONCEPT_NAME:
+        'How often have you been made fun of, picked on, pushed, shoved, hit or threatened with harm because of your race/ethnic group? How often in the past year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -6999,16 +7350,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'How often in your entire life?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200127,
-      LOCAL_CONCEPT_ID: 2005200127,
-      TARGET_CONCEPT_NAME: 'How often in your entire life?',
+      TARGET_CONCEPT_ID: 2005200539,
+      LOCAL_CONCEPT_ID: 2005200539,
+      TARGET_CONCEPT_NAME:
+        'How often have you been made fun of, picked on, pushed, shoved, hit or threatened with harm because of your race/ethnic group? How often in your entire life?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7022,17 +7375,18 @@ export default function StructureTable() {
         'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, 1 - Not at all stressful|2, 2|3, 3|4, 4|5, 5|6, 6 - Extremely stressful|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200128,
-      LOCAL_CONCEPT_ID: 2005200128,
+      TARGET_CONCEPT_ID: 2005200540,
+      LOCAL_CONCEPT_ID: 2005200540,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        'How often have you been made fun of, picked on, pushed, shoved, hit or threatened with harm because of your race/ethnic group? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7045,16 +7399,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'In the Past Year?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200129,
-      LOCAL_CONCEPT_ID: 2005200129,
-      TARGET_CONCEPT_NAME: 'In the Past Year?',
+      TARGET_CONCEPT_ID: 2005200541,
+      LOCAL_CONCEPT_ID: 2005200541,
+      TARGET_CONCEPT_NAME:
+        'How different would your life be now if you HAD NOT BEEN treated in a racist and unfair way? In the Past Year?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7067,16 +7423,18 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: 'In your entire life?',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, Never|2, Once in a while|3, Sometimes|4, A lot|5, Most of the time|6, Almost all the time|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200130,
-      LOCAL_CONCEPT_ID: 2005200130,
-      TARGET_CONCEPT_NAME: 'In your entire life?',
+      TARGET_CONCEPT_ID: 2005200542,
+      LOCAL_CONCEPT_ID: 2005200542,
+      TARGET_CONCEPT_NAME:
+        'How different would your life be now if you HAD NOT BEEN treated in a racist and unfair way? In your entire life?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7090,17 +7448,18 @@ export default function StructureTable() {
         'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK':
         '1, 1 - Not at all stressful|2, 2|3, 3|4, 4|5, 5|6, 6 - Extremely stressful|777, Prefer not to say',
-      TARGET_CONCEPT_ID: 2005200128,
-      LOCAL_CONCEPT_ID: 2005200128,
+      TARGET_CONCEPT_ID: 2005200543,
+      LOCAL_CONCEPT_ID: 2005200543,
       TARGET_CONCEPT_NAME:
-        'On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
+        'How different would your life be now if you HAD NOT BEEN treated in a racist and unfair way? On a scale of 1-6, how stressful was this for you? 1 = Not at all stressful; 6 = Extremely stressful',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7124,6 +7483,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7147,6 +7507,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7163,11 +7524,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'PhenX Racial/Ethnic MetaData',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7189,6 +7551,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7210,6 +7573,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '74015-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7226,11 +7590,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Date driving record assessment conducted',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Observation',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7253,6 +7618,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 288564002,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.25,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7271,11 +7637,12 @@ export default function StructureTable() {
         'In an average week, how many days per week do you normally drive? (number of days)',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7295,11 +7662,12 @@ export default function StructureTable() {
         'About how many miles did you personally drive during the past 12 months in all motorized vehicles?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: '',
-      TARGET_STANDARD_CONCEPT: '',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7316,11 +7684,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Was the activity monitor/watch sent home with the participant?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Observation',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7343,6 +7712,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 362978005,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7356,14 +7726,15 @@ export default function StructureTable() {
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
       TARGET_CONCEPT_ID: 2005200474,
       LOCAL_CONCEPT_ID: 2005200474,
-      TARGET_CONCEPT_NAME: 'Performed on (specify date)',
+      TARGET_CONCEPT_NAME: 'Date when physical activity monitor was given to patient',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_CONCEPT_CLASS_ID: 'Observation',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7385,6 +7756,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7407,6 +7779,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 362978005,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7423,11 +7796,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Date sensor inserted',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Answer',
+      TARGET_CONCEPT_CLASS_ID: 'Observation',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7444,11 +7818,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Did you verify that the Dexcom sensor was initialized and recording?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Observation',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7465,11 +7840,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Was the environmental sensor sent home with the participant?',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Observation',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7492,6 +7868,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 362978005,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7505,14 +7882,15 @@ export default function StructureTable() {
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
       TARGET_CONCEPT_ID: 2005200476,
       LOCAL_CONCEPT_ID: 2005200476,
-      TARGET_CONCEPT_NAME: 'Performed on (specify date)',
+      TARGET_CONCEPT_NAME: 'Date when continuous glucose monitor was given to participant',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Survey',
+      TARGET_CONCEPT_CLASS_ID: 'Observation',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7534,6 +7912,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 178291000000101,
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7556,6 +7935,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 468916005,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7578,6 +7958,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7599,6 +7980,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7620,6 +8002,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7642,6 +8025,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 4237617,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7664,6 +8048,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7686,6 +8071,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7710,6 +8096,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7734,6 +8121,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7758,6 +8146,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7782,6 +8171,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7804,6 +8194,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7827,6 +8218,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7849,6 +8241,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7871,6 +8264,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7892,6 +8286,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7913,6 +8308,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '8302-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7934,6 +8330,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '29463-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7955,6 +8352,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 60621009,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7976,6 +8374,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -7997,6 +8396,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8018,6 +8418,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 845541000000105,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8039,6 +8440,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 2403450,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8060,6 +8462,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 2396814,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8081,6 +8484,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 364075005,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8102,6 +8506,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 2403450,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8123,6 +8528,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 2396814,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8144,6 +8550,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 364075005,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8165,6 +8572,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8186,6 +8594,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8207,6 +8616,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8228,6 +8638,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '28687-2',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8249,6 +8660,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '28688-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8270,6 +8682,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '28689-8',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8291,6 +8704,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '28691-4',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8312,6 +8726,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '28692-2',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8333,6 +8748,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '28693-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8354,6 +8770,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8375,6 +8792,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8396,6 +8814,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8417,6 +8836,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8438,6 +8858,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8459,6 +8880,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8480,6 +8902,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8501,6 +8924,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8522,6 +8946,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8543,6 +8968,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8564,6 +8990,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8585,6 +9012,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8606,6 +9034,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8628,6 +9057,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8649,6 +9079,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '64747-9',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8670,6 +9101,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8691,6 +9123,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8712,6 +9145,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8733,6 +9167,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '64747-9',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8754,6 +9189,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8775,6 +9211,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8796,6 +9233,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8817,6 +9255,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8839,6 +9278,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8860,6 +9300,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '64747-9',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8881,6 +9322,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8902,6 +9344,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8923,6 +9366,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8944,6 +9388,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '64747-9',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8965,6 +9410,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -8986,6 +9432,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9007,6 +9454,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9028,6 +9476,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9050,6 +9499,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9072,6 +9522,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9094,6 +9545,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9116,6 +9568,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9138,6 +9591,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9160,6 +9614,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9182,6 +9637,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9204,6 +9660,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9226,6 +9683,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9248,6 +9706,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9270,6 +9729,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9291,6 +9751,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9312,6 +9773,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9334,6 +9796,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9356,6 +9819,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9378,6 +9842,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9400,6 +9865,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9422,6 +9888,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9444,6 +9911,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9466,6 +9934,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9488,6 +9957,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9510,6 +9980,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9532,6 +10003,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9553,6 +10025,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9574,6 +10047,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 134388005,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9595,6 +10069,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9616,6 +10091,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 459661000124109,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9632,11 +10108,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Date & time Fundus - Edion performed',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9653,11 +10130,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Fundus - Edion not done',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Fundus - Edion not done',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: 391999003,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9674,11 +10152,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Date & time Fundus -  Optomed performed',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9695,11 +10174,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Fundus - Optomed not done',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Fundus - Optomed not done',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: 20067007,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9716,11 +10196,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Date & time OCT & OCTA - Spectralis HRA OCT performed',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9737,11 +10218,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'OCT & OCTA - Spectralis HRA OCT not done',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'OCT & OCTA - Spectralis HRA OCT not done',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: 392010000,
-      PREDICATE_ID: 'skos:exactMatch',
+      PREDICATE_ID: 'skos:exactMatc',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9758,11 +10240,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Date & time OCT - Triton OCT performed',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9779,11 +10262,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'OCT - Triton OCT not done',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'OCT - Triton OCT not done',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: 392010000,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9800,11 +10284,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Date & time OCT & OCTA - Maestro2 performed',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9821,11 +10306,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'OCT & OCTA - Maestro2 not done',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'OCT & OCTA - Maestro2 not done',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: 392010000,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9842,11 +10328,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Date & time FLIO performed',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9863,11 +10350,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'FLIO not done',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'FLIO not done',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: 827055000,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9884,11 +10372,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Date & time Angioplex - Cirrus 5000 performed',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9905,11 +10394,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Angioplex - Cirrus 5000 not done',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Angioplex - Cirrus 5000 not done',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: 392010000,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9926,11 +10416,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Date & time Cardiology - EKG - Pagewriter TC30 Cardiograp performed',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Clinical Observation',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9948,11 +10439,12 @@ export default function StructureTable() {
       TARGET_CONCEPT_NAME: 'Cardiology - EKG - Pagewriter TC30 Cardiograp not done',
       TARGET_DOMAIN_ID: 'Observation',
       TARGET_VOCABULARY_ID: 'AIREADI',
-      TARGET_CONCEPT_CLASS_ID: 'Cardiology - EKG - Pagewriter TC30 Cardiograp not done',
+      TARGET_CONCEPT_CLASS_ID: 'Survey',
       TARGET_STANDARD_CONCEPT: 'S',
       TARGET_CONCEPT_CODE: 93000,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9974,6 +10466,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -9996,6 +10489,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 165331007,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10005,11 +10499,11 @@ export default function StructureTable() {
       FIELD_ID_NUM: 1665,
       SRC_CODE: 'lbscat_wbc',
       SRC_CODE_ID: '',
-      SRC_CD_DESCRIPTION: 'White Blood Cells (WBC) - x10E3/µL',
+      SRC_CD_DESCRIPTION: 'White Blood Cells (WBC) - x10E3/�L',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '(number)',
       TARGET_CONCEPT_ID: 2005200182,
       LOCAL_CONCEPT_ID: 2005200182,
-      TARGET_CONCEPT_NAME: 'White Blood Cells (WBC) - x10E3/µL',
+      TARGET_CONCEPT_NAME: 'White Blood Cells (WBC) - x10E3/�L',
       TARGET_DOMAIN_ID: 'Measurement',
       TARGET_VOCABULARY_ID: 'AIREADI',
       TARGET_CONCEPT_CLASS_ID: 'Procedure',
@@ -10017,6 +10511,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10026,11 +10521,11 @@ export default function StructureTable() {
       FIELD_ID_NUM: 1666,
       SRC_CODE: 'lbscat_rbc',
       SRC_CODE_ID: '',
-      SRC_CD_DESCRIPTION: 'Red Blood Cells (RBC) - x10E6/µL',
+      SRC_CD_DESCRIPTION: 'Red Blood Cells (RBC) - x10E6/�L',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '(number)',
       TARGET_CONCEPT_ID: 2005200183,
       LOCAL_CONCEPT_ID: 2005200183,
-      TARGET_CONCEPT_NAME: 'Red Blood Cells (RBC) - x10E6/µL',
+      TARGET_CONCEPT_NAME: 'Red Blood Cells (RBC) - x10E6/�L',
       TARGET_DOMAIN_ID: 'Measurement',
       TARGET_VOCABULARY_ID: 'AIREADI',
       TARGET_CONCEPT_CLASS_ID: 'Procedure',
@@ -10038,6 +10533,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10059,6 +10555,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10068,7 +10565,7 @@ export default function StructureTable() {
       FIELD_ID_NUM: 1668,
       SRC_CODE: 'lbscat_hct',
       SRC_CODE_ID: '',
-      SRC_CD_DESCRIPTION: 'Hematocrit  - %',
+      SRC_CD_DESCRIPTION: 'Hematocrit� - %',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '(number)',
       TARGET_CONCEPT_ID: 3009542,
       LOCAL_CONCEPT_ID: '',
@@ -10080,6 +10577,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '20570-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10101,6 +10599,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '30428-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10122,6 +10621,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '28539-5',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10143,6 +10643,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '28540-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10164,6 +10665,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '30385-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10173,7 +10675,7 @@ export default function StructureTable() {
       FIELD_ID_NUM: 1673,
       SRC_CODE: 'lbscat_plt',
       SRC_CODE_ID: '',
-      SRC_CD_DESCRIPTION: 'Platelets - x10E3/µL',
+      SRC_CD_DESCRIPTION: 'Platelets - x10E3/�L',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '(number)',
       TARGET_CONCEPT_ID: 3007461,
       LOCAL_CONCEPT_ID: '',
@@ -10185,6 +10687,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '26515-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10206,6 +10709,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '68963-8',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10227,6 +10731,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 26604007,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10248,6 +10753,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 246423001,
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10269,6 +10775,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 246423001,
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10290,6 +10797,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 246423001,
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10311,6 +10819,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 246423001,
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10333,6 +10842,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 246423001,
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10354,6 +10864,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 246423001,
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10375,6 +10886,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '19146-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10396,6 +10908,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 246423001,
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10417,6 +10930,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 246423001,
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10438,6 +10952,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 246423001,
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10460,6 +10975,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 246423001,
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10481,6 +10997,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'N/A - operational variable',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10502,6 +11019,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '82611-5',
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10523,6 +11041,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10544,6 +11063,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '82611-5',
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10565,6 +11085,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '82611-5',
       PREDICATE_ID: 'skos:broadMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10586,6 +11107,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10607,6 +11129,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10630,6 +11153,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10651,6 +11175,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10672,6 +11197,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10693,6 +11219,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10716,6 +11243,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10738,6 +11266,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 370894009,
       PREDICATE_ID: 'skos:narrowMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10759,6 +11288,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10780,6 +11310,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 59811005,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10802,6 +11333,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 410666004,
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10823,6 +11355,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10845,6 +11378,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 873751000000103,
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10867,6 +11401,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 840643003,
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10890,6 +11425,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'N/A - operational variable',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10911,6 +11447,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'N/A - operational variable',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10932,6 +11469,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '66240-3',
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10953,6 +11491,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '66240-3',
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10974,6 +11513,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -10995,6 +11535,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '66240-3',
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11016,6 +11557,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '66240-3',
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11037,6 +11579,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11059,6 +11602,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11080,6 +11624,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA4306-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11101,6 +11646,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA4585-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11122,6 +11668,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 434941000124101,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11144,6 +11691,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '66042-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11165,6 +11713,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA4306-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11186,6 +11735,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA4585-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11207,6 +11757,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 23088002,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11228,6 +11779,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 434941000124101,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11249,6 +11801,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11271,6 +11824,117 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
+    },
+    {
+      'Protected or open-source?': 'open-source',
+      FORM_NAME: 'screening_survey',
+      FIELD_TYPE: 'yes',
+      FIELD_ID: 'mhterm_dm1',
+      FIELD_ID_NUM: '',
+      SRC_CODE: 1,
+      SRC_CODE_ID: 'mhterm_dm1_1',
+      SRC_CD_DESCRIPTION: 'Yes',
+      'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
+      TARGET_CONCEPT_ID: 45883360,
+      LOCAL_CONCEPT_ID: '',
+      TARGET_CONCEPT_NAME: 'Diabetes Type 1',
+      TARGET_DOMAIN_ID: 'Meas Value',
+      TARGET_VOCABULARY_ID: 'LOINC',
+      TARGET_CONCEPT_CLASS_ID: 'Answer',
+      TARGET_STANDARD_CONCEPT: 'S',
+      TARGET_CONCEPT_CODE: 'LA10551-2',
+      PREDICATE_ID: 'skos:exactMatch',
+      CONFIDENCE: 1,
+      '': '',
+    },
+    {
+      'Protected or open-source?': 'open-source',
+      FORM_NAME: 'screening_survey',
+      FIELD_TYPE: 'yes',
+      FIELD_ID: 'mh_a1c',
+      FIELD_ID_NUM: '',
+      SRC_CODE: 1,
+      SRC_CODE_ID: 'mh_a1c_1',
+      SRC_CD_DESCRIPTION: 'Yes',
+      'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
+      TARGET_CONCEPT_ID: 1620380,
+      LOCAL_CONCEPT_ID: '',
+      TARGET_CONCEPT_NAME: 'Elevated',
+      TARGET_DOMAIN_ID: 'Meas Value',
+      TARGET_VOCABULARY_ID: 'LOINC',
+      TARGET_CONCEPT_CLASS_ID: 'Answer',
+      TARGET_STANDARD_CONCEPT: 'S',
+      TARGET_CONCEPT_CODE: 'LA32146-5',
+      PREDICATE_ID: 'skos:exactMatch',
+      CONFIDENCE: 1,
+      '': '',
+    },
+    {
+      'Protected or open-source?': 'open-source',
+      FORM_NAME: 'screening_survey',
+      FIELD_TYPE: 'no',
+      FIELD_ID: 'mh_a1c',
+      FIELD_ID_NUM: '',
+      SRC_CODE: 0,
+      SRC_CODE_ID: 'mh_a1c_0',
+      SRC_CD_DESCRIPTION: 'No',
+      'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
+      TARGET_CONCEPT_ID: 1620550,
+      LOCAL_CONCEPT_ID: '',
+      TARGET_CONCEPT_NAME: 'Not elevated',
+      TARGET_DOMAIN_ID: 'Meas Value',
+      TARGET_VOCABULARY_ID: 'LOINC',
+      TARGET_CONCEPT_CLASS_ID: 'Answer',
+      TARGET_STANDARD_CONCEPT: 'S',
+      TARGET_CONCEPT_CODE: 'LA32147-3',
+      PREDICATE_ID: 'skos:exactMatch',
+      CONFIDENCE: 1,
+      '': '',
+    },
+    {
+      'Protected or open-source?': 'open-source',
+      FORM_NAME: 'screening_survey',
+      FIELD_TYPE: 'yes',
+      FIELD_ID: 'mhterm_dm2',
+      FIELD_ID_NUM: '',
+      SRC_CODE: 1,
+      SRC_CODE_ID: 'mhterm_dm2_1',
+      SRC_CD_DESCRIPTION: 'yes',
+      'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
+      TARGET_CONCEPT_ID: 201826,
+      LOCAL_CONCEPT_ID: '',
+      TARGET_CONCEPT_NAME: 'Type 2 diabetes mellitus',
+      TARGET_DOMAIN_ID: 'Condition',
+      TARGET_VOCABULARY_ID: 'SNOMED',
+      TARGET_CONCEPT_CLASS_ID: 'Disorder',
+      TARGET_STANDARD_CONCEPT: 'S',
+      TARGET_CONCEPT_CODE: '',
+      PREDICATE_ID: 'skos:exactMatch',
+      CONFIDENCE: 1,
+      '': '',
+    },
+    {
+      'Protected or open-source?': 'open-source',
+      FORM_NAME: 'screening_survey',
+      FIELD_TYPE: 'no',
+      FIELD_ID: 'mhterm_dm2',
+      FIELD_ID_NUM: '',
+      SRC_CODE: 0,
+      SRC_CODE_ID: 'mhterm_dm2_0',
+      SRC_CD_DESCRIPTION: 'No',
+      'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
+      TARGET_CONCEPT_ID: 45878245,
+      LOCAL_CONCEPT_ID: '',
+      TARGET_CONCEPT_NAME: 'No',
+      TARGET_DOMAIN_ID: 'Meas Value',
+      TARGET_VOCABULARY_ID: 'LOINC',
+      TARGET_CONCEPT_CLASS_ID: 'Answer',
+      TARGET_STANDARD_CONCEPT: 'S',
+      TARGET_CONCEPT_CODE: 'LA32-8',
+      PREDICATE_ID: 'skos:exactMatch',
+      CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11282,16 +11946,17 @@ export default function StructureTable() {
       SRC_CODE_ID: 'mhterm_predm_1',
       SRC_CD_DESCRIPTION: 'Yes',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
-      TARGET_CONCEPT_ID: 45877994,
+      TARGET_CONCEPT_ID: 37018196,
       LOCAL_CONCEPT_ID: '',
-      TARGET_CONCEPT_NAME: 'Yes',
-      TARGET_DOMAIN_ID: 'Meas Value',
-      TARGET_VOCABULARY_ID: 'LOINC',
-      TARGET_CONCEPT_CLASS_ID: 'Answer',
+      TARGET_CONCEPT_NAME: 'Prediabetes',
+      TARGET_DOMAIN_ID: 'Condition',
+      TARGET_VOCABULARY_ID: 'SNOMED',
+      TARGET_CONCEPT_CLASS_ID: 'Clinical Finding',
       TARGET_STANDARD_CONCEPT: 'S',
-      TARGET_CONCEPT_CODE: 'LA33-6',
+      TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11313,6 +11978,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11324,16 +11990,17 @@ export default function StructureTable() {
       SRC_CODE_ID: 'cmtrt_a1c_1',
       SRC_CD_DESCRIPTION: 'Yes',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
-      TARGET_CONCEPT_ID: 45877994,
+      TARGET_CONCEPT_ID: 4016042,
       LOCAL_CONCEPT_ID: '',
-      TARGET_CONCEPT_NAME: 'Yes',
-      TARGET_DOMAIN_ID: 'Meas Value',
-      TARGET_VOCABULARY_ID: 'LOINC',
-      TARGET_CONCEPT_CLASS_ID: 'Answer',
+      TARGET_CONCEPT_NAME: 'Diabetic on oral treatment',
+      TARGET_DOMAIN_ID: 'Observation',
+      TARGET_VOCABULARY_ID: 'SNOMED',
+      TARGET_CONCEPT_CLASS_ID: 'Clinical Finding',
       TARGET_STANDARD_CONCEPT: 'S',
-      TARGET_CONCEPT_CODE: 'LA33-6',
+      TARGET_CONCEPT_CODE: 170746002,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11355,6 +12022,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11366,16 +12034,17 @@ export default function StructureTable() {
       SRC_CODE_ID: 'cmtrt_insln_1',
       SRC_CD_DESCRIPTION: 'Yes',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
-      TARGET_CONCEPT_ID: 45877994,
+      TARGET_CONCEPT_ID: 440922,
       LOCAL_CONCEPT_ID: '',
-      TARGET_CONCEPT_NAME: 'Yes',
-      TARGET_DOMAIN_ID: 'Meas Value',
-      TARGET_VOCABULARY_ID: 'LOINC',
-      TARGET_CONCEPT_CLASS_ID: 'Answer',
+      TARGET_CONCEPT_NAME: 'Diabetic on insulin',
+      TARGET_DOMAIN_ID: 'Observation',
+      TARGET_VOCABULARY_ID: 'SNOMED',
+      TARGET_CONCEPT_CLASS_ID: 'Clinical Finding',
       TARGET_STANDARD_CONCEPT: 'S',
-      TARGET_CONCEPT_CODE: 'LA33-6',
-      PREDICATE_ID: 'skos:exactMatch',
-      CONFIDENCE: 1,
+      TARGET_CONCEPT_CODE: 170747006,
+      PREDICATE_ID: 'skos:closeMatch',
+      CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11397,6 +12066,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11408,16 +12078,17 @@ export default function StructureTable() {
       SRC_CODE_ID: 'cmtrt_glcs_1',
       SRC_CD_DESCRIPTION: 'Yes',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
-      TARGET_CONCEPT_ID: 45877994,
+      TARGET_CONCEPT_ID: 36714369,
       LOCAL_CONCEPT_ID: '',
-      TARGET_CONCEPT_NAME: 'Yes',
-      TARGET_DOMAIN_ID: 'Meas Value',
-      TARGET_VOCABULARY_ID: 'LOINC',
-      TARGET_CONCEPT_CLASS_ID: 'Answer',
+      TARGET_CONCEPT_NAME: 'Diabetic on non-insulin injectable medication',
+      TARGET_DOMAIN_ID: 'Observation',
+      TARGET_VOCABULARY_ID: 'SNOMED',
+      TARGET_CONCEPT_CLASS_ID: 'Clinical Finding',
       TARGET_STANDARD_CONCEPT: 'S',
-      TARGET_CONCEPT_CODE: 'LA33-6',
+      TARGET_CONCEPT_CODE: 719566006,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11439,6 +12110,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11450,16 +12122,17 @@ export default function StructureTable() {
       SRC_CODE_ID: 'cmtrt_lfst_1',
       SRC_CD_DESCRIPTION: 'Yes',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
-      TARGET_CONCEPT_ID: 45877994,
+      TARGET_CONCEPT_ID: 607008,
       LOCAL_CONCEPT_ID: '',
-      TARGET_CONCEPT_NAME: 'Yes',
-      TARGET_DOMAIN_ID: 'Meas Value',
-      TARGET_VOCABULARY_ID: 'LOINC',
-      TARGET_CONCEPT_CLASS_ID: 'Answer',
+      TARGET_CONCEPT_NAME: 'Able to modify behavior and lifestyle to support health improvement',
+      TARGET_DOMAIN_ID: 'Observation',
+      TARGET_VOCABULARY_ID: 'SNOMED',
+      TARGET_CONCEPT_CLASS_ID: 'Clinical Finding',
       TARGET_STANDARD_CONCEPT: 'S',
-      TARGET_CONCEPT_CODE: 'LA33-6',
+      TARGET_CONCEPT_CODE: 1148971005,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11481,6 +12154,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11502,6 +12176,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA48-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11523,6 +12198,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA17717-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11544,6 +12220,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA51-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11565,6 +12242,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA49-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11586,6 +12264,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA22700-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11607,6 +12286,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA4288-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11628,6 +12308,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA46-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11649,6 +12330,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11670,6 +12352,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 22298006,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11691,6 +12374,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11712,6 +12396,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11733,6 +12418,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11754,6 +12440,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11775,6 +12462,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11796,6 +12484,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11817,6 +12506,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11838,6 +12528,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11859,6 +12550,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11880,6 +12572,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11901,6 +12594,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11922,6 +12616,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 370992007,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11943,6 +12638,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11964,6 +12660,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -11985,6 +12682,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 38341003,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12006,6 +12704,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12027,6 +12726,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12048,6 +12748,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 45007003,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12069,6 +12770,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12090,6 +12792,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12111,6 +12814,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 49049000,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12132,6 +12836,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12153,6 +12858,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12174,6 +12880,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 52448006,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12195,6 +12902,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12216,6 +12924,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12237,6 +12946,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 26929004,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12258,6 +12968,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA46-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12279,6 +12990,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14072-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12300,6 +13012,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12321,6 +13034,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 110352000,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12342,6 +13056,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12363,6 +13078,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12384,6 +13100,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 24700007,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12405,6 +13122,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12426,6 +13144,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12447,6 +13166,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 709073001,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12468,6 +13188,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12489,6 +13210,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12510,6 +13232,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 3723001,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12531,6 +13254,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12552,6 +13276,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12573,6 +13298,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 64859006,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12594,6 +13320,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12615,6 +13342,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12636,6 +13364,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10524-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12657,6 +13386,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12678,6 +13408,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12699,6 +13430,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 413839001,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12720,6 +13452,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12741,6 +13474,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12762,6 +13496,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 308925008,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12783,6 +13518,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12804,6 +13540,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12825,6 +13562,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 68566005,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12846,6 +13584,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12867,6 +13606,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12888,6 +13628,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 90708001,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12909,6 +13650,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12930,6 +13672,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12951,6 +13694,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA16989-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12972,6 +13716,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -12993,6 +13738,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13014,6 +13760,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 414916001,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13035,6 +13782,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13056,6 +13804,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13077,6 +13826,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13098,6 +13848,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13119,6 +13870,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA4489-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13140,6 +13892,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13161,6 +13914,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10417-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13182,6 +13936,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10416-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13203,6 +13958,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13224,6 +13980,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13245,6 +14002,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA4489-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13266,6 +14024,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13287,6 +14046,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10418-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13308,6 +14068,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10415-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13329,6 +14090,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10409-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13350,6 +14112,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10408-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13371,6 +14134,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 23986001,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13392,6 +14156,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13413,6 +14178,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13434,6 +14200,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 267718000,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13455,6 +14222,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13476,6 +14244,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13497,6 +14266,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA16306-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13518,6 +14288,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13539,6 +14310,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13560,6 +14332,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '45672-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13581,6 +14354,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13602,6 +14376,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13623,6 +14398,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 73757007,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13644,6 +14420,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13665,6 +14442,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13686,6 +14464,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 162290004,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13707,6 +14486,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13728,6 +14508,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13749,6 +14530,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '76472-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13770,6 +14552,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13791,6 +14574,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13812,6 +14596,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '52552-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13833,6 +14618,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13854,6 +14640,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13875,6 +14662,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '63581-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13896,6 +14684,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13917,6 +14706,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13938,6 +14728,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA16058-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13959,6 +14750,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -13980,6 +14772,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '64234-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14001,6 +14794,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14022,6 +14816,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14043,6 +14838,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA16058-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14064,6 +14860,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14085,6 +14882,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14106,6 +14904,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15914-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14127,6 +14926,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15915-4',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14148,6 +14948,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14169,6 +14970,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14190,6 +14992,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14211,6 +15014,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14232,6 +15036,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14253,6 +15058,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14274,6 +15080,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA16058-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14295,6 +15102,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14316,6 +15124,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14337,6 +15146,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA16058-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14358,6 +15168,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14379,6 +15190,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14400,6 +15212,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14421,6 +15234,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14442,6 +15256,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14463,6 +15278,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14683-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14484,6 +15300,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14505,6 +15322,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14526,6 +15344,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14547,6 +15366,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14568,6 +15388,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14589,6 +15410,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14610,6 +15432,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14631,6 +15454,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14683-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14652,6 +15476,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14673,6 +15498,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14694,6 +15520,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14715,6 +15542,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14736,6 +15564,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14757,6 +15586,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14778,6 +15608,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14799,6 +15630,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14820,6 +15652,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14683-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14841,6 +15674,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14862,6 +15696,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14883,6 +15718,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14904,6 +15740,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14925,6 +15762,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14946,6 +15784,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10066-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14967,6 +15806,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -14988,6 +15828,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10044-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15009,6 +15850,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA9933-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15030,6 +15872,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15051,6 +15894,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15072,6 +15916,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15093,6 +15938,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15114,6 +15960,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA16058-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15135,6 +15982,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15156,6 +16004,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'OMOP5181836',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15177,6 +16026,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15198,6 +16048,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15219,6 +16070,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15240,6 +16092,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15261,6 +16114,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15282,6 +16136,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15303,6 +16158,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15324,6 +16180,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15345,6 +16202,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA16058-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15366,6 +16224,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15387,6 +16246,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 733460004,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15408,6 +16268,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15429,6 +16290,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15450,6 +16312,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA11273-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15472,6 +16335,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA9367-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15493,6 +16357,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA9456-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15514,6 +16379,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15535,6 +16401,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15556,6 +16423,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15577,6 +16445,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15598,6 +16467,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15619,6 +16489,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15640,6 +16511,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15661,6 +16533,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15682,6 +16555,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15703,6 +16577,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15724,6 +16599,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15745,6 +16621,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15766,6 +16643,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15787,6 +16665,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15808,6 +16687,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15829,6 +16709,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15850,6 +16731,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15871,6 +16753,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15892,6 +16775,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15913,6 +16797,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15934,6 +16819,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15955,6 +16841,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15976,6 +16863,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -15997,6 +16885,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16018,6 +16907,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16039,6 +16929,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16060,6 +16951,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16081,6 +16973,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16102,6 +16995,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16123,6 +17017,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16144,6 +17039,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16165,6 +17061,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16186,6 +17083,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16207,6 +17105,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16228,6 +17127,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16249,6 +17149,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16270,6 +17171,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16291,6 +17193,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16312,6 +17215,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16333,6 +17237,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16354,6 +17259,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16375,6 +17281,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16396,6 +17303,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16417,6 +17325,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16438,6 +17347,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16459,6 +17369,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16480,6 +17391,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16501,6 +17413,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16522,6 +17435,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16543,6 +17457,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16564,6 +17479,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16585,6 +17501,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16606,6 +17523,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16627,6 +17545,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16648,6 +17567,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16669,6 +17589,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16690,6 +17611,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16711,6 +17633,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16732,6 +17655,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16753,6 +17677,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16774,6 +17699,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16795,6 +17721,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16816,6 +17743,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16837,6 +17765,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16858,6 +17787,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16879,6 +17809,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16900,6 +17831,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16921,6 +17853,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16942,6 +17875,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16963,6 +17897,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -16984,6 +17919,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17005,6 +17941,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15665-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17026,6 +17963,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17047,6 +17985,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17068,6 +18007,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17089,6 +18029,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17110,6 +18051,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17131,6 +18073,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17152,6 +18095,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17173,6 +18117,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15665-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17194,6 +18139,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17215,6 +18161,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17236,6 +18183,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17257,6 +18205,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17278,6 +18227,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17299,6 +18249,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17320,6 +18271,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17341,6 +18293,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17362,6 +18315,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17383,6 +18337,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17404,6 +18359,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17425,6 +18381,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17446,6 +18403,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17467,6 +18425,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17488,6 +18447,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17509,6 +18469,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15665-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17530,6 +18491,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17553,6 +18515,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17574,6 +18537,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17595,6 +18559,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15665-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17616,6 +18581,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17637,6 +18603,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA18934-2',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17658,6 +18625,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA18876-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17679,6 +18647,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15665-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17700,6 +18669,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17721,6 +18691,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17742,6 +18713,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17763,6 +18735,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17784,6 +18757,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17805,6 +18779,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17826,6 +18801,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17847,6 +18823,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA23713-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17868,6 +18845,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17889,6 +18867,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17910,6 +18889,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14353-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17922,7 +18902,8 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: '2 or less',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
       TARGET_CONCEPT_ID: 2005200241,
-      LOCAL_CONCEPT_ID: 2005200241,
+      LOCAL_CONCEPT_ID:
+        '###############################################################################################################################################################################################################################################################',
       TARGET_CONCEPT_NAME: '2 or less',
       TARGET_DOMAIN_ID: 'Meas Value',
       TARGET_VOCABULARY_ID: 'AIREADI',
@@ -17931,6 +18912,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17952,6 +18934,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17973,6 +18956,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -17994,6 +18978,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14353-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18006,7 +18991,8 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: '2 or less',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
       TARGET_CONCEPT_ID: 2005200241,
-      LOCAL_CONCEPT_ID: 2005200241,
+      LOCAL_CONCEPT_ID:
+        '###############################################################################################################################################################################################################################################################',
       TARGET_CONCEPT_NAME: '2 or less',
       TARGET_DOMAIN_ID: 'Meas Value',
       TARGET_VOCABULARY_ID: 'AIREADI',
@@ -18015,6 +19001,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18036,6 +19023,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18057,6 +19045,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18078,6 +19067,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14352-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18099,6 +19089,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA19812-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18120,6 +19111,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18141,6 +19133,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14665-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18162,6 +19155,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA23695-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18183,6 +19177,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18204,6 +19199,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18225,6 +19221,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18246,6 +19243,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28443-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18267,6 +19265,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA23713-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18288,6 +19287,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18309,6 +19309,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18330,6 +19331,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28443-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18351,6 +19353,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA23713-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18372,6 +19375,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18393,6 +19397,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA13947-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18414,6 +19419,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14973-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18435,6 +19441,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18456,6 +19463,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18477,6 +19485,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18498,6 +19507,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14352-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18519,6 +19529,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA19812-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18540,6 +19551,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18561,6 +19573,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15227-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18582,6 +19595,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15725-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18603,6 +19617,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15726-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18624,6 +19639,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15727-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18645,6 +19661,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14735-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18666,6 +19683,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18687,6 +19705,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15227-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18708,6 +19727,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15725-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18729,6 +19749,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15726-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18750,6 +19771,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15727-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18771,6 +19793,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14735-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18792,6 +19815,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18813,6 +19837,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15227-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18834,6 +19859,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15725-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18855,6 +19881,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15726-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18876,6 +19903,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15727-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18897,6 +19925,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14735-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18918,6 +19947,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18939,6 +19969,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA160-4',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18960,6 +19991,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15789-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -18981,6 +20013,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19002,6 +20035,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32867-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19023,6 +20057,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19044,6 +20079,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19065,6 +20101,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19086,6 +20123,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19107,6 +20145,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19128,6 +20167,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19149,6 +20189,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19170,6 +20211,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA46-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19191,6 +20233,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19212,6 +20255,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA160-4',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19233,6 +20277,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15789-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19254,6 +20299,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19275,6 +20321,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32867-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19296,6 +20343,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19317,6 +20365,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19338,6 +20387,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19359,6 +20409,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19380,6 +20431,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19401,6 +20453,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA30188-9',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19422,6 +20475,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19443,6 +20497,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19464,6 +20519,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15367-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19485,6 +20541,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA18365-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19506,6 +20563,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA18366-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19527,6 +20585,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6568-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19548,6 +20607,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19569,6 +20629,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19590,6 +20651,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15606-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19611,6 +20673,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15607-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19632,6 +20695,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15608-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19653,6 +20717,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15609-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19674,6 +20739,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15610-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19695,6 +20761,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15611-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19716,6 +20783,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15612-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19737,6 +20805,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15613-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19758,6 +20827,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15614-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19779,6 +20849,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15615-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19800,6 +20871,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15616-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19821,6 +20893,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15617-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19842,6 +20915,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15618-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19863,6 +20937,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15564-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19884,6 +20959,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15619-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19905,6 +20981,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15620-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19926,6 +21003,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15621-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19947,6 +21025,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15622-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19968,6 +21047,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12460-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -19989,6 +21069,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12461-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20010,6 +21091,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15625-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20031,6 +21113,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15626-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20052,6 +21135,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20073,6 +21157,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20094,6 +21179,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15586-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20115,6 +21201,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33145-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20136,6 +21223,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33144-9',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20157,6 +21245,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15589-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20178,6 +21267,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20199,6 +21289,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20220,6 +21311,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20241,6 +21333,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA4720-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20262,6 +21355,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33160-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20283,6 +21377,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33161-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20304,6 +21399,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6575-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20325,6 +21421,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20346,6 +21443,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20367,6 +21465,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA4720-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20388,6 +21487,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31993-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20411,6 +21511,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31994-9',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20434,6 +21535,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31995-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20455,6 +21557,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20476,6 +21579,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31996-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20497,6 +21601,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28580-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20518,6 +21623,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31997-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20539,6 +21645,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31998-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20560,6 +21667,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31999-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20581,6 +21689,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32000-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20602,6 +21711,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32001-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20623,6 +21733,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA9-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20644,6 +21755,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20665,6 +21777,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20686,6 +21799,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20707,6 +21821,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20728,6 +21843,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20749,6 +21865,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20770,6 +21887,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20791,6 +21909,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20812,6 +21931,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20833,6 +21953,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20854,6 +21975,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20875,6 +21997,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20896,6 +22019,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20917,6 +22041,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20938,6 +22063,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20959,6 +22085,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -20980,6 +22107,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21001,6 +22129,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21022,6 +22151,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10041-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21043,6 +22173,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12693-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21064,6 +22195,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21085,6 +22217,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21106,6 +22239,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10041-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21127,6 +22261,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12693-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21148,6 +22283,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21169,6 +22305,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21190,6 +22327,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10041-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21211,6 +22349,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12693-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21232,6 +22371,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21253,6 +22393,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21274,6 +22415,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10041-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21295,6 +22437,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12693-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21316,6 +22459,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21337,6 +22481,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21358,6 +22503,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10041-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21379,6 +22525,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12693-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21400,6 +22547,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21421,6 +22569,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21442,6 +22591,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10041-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21463,6 +22613,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12693-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21484,6 +22635,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21505,6 +22657,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21526,6 +22679,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21547,6 +22701,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21568,6 +22723,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21589,6 +22745,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14700-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21610,6 +22767,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14438-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21631,6 +22789,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14439-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21652,6 +22811,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14440-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21673,6 +22833,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21694,6 +22855,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA13833-1',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21715,6 +22877,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21736,6 +22899,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21757,6 +22921,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21778,6 +22943,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21799,6 +22965,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21820,6 +22987,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21841,6 +23009,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21862,6 +23031,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14700-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21883,6 +23053,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14438-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21904,6 +23075,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14439-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21925,6 +23097,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14440-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21946,6 +23119,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21967,6 +23141,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA13833-1',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -21988,6 +23163,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22009,6 +23185,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22030,6 +23207,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22051,6 +23229,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22072,6 +23251,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22093,6 +23273,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22114,6 +23295,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22135,6 +23317,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22158,6 +23341,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22179,6 +23363,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA7172-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22200,6 +23385,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22221,6 +23407,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA46-8',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22242,6 +23429,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22263,6 +23451,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22284,6 +23473,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22305,6 +23495,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA137-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22317,7 +23508,8 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: '1 - 10 times',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
       TARGET_CONCEPT_ID: 2005200262,
-      LOCAL_CONCEPT_ID: 2005200262,
+      LOCAL_CONCEPT_ID:
+        '###############################################################################################################################################################################################################################################################',
       TARGET_CONCEPT_NAME: '1 - 10 times',
       TARGET_DOMAIN_ID: 'Meas Value',
       TARGET_VOCABULARY_ID: 'AIREADI',
@@ -22326,6 +23518,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22347,6 +23540,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22368,6 +23562,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22389,6 +23584,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22410,6 +23606,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22431,6 +23628,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22452,6 +23650,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22473,6 +23672,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22494,6 +23694,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA137-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22506,7 +23707,8 @@ export default function StructureTable() {
       SRC_CD_DESCRIPTION: '1 - 10 times',
       'Choices, Calculations, \nOR Slider Labels\n\nFrom REDCap CODEBOOK': '',
       TARGET_CONCEPT_ID: 2005200262,
-      LOCAL_CONCEPT_ID: 2005200262,
+      LOCAL_CONCEPT_ID:
+        '###############################################################################################################################################################################################################################################################',
       TARGET_CONCEPT_NAME: '1 - 10 times',
       TARGET_DOMAIN_ID: 'Meas Value',
       TARGET_VOCABULARY_ID: 'AIREADI',
@@ -22515,6 +23717,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22536,6 +23739,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22557,6 +23761,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22578,6 +23783,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22599,6 +23805,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22620,6 +23827,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22641,6 +23849,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22662,6 +23871,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22683,6 +23893,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22704,6 +23915,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22725,6 +23937,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22746,6 +23959,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22767,6 +23981,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22788,6 +24003,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22809,6 +24025,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22830,6 +24047,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22851,6 +24069,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22872,6 +24091,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22893,6 +24113,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22914,6 +24135,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22935,6 +24157,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22956,6 +24179,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10066-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22977,6 +24201,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -22998,6 +24223,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23019,6 +24245,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA9933-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23040,6 +24267,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23061,6 +24289,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23082,6 +24311,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10066-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23103,6 +24333,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23124,6 +24355,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23145,6 +24377,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA9933-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23166,6 +24399,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23187,6 +24421,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23208,6 +24443,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10066-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23229,6 +24465,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23250,6 +24487,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23271,6 +24509,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA9933-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23292,6 +24531,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23313,6 +24553,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23334,6 +24575,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10066-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23355,6 +24597,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23376,6 +24619,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23397,6 +24641,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA9933-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23418,6 +24663,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23439,6 +24685,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23460,6 +24707,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10066-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23481,6 +24729,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23502,6 +24751,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23523,6 +24773,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA9933-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23544,6 +24795,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23565,6 +24817,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23586,6 +24839,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10066-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23607,6 +24861,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23628,6 +24883,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23649,6 +24905,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA9933-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23670,6 +24927,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23691,6 +24949,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23712,6 +24971,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10066-1',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23733,6 +24993,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23754,6 +25015,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23775,6 +25037,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA9933-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23796,6 +25059,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23817,6 +25081,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28397-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23838,6 +25103,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6729-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23859,6 +25125,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28398-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23880,6 +25147,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23901,6 +25169,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23922,6 +25191,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28397-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23943,6 +25213,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6729-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23964,6 +25235,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28398-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -23985,6 +25257,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24006,6 +25279,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24027,6 +25301,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24048,6 +25323,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24069,6 +25345,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24090,6 +25367,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24111,6 +25389,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA30970-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24132,6 +25411,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA30971-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24153,6 +25433,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA30972-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24174,6 +25455,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24195,6 +25477,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24216,6 +25499,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24237,6 +25521,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24258,6 +25543,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24279,6 +25565,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24300,6 +25587,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24321,6 +25609,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24342,6 +25631,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24363,6 +25653,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24384,6 +25675,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15229-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24405,6 +25697,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15230-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24428,6 +25721,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15231-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24449,6 +25743,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15232-4',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24470,6 +25765,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15233-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24491,6 +25787,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24512,6 +25809,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24533,6 +25831,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15236-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24554,6 +25853,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15234-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24575,6 +25875,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15235-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24596,6 +25897,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15237-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24617,6 +25919,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24638,6 +25941,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24659,6 +25963,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15236-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24680,6 +25985,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15234-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24701,6 +26007,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15235-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24722,6 +26029,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15237-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24743,6 +26051,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24764,6 +26073,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24785,6 +26095,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15236-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24806,6 +26117,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15234-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24827,6 +26139,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15235-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24848,6 +26161,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15237-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24869,6 +26183,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24890,6 +26205,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24911,6 +26227,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24932,6 +26249,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15236-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24953,6 +26271,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15234-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24974,6 +26293,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15235-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -24995,6 +26315,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15237-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25016,6 +26337,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25037,6 +26359,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25058,6 +26381,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25079,6 +26403,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15236-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25100,6 +26425,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15234-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25121,6 +26447,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15235-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25142,6 +26469,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15237-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25163,6 +26491,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25184,6 +26513,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25205,6 +26535,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15236-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25226,6 +26557,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15234-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25247,6 +26579,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15235-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25268,6 +26601,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15237-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25289,6 +26623,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25310,6 +26645,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25331,6 +26667,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15236-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25352,6 +26689,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15234-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25373,6 +26711,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15235-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25394,6 +26733,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15237-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25415,6 +26755,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25436,6 +26777,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25457,6 +26799,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25478,6 +26821,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15236-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25499,6 +26843,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15234-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25520,6 +26865,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15235-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25541,6 +26887,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15237-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25562,6 +26909,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25583,6 +26931,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25604,6 +26953,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15236-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25625,6 +26975,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15234-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25646,6 +26997,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15235-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25667,6 +27019,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15237-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25688,6 +27041,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25709,6 +27063,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25730,6 +27085,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA137-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25751,6 +27107,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25772,6 +27129,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25793,6 +27151,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25814,6 +27173,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15236-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25835,6 +27195,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15234-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25856,6 +27217,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15235-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25877,6 +27239,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15237-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25898,6 +27261,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25919,6 +27283,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25940,6 +27305,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25961,6 +27327,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15236-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -25982,6 +27349,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15234-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26003,6 +27371,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15235-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26024,6 +27393,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15237-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26045,6 +27415,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26066,6 +27437,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26087,6 +27459,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15236-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26108,6 +27481,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15234-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26129,6 +27503,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15235-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26150,6 +27525,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15237-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26171,6 +27547,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26192,6 +27569,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26213,6 +27591,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15236-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26234,6 +27613,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15234-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26255,6 +27635,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15235-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26276,6 +27657,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15237-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26297,6 +27679,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26318,6 +27701,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26339,6 +27723,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15236-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26360,6 +27745,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15234-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26381,6 +27767,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15235-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26402,6 +27789,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15237-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26423,6 +27811,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26444,6 +27833,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26465,6 +27855,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15236-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26486,6 +27877,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15234-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26507,6 +27899,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15235-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26528,6 +27921,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15237-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26549,6 +27943,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26570,6 +27965,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26591,6 +27987,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26612,6 +28009,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26633,6 +28031,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26654,6 +28053,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26675,6 +28075,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26696,6 +28097,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26717,6 +28119,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26738,6 +28141,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26759,6 +28163,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26780,6 +28185,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26801,6 +28207,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26822,6 +28229,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26843,6 +28251,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26864,6 +28273,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26885,6 +28295,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26906,6 +28317,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26927,6 +28339,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26948,6 +28361,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26969,6 +28383,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -26990,6 +28405,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27011,6 +28427,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27032,6 +28449,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27053,6 +28471,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27074,6 +28493,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27095,6 +28515,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27116,6 +28537,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27137,6 +28559,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27158,6 +28581,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27179,6 +28603,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27200,6 +28625,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27221,6 +28647,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27242,6 +28669,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27263,6 +28691,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27284,6 +28713,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27305,6 +28735,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27326,6 +28757,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27347,6 +28779,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27368,6 +28801,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27389,6 +28823,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27410,6 +28845,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27431,6 +28867,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27452,6 +28889,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27473,6 +28911,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27494,6 +28933,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27515,6 +28955,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27536,6 +28977,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27557,6 +28999,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27578,6 +29021,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27599,6 +29043,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27620,6 +29065,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27641,6 +29087,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27662,6 +29109,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27683,6 +29131,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27704,6 +29153,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27725,6 +29175,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27746,6 +29197,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27767,6 +29219,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27788,6 +29241,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27809,6 +29263,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27830,6 +29285,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27851,6 +29307,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27872,6 +29329,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27893,6 +29351,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27914,6 +29373,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27935,6 +29395,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27956,6 +29417,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27977,6 +29439,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -27998,6 +29461,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28019,6 +29483,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28040,6 +29505,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28061,6 +29527,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28082,6 +29549,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28103,6 +29571,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28124,6 +29593,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28145,6 +29615,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28166,6 +29637,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28187,6 +29659,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28208,6 +29681,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28229,6 +29703,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28250,6 +29725,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28271,6 +29747,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28292,6 +29769,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28313,6 +29791,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28334,6 +29813,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28355,6 +29835,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28376,6 +29857,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28397,6 +29879,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28418,6 +29901,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28439,6 +29923,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28460,6 +29945,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28481,6 +29967,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28502,6 +29989,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28523,6 +30011,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28544,6 +30033,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28565,6 +30055,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28586,6 +30077,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28607,6 +30099,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28628,6 +30121,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28649,6 +30143,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28670,6 +30165,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28691,6 +30187,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28712,6 +30209,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28733,6 +30231,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28754,6 +30253,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28775,6 +30275,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28796,6 +30297,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28817,6 +30319,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28838,6 +30341,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28859,6 +30363,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28880,6 +30385,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28901,6 +30407,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28922,6 +30429,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28943,6 +30451,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28964,6 +30473,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -28985,6 +30495,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29006,6 +30517,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29027,6 +30539,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29048,6 +30561,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29069,6 +30583,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29090,6 +30605,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29111,6 +30627,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29132,6 +30649,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29153,6 +30671,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29174,6 +30693,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29195,6 +30715,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29216,6 +30737,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29237,6 +30759,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29258,6 +30781,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29279,6 +30803,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29300,6 +30825,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29321,6 +30847,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29342,6 +30869,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29363,6 +30891,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29384,6 +30913,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29405,6 +30935,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29426,6 +30957,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29447,6 +30979,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29468,6 +31001,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29489,6 +31023,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29510,6 +31045,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29531,6 +31067,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29552,6 +31089,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29573,6 +31111,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29594,6 +31133,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29615,6 +31155,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29636,6 +31177,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29657,6 +31199,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29678,6 +31221,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29699,6 +31243,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29720,6 +31265,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29741,6 +31287,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29762,6 +31309,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29783,6 +31331,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29804,6 +31353,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29825,6 +31375,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29846,6 +31397,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29867,6 +31419,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29888,6 +31441,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29909,6 +31463,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29930,6 +31485,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29951,6 +31507,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29972,6 +31529,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -29993,6 +31551,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30014,6 +31573,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30035,6 +31595,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30056,6 +31617,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30077,6 +31639,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30098,6 +31661,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30119,6 +31683,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30140,6 +31705,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30161,6 +31727,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30182,6 +31749,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30203,6 +31771,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30224,6 +31793,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30245,6 +31815,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30266,6 +31837,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30287,6 +31859,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30308,6 +31881,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30329,6 +31903,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30350,6 +31925,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30371,6 +31947,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30392,6 +31969,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30413,6 +31991,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30434,6 +32013,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30455,6 +32035,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30476,6 +32057,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30497,6 +32079,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30518,6 +32101,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30539,6 +32123,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30560,6 +32145,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30581,6 +32167,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30602,6 +32189,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30623,6 +32211,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30644,6 +32233,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30665,6 +32255,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30686,6 +32277,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30707,6 +32299,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30728,6 +32321,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30749,6 +32343,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30770,6 +32365,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30791,6 +32387,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30812,6 +32409,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30833,6 +32431,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30854,6 +32453,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30875,6 +32475,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30896,6 +32497,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30917,6 +32519,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30938,6 +32541,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30959,6 +32563,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -30980,6 +32585,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31001,6 +32607,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31022,6 +32629,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31043,6 +32651,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31064,6 +32673,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31085,6 +32695,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31106,6 +32717,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31127,6 +32739,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31148,6 +32761,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31169,6 +32783,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31190,6 +32805,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31211,6 +32827,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31232,6 +32849,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31253,6 +32871,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31274,6 +32893,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31295,6 +32915,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31316,6 +32937,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31337,6 +32959,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31358,6 +32981,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31379,6 +33003,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31400,6 +33025,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31421,6 +33047,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31442,6 +33069,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31463,6 +33091,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31484,6 +33113,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31505,6 +33135,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31526,6 +33157,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31547,6 +33179,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31568,6 +33201,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31589,6 +33223,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31610,6 +33245,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31631,6 +33267,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31652,6 +33289,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31673,6 +33311,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31694,6 +33333,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31715,6 +33355,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31736,6 +33377,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31757,6 +33399,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31778,6 +33421,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31799,6 +33443,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31820,6 +33465,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31841,6 +33487,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31862,6 +33509,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31883,6 +33531,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31904,6 +33553,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31925,6 +33575,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31946,6 +33597,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31967,6 +33619,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -31988,6 +33641,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32009,6 +33663,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32030,6 +33685,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32051,6 +33707,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32072,6 +33729,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32093,6 +33751,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32114,6 +33773,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32135,6 +33795,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32156,6 +33817,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32177,6 +33839,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32198,6 +33861,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32219,6 +33883,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32240,6 +33905,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32261,6 +33927,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32282,6 +33949,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32303,6 +33971,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32324,6 +33993,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32345,6 +34015,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32366,6 +34037,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32387,6 +34059,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32408,6 +34081,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32429,6 +34103,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32450,6 +34125,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6270-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32471,6 +34147,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA6483-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32492,6 +34169,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA10082-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32513,6 +34191,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14468-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32534,6 +34213,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14734-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32555,6 +34235,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14726-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32576,6 +34257,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32597,6 +34279,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32618,6 +34301,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32639,6 +34323,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32660,6 +34345,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA18129-9',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32681,6 +34367,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA155-4',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32702,6 +34389,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA155-4',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32723,6 +34411,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA156-2',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32744,6 +34433,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA156-2',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32765,6 +34455,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA156-2',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32786,6 +34477,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32807,6 +34499,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA18129-9',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32828,6 +34521,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA155-4',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32849,6 +34543,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA155-4',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32870,6 +34565,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA156-2',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32891,6 +34587,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA156-2',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32912,6 +34609,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA156-2',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32933,6 +34631,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32954,6 +34653,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA24969-0',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32975,6 +34675,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA27766-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -32996,6 +34697,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33017,6 +34719,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33038,6 +34741,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33059,6 +34763,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33080,6 +34785,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33101,6 +34807,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33122,6 +34829,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33143,6 +34851,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33164,6 +34873,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33185,6 +34895,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33206,6 +34917,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33227,6 +34939,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33248,6 +34961,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33269,6 +34983,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33290,6 +35005,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14799-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33311,6 +35027,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14482-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33332,6 +35049,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31669-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33353,6 +35071,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31670-5',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33374,6 +35093,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33395,6 +35115,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33416,6 +35137,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33437,6 +35159,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14799-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33458,6 +35181,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14482-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33479,6 +35203,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31669-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33500,6 +35225,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31670-5',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33521,6 +35247,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33542,6 +35269,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33563,6 +35291,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33584,6 +35313,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14799-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33605,6 +35335,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14482-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33626,6 +35357,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31669-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33647,6 +35379,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31670-5',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33668,6 +35401,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33689,6 +35423,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33710,6 +35445,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33731,6 +35467,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14799-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33752,6 +35489,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14482-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33773,6 +35511,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31669-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33794,6 +35533,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31670-5',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33815,6 +35555,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33836,6 +35577,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33857,6 +35599,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33878,6 +35621,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14799-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33899,6 +35643,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14482-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33920,6 +35665,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31669-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33941,6 +35687,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31670-5',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33962,6 +35709,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -33983,6 +35731,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34004,6 +35753,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34025,6 +35775,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14799-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34046,6 +35797,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14482-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34067,6 +35819,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31669-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34088,6 +35841,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA31670-5',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34109,6 +35863,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA12688-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34130,6 +35885,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28803-7',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34151,6 +35907,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34172,6 +35929,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34193,6 +35951,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34214,6 +35973,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 400914004,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34235,6 +35995,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14704-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34256,6 +36017,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14703-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34277,6 +36039,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15091-4',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34298,6 +36061,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14704-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34319,6 +36083,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14703-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34340,6 +36105,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15091-4',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34361,6 +36127,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14704-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34382,6 +36149,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14703-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34403,6 +36171,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15091-4',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34424,6 +36193,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14704-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34445,6 +36215,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14703-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34466,6 +36237,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15091-4',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34487,6 +36259,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14704-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34508,6 +36281,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14703-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34529,6 +36303,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15091-4',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34550,6 +36325,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14704-3',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34571,6 +36347,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14703-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34592,6 +36369,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA15091-4',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34613,6 +36391,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34634,6 +36413,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34655,6 +36435,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34676,6 +36457,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34697,6 +36479,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 399307001,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34718,6 +36501,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34739,6 +36523,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34760,6 +36545,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 444734003,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34781,6 +36567,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34802,6 +36589,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA7424-0',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34823,6 +36611,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA7266-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34844,6 +36633,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34865,6 +36655,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA46-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34886,6 +36677,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34907,6 +36699,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA14670-6',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34928,6 +36721,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34949,6 +36743,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34970,6 +36765,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA46-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -34991,6 +36787,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '19826-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35012,6 +36809,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 769562006,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35033,6 +36831,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35054,6 +36853,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35075,6 +36875,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA21591-5',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35096,6 +36897,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '19826-7',
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35117,6 +36919,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: '',
       CONFIDENCE: '',
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35138,6 +36941,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 453701000124103,
       PREDICATE_ID: 'skos:closeMatch',
       CONFIDENCE: 0.75,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35159,6 +36963,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA28743-5',
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35180,6 +36985,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '72133-2',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35202,6 +37008,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA20770-6',
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35224,6 +37031,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA20770-6',
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35246,6 +37054,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA20770-6',
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35268,6 +37077,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA20770-6',
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35290,6 +37100,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA20770-6',
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35312,6 +37123,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA20770-6',
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35334,6 +37146,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA20770-6',
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35356,6 +37169,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA20770-6',
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35378,6 +37192,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA20770-6',
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35400,6 +37215,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA20770-6',
       PREDICATE_ID: 'skos:relatedMatch',
       CONFIDENCE: 0.5,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35421,6 +37237,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 468916005,
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35442,6 +37259,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35463,6 +37281,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35484,6 +37303,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35505,6 +37325,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35526,6 +37347,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35547,6 +37369,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35568,6 +37391,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35589,6 +37413,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35610,6 +37435,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35631,6 +37457,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35652,6 +37479,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35673,6 +37501,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35694,6 +37523,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35715,6 +37545,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35736,6 +37567,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35757,6 +37589,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35778,6 +37611,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35799,6 +37633,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35820,6 +37655,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35841,6 +37677,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35862,6 +37699,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35883,6 +37721,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35904,6 +37743,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35925,6 +37765,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35946,6 +37787,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35967,6 +37809,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -35988,6 +37831,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36009,6 +37853,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36030,6 +37875,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36051,6 +37897,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36072,6 +37919,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36093,6 +37941,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36114,6 +37963,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36135,6 +37985,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36156,6 +38007,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36177,6 +38029,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36198,6 +38051,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36219,6 +38073,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36240,6 +38095,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36261,6 +38117,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36282,6 +38139,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36303,6 +38161,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36324,6 +38183,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36345,6 +38205,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36366,6 +38227,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: '',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36387,6 +38249,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36408,6 +38271,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36429,6 +38293,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36450,6 +38315,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36471,6 +38337,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36492,6 +38359,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36513,6 +38381,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36534,6 +38403,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36555,6 +38425,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36576,6 +38447,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36597,6 +38469,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36618,6 +38491,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36639,6 +38513,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36660,6 +38535,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36681,6 +38557,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36702,6 +38579,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36723,6 +38601,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36744,6 +38623,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36765,6 +38645,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36786,6 +38667,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36807,6 +38689,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36828,6 +38711,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36849,6 +38733,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36870,6 +38755,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36891,6 +38777,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36912,6 +38799,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36933,6 +38821,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36954,6 +38843,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36975,6 +38865,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -36996,6 +38887,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37017,6 +38909,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37038,6 +38931,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37059,6 +38953,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37080,6 +38975,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37101,6 +38997,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37122,6 +39019,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37143,6 +39041,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37164,6 +39063,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37185,6 +39085,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37206,6 +39107,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37227,6 +39129,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37248,6 +39151,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37269,6 +39173,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37290,6 +39195,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37311,6 +39217,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37332,6 +39239,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37353,6 +39261,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37374,6 +39283,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37395,6 +39305,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37416,6 +39327,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37437,6 +39349,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37458,6 +39371,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37479,6 +39393,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37500,6 +39415,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37521,6 +39437,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37542,6 +39459,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37563,6 +39481,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37584,6 +39503,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37605,6 +39525,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37626,6 +39547,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37647,6 +39569,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37668,6 +39591,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37689,6 +39613,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37710,6 +39635,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37731,6 +39657,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37752,6 +39679,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37773,6 +39701,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37794,6 +39723,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37815,6 +39745,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37836,6 +39767,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37857,6 +39789,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37878,6 +39811,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37899,6 +39833,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37920,6 +39855,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37941,6 +39877,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37962,6 +39899,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -37983,6 +39921,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -38004,6 +39943,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -38025,6 +39965,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -38046,6 +39987,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -38067,6 +40009,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -38088,6 +40031,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -38109,6 +40053,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -38130,6 +40075,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -38151,6 +40097,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -38172,6 +40119,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -38193,6 +40141,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -38214,6 +40163,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -38235,6 +40185,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA33-6',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
     {
       'Protected or open-source?': 'open-source',
@@ -38256,6 +40207,7 @@ export default function StructureTable() {
       TARGET_CONCEPT_CODE: 'LA32-8',
       PREDICATE_ID: 'skos:exactMatch',
       CONFIDENCE: 1,
+      '': '',
     },
   ];
 
@@ -38435,9 +40387,9 @@ export default function StructureTable() {
               margin-top: var(--ifm-list-item-margin);}
         .row{margin:0;}
         .col-sm-3.filter-container{
-        margin-right:15rem;}
+        margin-right:3rem;}
 
-        .text-center.text-muted.record-count{padding-top:10px;font-size:small}
+        .text-center.text-muted.record-count{padding-top:10px;font-size:small; min-width:20rem;}
         .col-sm-5.col-sm-push-4{
         padding-right:2rem;}
 
