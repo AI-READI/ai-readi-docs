@@ -8,15 +8,23 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 import MappingsJSON from '../../static/json/mappings.json';
 
 export default function StructureTable() {
-  const targetConceptIdRender = (props) => (
-    <a
-      href={`https://athena.ohdsi.org/search-terms/terms/${props.value}`}
-      target="_blank"
-      rel="noreferrer"
-    >
-      {props.value}
-    </a>
-  );
+  const targetConceptIdRender = (props) => {
+    const { value, record } = props;
+
+    const isLocalConceptId = record.TARGET_CONCEPT_ID === record.LOCAL_CONCEPT_ID;
+
+    return isLocalConceptId ? (
+      <span>{value}</span>
+    ) : (
+      <a
+        href={`https://athena.ohdsi.org/search-terms/terms/${props.value}`}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {props.value}
+      </a>
+    );
+  };
 
   // Fields to show in the table, and what object properties in the data they bind to
   const fields = [
