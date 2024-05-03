@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/button-has-type */
 import React from 'react';
 import FilterableTable from 'react-filterable-table';
@@ -39757,6 +39758,16 @@ export default function StructureTable() {
     },
   ];
 
+  const targetConceptIdRender = (props) => (
+    <a
+      href={`https://athena.ohdsi.org/search-terms/terms/${props.value}`}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {props.value}
+    </a>
+  );
+
   // Fields to show in the table, and what object properties in the data they bind to
   const fields = [
     {
@@ -39818,6 +39829,7 @@ export default function StructureTable() {
       displayName: 'TARGET_CONCEPT_ID',
       inputFilterable: true,
       sortable: true,
+      render: targetConceptIdRender,
     },
     {
       name: 'LOCAL_CONCEPT_ID',
