@@ -40343,6 +40343,7 @@ export default function StructureTable() {
               .filterable-table-container
               .row.header-row:nth-child(1){display:
               flex;
+              gap: 10px;
               padding-top: 2rem;
               }
               .form-control.filter-input,
@@ -40389,7 +40390,11 @@ export default function StructureTable() {
         .col-sm-3.filter-container{
         margin-right:8rem;}
 
-        .text-center.text-muted.record-count{padding-top:10px;font-size:small; min-width:20rem;text-align:start}
+        .text-center.text-muted.record-count{
+        padding-top:10px;
+        font-size:small;
+        min-width:20rem;
+        text-align:start}
         .col-sm-5.col-sm-push-4{
         padding-right:2rem;}
 
