@@ -40389,7 +40389,7 @@ export default function StructureTable() {
         .col-sm-3.filter-container{
         margin-right:3rem;}
 
-        .text-center.text-muted.record-count{padding-top:10px;font-size:small; min-width:20rem;}
+        .text-center.text-muted.record-count{padding-top:10px;font-size:small; min-width:20rem;text-align:start}
         .col-sm-5.col-sm-push-4{
         padding-right:2rem;}
 
