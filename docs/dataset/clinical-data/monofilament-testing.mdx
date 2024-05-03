@@ -1,9 +1,7 @@
 ---
 sidebar_position: 2
-title: Monofilament Testing
+title: Peripheral Neuropathy / Monofilament Testing
 ---
-
-# Peripheral Neuropathy / Monofilament Testing
 
 ## Overview of Data Domain
 
@@ -29,9 +27,9 @@ pilot_data_root
     └── measurement.csv
 ```
 
-| Domain                | Variable          | Method            | Data Standard/ File Extension | Open Source vs. Protected Database? |             |
-| --------------------- | ----------------- | ----------------- | ----------------------------- | ----------------------------------- | ----------- |
-| Peripheral neuropathy | Monofilament test | CRC- administered | REDCap                        | .csv                                | Open Source |
+| Domain                | Variable          | Method                   | Data Standard/ File Extension | Open Source vs. Protected Database? |
+| --------------------- | ----------------- | ------------------------ | ----------------------------- | ----------------------------------- |
+| Peripheral neuropathy | Monofilament test | CRC- administered REDCap | .csv                          | Open Source                         |
 
 ### Data Standards
 
@@ -43,63 +41,38 @@ The .csv files are designed for easy opening in Python and/or Jupyter Notebooks.
 
 ### Metadata and Example Outputs
 
-| Data Elements                | Description                                                                    | Example                                 |
-| --------------------------- | ------------------------------------------------------------------------------ | --------------------------------------- |
-| measurement_id       | Identifier for the measurement record        | 23 |
-| person_id                     | Subject ID (serves as foreign key to the OMOP Persons table)     | 0000  |
-| measurement_concept_id          | Concept identifier representing the type of measurement     | **4047085 (for peripheral neuropathy)** |
-| measurement_date                | Date of the measurement              | 2023-08-28   |
-| measurement_datetime            | Date and time of the measurement             | 2023-08-28 00:00:00  |
-| measurement_time            | Time of the measurement            | blank   |
-| measurement_type_concept_id        | Concept identifier representing the type of measurement    |32862    |
-| operator_concept_id     | Concept identifier representing the operator involved in the measurement   | 0     |
-| value_as_number           | Numeric value of the measurement |0   |
-| value_as_concept_id       | Concept identifier representing the value of the measurement        | 0 |
-| unit_concept_id                   | Concept identifier representing the unit of measurement                                  | 0   |
-| range_low           | Lower range of normal values for the measurement                                         | blank    |
-| range_high               | Upper range of normal values for the measurement    | blank    |
-| provider_id        | Identifier for the healthcare provider        | 0     |
-| visit_occurrence_id   | Identifier for the measurement visit      | 0  |
-| visit_detail_id         | Identifier for additional details about the visit       | 0  |
-| measurement_source_value   | Original value in the source data representing the measurement   |Refer to the table below*   |
-| measurement_source_concept_id   | Concept identifier in the source data representing the measurement      | 0     |
-| unit_source_value   | Original value in the source data representing the unit of measurement       | blank  |
-| unit_source_concept_id   | Concept identifier in the source data representing the unit of measurement       | 0    |
-| value_source_value   | Original value in the source data representing the measurement value      | 0|
-| measurement_event_id   | Identifier for the specific event associated with the measurement      | 0  |
-| meas_event_field_concept_id   | Concept identifier representing the specific field being measured within the measurement event       | 0  |
+| Data Elements                 | Description                                                                                    | Example                                 |
+| ----------------------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------- |
+| measurement_id                | Identifier for the measurement record                                                          | 23                                      |
+| person_id                     | Subject ID (serves as foreign key to the OMOP Persons table)                                   | 0000                                    |
+| measurement_concept_id        | Concept identifier representing the type of measurement                                        | **4047085 (for peripheral neuropathy)** |
+| measurement_date              | Date of the measurement                                                                        | 2023-08-28                              |
+| measurement_datetime          | Date and time of the measurement                                                               | 2023-08-28 00:00:00                     |
+| measurement_time              | Time of the measurement                                                                        | blank                                   |
+| measurement_type_concept_id   | Concept identifier representing the type of measurement                                        | 32862                                   |
+| operator_concept_id           | Concept identifier representing the operator involved in the measurement                       | 0                                       |
+| value_as_number               | Numeric value of the measurement                                                               | 0                                       |
+| value_as_concept_id           | Concept identifier representing the value of the measurement                                   | 0                                       |
+| unit_concept_id               | Concept identifier representing the unit of measurement                                        | 0                                       |
+| range_low                     | Lower range of normal values for the measurement                                               | blank                                   |
+| range_high                    | Upper range of normal values for the measurement                                               | blank                                   |
+| provider_id                   | Identifier for the healthcare provider                                                         | 0                                       |
+| visit_occurrence_id           | Identifier for the measurement visit                                                           | 0                                       |
+| visit_detail_id               | Identifier for additional details about the visit                                              | 0                                       |
+| measurement_source_value      | Original value in the source data representing the measurement                                 | Refer to the table below\*              |
+| measurement_source_concept_id | Concept identifier in the source data representing the measurement                             | 0                                       |
+| unit_source_value             | Original value in the source data representing the unit of measurement                         | blank                                   |
+| unit_source_concept_id        | Concept identifier in the source data representing the unit of measurement                     | 0                                       |
+| value_source_value            | Original value in the source data representing the measurement value                           | 0                                       |
+| measurement_event_id          | Identifier for the specific event associated with the measurement                              | 0                                       |
+| meas_event_field_concept_id   | Concept identifier representing the specific field being measured within the measurement event | 0                                       |
 
-\*Peripheral Neuropathy values are stored for individual Right and Left foot. For each foot, the number of sites felt and tested are recorded. For example:
+\*Peripheral Neuropathy values are stored for individual Right and Left foot. For each foot, the number of sites felt are recorded. For example:
 
-<table>
-  <thead>
-    <tr>
-      <th>Order of Testing</th>
-      <th>Measurement conditions</th>
-      <th>measurement_source_value : (measured value) </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowSpan="2">1</td>
-      <td>Right Foot: Number of correct responses</td>
-      <td>Right Foot - Felt:(10.0)</td>
-    </tr>
-    <tr>
-      <td>Right Foot: Number of sites tested</td>
-      <td>Right Foot - Tested:(10.0)</td>
-    </tr>
-    <tr>
-      <td rowSpan="2">2</td>
-      <td>Left Foot: Number of correct responses</td>
-      <td>Left Foot - Felt:(8.0)</td>
-    </tr>
-    <tr>
-      <td>Left Foot: Number of sites tested</td>
-      <td>Left Foot - Tested:(10.0)</td>
-    </tr>
-  </tbody>
-</table>
+| Order of Testing | Measurement conditions                  | measurement_source_value : (measured value) | measurement_concept_id |
+| ---------------- | --------------------------------------- | ------------------------------------------- | ---------------------- |
+| 1                | Right Foot: Number of correct responses | Right Foot - Felt: (10.0)                   | 2005200159             |
+| 2                | Left Foot: Number of correct responses  | Left Foot - Felt: (8.0)                     | 2005200161             |
 
 import PageFeedback from '@site/src/components/PageFeedback';
 

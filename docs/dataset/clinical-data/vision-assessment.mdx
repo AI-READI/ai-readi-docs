@@ -66,7 +66,9 @@ pilot_data_root
 #### Data Standards
 
 BCVA data follows the OMOP Common Data Model. OMOP (Observational Medical Outcomes Partnership) is a collaborative effort focused on standardizing and analyzing healthcare data. Developed by the Observational Health Data Sciences and Informatics (OHDSI) community, OMOP provides a standardized data model, vocabulary, and analytics tools to enable large-scale analysis of real-world healthcare data.
+
 #### File Processing
+
 The .csv files are designed for easy opening in Python and/or Jupyter Notebooks. The BCVA data is organized per subject (person_id) and within each subject block i.e. ~30 rows, each row corresponds to a different measurement type (measurement_concept_id) for that subject.
 
 #### Metadata and Example Outputs
@@ -159,18 +161,22 @@ The .csv files are designed for easy opening in Python and/or Jupyter Notebooks.
 | measurement_event_id          | Identifier for the specific event associated with the measurement                              | 0                      |
 | meas_event_field_concept_id   | Concept identifier representing the specific field being measured within the measurement event | 0                      |
 
-BCVA values are stored in this order: Right eye (OD) Photopic, Left eye (OS) Photopic, Right eye (OD) Mesopic, Left eye (OS) Mesopic. For each measurement, the value of the Snellen fraction and letter score is recorded. For example:
+BCVA values are stored in this order: Right eye (OD) Photopic, Left eye (OS) Photopic, Right eye (OD) Mesopic, Left eye (OS) Mesopic. For each measurement, the value of the Snellen fraction, letter score and LogMAR BCVA is recorded. For example:
 
 | Order | Measurement conditions                   | measurement_source_value            | measurement_concept_id |
 | ----- | ---------------------------------------- | ----------------------------------- | ---------------------- |
-| 1     | BCVA right eye (OD) Photopic             | Snellen fraction - Photopic VA - OD | 21491744               |
-| 2     | BCVA left eye (OS) Photopic              | Snellen fraction - Photopic VA - OS | 21491745               |
-| 3     | BCVA right eye (OD) Mesopic              | Snellen fraction - Mesopic VA - OD  | 21491744               |
-| 4     | BCVA left eye (OS) Mesopic               | Snellen fraction - Mesopic VA - OS  | 21491745               |
-| 5     | Snellen fraction right eye (OD) Photopic | VA Letter Score - Photopic VA - OD  | 21491740               |
-| 6     | Snellen fraction left eye (OS) Photopic  | VA Letter Score - Photopic VA - OS  | 21491741               |
-| 7     | Snellen fraction right eye (OD) Mesopic  | VA Letter Score - Mesopic VA - OD   | 21491740               |
-| 8     | Snellen fraction left eye (OS) Mesopic   | VA Letter Score - Mesopic VA - OS   | 21491741               |
+| 1     | Snellen fraction right eye (OD) Photopic | Snellen fraction - Photopic VA - OD | 2005200012             |
+| 2     | Snellen fraction left eye (OS) Photopic  | Snellen fraction - Photopic VA - OS | 2005200013             |
+| 3     | BCVA right eye (OD) Photopic             | VA Letter Score - Photopic VA - OD  | 2005200042             |
+| 4     | BCVA left eye (OS) Photopic              | VA Letter Score - Photopic VA - OS  | 2005200043             |
+| 5     | LogMAR score (OD) Photopic               | Photopic LogMAR OD Score            | 2005200052             |
+| 6     | LogMAR score (OS) Photopic               | Photopic LogMAR OS Score            | 2005200053             |
+| 7     | Snellen fraction right eye (OD) Mesopic  | Snellen fraction - Mesopic VA - OD  | 2005200054             |
+| 8     | Snellen fraction left eye (OS) Mesopic   | Snellen fraction - Mesopic VA - OS  | 2005200055             |
+| 9     | BCVA right eye (OD) Mesopic              | LLVA Letter Score - Mesopic VA - OD | 2005200056             |
+| 10    | BCVA left eye (OS) Mesopic               | LLVA Letter Score - Mesopic VA - OS | 2005200057             |
+| 11    | LogMAR score (OD) Mesopic                | Mesopic LogMAR OD Score             | 2005200336             |
+| 12    | LogMAR score (OS) Mesopic                | Mesopic LogMAR OS Score             | 2005200337             |
 
 ### MARS Letter Contrast Sensitivity
 
@@ -199,88 +205,102 @@ The .csv files are designed for easy opening in Python and/or Jupyter Notebooks.
 
 The measurement.csv is organized per subject (person_id) and within each subject block i.e. ~30 rows, each row corresponds to a different measurement type (measurement_concept_id) for that subject.
 
-| Data Element                  | Description                                                                                    | Example                     |
-| ----------------------------- | ---------------------------------------------------------------------------------------------- | --------------------------- |
-| measurement_id                | Identifier for the measurement record                                                          | 23                          |
-| person_id                     | Subject ID (serves as foreign key to the OMOP Persons table)                                   | 0000                        |
-| measurement_concept_id        | Concept identifier representing the type of measurement                                        | 4090077 (for LogMAR values) |
-| measurement_date              | Date of the measurement                                                                        | 2023-08-28                  |
-| measurement_datetime          | Date and time of the measurement                                                               | 2023-08-28 00:00:00         |
-| measurement_time              | Time of the measurement                                                                        | blank                       |
-| measurement_type_concept_id   | Concept identifier representing the type of measurement                                        | 32862                       |
-| operator_concept_id           | Concept identifier representing the operator involved in the measurement                       | 0                           |
-| value_as_number               | Numeric value of the measurement                                                               | 1.4                         |
-| value_as_concept_id           | Concept identifier representing the value of the measurement                                   | 0                           |
-| unit_concept_id               | Concept identifier representing the unit of measurement                                        | 0                           |
-| range_low                     | Lower range of normal values for the measurement                                               | blank                       |
-| range_high                    | Upper range of normal values for the measurement                                               | blank                       |
-| provider_id                   | Identifier for the healthcare provider                                                         | blank                       |
-| visit_occurrence_id           | Identifier for the measurement visit                                                           | 0                           |
-| visit_detail_id               | Identifier for additional details about the visit                                              | 0                           |
-| measurement_source_value      | Original value in the source data representing the measurement                                 | Refer to tables below\*      |
-| measurement_source_concept_id | Concept identifier in the source data representing the measurement                             | 0                           |
-| unit_source_value             | Original value in the source data representing the unit of measurement                         | blank                       |
-| unit_source_concept_id        | Concept identifier in the source data representing the unit of measurement                     | 0                           |
-| value_source_value            | Original value in the source data representing the measurement value                           | blank                       |
-| measurement_event_id          | Identifier for the specific event associated with the measurement                              | 0                           |
-| meas_event_field_concept_id   | Concept identifier representing the specific field being measured within the measurement event | 0                           |
+| Data Element                  | Description                                                                                    | Example                |
+| ----------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------- |
+| measurement_id                | Identifier for the measurement record                                                          | 23                     |
+| person_id                     | Subject ID (serves as foreign key to the OMOP Persons table)                                   | 0000                   |
+| measurement_concept_id        | Concept identifier representing the type of measurement                                        | Refer to table below\* |
+| measurement_date              | Date of the measurement                                                                        | 2023-08-28             |
+| measurement_datetime          | Date and time of the measurement                                                               | 2023-08-28 00:00:00    |
+| measurement_time              | Time of the measurement                                                                        | blank                  |
+| measurement_type_concept_id   | Concept identifier representing the type of measurement                                        | 32862                  |
+| operator_concept_id           | Concept identifier representing the operator involved in the measurement                       | 0                      |
+| value_as_number               | Numeric value of the measurement                                                               | 1.4                    |
+| value_as_concept_id           | Concept identifier representing the value of the measurement                                   | 0                      |
+| unit_concept_id               | Concept identifier representing the unit of measurement                                        | 0                      |
+| range_low                     | Lower range of normal values for the measurement                                               | blank                  |
+| range_high                    | Upper range of normal values for the measurement                                               | blank                  |
+| provider_id                   | Identifier for the healthcare provider                                                         | blank                  |
+| visit_occurrence_id           | Identifier for the measurement visit                                                           | 0                      |
+| visit_detail_id               | Identifier for additional details about the visit                                              | 0                      |
+| measurement_source_value      | Original value in the source data representing the measurement                                 | Refer to table below\* |
+| measurement_source_concept_id | Concept identifier in the source data representing the measurement                             | 0                      |
+| unit_source_value             | Original value in the source data representing the unit of measurement                         | blank                  |
+| unit_source_concept_id        | Concept identifier in the source data representing the unit of measurement                     | 0                      |
+| value_source_value            | Original value in the source data representing the measurement value                           | blank                  |
+| measurement_event_id          | Identifier for the specific event associated with the measurement                              | 0                      |
+| meas_event_field_concept_id   | Concept identifier representing the specific field being measured within the measurement event | 0                      |
 
-\*LogMAR CS values are stored in the following order: Right eye (OD) Photopic, Left eye (OS) Photopic, Right eye (OD) Mesopic, Left eye (OS) Mesopic
+\*LogMAR CS values are stored in the following order: Right eye (OD) Photopic, Left eye (OS) Photopic, Right eye (OD) Mesopic, Left eye (OS) Mesopic. Besides the log CS values, the value of the final correct letter and number of misses prior to stopping is recorded. The values are stored in this order: Right eye (OD) Photopic, Left eye (OS) Photopic, Right eye (OD) Mesopic, Left eye (OS) Mesopic. For example:
 
-| Order of Testing | Measurement conditions     | measurement_source_value     |
-| ----- | -------------------------- | ---------------------------- |
-| 1     | Right eye (OD) Photopic CS | OD: Log Contrast Sensitivity |
-| 2     | Left eye (OS) Photopic CS  | OS: Log Contrast Sensitivity |
-| 3     | Right eye (OD) Mesopic CS  | OD: Log Contrast Sensitivity |
-| 4     | Left eye (OS) Mesopic CS   | OS: Log Contrast Sensitivity |
-
-Besides the log CS values, the value of the final correct letter and number of misses prior to stopping is recorded. Measurement values are stored in this order: Right eye (OD) Photopic, Left eye (OS) Photopic, Right eye (OD) Mesopic, Left eye (OS) Mesopic. For example:
 <table>
   <thead>
     <tr>
       <th>Order of Testing</th>
       <th>Measurement conditions</th>
-      <th>procedure_source_value (measured value)</th>
+      <th>measurement_source_value</th>
+      <th>measurement_concept_id</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowSpan="2">1</td>
-      <td rowSpan="2">Photopic Right eye (OD) CS</td>
-      <td>OD: Value of final correct letter(1.44)</td>
+      <td rowSpan="3">1</td>
+      <td rowSpan="3">Right eye (OD) Photopic CS</td>
+      <td>OD: Value of final correct letter - Photopic, right eye</td>
+      <td>2005200338</td>
     </tr>
     <tr>
-      <td>OD: Number of misses prior to stopping(1.0)</td>
+      <td>OD: Number of misses prior to stopping - Photopic, right eye</td>
+      <td>2005200339</td>
     </tr>
     <tr>
-      <td rowSpan="2">2</td>
-      <td rowSpan="2">Photopic Left eye (OS) CS</td>
-      <td>OS: Value of final correct letter(1.44)</td>
+      <td>OD: Log Contrast Sensitivity - Photopic, right eye</td>
+      <td>2005200155</td>
     </tr>
     <tr>
-      <td>OS: Number of misses prior to stopping(1.0)</td>
+      <td rowSpan="3">2</td>
+      <td rowSpan="3">Left eye (OS) Photopic CS</td>
+      <td>OS: Value of final correct letter - Photopic, left eye</td>
+      <td>2005200340</td>
     </tr>
     <tr>
-      <td rowSpan="2">3</td>
-      <td rowSpan="2">Mesopic Right eye (OD) CS</td>
-      <td>OD: Value of final correct letter(1.28)</td>
+      <td>OS: Number of misses prior to stopping - Photopic, left eye</td>
+      <td>2005200341</td>
     </tr>
     <tr>
-      <td>OD: Number of misses prior to stopping(1.0)</td>
-    </tr>
-        <tr>
-      <td rowSpan="2">4</td>
-      <td rowSpan="2">Mesopic Left eye (OS) CS</td>
-      <td>OS: Value of final correct letter(1.44)</td>
+      <td>OS: Log Contrast Sensitivity - Photopic, left eye</td>
+      <td>2005200156</td>
     </tr>
     <tr>
-      <td>OS: Number of misses prior to stopping(1.0)</td>
+      <td rowSpan="3">3</td>
+      <td rowSpan="3">Right eye (OD) Mesopic CS</td>
+      <td>OD: Value of final correct letter - Mesopic, right eye</td>
+      <td>2005200486</td>
+    </tr>
+    <tr>
+      <td>OD: Number of misses prior to stopping - Mesopic, right eye</td>
+      <td>2005200487</td>
+    </tr>
+    <tr>
+      <td>OD: Log Contrast Sensitivity - Mesopic, right eye</td>
+      <td>2005200155</td>
+    </tr>
+    <tr>
+      <td rowSpan="3">4</td>
+      <td rowSpan="3">Left eye (OS) Mesopic CS</td>
+      <td>OS: Value of final correct letter - Mesopic, left eye</td>
+      <td>2005200488</td>
+    </tr>
+    <tr>
+      <td>OS: Number of misses prior to stopping - Mesopic, left eye</td>
+      <td>2005200489</td>
+    </tr>
+    <tr>
+      <td>OS: Log Contrast Sensitivity - Mesopic, left eye</td>
+      <td>2005200156</td>
     </tr>
   </tbody>
 </table>
-
-
-
 
 #### Metadata and Example Outputs (observation.csv)
 
@@ -309,7 +329,6 @@ The observation.csv data file is organized per subject (person_id) and within ea
 | value_source_value            | Source data value                                            | blank                                                     |
 | observation_event_id          | Observation event identifier                                 | 0                                                         |
 | obs_event_field_concept_id    | Observation event field concept                              | 0                                                         |
-
 
 import PageFeedback from '@site/src/components/PageFeedback';
 
