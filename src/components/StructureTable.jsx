@@ -40387,7 +40387,7 @@ export default function StructureTable() {
               margin-top: var(--ifm-list-item-margin);}
         .row{margin:0;}
         .col-sm-3.filter-container{
-        margin-right:3rem;}
+        margin-right:8rem;}
 
         .text-center.text-muted.record-count{padding-top:10px;font-size:small; min-width:20rem;text-align:start}
         .col-sm-5.col-sm-push-4{
