@@ -14,7 +14,7 @@ const StatsList = [
     text: `Data modalities collected`,
   },
   {
-    heading: '21,939',
+    heading: '21,669',
     text: 'Total number of data files',
   },
 
@@ -70,7 +70,7 @@ export default function HomepageFeatures() {
         </h1>
 
         <p className="snapshot mb-12 text-xl font-medium text-slate-600">
-          Key numbers from the current version of the dataset (v1.0)
+          Key numbers from the current version of the dataset (v1.0.0)
         </p>
 
         <div className={styles.stat}>
