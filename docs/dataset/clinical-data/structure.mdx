@@ -1,7 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 1
 title: OMOP Clinical Data Structure
 ---
+import StructureTable from '@site/src/components/StructureTable';
 
 ## Overview
 
@@ -121,7 +122,7 @@ For more specific information regarding the concept IDs used for AI-READI, the f
 
 ## Metadata on AI-READI OMOP Mappings
 
-Over 2000 concepts were mapped to the OMOP CDM for the AI-READI project, with metadata on the quality of the mappings provided. A document explaining the mappings and how each data element in the AI-READI dataset corresponds to OMOP concepts is provided in the table below.
+Over 2000 concepts were mapped to the OMOP CDM for the AI-READI project, with metadata on the quality of the mappings provided. A document explaining the mappings and how each data element in the AI-READI dataset corresponds to OMOP concepts is provided in the [table below](#omop-mapping-table).
 
 A Simple Standard for Sharing Ontological Mappings (SSSOM) Simple Knowledge Organization System (SKOS) categorizations were provided to denote the relationship between each concept and mapping (e.g. exact, close, narrow, broad, related) as well as the confidence level of the mapping (0-100%). Providing such metadata on the quality of the mappings improves transparency on the quality of the mappings and helps ensure they adhere to FAIR data principles.
 
@@ -133,6 +134,9 @@ Resources to learn more about SSSOM:
 - [SSSOM - Which mapping predicate should I choose? Cheat sheet](https://oboacademy.github.io/obook/images/mapping-predicates-cheatsheet.png)
 - [A Simple Standard for Sharing Ontological Mappings (SSSOM)](https://academic.oup.com/database/article/doi/10.1093/database/baac035/6591806#355913738)
 
+### OMOP Mapping Table
+
+<StructureTable />
 import PageFeedback from '@site/src/components/PageFeedback';
 
 <PageFeedback />
