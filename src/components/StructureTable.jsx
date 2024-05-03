@@ -82,11 +82,7 @@ export default function StructureTable() {
       SRC_CODE_ID: '',
       SRC_CD_DESCRIPTION: 'Recruitment survey date (date survey/form opened)',
       'Choices, Calculations, OR Slider Labels From REDCap CODEBOOK': '',
-      TARGET_CONCEPT_ID: (
-        <a href="https://athena.ohdsi.org/search-terms/terms/3039611" target="_blank" rel="noreferrer">
-          3039611
-        </a>
-      ),
+      TARGET_CONCEPT_ID: 3039611,
       LOCAL_CONCEPT_ID: '',
       TARGET_CONCEPT_NAME: 'Survey reporting period start date',
       TARGET_DOMAIN_ID: 'Observation',
