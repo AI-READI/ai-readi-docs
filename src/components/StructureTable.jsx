@@ -232,7 +232,7 @@ export default function StructureTable() {
                 fields={fields}
                 noRecordsMessage="No match found."
                 noFilteredRecordsMessage="No match found."
-                pageSizes={[10, 20, 30, 50, 100, 1796]}
+                pageSizes={[10, 20, 30, 50, 100, 1781]}
                 pageSize={10}
               />
             </div>
