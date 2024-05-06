@@ -12,16 +12,13 @@ export default function ClinicalLabTable() {
         'NT-proBNP is used to diagnose and monitor heart failure, reflecting heart stress.',
       Units: 'pg/mL',
       'Unit Description': 'Picograms per milliliter (pg/mL)',
-      'Reference Interval': (
-        <div>
-          <a href="#nt-probnp-reference-intervals">See table below</a>
-          <div>called &quot;NT-proBNP Reference Intervals&quot;.</div>
-        </div>
-      ),
+      'Reference Interval': 'See table below called NT-proBNP Reference Intervals.',
       'Collection Method': 'Blood draw from a vein',
       LOINC: '33762-6',
       Reference: 'NORC Clinical Lab Tests',
       measurement_source_value: 'NT-proBNP (pg/mL)',
+      table: 'nt-probnp-reference-intervals',
+      tableName: 'NT-proBNP Reference Intervals',
     },
     {
       Test: 'Troponin-T',
@@ -280,16 +277,13 @@ export default function ClinicalLabTable() {
         'Enzyme linked to liver and bone health; high levels may indicate liver or bone disorders.',
       Units: 'IU/L',
       'Unit Description': 'International Units per liter (IU/L)',
-      'Reference Interval': (
-        <div>
-          <a href="#alkaline-phosphatase-reference-ranges">See table below</a>
-          <div>called &quot;Alkaline Phosphatase reference ranges&quot;.</div>
-        </div>
-      ),
+      'Reference Interval': 'See table below called Alkaline Phosphatase reference ranges.',
       'Collection Method': 'Blood draw',
       LOINC: '6768-6',
       Reference: 'NORC Clinical Lab Tests',
       measurement_source_value: 'Alkaline Phosphatase (IU/L)',
+      table: 'alkaline-phosphatase-reference-ranges',
+      tableName: 'Alkaline Phosphatase reference ranges',
     },
     {
       Test: 'AST',
@@ -352,6 +346,21 @@ export default function ClinicalLabTable() {
     },
   ];
 
+  const renderReferenceInterval = (props) => {
+    const { value, record } = props;
+
+    const isTable = record.table && record.tableName;
+
+    return !isTable ? (
+      <span>{value}</span>
+    ) : (
+      <div>
+        <span>See table below called </span>
+        <a href={`#${record.table}`}>{record.tableName}</a>
+      </div>
+    );
+  };
+
   // Fields to show in the table, and what object properties in the data they bind to
   const fields = [
     {
@@ -383,6 +392,7 @@ export default function ClinicalLabTable() {
       displayName: 'Reference Interval',
       inputFilterable: true,
       sortable: true,
+      render: renderReferenceInterval,
     },
     {
       name: 'Collection Method',
@@ -410,12 +420,12 @@ export default function ClinicalLabTable() {
     },
   ];
 
-  const customRender = ({ rowIndex, field }) => {
-    if (field === 'Reference Interval' && data[rowIndex][field] === 'See table below') {
-      return <a href="#nt-probnp-reference-intervals">See table below</a>;
-    }
-    return data[rowIndex][field];
-  };
+  // const customRender = ({ rowIndex, field }) => {
+  //   if (field === 'Reference Interval' && data[rowIndex][field] === 'See table below') {
+  //     return <a href="#nt-probnp-reference-intervals">See table below</a>;
+  //   }
+  //   return data[rowIndex][field];
+  // };
 
   return (
     <BrowserOnly>
@@ -452,7 +462,6 @@ export default function ClinicalLabTable() {
               <FilterableTable
                 fields={fields}
                 pageSize={50}
-                render={customRender}
                 data={data}
                 pageSizes={[40, 40, 30, 50]}
                 noRecordsMessage="No match found."
