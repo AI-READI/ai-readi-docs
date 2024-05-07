@@ -67,8 +67,8 @@ Data was exported from the RedCap Survey that was filled by clinical personnel i
 
 ```
 pilot_data_root
-  clinical_data
-    measurement.csv
+└── clinical_data
+   └── measurement.csv
 ```
 
 | Domain | Variable        | Data Capture       | Method | Data Standard/File Extension | Open Source vs. Protected Database? |
@@ -83,13 +83,11 @@ The OMOP (Observational Medical Outcomes Partnership) data standard, developed b
 
 Reference : https://ohdsi.github.io/CommonDataModel/
 
-File Processing
+#### File Processing
 
 The .csv file can be opened and processed using notebook application or any coding language example:( Python, R). Here is a snippet code to extract HbA1c.
 
-```
-Code Example : Extract HbA1C
-Syntax : python
+```python
 
 import pandas as pd
 
@@ -109,7 +107,6 @@ hba1c_df = hba1c_df[['person_id', 'value_as_number', 'measurement_source_value']
 hba1c_df.to_csv('hba1c.csv', index=False)
 
 print(‘ Data saved to hba1c.csv')
-
 
 ```
 
