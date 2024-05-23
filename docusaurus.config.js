@@ -66,7 +66,7 @@ export default {
           alt: 'My Site Logo',
           src: 'https://fairdataihub.org/images/hero/aireadi-logo.png',
         },
-        hideOnScroll: false,
+        hideOnScroll: true,
         items: [
           {
             type: 'docsVersionDropdown',
@@ -78,7 +78,7 @@ export default {
             position: 'right',
           },
           {
-            href: '/docs/1/contact',
+            href: 'https://aireadi.org/contact',
             label: 'Contact Us',
             position: 'right',
           },
@@ -162,7 +162,6 @@ export default {
           content: 'summary_large_image',
         },
       ],
-      scripts: [],
       headTags: [
         {
           tagName: 'link',
