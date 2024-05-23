@@ -1,7 +1,6 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
 import Lottie from 'react-lottie';
-import { Icon } from '@iconify/react';
 
 import LikeAnimationData from './lotties/like.json';
 import DislikeAnimationData from './lotties/dislike.json';
@@ -217,15 +216,6 @@ function PageFeedback() {
           setShowTextFeedback={setShowTextFeedback}
         />
       )}
-
-      <hr className="w-2/5 mx-auto  bg-sky-200" />
-
-      <div className="flex justify-center items-center space-x-2 pt-1">
-        <Icon icon="lucide:badge-info" />
-        <a href="/docs/1/contact" className="">
-          <h4 className="mb-0">I have more feedback!</h4>
-        </a>
-      </div>
 
       {showTextFeedback && (
         <div className="flex justify-center space-x-2 pt-1">
