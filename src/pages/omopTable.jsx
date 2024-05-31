@@ -201,8 +201,7 @@ export default function StructureTable() {
                 background-color: #337ab7;
                 border-color: #337ab7;}
         .pagination li.btn-numbered-page.active a{color:#fff;}
-          .btn-first-page{height: 38px;
-              margin-top: var(--ifm-list-item-margin);}
+          .btn-first-page{height: 38px;}
         .row{margin:0;}
         .col-sm-3.filter-container{
         margin-right:8rem;}
@@ -225,6 +224,7 @@ export default function StructureTable() {
             </style>
           </head>
           <body>
+            <h1 className="m-8">OMOP Mapping Table</h1>
             <div className="max-w-xl:max-h-[400px] m-8 gap-8 overflow-auto">
               <FilterableTable
                 initialSort="Data Element"
@@ -232,8 +232,8 @@ export default function StructureTable() {
                 fields={fields}
                 noRecordsMessage="No match found."
                 noFilteredRecordsMessage="No match found."
-                pageSizes={[10, 20, 30, 50, 100, 1781]}
-                pageSize={10}
+                pageSizes={[30, 50, 100, 1781]}
+                pageSize={30}
               />
             </div>
           </body>
