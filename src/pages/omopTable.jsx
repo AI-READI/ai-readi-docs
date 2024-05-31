@@ -225,7 +225,7 @@ export default function StructureTable() {
           </head>
           <body>
             <h1 className="m-8">OMOP Mapping Table</h1>
-            <div className="max-w-xl:max-h-[400px] m-8 gap-8 overflow-auto">
+            <div className="max-w-xl:max-h-[400px] m-16 gap-8 overflow-auto">
               <FilterableTable
                 initialSort="Data Element"
                 data={MappingsJSON}
