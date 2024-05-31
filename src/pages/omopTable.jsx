@@ -161,7 +161,6 @@ export default function StructureTable() {
               .row.header-row:nth-child(1){display:
               flex;
               gap: 10px;
-              padding-top: 2rem;
               }
               .form-control.filter-input,
               .form-control.pull-sm-right.pull-md-right.pull-lg-right
@@ -224,7 +223,7 @@ export default function StructureTable() {
             </style>
           </head>
           <body>
-            <h1 className="m-8">OMOP Mapping Table</h1>
+            <h1 className="mt-16 ml-16">OMOP Mapping Table</h1>
             <div className="max-w-xl:max-h-[400px] m-16 gap-8 overflow-auto">
               <FilterableTable
                 initialSort="Data Element"
