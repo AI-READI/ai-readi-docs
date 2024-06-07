@@ -3,6 +3,7 @@
 import React from 'react';
 import FilterableTable from 'react-filterable-table';
 // eslint-disable-next-line import/no-unresolved
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 import MappingsJSON from '../../static/json/mappings.json';
 
@@ -126,20 +127,24 @@ export default function StructureTable() {
   ];
 
   return (
-    <div>
-      <h1 className="m-6">OMOP Mapping Table</h1>
-      <div className="overflow-auto max-h-screen m-6">
-        <FilterableTable
-          className="text-sm w-full"
-          initialSort="Data Element"
-          data={MappingsJSON}
-          fields={fields}
-          noRecordsMessage="No match found."
-          noFilteredRecordsMessage="No match found."
-          pageSizes={[10, 30, 50, 100, 1781]}
-          pageSize={10}
-        />
-      </div>
-    </div>
+    <BrowserOnly>
+      {() => (
+        <div>
+          <h1 className="m-6">OMOP Mapping Table</h1>
+          <div className="overflow-auto max-h-screen m-6">
+            <FilterableTable
+              className="text-sm w-full"
+              initialSort="Data Element"
+              data={MappingsJSON}
+              fields={fields}
+              noRecordsMessage="No match found."
+              noFilteredRecordsMessage="No match found."
+              pageSizes={[10, 30, 50, 100, 1781]}
+              pageSize={10}
+            />
+          </div>
+        </div>
+      )}
+    </BrowserOnly>
   );
 }
