@@ -255,3 +255,7 @@ html[data-theme='dark'] .button {
   background: #e0f2fe;
   cursor: pointer;
 }
+
+.filterable-table-container {
+  font-size: 0.75rem;
+}
