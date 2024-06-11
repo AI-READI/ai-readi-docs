@@ -306,9 +306,9 @@ nav:nth-child(2) .pagination {
   background: var(--table-header-color);
 }
 
-#__docusaurus:has(.main-wrapper .omop-filtered-table) .footer--dark {
-  display: none;
-}
+/*#__docusaurus:has(.main-wrapper .omop-filtered-table) .footer--dark {*/
+/*  display: none;*/
+/*}*/
 
 .table.table-condensed.filterable-table tbody td {
   width: 16rem !important;
