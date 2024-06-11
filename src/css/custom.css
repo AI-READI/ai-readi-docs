@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 /* You can override the default Infima variables here. */
@@ -20,6 +21,7 @@ html {
   --ifm-color-primary-darker: #185796;
   --ifm-color-primary-darkest: #14477b;
   --ifm-link-color: #2e7a99;
+  --table-header-color: #f3f4f6;
 
   --ifm-toc-link-color: #94a3b8;
 
@@ -212,6 +214,10 @@ html[data-theme='dark'] .button {
   justify-content: flex-start;
 }
 
+nav:nth-child(2) .pagination {
+  display: none;
+}
+
 .pagination li a {
   color: #777;
   background-color: #fff;
@@ -258,4 +264,58 @@ html[data-theme='dark'] .button {
 
 .filterable-table-container {
   font-size: 0.75rem;
+}
+
+.omop-filtered-table {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  height: 100vh;
+}
+
+.omop-filtered-table h1 {
+  margin: 2rem;
+}
+
+.filteredTable {
+  flex-grow: 1;
+  flex-basis: 0;
+  z-index: 100;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+
+.filteredTable div:has(.row.header-row) {
+  margin: 2rem;
+}
+
+.omop-filtered-table .filteredTable .table-container {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.table.table-condensed.filterable-table {
+  border-collapse: collapse;
+  position: relative;
+}
+
+.table.table-condensed.filterable-table th {
+  position: sticky;
+  top: 0;
+  background: var(--table-header-color);
+}
+
+/*.table.table-condensed.filterable-table tr td:last-child*/
+/*{*/
+/*    border-right: none;*/
+/*}*/
+
+/*.table.table-condensed.filterable-table  tr:last-child td*/
+/*{*/
+/*    border-bottom: none;*/
+/*}*/
+
+#__docusaurus:has(.main-wrapper .omop-filtered-table) .footer--dark {
+  display: none;
 }

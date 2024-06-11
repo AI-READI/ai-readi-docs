@@ -129,20 +129,18 @@ export default function StructureTable() {
   return (
     <BrowserOnly>
       {() => (
-        <div>
-          <h1 className="m-6">OMOP Mapping Table</h1>
-          <div className="overflow-auto max-h-screen m-6">
-            <FilterableTable
-              className="text-sm w-full"
-              initialSort="Data Element"
-              data={MappingsJSON}
-              fields={fields}
-              noRecordsMessage="No match found."
-              noFilteredRecordsMessage="No match found."
-              pageSizes={[10, 30, 50, 100, 1781]}
-              pageSize={10}
-            />
-          </div>
+        <div className="omop-filtered-table">
+          <h1 className="header">OMOP Mapping Table</h1>
+          <FilterableTable
+            className="filteredTable"
+            initialSort="Data Element"
+            data={MappingsJSON}
+            fields={fields}
+            noRecordsMessage="No match found."
+            noFilteredRecordsMessage="No match found."
+            pageSizes={[10, 30, 50, 100, 1781]}
+            pageSize={10}
+          />
         </div>
       )}
     </BrowserOnly>
