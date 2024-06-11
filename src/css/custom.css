@@ -306,16 +306,15 @@ nav:nth-child(2) .pagination {
   background: var(--table-header-color);
 }
 
-/*.table.table-condensed.filterable-table tr td:last-child*/
-/*{*/
-/*    border-right: none;*/
-/*}*/
-
-/*.table.table-condensed.filterable-table  tr:last-child td*/
-/*{*/
-/*    border-bottom: none;*/
-/*}*/
-
 #__docusaurus:has(.main-wrapper .omop-filtered-table) .footer--dark {
   display: none;
+}
+
+.table.table-condensed.filterable-table tbody td {
+  width: 16rem !important;
+  max-width: 16rem !important;
+}
+
+.table.table-condensed.filterable-table td span {
+  max-width: 16rem !important;
 }
