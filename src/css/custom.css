@@ -302,7 +302,7 @@ nav:nth-child(2) .pagination {
 
 .table.table-condensed.filterable-table th {
   position: sticky;
-  top: 60px;
+  top: 0;
   background: var(--table-header-color);
 }
 
