@@ -16,7 +16,9 @@ export default function ClinicalLabTable() {
     ) : (
       <div>
         <span>See table below called </span>
-        <a href={`#${record.table}`}>{record.tableName}</a>
+        <a href={`/docs/1/dataset/clinical-data/clinical-lab-tests/#${record.table}`}>
+          {record.tableName}
+        </a>
       </div>
     );
   };
