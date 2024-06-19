@@ -129,7 +129,7 @@ export default function StructureTable() {
   return (
     <BrowserOnly>
       {() => (
-        <div className="omop-filtered-table">
+        <div className="filtered-table">
           <h1 className="header">OMOP Mapping Table</h1>
           <FilterableTable
             className="filteredTable"
