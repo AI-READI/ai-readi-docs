@@ -91,6 +91,7 @@ export default function ClinicalLabTable() {
     <BrowserOnly>
       {() => (
         <div className="filtered-table">
+          <h1 className="header">Data Domain Table</h1>
           <FilterableTable
             className="filteredTable"
             fields={fields}

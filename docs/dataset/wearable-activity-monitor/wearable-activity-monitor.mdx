@@ -1058,34 +1058,36 @@ Stress: The negative stress values (-1 & -2) originate from the source, possibly
 
 There may be cases in which certain participants do not have certain files, e.g have no measurement file for sleep data. In these cases, the file path will display "none." However, there are also instances where a measurement file exists, but it contains no observations, similar to having data with no meaningful content.
 
-| Metadata Elements              | Description                                                    | Example                                                                                        |
-| ------------------------------ | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| participant_id                 | Identification number of study participant                     | 0000                                                                                           |
-| wrist_worn_on                  | Which wrist the fitness tracker was worn on by the participant | Left                                                                                           |
-| dominant_hand                  | Participants dominant hand                                     | Right hand                                                                                     |
-| heartrate_filename             | Filename containing participants heart rate data               | /wearable_activity_monitor/heart_rate/garmin_vivosmart5/1043/0000_heartrate.json               |
-| heartrate_record_count         | Total number of heart rate measurements recorded               | 15780                                                                                          |
-| average_heartrate_bpm          | Average heart rate during the recording period                 | 79.35743649                                                                                    |
-| oxygen_saturation_filename     | Filename containing participants oxygen saturation (SpO2) data | /wearable_activity_monitor/oxygen_saturation/garmin_vivosmart5/0000/0000_oxygensaturation.json |
-| oxygen_saturation_record_count | Total number of SpO2 measurements recorded                     | 2094                                                                                           |
-| average_oxygen_saturation_pct  | Average SpO2 during the recording period                       | 91.71%                                                                                         |
-| stress_level_filename          | Filename containing participants stress level data             | /wearable_activity_monitor/stress/garmin_vivosmart5/0000/0000_stress.json                      |
-| stress_level_record_count      | Total number of stress level measurements recorded             | 24659                                                                                          |
-| average_stress_level           | Average stress levels during the recording period              | 15.37                                                                                          |
-| sleep_filename                 | Filename containing participants sleep data                    | /wearable_activity_monitor/sleep/garmin_vivosmart5/0000/0000_sleep.json                        |
-| sleep_record_count             | Total number of sleep measurements recorded                    | 12                                                                                             |
-| average_sleep_hours            | Average sleep duration during the recording period             | 7.25                                                                                           |
-| respiratory_rate_filename      | Filename containing participants respiratory rate data         | /wearable_activity_monitor/respiratory_rate/garmin_vivosmart5/0000/0000_respiratoryrate.json   |
-| respiratory_rate_record_count  | Total number of respiratory rate measurements recorded         | 2164                                                                                           |
-| average_respiratory_rate_bpm   | Average respiratory rate during the recording period           | 27.02                                                                                          |
-| physical_activity_filename     | Filename containing participants physical activity data        | /wearable_activity_monitor/physical_activity/garmin_vivosmart5/0000/0000_activity.json         |
-| physical_activity_num_records  | Total number of measurements recorded                          | 5524                                                                                           |
-| average_daily_activity         | Average number of steps during the recording period            | 7897.21                                                                                        |
-| active_calories_filename       | Filename containing participants active calories data          | /wearable_activity_monitor/physical_activity_calorie/garmin_vivosmart5/0000/0000_calorie.json  |
-| active_calories_record_count   | Total number of calorie measurements recorded                  | 1773                                                                                           |
-| average_active_calories_kcal   | Average number of calories burned during the recording period  | 194.11                                                                                         |
-| sensor_sampling_duration_days  | How many days the participant wore the fitness tracker         | 12                                                                                             |
-| fitness_manufacturer_model     | Model of the fitness tracker                                   | Garmin Vivosmart 5                                                                             |
+<a href="/fileProcessingTable" target="_blank">See the table here</a>
+
+<!-- | Metadata Elements              | Description                                                    | Example                                                                                        | -->
+<!-- | ------------------------------ | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | -->
+<!-- | participant_id                 | Identification number of study participant                     | 0000                                                                                           | -->
+<!-- | wrist_worn_on                  | Which wrist the fitness tracker was worn on by the participant | Left                                                                                           | -->
+<!-- | dominant_hand                  | Participants dominant hand                                     | Right hand                                                                                     | -->
+<!-- | heartrate_filename             | Filename containing participants heart rate data               | /wearable_activity_monitor/heart_rate/garmin_vivosmart5/1043/0000_heartrate.json               | -->
+<!-- | heartrate_record_count         | Total number of heart rate measurements recorded               | 15780                                                                                          | -->
+<!-- | average_heartrate_bpm          | Average heart rate during the recording period                 | 79.35743649                                                                                    | -->
+<!-- | oxygen_saturation_filename     | Filename containing participants oxygen saturation (SpO2) data | /wearable_activity_monitor/oxygen_saturation/garmin_vivosmart5/0000/0000_oxygensaturation.json | -->
+<!-- | oxygen_saturation_record_count | Total number of SpO2 measurements recorded                     | 2094                                                                                           | -->
+<!-- | average_oxygen_saturation_pct  | Average SpO2 during the recording period                       | 91.71%                                                                                         | -->
+<!-- | stress_level_filename          | Filename containing participants stress level data             | /wearable_activity_monitor/stress/garmin_vivosmart5/0000/0000_stress.json                      | -->
+<!-- | stress_level_record_count      | Total number of stress level measurements recorded             | 24659                                                                                          | -->
+<!-- | average_stress_level           | Average stress levels during the recording period              | 15.37                                                                                          | -->
+<!-- | sleep_filename                 | Filename containing participants sleep data                    | /wearable_activity_monitor/sleep/garmin_vivosmart5/0000/0000_sleep.json                        | -->
+<!-- | sleep_record_count             | Total number of sleep measurements recorded                    | 12                                                                                             | -->
+<!-- | average_sleep_hours            | Average sleep duration during the recording period             | 7.25                                                                                           | -->
+<!-- | respiratory_rate_filename      | Filename containing participants respiratory rate data         | /wearable_activity_monitor/respiratory_rate/garmin_vivosmart5/0000/0000_respiratoryrate.json   | -->
+<!-- | respiratory_rate_record_count  | Total number of respiratory rate measurements recorded         | 2164                                                                                           | -->
+<!-- | average_respiratory_rate_bpm   | Average respiratory rate during the recording period           | 27.02                                                                                          | -->
+<!-- | physical_activity_filename     | Filename containing participants physical activity data        | /wearable_activity_monitor/physical_activity/garmin_vivosmart5/0000/0000_activity.json         | -->
+<!-- | physical_activity_num_records  | Total number of measurements recorded                          | 5524                                                                                           | -->
+<!-- | average_daily_activity         | Average number of steps during the recording period            | 7897.21                                                                                        | -->
+<!-- | active_calories_filename       | Filename containing participants active calories data          | /wearable_activity_monitor/physical_activity_calorie/garmin_vivosmart5/0000/0000_calorie.json  | -->
+<!-- | active_calories_record_count   | Total number of calorie measurements recorded                  | 1773                                                                                           | -->
+<!-- | average_active_calories_kcal   | Average number of calories burned during the recording period  | 194.11                                                                                         | -->
+<!-- | sensor_sampling_duration_days  | How many days the participant wore the fitness tracker         | 12                                                                                             | -->
+<!-- | fitness_manufacturer_model     | Model of the fitness tracker                                   | Garmin Vivosmart 5                                                                             | -->
 
 import PageFeedback from '@site/src/components/PageFeedback';
 
