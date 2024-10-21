@@ -39,7 +39,6 @@ export default {
             },
             current: {
               label: `2.0.0 (next)`,
-              path: '2',
             },
           },
         },
