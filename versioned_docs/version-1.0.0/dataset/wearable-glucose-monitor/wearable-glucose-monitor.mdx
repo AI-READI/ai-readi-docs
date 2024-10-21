@@ -1,0 +1,334 @@
+---
+sidebar_position: 12
+title: Continuous glucose monitor
+---
+
+# Continuous Glucose Monitor-Dexcom G6
+
+## Overview of Data Domain
+
+The Dexcom G6 is a real-time, integrated continuous glucose monitoring system (iCGM) that directly monitors blood glucose levels without requiring finger pricks. The device must be worn continuously in order to collect data day and night. A tiny filament called a glucose sensor is inserted under the skin to measure glucose levels in tissue fluid. This filament remains under the skin while it is worn. The internal sensor is connected to the transmitter that sits on top of the skin. The battery life for the transmitter is sufficient to power the system for three months. It is approximately the size of a quarter and adheres to the skin with medical tape. The Dexcom G6 **Continuous Glucose Monitor (CGM)** captures blood glucose readings every **five minutes** using this sensor. A single sensor is designed to last for a maximum of ten days, after which time the Dexcom G6 will require the insertion of a new sensor. The G6 transmitter will only save data for thirty days, therefore the data must be downloaded within thirty days from activation or all data will be lost.
+
+In the AI-READI program, we have asked the research participants to wear the Dexcom CGM for ten days concurrently with wearing the Garmin Activity Monitor and using the home environmental sensor.
+
+More information about Dexcom G6 can be found here: https://www.dexcom.com/en-us/g6/how-it-works
+
+## Data Processing
+
+### File Format
+
+CGM data are in JSON format. Any software system or libraries designed to load and process JSON files will be able to access this data. The data can be loaded using the Python PANDAS libraries and if desired Jupyter Notebooks. There are many software libraries that can alternatively load JSON files if users have differing preferences, but our example code uses these libraries. Example code can be found here in the server: /Data/z_example_code/explore_cgm.ipynb
+
+File organization is expected to follow this pattern:
+
+```
+pilot_data_root
+└── wearable_blood_glucose
+    ├── manifest.tsv
+    └── continuous_glucose_monitoring
+        └── dexcom_g6
+            ├── 0001
+            │   └── 0001_DEX.json
+            ├── 0002
+            │   └── 0002_DEX.json
+            └── ... etc.
+```
+
+| Domain                        | Variable             | Method    | Data Standard/ File Extension | Open Source vs. Protected Database? |
+| ----------------------------- | -------------------- | --------- | ----------------------------- | ----------------------------------- |
+| Continuous Glucose Monitoring | blood glucose levels | Dexcom G6 | mHealth json                  | Open source                         |
+
+### Data Structure
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th colSpan={2}> </th>
+      <th> Description</th>
+      <th> Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowSpan={13}>root</td>
+      <td rowSpan={3}>header</td>
+      <td colSpan={2}>uuid</td>
+      <td> Universally Unique IDentifier</td>
+      <td>AIREADI-1234</td>
+    </tr>
+    <tr>
+      <td colSpan={2}> creation_date_time</td>
+      <td> Time of CGM reading</td>
+      <td>2023-08-08T21:15:10+00:00</td>
+    </tr>
+    <tr>
+      <td colSpan={2}>patient_id </td>
+      <td> Identification number of patient</td>
+      <td>AIREADI-1234</td>
+    </tr>
+    <tr>
+      <td rowSpan={3}>schema_id </td>
+      <td colSpan={2}>namespace </td>
+      <td>The namespace of the schema to disambiguate schemas with conflicting names </td>
+      <td>omh</td>
+    </tr>
+    <tr>
+      <td colSpan={2}>name </td>
+      <td>Name of schema </td>
+      <td>blood-glucose</td>
+    </tr>
+    <tr>
+      <td colSpan={2}> version</td>
+      <td> Version of schema</td>
+      <td>3 </td>
+    </tr>
+    <tr>
+      <td>modality </td>
+      <td colSpan={2}> </td>
+      <td>
+        This modality involves a small, wearable sensor that measures glucose levels in the
+        interstitial fluid just beneath the skin
+      </td>
+      <td>sensed</td>
+    </tr>
+    <tr>
+      <td rowSpan={3}> acquisition_rate</td>
+      <td colSpan={2}>number_of_times </td>
+      <td> Frequency of reading in a specific time window</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowSpan="2"> time_window</td>
+      <td>value </td>
+      <td> Value of time window</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td> unit</td>
+      <td>Unit of time window </td>
+      <td>min</td>
+    </tr>
+    <tr>
+      <td rowSpan={2}>external_datasheets </td>
+      <td colSpan={2}>datasheet_type</td>
+      <td rowSpan="2">
+        The term IRI stands for Internationalized Resource Identifier, a unique sequence of
+        characters used to identify a resource. In this context, iri-of-cgm-device serves as a
+        placeholder for an IRI that would point to a datasheet or documentation about a CGM device
+        on the AI-READI website, directing users to the site. We plan to update it with the actual
+        URL in the next phase. It is important to note this is a placeholder, but its use can be
+        extended to cover other datasheets, including those featuring AI algorithms. For more
+        information, refer to the following documentation: [IEEE 1752 Working Group
+        CardioRespiratory
+        slides](https://sagroups.ieee.org/1752/wp-content/uploads/sites/277/2022/04/2022-04-28-1752-CardioRespiratory-slides.pdf).
+      </td>
+      <td>source_device</td>
+    </tr>
+    <tr>
+      <td colSpan={2}> datasheet_reference </td>
+      <td>iri-of-cgm-device</td>
+    </tr>
+    <tr>
+      <td>timezone* </td>
+      <td colSpan={2}> </td>
+      <td>Participant's time zone </td>
+      <td>PST (Pacific Standard Timezone)</td>
+    </tr>
+    <tr>
+      <td rowSpan="9"> body</td>
+      <td rowSpan="4"> effective_time_frame</td>
+      <td rowSpan={2}>
+        time_interval <sup>1</sup>
+      </td>
+      <td>start_date_time </td>
+      <td>Time of CGM reading</td>
+      <td>2023-08-08T21:15:10Z</td>
+    </tr>
+    <tr>
+      <td> end_date_time</td>
+      <td>Time of CGM reading </td>
+      <td>2023-08-08T21:15:10Z</td>
+    </tr>
+    <tr>
+      <td colSpan={2}> event_type</td>
+      <td>
+        Estimated Glucose Value<sup>2</sup>
+      </td>
+      <td>EGV </td>
+    </tr>
+    <tr>
+      <td colSpan={2}>source_service_id </td>
+      <td>Glucose sensor ID </td>
+      <td>AB12345678</td>
+    </tr>
+    <tr>
+      <td rowSpan={2}>blood_glucose </td>
+      <td colSpan={2}> unit</td>
+      <td> Unit of CGM reading</td>
+      <td>mg/dL</td>
+    </tr>
+    <tr>
+      <td colSpan={2}> value**</td>
+      <td> Value of CGM reading</td>
+      <td> 138</td>
+    </tr>
+    <tr>
+      <td rowSpan={2}>transmitter_time</td>
+      <td colSpan={2}> unit</td>
+      <td>Unit of transmitter timeg</td>
+      <td>long integer</td>
+    </tr>
+    <tr>
+      <td colSpan={2}>value </td>
+      <td> Value of transmitter time</td>
+      <td>7573</td>
+    </tr>
+    <tr>
+      <td>transmitter_id</td>
+      <td colSpan={2}> </td>
+      <td>Transmitter ID</td>
+      <td>123ABC</td>
+    </tr>
+  </tbody>
+</table>
+
+<sup>1</sup>**Time_interval**: The raw file contains singular timestamped entries, representing CGM
+readings at specific times. These readings were recorded at five-minute intervals increasing by 300
+seconds with each new entry. The format for CGM/Dexcom G6 incorporates both start and end times,
+which allows it to accommodate a wider range of devices and data types such as heart rate and steps.
+Given that each value corresponds to a specific datetime, the start and end times are identical.
+
+<sup>1</sup>**EGV**: Estimated Glucose Value. An “EGV event” essentially captures any significant
+data point or occurrence tracked by the CGM system in relation to estimated glucose levels.
+
+## Data Standards
+
+### AI-READI wearable Data Processing Pipeline
+
+Wearable data files have been standardized based on an extended model derived from the Open mHealth schema. The Open mHealth standard for wearables offers a comprehensive framework and guidelines designed to enhance interoperability and data exchange between wearable devices and mobile health (mHealth) applications. This initiative aims to streamline the integration of health data from diverse sources, fostering innovation and enabling personalized healthcare solutions.
+
+More information can be found here:
+
+- Open mHealth Storage Endpoint Github repository:
+
+  https://github.com/openmhealth/omh-dsu-ri
+
+- Overview of Open mHealth:
+
+  https://www.openmhealth.org/documentation/#/overview/get-started
+
+- Standards extension
+
+  Here is a sample data format for Blood Glucose from Open mHealth:
+
+  https://www.openmhealth.org/documentation/#/schema-docs/schema-library/schemas/omh_blood-glucose
+
+  ```json
+  {
+    "blood_glucose": {
+      "unit": "mg/dL",
+      "value": 95
+    },
+    "effective_time_frame": {
+      "time_interval": {
+        "start_date_time": "2013-02-05T07:25:00Z",
+        "end_date_time": "2013-06-05T07:25:00Z"
+      }
+    },
+    "specimen_source": "capillary blood",
+    "temporal_relationship_to_meal": "fasting",
+    "temporal_relationship_to_sleep": "on waking",
+    "descriptive_statistic": "minimum"
+  }
+  ```
+
+  Additionally, here is a sample data format from a Dexcom Continuous Glucose Monitor (CGM):
+
+  ```json
+  {
+    "timestamp": "YYYY-MM-DDThh:mm:ss",
+    "event_type": "event type",
+    "event_subtype": "event subtype",
+    "patient_info": "patient info",
+    "device_info": "device info",
+    "source_device_id": "source device ID",
+    "glucose_value": "mg/dL",
+    "insulin_value": "u",
+    "carb_value": "grams",
+    "duration": "hh:mm:ss",
+    "glucose_rate_of_change": "mg/dL/min",
+    "transmitter_time": "long integer",
+    "transmitter_id": "transmitter ID"
+  }
+  ```
+
+  To accommodate Dexcom data, we have extended the blood_glucose template as follows:
+
+  ```
+  {
+    "header": {
+      "uuid": "AIREADI-XYZ",
+      "creation_date_time": "YYYY-MM-DDThh:mm:ss",
+      "patient_id": "AIREADI-XYZ",
+      "schema_id": {
+        "namespace": "omh",
+        "name": "blood-glucose",
+        "version": 3.0
+      },
+      "modality": "sensed",
+      "acquisition_rate": {
+        "number_of_times": 1,
+        "time_window": {
+          "value": 5,
+          "unit": "min"
+        }
+      },
+      "external_datasheets": {
+        "datasheet_type": "source_device",
+        "datasheet_reference": "iri-of-cgm-device"
+      },
+      "timezone": "PST"
+    },
+    "body": [
+      {
+        "effective_time_frame": {
+          "time_interval": {
+            "start_date_time": "YYYY-MM-DDThh:mm:ssZ",
+            "end_date_time": "YYYY-MM-DDThh:mm:ssZ"
+          }
+        },
+        "event_type": "event_type",
+        "source_device_id": "source_device_id",
+        "blood_glucose": {
+          "unit": "mg/dL",
+          "value": "val"
+        },
+        "transmitter_time": {
+          "unit": "long integer",
+          "value": "number"
+        },
+        "transmitter_id": "transmitter_id"
+      }
+    ]
+  }
+  ```
+
+  This extension was necessary to accurately represent Dexcom CGM data within the Blood Glucose template by incorporating additional fields such as event types, device information, and transmitter details.
+
+## Metadata and Example outputs
+
+| Metadata elements                     | Description                                          | Example       |
+| ------------------------------------- | ---------------------------------------------------- | ------------- |
+| Participant_id                        | Primary identifier of study participant              | 1234          |
+| Glucose_filename                      | Name of file ends with participant_id_DEX.json       | 1234_DEX.json |
+| Glucose_level_record_count            | Total number of CGM reading                          | 2856          |
+| Average_glucose_level_mg_dl           | Average level of glucose in mg/dl                    | 123.304       |
+| Glucose_sensor_sampling_duration_days | Number of days of glucose sensor sampling            | 10            |
+| Glucose_sensor_id                     | The number printed on the back of each Dexcom sensor | AB12345678    |
+| Cgm_manufacturer_model                | Manufacturer's model name of the device              | Dexcom G6     |
+
+import PageFeedback from '@site/src/components/PageFeedback';
+
+<PageFeedback />
