@@ -5,9 +5,9 @@ import FilterableTable from 'react-filterable-table';
 // eslint-disable-next-line import/no-unresolved
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
-import MappingsJSON from '../../static/json/mappings.json';
+import MappingsJSON from '../../../docs/static/json/mappings.json';
 
-export default function StructureTable() {
+export default function OmopMappingTable() {
   const targetConceptIdRender = (props) => {
     const { value, record } = props;
 
@@ -124,6 +124,16 @@ export default function StructureTable() {
       displayName: 'CONFIDENCE',
       inputFilterable: true,
     },
+    {
+      name: 'qualifier_concept_id',
+      displayName: 'qualifier_concept_id',
+      inputFilterable: true,
+    },
+    {
+      name: 'qualifier_source_value',
+      displayName: 'qualifier_source_value',
+      inputFilterable: true,
+    },
   ];
 
   return (
@@ -138,7 +148,7 @@ export default function StructureTable() {
             fields={fields}
             noRecordsMessage="No match found."
             noFilteredRecordsMessage="No match found."
-            pageSizes={[10, 30, 50, 100, 1781]}
+            pageSizes={[10, 30, 50, 100, 1667]}
             pageSize={10}
           />
         </div>

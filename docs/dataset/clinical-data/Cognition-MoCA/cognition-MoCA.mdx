@@ -5,12 +5,6 @@ title: Cognition/MoCA
 
 ## Overview of Data Domain
 
-:::warning
-
-This version on the dataset includes MoCA data from only 79 participants out of the 204 due to a bug. This will be addressed in the next version of the dataset anticipated to be released in November 2024.
-
-:::
-
 ### Montreal CogniÍtive Assessment (MoCA)
 
 The Montreal Cognitive Assessment (MOCA) is widely used as a screening tool to assess cognitive function. This validated method comprises diverse tasks targeting distinct cognitive domains, rendering it highly sensitive in detecting mild cognitive impairment. During assessment, subjects engage in tasks such as recalling word lists, drawing specific shapes, and following complex instructions. These tasks are all administered electronically using an iPad, with a maximum score of 30 points. A score below 24 indicates cognitive impairment, while a final total score of 26 and above is considered normal. Additionally, participants with 12 or fewer years of education are granted an additional point, thereby adjusting the results for varying education levels.
@@ -34,7 +28,7 @@ Some limitations of the MoCA include the need for trained professionals to accur
 
 ### File format
 
-The MoCA data from all subjects is stored in 2 .csvs files, along with other RedCap measurements. A .csv file, short for Comma-Separated Values, is a commonly used file format for storing tabular data in plain text, where each line represents a row of data and each value within the row is separated by a comma.
+The MoCA data from all subjects is stored in 2 .csv files, along with other RedCap measurements. A .csv file, short for Comma-Separated Values, is a commonly used file format for storing tabular data in plain text, where each line represents a row of data and each value within the row is separated by a comma.
 
 The file organization is as follows:
 
@@ -87,36 +81,10 @@ The MoCA data is organized per subject (person_id) and within each subject block
 | measurement_event_id          | Identifier for the specific event associated with the measurement                              | 0                   |
 | meas_event_field_concept_id   | Concept identifier representing the specific field being measured within the measurement event | 0                   |
 
-| Description                                                                                                                                                                               | measurement_source_value | measurement_concept_id |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | ---------------------- |
-| Trail drawings score                                                                                                                                                                      | Trails                   | 4165596                |
-| Time taken to do trails in seconds                                                                                                                                                        | Time(sec.)               | 2005200344             |
-| Cube drawings score                                                                                                                                                                       | Cube                     | 2005200345             |
-| Time taken to do cube in seconds                                                                                                                                                          | Time(sec.)               | 2005200346             |
-| Time taken to do clock in seconds                                                                                                                                                         | Time(sec.)               | 2005200347             |
-| Animal name recall task                                                                                                                                                                   | Naming (3 points)        | 2005200348             |
-| time in seconds to perform the animal name recall task                                                                                                                                    | Naming(sec.)             | 2005200349             |
-| Words correctly repeated (1st trial)                                                                                                                                                      | Memory Trial 1           | 2005200350             |
-| Time in seconds to perform the above task.                                                                                                                                                | Memory Trial 1(sec.)     | 2005200351             |
-| Words correctly repeated (2nd trial)                                                                                                                                                      | Memory Trial 2           | 2005200352             |
-| Time in seconds to perform the above task.                                                                                                                                                | Memory Trial 2(sec.)     | 2005200351             |
-| Time in seconds to perform the above task.                                                                                                                                                | Digit Span(sec.)         | 2005200351             |
-| Letter tapping score                                                                                                                                                                      | Letter A                 | 2005200353             |
-| Time in seconds to perform the above task.                                                                                                                                                | Time(sec.)               | 2005200351             |
-| Serial 7 subtraction score                                                                                                                                                                | Subtraction              | 2005200354             |
-| Time in seconds to perform the above task.                                                                                                                                                | Time(sec.)               | 2005200351             |
-| Repeats sentences II                                                                                                                                                                      | Repetition               | 2005200355             |
-| Time in seconds to perform the above task.                                                                                                                                                | Time(sec.)               | 2005200351             |
-| Maximal one-minute recall of words beginning with 'F'                                                                                                                                     | Fluency                  | 2005200356             |
-| Time in seconds to perform the above task.                                                                                                                                                | Time(sec.)               | 2005200351             |
-| MOCA abstraction                                                                                                                                                                          | Abstraction              | 2005200357             |
-| Time in seconds to perform the above task.                                                                                                                                                | Time(sec.)               | 2005200351             |
-| MOCA delayed recall with no cue                                                                                                                                                           | Delayed Recall           | 2005200358             |
-| Time in seconds to perform the above task.                                                                                                                                                | Time(sec.)               | 2005200351             |
-| MOCA orientation date, month, year, day, place, city                                                                                                                                      | Orientation              | 2005200359             |
-| Time in seconds to perform the above task.                                                                                                                                                | Time(sec.)               | 2005200351             |
-| pull down menu of 3-4 year age spans, age in years                                                                                                                                        | Age Range                | 2005200360             |
-| combined score of MOCA delayed recall with no cue, MOCA delayed recall category cue (not included in total score), MOCA delayed recall multiple choice cue ( not included in total score) | MIS Score                | 2005200361             |
+### MOCA Data Dictionary Table
+
+<a href="/cognitionMoCATable" target="_blank">See the table here</a>
+
 
 ### Metadata and Example Outputs (observation.csv)
 
@@ -146,12 +114,12 @@ The MoCA data is organized per subject (person_id) and within each subject block
 
 | Measurement conditions              | observation_source_value | observation_concept_id |
 | ----------------------------------- | ------------------------ | ---------------------- |
-| Dare form completed                 | Test Upload Date         | 3006440                |
+| Date form completed                 | Test Upload Date         | 3006440                |
 | Clock drawing panel [GPCOG]         | Clock (3 points)         | 21492218               |
 | Digit span performance              | Digit Span               | 4153980                |
 | Years of education [#] - Reported   | Subject's Education      | 42528764               |
 | Time to complete survey             | Total Time               | 1988422                |
-| Montreal cognitive assessment score | Total Score              | 36684973               |
+| Montreal cognitive assessment score | Total Score              | 37174522               |
 
 import PageFeedback from '@site/src/components/PageFeedback';
 

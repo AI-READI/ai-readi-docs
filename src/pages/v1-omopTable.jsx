@@ -2,12 +2,12 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
 
-import ClinicalLabTable from '../components/ClinicalLabTable';
+import StructureTable from '../components/v1/StructureTable';
 
-export default function dataDomainTable() {
+export default function V1OmopTable() {
   return (
     <div>
-      <ClinicalLabTable />
+      <StructureTable />
     </div>
   );
 }
