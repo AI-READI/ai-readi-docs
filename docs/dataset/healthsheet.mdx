@@ -32,7 +32,7 @@ The following set of questions clarifies the information about the current (late
 
    b. If dynamic, how frequently is the dataset updated?
 
-   The dataset gets released as static versions. This is the second version of the dataset and consists of data collected during first year of the study (the first version of the dataset consisted of data collected only during the pilot data collection phase). There are plans to release new versions of the dataset approximately once a year with additional data from participants who have been enrolled since the last dataset version release.
+   The dataset gets released as static versions. This is the second version of the dataset and consists of data collected during first year of the study, i.e. between July 19, 2023 and July, 31 2024 (the first version of the dataset consisted of data collected only during the pilot data collection phase). There are plans to release new versions of the dataset approximately once a year with additional data from participants who have been enrolled since the last dataset version release.
 
 2. Is this datasheet created for the original version of the dataset? If not, which version of the dataset is this datasheet for?
 
@@ -56,23 +56,23 @@ The following set of questions clarifies the information about the current (late
 
    b. Explain the motivation/rationale for creating the current version of the dataset.
 
-        The current version of the dataset includes data from the first year of the study, rather than only the data collected from the pilot data collection phase (which comprised the first version of the dataset).
+  The current version of the dataset includes data from the first year of the study, rather than only the data collected from the pilot data collection phase (which comprised the first version of the dataset).
 
    c. Does this version have more subjects/patients represented in the data, or fewer?
 
-        This version has more subjects/patients represented in the data (the first version of the dataset contains data from 204 participants while this second version contains additional data from 863 participants for a total of 1067 participants).
+  This version has more subjects/patients represented in the data (the first version of the dataset contains data from 204 participants while this second version contains additional data from 863 participants for a total of 1067 participants).
 
    d. Does this version of the dataset have extended data or new data from the same patients as the older versions? Were any patients, data fields, or data points removed? If so, why?
 
-    No, the data fields/types are the same as the prior version of the dataset.
+   No, the data fields/types are the same as the prior version of the dataset.
 
    e. Do we expect more versions of the dataset to be released?
 
-        Yes, enrollment is ongoing, and future versions of the dataset will be released that will include larger numbers of subjects/patients as enrollment increases.
+  Yes, enrollment is ongoing, and future versions of the dataset will be released that will include larger numbers of subjects/patients as enrollment increases.
 
    f. Is this datasheet for a version of the dataset? If yes, does this sub-version of the dataset introduce a new task, labeling, and/or recommended data splits? If the answer to any of these questions is yes, explain the rationale behind it.
 
-        This datasheet is for the first year of the study and does not include new tasks, labeling.  It does include a new recommended data split.
+  This datasheet is for the first year of the study and is the second version of the dataset. It does include a new recommended data split for the 1067 participants balancing training, validation, and testing sets for age, sex, races/ethnicities, and study group.
 
    g. Are you aware of any widespread version(s)/subversion(s) of the dataset? If yes, what is the addressed task, or application that is addressed?
 
@@ -130,7 +130,7 @@ Refers to the unit of interest. The unit might be different in the datasheet com
 
 4. Does the dataset contain all possible instances or is it a sample (not necessarily random) of instances from a larger set? If the dataset is a sample, then what is the larger set? Is the sample representative of the larger set (e.g., geographic coverage)? If so, please describe how this representativeness was validated/verified. If it is not representative of the larger set, please describe why not (e.g., to cover a more diverse range of instances, because instances were withheld or unavailable). Answer this question for the preliminary version and the current version of the dataset in question.
 
-   The dataset contains all possible instances. More specifically, the dataset contains data from all participants who have been enrolled during first year of data collection for AI-READI.
+   The dataset contains all possible instances. More specifically, the dataset contains data from all participants who have been enrolled during the first year of data collection for AI-READI.
 
 5. What data modality does each patient data consist of? If the data is hierarchical, provide the modality details for all levels (e.g: text, image, physiological signal). Break down in all levels and specify the modalities and devices.
 
@@ -431,7 +431,7 @@ In medical domains, researchers usually take a dataset and appropriate it for a 
 
 5. Are there recommended data splits (e.g., training, development/validation, testing)? Are there units of data to consider, whatever the task? If so, please provide a description of these splits, explaining the rationale behind them. Please provide the answer for both the preliminary dataset and the current version or any sub-version that is widely used.
 
-   The current version of the dataset comes with recommended data splits. Because sex, race, and ethnicity data are not being released with the public version of the dataset, the project team has prepared data splits into proportions (70%/15%/15%) that can be used for subsequent training/validation/testing where the validation and test sets are balanced for sex, race/ethnicity and diabetes status (with and without diabetes).
+   The current version of the dataset comes with recommended data splits. Because sex, race, and ethnicity data are not being released with the public version of the dataset, the project team has prepared data splits into proportions (70%/15%/15%) that can be used for subsequent training/validation/testing where the validation and test sets are balanced as well as possible for sex, race/ethnicity and diabetes status (no diabetes, prediabetes/lifestyle controlled, oral medication controlled, and insulin controlled).
 
 
 ## Collection Process
@@ -456,7 +456,7 @@ In medical domains, researchers usually take a dataset and appropriate it for a 
 
    The timeline for the overall project spans four years, encompassing one year dedicated to protocol development and training, and years 2-4 allocated for subject recruitment and data collection. Approximately 4% of participants are expected to undergo a follow-up examination in Year 4. The data collection process is specifically tailored to enable downstream pseudotime manifold analysis—an approach used to predict disease trajectories. This involves gathering and learning from complex, multimodal data from participants exhibiting varying disease severity, ranging from normal to insulin-dependent Type 2 Diabetes Mellitus (T2DM). The timeframe also allows for the collection of the highest number of subjects possible to ensure a balanced representation of racial and ethnic groups and mitigate biases in computer vision algorithms.
 
-   For this version of the dataset, the timeframe for data collection was July 19, 2023 to July 31, 2024.
+   For this version of the dataset, the timeframe for data collection was July 18, 2023 to July 31, 2024.
 
 6. Does the dataset relate to people? If not, you may skip the remaining questions in this section.
 
