@@ -3,7 +3,7 @@ import React from 'react';
 import FilterableTable from 'react-filterable-table';
 // eslint-disable-next-line import/no-unresolved
 import BrowserOnly from '@docusaurus/BrowserOnly';
-import clinicalLabData from '../../../docs/static/json/clinicalLabData.json';
+import clinicalLabData from '../../docs/static/json/clinicalLabData.json';
 
 export default function ClinicalLabTable() {
   const renderReferenceInterval = (props) => {
