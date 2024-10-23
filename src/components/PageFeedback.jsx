@@ -1,6 +1,8 @@
 /* eslint-disable react/button-has-type */
 // eslint-disable-next-line import/no-unresolved
 import BrowserOnly from '@docusaurus/BrowserOnly';
+// eslint-disable-next-line import/no-unresolved
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import React from 'react';
 import Lottie from 'react-lottie';
 import { Icon } from '@iconify/react';
@@ -15,9 +17,11 @@ function AskFeedback({ setShowSuccess, setReaction }) {
   const [analyticsTitle, setAnalyticsTitle] = React.useState('');
 
   React.useEffect(() => {
-    const windowTitle = document.title;
-    const title = windowTitle.split(' | ')[0];
-    setAnalyticsTitle(title);
+    if (ExecutionEnvironment.canUseDOM) {
+      const windowTitle = document.title;
+      const title = windowTitle.split(' | ')[0];
+      setAnalyticsTitle(title);
+    }
   }, []);
 
   const likeAnimationOptions = {
@@ -39,12 +43,14 @@ function AskFeedback({ setShowSuccess, setReaction }) {
   };
 
   const sendReactionFeedback = (action) => {
-    // eslint-disable-next-line no-console
-    console.log(`Send feedback - Title: ${document.title} | Reaction: ${action}`, action);
+    if (ExecutionEnvironment.canUseDOM) {
+      // eslint-disable-next-line no-console
+      console.log(`Send feedback - Title: ${document.title} | Reaction: ${action}`, action);
+    }
 
     setReaction(action);
 
-    const windowTitle = document.title;
+    const windowTitle = ExecutionEnvironment.canUseDOM ? document.title : ' | ';
     const aT = windowTitle.split(' | ')[0];
     const feedbackText = '';
 
@@ -165,10 +171,12 @@ function PageFeedback() {
   };
 
   const sendTextFeedback = () => {
-    // eslint-disable-next-line no-console
-    console.log(`Send feedback - Title: ${document.title} | Reaction: ${reaction}`, feedbackText);
+    if (ExecutionEnvironment.canUseDOM) {
+      // eslint-disable-next-line no-console
+      console.log(`Send feedback - Title: ${document.title} | Reaction: ${reaction}`, feedbackText);
+    }
 
-    const windowTitle = document.title;
+    const windowTitle = ExecutionEnvironment.canUseDOM ? document.title : ' | ';
     const analyticsTitle = windowTitle.split(' | ')[0];
 
     const requestOptions = {
