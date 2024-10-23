@@ -12,10 +12,3 @@ The format is based on [Keep a Changelog v1.0.0](https://keepachangelog.com/en/1
 ### Added
 
 - First version of the documentation associated with the AI-READI dataset v1.0
-
-import PageFeedback from '@site/src/components/PageFeedback';
-import BrowserOnly from '@docusaurus/BrowserOnly';
-
-<BrowserOnly>
-  <PageFeedback />
-</BrowserOnly>
