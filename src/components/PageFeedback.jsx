@@ -1,8 +1,9 @@
 /* eslint-disable react/button-has-type */
+// eslint-disable-next-line import/no-unresolved
+import BrowserOnly from '@docusaurus/BrowserOnly';
 import React from 'react';
 import Lottie from 'react-lottie';
 import { Icon } from '@iconify/react';
-
 import LikeAnimationData from './lotties/like.json';
 import DislikeAnimationData from './lotties/dislike.json';
 import SuccessAnimationData from './lotties/success.json';
@@ -205,45 +206,47 @@ function PageFeedback() {
   };
 
   return (
-    <div className="relative mt-4 w-full">
-      <hr className="feedback-divider" />
+    <BrowserOnly>
+      <div className="relative mt-4 w-full">
+        <hr className="feedback-divider" />
 
-      {showSuccess ? (
-        <ShowSuccessMessage hideSubText={hideSubText} />
-      ) : (
-        <AskFeedback
-          setShowSuccess={setShowSuccess}
-          setReaction={setReaction}
-          setShowTextFeedback={setShowTextFeedback}
-        />
-      )}
-
-      <hr className="w-2/5 mx-auto  bg-sky-200" />
-
-      <div className="flex justify-center items-center space-x-2 pt-1">
-        <Icon icon="lucide:badge-info" />
-        <a href="/docs/1/contact" className="">
-          <h4 className="mb-0">I have more feedback!</h4>
-        </a>
-      </div>
-
-      {showTextFeedback && (
-        <div className="flex justify-center space-x-2 pt-1">
-          <textarea
-            className="w-[350px] rounded-md px-3 py-2 font-inter"
-            placeholder="Any additional comments?"
-            onChange={handleFeedbackTextChange}
-            value={feedbackText}
+        {showSuccess ? (
+          <ShowSuccessMessage hideSubText={hideSubText} />
+        ) : (
+          <AskFeedback
+            setShowSuccess={setShowSuccess}
+            setReaction={setReaction}
+            setShowTextFeedback={setShowTextFeedback}
           />
-          <button
-            className="feedback-button feedback-button-yes !w-[180px]"
-            onClick={() => sendTextFeedback()}
-          >
-            Add Comment
-          </button>
+        )}
+
+        <hr className="w-2/5 mx-auto  bg-sky-200" />
+
+        <div className="flex justify-center items-center space-x-2 pt-1">
+          <Icon icon="lucide:badge-info" />
+          <a href="/docs/1/contact" className="">
+            <h4 className="mb-0">I have more feedback!</h4>
+          </a>
         </div>
-      )}
-    </div>
+
+        {showTextFeedback && (
+          <div className="flex justify-center space-x-2 pt-1">
+            <textarea
+              className="w-[350px] rounded-md px-3 py-2 font-inter"
+              placeholder="Any additional comments?"
+              onChange={handleFeedbackTextChange}
+              value={feedbackText}
+            />
+            <button
+              className="feedback-button feedback-button-yes !w-[180px]"
+              onClick={() => sendTextFeedback()}
+            >
+              Add Comment
+            </button>
+          </div>
+        )}
+      </div>
+    </BrowserOnly>
   );
 }
 
