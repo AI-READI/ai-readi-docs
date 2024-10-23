@@ -83,47 +83,49 @@ function AskFeedback({ setShowSuccess, setReaction }) {
   };
 
   return (
-    <div className="mt-4 flex w-full flex-col items-center justify-center sm:flex-row">
-      <h3 className="mb-5 w-max pr-5 sm:mb-0"> Was this page helpful? </h3>
+    <BrowserOnly>
+      <div className="mt-4 flex w-full flex-col items-center justify-center sm:flex-row">
+        <h3 className="mb-5 w-max pr-5 sm:mb-0"> Was this page helpful? </h3>
 
-      <div className="flex items-center justify-center space-x-4">
-        <button
-          className="feedback-button feedback-button-yes"
-          data-umami-event="feedback-yes"
-          data-umami-event-title={analyticsTitle}
-          onClick={() => sendReactionFeedback('Like')}
-          onMouseEnter={() => setStartLikeAnimation(true)}
-          onMouseLeave={() => setStartLikeAnimation(false)}
-        >
-          <Lottie
-            options={likeAnimationOptions}
-            height={25}
-            width={25}
-            isClickToPauseDisabled
-            isStopped={!startLikeAnimation}
-          />
-          <span className="px-2">Yes</span>
-        </button>
+        <div className="flex items-center justify-center space-x-4">
+          <button
+            className="feedback-button feedback-button-yes"
+            data-umami-event="feedback-yes"
+            data-umami-event-title={analyticsTitle}
+            onClick={() => sendReactionFeedback('Like')}
+            onMouseEnter={() => setStartLikeAnimation(true)}
+            onMouseLeave={() => setStartLikeAnimation(false)}
+          >
+            <Lottie
+              options={likeAnimationOptions}
+              height={25}
+              width={25}
+              isClickToPauseDisabled
+              isStopped={!startLikeAnimation}
+            />
+            <span className="px-2">Yes</span>
+          </button>
 
-        <button
-          className="feedback-button feedback-button-no"
-          data-umami-event="feedback-no"
-          data-umami-event-title={analyticsTitle}
-          onClick={() => sendReactionFeedback('Dislike')}
-          onMouseEnter={() => setStartDislikeAnimation(true)}
-          onMouseLeave={() => setStartDislikeAnimation(false)}
-        >
-          <Lottie
-            options={dislikeAnimationOptions}
-            height={25}
-            width={25}
-            isClickToPauseDisabled
-            isStopped={!startDislikeAnimation}
-          />
-          <span className="px-2">No</span>
-        </button>
+          <button
+            className="feedback-button feedback-button-no"
+            data-umami-event="feedback-no"
+            data-umami-event-title={analyticsTitle}
+            onClick={() => sendReactionFeedback('Dislike')}
+            onMouseEnter={() => setStartDislikeAnimation(true)}
+            onMouseLeave={() => setStartDislikeAnimation(false)}
+          >
+            <Lottie
+              options={dislikeAnimationOptions}
+              height={25}
+              width={25}
+              isClickToPauseDisabled
+              isStopped={!startDislikeAnimation}
+            />
+            <span className="px-2">No</span>
+          </button>
+        </div>
       </div>
-    </div>
+    </BrowserOnly>
   );
 }
 
@@ -139,23 +141,25 @@ function ShowSuccessMessage({ hideSubText }) {
   };
 
   return (
-    <div className="flex flex-row items-center justify-center">
-      <div className="flex flex-col items-center justify-center">
-        <h3 className="mb-0 w-max"> Thank you for your feedback! </h3>
-        {/* {!hideSubText && (
+    <BrowserOnly>
+      <div className="flex flex-row items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
+          <h3 className="mb-0 w-max"> Thank you for your feedback! </h3>
+          {/* {!hideSubText && (
           <h4 className="mb-3 pt-1">Would you like to leave any additional comments?</h4>
         )} */}
+        </div>
+        {hideSubText && (
+          <Lottie
+            options={animationOptions}
+            height={70}
+            width={70}
+            isClickToPauseDisabled
+            style={{ margin: '0' }}
+          />
+        )}
       </div>
-      {hideSubText && (
-        <Lottie
-          options={animationOptions}
-          height={70}
-          width={70}
-          isClickToPauseDisabled
-          style={{ margin: '0' }}
-        />
-      )}
-    </div>
+    </BrowserOnly>
   );
 }
 
