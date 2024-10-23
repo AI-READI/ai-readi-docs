@@ -331,5 +331,8 @@ The observation.csv data file is organized per subject (person_id) and within ea
 | obs_event_field_concept_id    | Observation event field concept                              | 0                                                         |
 
 import PageFeedback from '@site/src/components/PageFeedback';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<PageFeedback />
+<BrowserOnly>
+  <PageFeedback />
+</BrowserOnly>

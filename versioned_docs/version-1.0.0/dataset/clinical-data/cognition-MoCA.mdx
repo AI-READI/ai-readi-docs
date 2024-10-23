@@ -154,5 +154,8 @@ The MoCA data is organized per subject (person_id) and within each subject block
 | Montreal cognitive assessment score | Total Score              | 36684973               |
 
 import PageFeedback from '@site/src/components/PageFeedback';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<PageFeedback />
+<BrowserOnly>
+  <PageFeedback />
+</BrowserOnly>

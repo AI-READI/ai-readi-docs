@@ -19,43 +19,45 @@ Clinical lab tests are a fundamental component of medical diagnostics and patien
 
 ## Variables included in Data Domain
 
-<a href="/v2-DataDomainTable" target="_blank">See the table here</a>
+<a href="/v2-DataDomainTable" target="_blank">
+  See the table here
+</a>
 
 {/* <ClinicalLabTable /> */}
 
 #### NT-proBNP Reference Intervals
-| Age | Female Range        | Male Range      |
-| ------ | --------------- | ------------------ |
-|  0-2d  |  321-11987 | 321-11987  |
-|  3d-10d  |  263-5918 | 263-5918  |
-|  11d-1m  |  263-5918 | 263-5918  |
-| 2m-1y   | 37-646  |37-646   |
-|  2y  |  39-413 | 39-413  |
-|  3y-6y  |  23-289 | 23-289  |
-| 7y-14y   | 0-157  |0-157   |
-|  15y-18y  |  0-158 | 0-158  |
-|   19y-39y |   0-160|  0-79 |
-| 40y-44y   | 0-162  |0-72   |
-| 45y-54y   | 0-141  |0-87   |
-|  55y-64y  |  0-226 | 0-88  |
-|   65y- |   0-540|  0-540 |
 
+| Age     | Female Range | Male Range |
+| ------- | ------------ | ---------- |
+| 0-2d    | 321-11987    | 321-11987  |
+| 3d-10d  | 263-5918     | 263-5918   |
+| 11d-1m  | 263-5918     | 263-5918   |
+| 2m-1y   | 37-646       | 37-646     |
+| 2y      | 39-413       | 39-413     |
+| 3y-6y   | 23-289       | 23-289     |
+| 7y-14y  | 0-157        | 0-157      |
+| 15y-18y | 0-158        | 0-158      |
+| 19y-39y | 0-160        | 0-79       |
+| 40y-44y | 0-162        | 0-72       |
+| 45y-54y | 0-141        | 0-87       |
+| 55y-64y | 0-226        | 0-88       |
+| 65y-    | 0-540        | 0-540      |
 
 #### Alkaline Phosphatase reference ranges
-| Age | Female Range        | Male Range      |
-| ------ | --------------- | ------------------ |
-|  0-9y  | 111-281 | 115-324|
-|  10y-11y  | 132-366 | 115-324|
-|  12y-13y |  89-285 | 119-426|
-| 14y-17y  | 43-226  |72-400|
-|  18y-24y  | 26-98 | 42-136|
-| 25y-34y  | 25-100 | 35-109|
-| 35y-44y   |25-112  |36-122|
-|  45y-54y  | 34-121 | 39-139|
-|   55y-64y |  31-132|  37-159|
-| 65y-74y  | 38-172  |36-161|
-| 75y-   |49-199  |52-227|
 
+| Age     | Female Range | Male Range |
+| ------- | ------------ | ---------- |
+| 0-9y    | 111-281      | 115-324    |
+| 10y-11y | 132-366      | 115-324    |
+| 12y-13y | 89-285       | 119-426    |
+| 14y-17y | 43-226       | 72-400     |
+| 18y-24y | 26-98        | 42-136     |
+| 25y-34y | 25-100       | 35-109     |
+| 35y-44y | 25-112       | 36-122     |
+| 45y-54y | 34-121       | 39-139     |
+| 55y-64y | 31-132       | 37-159     |
+| 65y-74y | 38-172       | 36-161     |
+| 75y-    | 49-199       | 52-227     |
 
 ## Data Processing
 
@@ -139,5 +141,8 @@ print(‘ Data saved to hba1c.csv')
 | meas_event_field_concept_id   | Concept ID for the measurement event field  | 0                           | 0                   |
 
 import PageFeedback from '@site/src/components/PageFeedback';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<PageFeedback />
+<BrowserOnly>
+  <PageFeedback />
+</BrowserOnly>

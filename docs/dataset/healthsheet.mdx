@@ -2,7 +2,6 @@
 sidebar_position: 2
 title: Healthsheet
 ---
-import BrowserOnly from '@docusaurus/BrowserOnly';
 
 ## General information
 
@@ -52,31 +51,31 @@ The following set of questions clarifies the information about the current (late
 
    a. What are the characteristics that have been changed between different versions of the dataset?
 
-    This version of the dataset includes more patients than the first version of the dataset.
+   This version of the dataset includes more patients than the first version of the dataset.
 
    b. Explain the motivation/rationale for creating the current version of the dataset.
 
-  The current version of the dataset includes data from the first year of the study, rather than only the data collected from the pilot data collection phase (which comprised the first version of the dataset).
+The current version of the dataset includes data from the first year of the study, rather than only the data collected from the pilot data collection phase (which comprised the first version of the dataset).
 
-   c. Does this version have more subjects/patients represented in the data, or fewer?
+c. Does this version have more subjects/patients represented in the data, or fewer?
 
-  This version has more subjects/patients represented in the data (the first version of the dataset contains data from 204 participants while this second version contains additional data from 863 participants for a total of 1067 participants).
+This version has more subjects/patients represented in the data (the first version of the dataset contains data from 204 participants while this second version contains additional data from 863 participants for a total of 1067 participants).
 
-   d. Does this version of the dataset have extended data or new data from the same patients as the older versions? Were any patients, data fields, or data points removed? If so, why?
+d. Does this version of the dataset have extended data or new data from the same patients as the older versions? Were any patients, data fields, or data points removed? If so, why?
 
-   No, the data fields/types are the same as the prior version of the dataset.
+No, the data fields/types are the same as the prior version of the dataset.
 
-   e. Do we expect more versions of the dataset to be released?
+e. Do we expect more versions of the dataset to be released?
 
-  Yes, enrollment is ongoing, and future versions of the dataset will be released that will include larger numbers of subjects/patients as enrollment increases.
+Yes, enrollment is ongoing, and future versions of the dataset will be released that will include larger numbers of subjects/patients as enrollment increases.
 
-   f. Is this datasheet for a version of the dataset? If yes, does this sub-version of the dataset introduce a new task, labeling, and/or recommended data splits? If the answer to any of these questions is yes, explain the rationale behind it.
+f. Is this datasheet for a version of the dataset? If yes, does this sub-version of the dataset introduce a new task, labeling, and/or recommended data splits? If the answer to any of these questions is yes, explain the rationale behind it.
 
-  This datasheet is for the first year of the study and is the second version of the dataset. It does include a new recommended data split for the 1067 participants balancing training, validation, and testing sets for age, sex, races/ethnicities, and study group.
+This datasheet is for the first year of the study and is the second version of the dataset. It does include a new recommended data split for the 1067 participants balancing training, validation, and testing sets for age, sex, races/ethnicities, and study group.
 
-   g. Are you aware of any widespread version(s)/subversion(s) of the dataset? If yes, what is the addressed task, or application that is addressed?
+g. Are you aware of any widespread version(s)/subversion(s) of the dataset? If yes, what is the addressed task, or application that is addressed?
 
-   No.
+No.
 
 ## Motivation
 
@@ -376,7 +375,7 @@ In medical domains, researchers usually take a dataset and appropriate it for a 
 
    2. Who performed the labeling? For example, was the labeling done by a clinician, ML researcher, university or hospital?
 
-    N/A - no labels are provided
+   N/A - no labels are provided
 
    b. What labeling strategy was used?
 
@@ -390,7 +389,7 @@ In medical domains, researchers usually take a dataset and appropriate it for a 
 
    3. Which proportion of the data has gold standard labels?
 
-    N/A - no labels are provided
+   N/A - no labels are provided
 
    c. Human-labeled data
 
@@ -432,7 +431,6 @@ In medical domains, researchers usually take a dataset and appropriate it for a 
 5. Are there recommended data splits (e.g., training, development/validation, testing)? Are there units of data to consider, whatever the task? If so, please provide a description of these splits, explaining the rationale behind them. Please provide the answer for both the preliminary dataset and the current version or any sub-version that is widely used.
 
    The current version of the dataset comes with recommended data splits. Because sex, race, and ethnicity data are not being released with the public version of the dataset, the project team has prepared data splits into proportions (70%/15%/15%) that can be used for subsequent training/validation/testing where the validation and test sets are balanced as well as possible for sex, race/ethnicity and diabetes status (no diabetes, prediabetes/lifestyle controlled, oral medication controlled, and insulin controlled).
-
 
 ## Collection Process
 
@@ -585,12 +583,15 @@ In medical domains, researchers usually take a dataset and appropriate it for a 
 
 6. Will older versions of the dataset continue to be supported/hosted/maintained? If so, please describe how and for how long. If not, please describe how its obsolescence will be communicated to users.
 
-   N/A -  as mentioned in the response to question 4, the dataset will not be updated. Rather, new versions of the dataset will be released with additional instances as more study participants are enrolled.
+   N/A - as mentioned in the response to question 4, the dataset will not be updated. Rather, new versions of the dataset will be released with additional instances as more study participants are enrolled.
 
 7. If others want to extend/augment/build on/contribute to the dataset, is there a mechanism for them to do so? If so, please provide a description. Will these contributions be validated/verified? If so, please describe how. If not, why not? Is there a process for communicating/distributing these contributions to other users? If so, please provide a description.
 
    No, currently there is no mechanism for others to extend or augment the AI-READI dataset outside of those who are involved in the project.
 
 import PageFeedback from '@site/src/components/PageFeedback';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<PageFeedback />
+<BrowserOnly>
+  <PageFeedback />
+</BrowserOnly>

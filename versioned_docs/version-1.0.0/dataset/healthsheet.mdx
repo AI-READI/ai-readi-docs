@@ -625,5 +625,8 @@ In medical domains, researchers usually take a dataset and appropriate it for a 
    No, currently there is no mechanism for others to extend or augment the AI-READI dataset outside of those who are involved in the project.
 
 import PageFeedback from '@site/src/components/PageFeedback';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<PageFeedback />
+<BrowserOnly>
+  <PageFeedback />
+</BrowserOnly>

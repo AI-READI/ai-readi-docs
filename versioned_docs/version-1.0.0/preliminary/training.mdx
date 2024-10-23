@@ -34,5 +34,8 @@ K.D. Blizinsky, S. Chandrasekharan, S. Jooma, et al. The _All of Us_ Responsible
 ```
 
 import PageFeedback from '@site/src/components/PageFeedback';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<PageFeedback />
+<BrowserOnly>
+  <PageFeedback />
+</BrowserOnly>

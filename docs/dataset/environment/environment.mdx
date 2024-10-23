@@ -142,5 +142,8 @@ Before issuing the device, the 3 digit unit number from the back of the sensor i
 | inttemp       | Internal case temperature measured on the RTC board   | float [0.00 to FF.FF    | degrees C                       | 23.50               |
 
 import PageFeedback from '@site/src/components/PageFeedback';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<PageFeedback />
+<BrowserOnly>
+  <PageFeedback />
+</BrowserOnly>

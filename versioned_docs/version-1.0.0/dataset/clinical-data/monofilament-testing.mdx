@@ -75,5 +75,8 @@ The .csv files are designed for easy opening in Python and/or Jupyter Notebooks.
 | 2                | Left Foot: Number of correct responses  | Left Foot - Felt: (8.0)                     | 2005200161             |
 
 import PageFeedback from '@site/src/components/PageFeedback';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<PageFeedback />
+<BrowserOnly>
+  <PageFeedback />
+</BrowserOnly>

@@ -1058,10 +1058,14 @@ Stress: The negative stress values (-1 & -2) originate from the source, possibly
 
 There may be cases in which certain participants do not have certain files, e.g have no measurement file for sleep data. In these cases, the file path will display "none." However, there are also instances where a measurement file exists, but it contains no observations, similar to having data with no meaningful content.
 
-<a href="/fileProcessingTable" target="_blank">See the table here</a>
+<a href="/fileProcessingTable" target="_blank">
+  See the table here
+</a>
 
 <!-- | Metadata Elements              | Description                                                    | Example                                                                                        | -->
+
 <!-- | ------------------------------ | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | -->
+
 <!-- | participant_id                 | Identification number of study participant                     | 0000                                                                                           | -->
 <!-- | wrist_worn_on                  | Which wrist the fitness tracker was worn on by the participant | Left                                                                                           | -->
 <!-- | dominant_hand                  | Participants dominant hand                                     | Right hand                                                                                     | -->
@@ -1090,5 +1094,8 @@ There may be cases in which certain participants do not have certain files, e.g 
 <!-- | fitness_manufacturer_model     | Model of the fitness tracker                                   | Garmin Vivosmart 5                                                                             | -->
 
 import PageFeedback from '@site/src/components/PageFeedback';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<PageFeedback />
+<BrowserOnly>
+  <PageFeedback />
+</BrowserOnly>
