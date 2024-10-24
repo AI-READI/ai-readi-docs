@@ -6,7 +6,7 @@ function DirectFileProcessingTable() {
     window.open('/fileProcessingTable', '_blank');
 
     // Redirect the current page to the documentation
-    window.location.replace('/docs/1/dataset/wearable-activity-monitor');
+    window.location.replace('/docs/2/dataset/wearable-activity-monitor');
   }, []);
 }
 
