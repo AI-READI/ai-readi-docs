@@ -28,13 +28,13 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
 
         <div className={styles.buttons}>
-          <Link className="button py-4 px-6 bg-sky-600 button--lg" to="/docs/1/about">
+          <Link className="button py-4 px-6 bg-sky-600 button--lg" to="/docs/2/about">
             View the Documentation
           </Link>
 
           <Link
             className="button border border-sky-600 bg-sky-400  py-4 px-6 min-w-[17.5rem] button--lg"
-            to="https://fairhub.io/datasets/1"
+            to="https://fairhub.io/datasets/2"
           >
             Access the Dataset
           </Link>
