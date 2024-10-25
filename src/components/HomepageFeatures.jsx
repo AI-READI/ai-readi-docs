@@ -6,7 +6,7 @@ import styles from './HomepageFeatures.module.css';
 
 const StatsList = [
   {
-    heading: '204',
+    heading: '1067',
     text: 'Participants from three data collection sites',
   },
   {
@@ -14,13 +14,13 @@ const StatsList = [
     text: `Data modalities collected`,
   },
   {
-    heading: '21,669',
+    heading: '165,227',
     text: 'Total number of data files',
   },
 
   {
-    heading: '310',
-    text: `GB dataset size`,
+    heading: '1.83',
+    text: `TB dataset size`,
   },
 ];
 
