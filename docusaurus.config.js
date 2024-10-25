@@ -82,7 +82,7 @@ export default {
             position: 'right',
           },
           {
-            href: '/docs/1/contact',
+            href: '/docs/2/contact',
             label: 'Contact Us',
             position: 'right',
           },
@@ -96,7 +96,7 @@ export default {
             items: [
               {
                 label: 'Changelog',
-                to: '/docs/1/changelog',
+                to: '/docs/2/changelog',
               },
             ],
           },
