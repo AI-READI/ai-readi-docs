@@ -74,7 +74,7 @@ function LatestVersionSuggestionLabel({ versionLabel, to, onClick }) {
         ),
       }}
     >
-      {'Refer to the documentation for the v{latestVersionLink} of the dataset.'}
+      {'Refer to the documentation for the latest version of the dataset v{latestVersionLink}.'}
       {/* {'For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).'} */}
     </Translate>
   );
