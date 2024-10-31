@@ -142,7 +142,7 @@ export default function ClinicalLabTable() {
             fields={fields}
             pageSize={10}
             data={clinicalLabData}
-            pageSizes={[10, 20, 30]}
+            pageSizes={[10, 20, 39]}
             noRecordsMessage="No match found."
             noFilteredRecordsMessage="No match found."
             exactFilterable={false}
