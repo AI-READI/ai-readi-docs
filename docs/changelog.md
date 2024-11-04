@@ -31,6 +31,14 @@ https://doi.org/10.60775/fairhub.2
 - CGM: To ensure consistency in the body format across all wearable data files, we have updated the structure of the JSON files as follows:
   - The "body" field now includes a section for continuous glucose monitoring (CGM) data:
     - "body": `{ "cgm": [ ...list of observations ] }`
+- Labs OMOP mapping table replaced with updated version
+  - 2 mapping rows updated (units changed to mg/DL for Urine creatinine and Urine Albumin)
+  - 9 mapping rows added to add UCUM codes for units
+- MOCA OMOP mapping table replaced with updated version
+  - 7 mapping rows updated
+- REDCap OMOP mapping table replaced with updated version
+  - 344 mapping rows updated
+  - “value_as_concept_id,” “qualifier_concept_id,” and “qualifier_source_value” columns added to mapping table
 
 ## [1.0.0] - 2024-04-01
 
