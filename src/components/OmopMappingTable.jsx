@@ -134,6 +134,11 @@ export default function OmopMappingTable() {
       displayName: 'qualifier_source_value',
       inputFilterable: true,
     },
+    {
+      name: 'value_as_concept_id',
+      displayName: 'value_as_concept_id',
+      inputFilterable: true,
+    },
   ];
 
   return (
@@ -148,7 +153,7 @@ export default function OmopMappingTable() {
             fields={fields}
             noRecordsMessage="No match found."
             noFilteredRecordsMessage="No match found."
-            pageSizes={[10, 30, 50, 100, 1667]}
+            pageSizes={[10, 30, 50, 100, 200, 1695]}
             pageSize={10}
           />
         </div>
