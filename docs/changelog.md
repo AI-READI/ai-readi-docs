@@ -13,6 +13,7 @@ https://doi.org/10.60775/fairhub.2
 
 ### Added
 
+- Data from additional 863 participants has been added.
 - OCT and OCTA scans from the Zeiss Cirrus device have been added.
 
 ### Changed
