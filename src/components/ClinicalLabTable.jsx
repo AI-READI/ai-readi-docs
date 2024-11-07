@@ -27,7 +27,7 @@ export default function ClinicalLabTable() {
   const fields = [
     {
       name: 'Protected_or_open-source',
-      displayName: 'Protected_or_open',
+      displayName: 'Protected_or_open-source',
       inputFilterable: true,
       sortable: true,
     },
