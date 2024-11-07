@@ -29,8 +29,8 @@ export default function OmopMappingTable() {
   // Fields to show in the table, and what object properties in the data they bind to
   const fields = [
     {
-      name: 'Protected or open-source?',
-      displayName: 'Protected or open-source?',
+      name: 'Protected_or_open-source',
+      displayName: 'Protected_or_open-source',
       inputFilterable: true,
     },
     {
