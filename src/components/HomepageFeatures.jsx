@@ -14,12 +14,12 @@ const StatsList = [
     text: `Data modalities collected`,
   },
   {
-    heading: '165,227',
+    heading: '165,051',
     text: 'Total number of data files',
   },
 
   {
-    heading: '1.83',
+    heading: '2.01',
     text: `TB dataset size`,
   },
 ];
