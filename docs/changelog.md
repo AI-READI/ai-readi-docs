@@ -41,8 +41,12 @@ https://doi.org/10.60775/fairhub.2
   - 344 mapping rows updated
   - “value_as_concept_id,” “qualifier_concept_id,” and “qualifier_source_value” columns added to mapping table
 
-## [1.0.0] - 2024-04-01
+## [1.0.0] - 2024-05-03
+
+### Identifier/Link
+
+https://doi.org/10.60775/fairhub.1
 
 ### Added
 
-- First version of the documentation associated with the AI-READI dataset v1.0
+- Added data from pilot study (204 participants)
