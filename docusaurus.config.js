@@ -33,9 +33,13 @@ export default {
           showLastUpdateTime: true,
           lastVersion: 'current',
           versions: {
-            current: {
+            '1.0.0': {
               label: `1.0.0`,
               path: '1',
+            },
+            current: {
+              label: `2.0.0`,
+              path: '2',
             },
           },
         },
@@ -78,7 +82,7 @@ export default {
             position: 'right',
           },
           {
-            href: '/docs/1/contact',
+            href: '/docs/2/contact',
             label: 'Contact Us',
             position: 'right',
           },
@@ -92,7 +96,7 @@ export default {
             items: [
               {
                 label: 'Changelog',
-                to: '/docs/1/changelog',
+                to: '/docs/2/changelog',
               },
             ],
           },

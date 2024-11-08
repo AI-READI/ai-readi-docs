@@ -3,7 +3,7 @@ import React from 'react';
 import FilterableTable from 'react-filterable-table';
 // eslint-disable-next-line import/no-unresolved
 import BrowserOnly from '@docusaurus/BrowserOnly';
-import clinicalLabData from '../../static/json/clinicalLabData.json';
+import clinicalLabData from '../../docs/static/json/clinicalLabData.json';
 
 export default function ClinicalLabTable() {
   const renderReferenceInterval = (props) => {
@@ -16,7 +16,7 @@ export default function ClinicalLabTable() {
     ) : (
       <div>
         <span>See table below called </span>
-        <a href={`/docs/1/dataset/clinical-data/clinical-lab-tests/#${record.table}`}>
+        <a href={`/docs/2/dataset/clinical-data/clinical-lab-tests/#${record.table}`}>
           {record.tableName}
         </a>
       </div>
@@ -26,17 +26,43 @@ export default function ClinicalLabTable() {
   // Fields to show in the table, and what object properties in the data they bind to
   const fields = [
     {
-      name: 'Test',
-      displayName: 'Test',
+      name: 'Protected_or_open-source',
+      displayName: 'Protected_or_open-source',
       inputFilterable: true,
       sortable: true,
     },
     {
-      name: 'Lab Interpretation',
-      displayName: 'Lab Interpretation',
+      name: 'Name',
+      displayName: 'Name',
       inputFilterable: true,
       sortable: true,
     },
+    {
+      name: 'Sample_Source',
+      displayName: 'Sample_Source',
+      inputFilterable: true,
+      sortable: true,
+    },
+    {
+      name: 'Example_Data',
+      displayName: 'Example_Data',
+      inputFilterable: true,
+      sortable: true,
+    },
+    {
+      name: 'Data_Type',
+      displayName: 'Data_Type',
+      inputFilterable: true,
+      sortable: true,
+    },
+    {
+      name: 'Reference_Interval',
+      displayName: 'Reference_Interval',
+      inputFilterable: true,
+      sortable: true,
+      render: renderReferenceInterval,
+    },
+
     {
       name: 'Units',
       displayName: 'Units',
@@ -44,39 +70,56 @@ export default function ClinicalLabTable() {
       sortable: true,
     },
     {
-      name: 'Unit Description',
-      displayName: 'Unit Description',
+      name: 'TARGET_CONCEPT_ID',
+      displayName: 'TARGET_CONCEPT_ID',
       inputFilterable: true,
       sortable: true,
     },
     {
-      name: 'Reference Interval',
-      displayName: 'Reference Interval',
-      inputFilterable: true,
-      sortable: true,
-      render: renderReferenceInterval,
-    },
-    {
-      name: 'Collection Method',
-      displayName: 'Collection Method',
+      name: 'TARGET_CONCEPT_NAME',
+      displayName: 'TARGET_CONCEPT_NAME',
       inputFilterable: true,
       sortable: true,
     },
     {
-      name: 'LOINC',
-      displayName: 'LOINC',
+      name: 'TARGET_DOMAIN_ID',
+      displayName: 'TARGET_DOMAIN_ID',
       inputFilterable: true,
       sortable: true,
     },
     {
-      name: 'Reference',
-      displayName: 'Reference',
+      name: 'TARGET_VOCABULARY_ID',
+      displayName: 'TARGET_VOCABULARY_ID',
       inputFilterable: true,
       sortable: true,
     },
     {
-      name: 'measurement_source_value',
-      displayName: 'Measurement Source Value',
+      name: 'TARGET_CONCEPT_CLASS_ID',
+      displayName: 'TARGET_CONCEPT_CLASS_ID',
+      inputFilterable: true,
+      sortable: true,
+    },
+    {
+      name: 'TARGET_STANDARD_CONCEPT',
+      displayName: 'TARGET_STANDARD_CONCEPT',
+      inputFilterable: true,
+      sortable: true,
+    },
+    {
+      name: 'TARGET_CONCEPT_CODE',
+      displayName: 'TARGET_CONCEPT_CODE',
+      inputFilterable: true,
+      sortable: true,
+    },
+    {
+      name: 'PREDICATE_ID',
+      displayName: 'PREDICATE_ID',
+      inputFilterable: true,
+      sortable: true,
+    },
+    {
+      name: 'CONFIDENCE',
+      displayName: 'CONFIDENCE',
       inputFilterable: true,
       sortable: true,
     },
@@ -99,7 +142,7 @@ export default function ClinicalLabTable() {
             fields={fields}
             pageSize={10}
             data={clinicalLabData}
-            pageSizes={[10, 20, 28]}
+            pageSizes={[10, 20, 39]}
             noRecordsMessage="No match found."
             noFilteredRecordsMessage="No match found."
             exactFilterable={false}

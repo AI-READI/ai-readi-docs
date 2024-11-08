@@ -1,0 +1,143 @@
+---
+sidebar_position: 2
+title: Clinical Lab Tests
+---
+
+import ClinicalLabTable from '@site/src/components/v1/ClinicalLabTable';
+
+## Overview of Data Domain
+
+Clinical lab tests are a fundamental component of medical diagnostics and patient care. They encompass a wide range of tests performed on samples of blood, urine, tissue, or other bodily substances to assess health and diagnose disease. The data domain for clinical lab tests includes several key elements:
+
+1. **Test Name and Description**: Each lab test has a specific name and purpose, which provides vital information about what aspect of health or disease is being evaluated.
+
+2. **Interpretation**: The analysis and understanding of test results in the context of a patient’s overall health and medical history. Abnormal results may indicate an underlying condition that requires further investigation or treatment.
+
+3. **Measurement Units**: Lab tests results are reported in specific units of measure, such as milligrams per deciliter (mg/dL) for blood sugar levels or cells per microliter for blood cell counts.
+
+4. **Reference Ranges**: These are established norms used to compare individual test results. They indicate what is considered normal for a specific population or individual, based on age, sex, and other factors.The reference ranges for all clinical lab tests performed by the UW NORC lab (and CBC test performed at local labs for each Data site).
+
+5. **Method of Collection** This refers to how the sample is obtained, whether it's a blood draw, urine collection, or tissue biopsy.
+
+## Variables included in Data Domain
+
+<a href="/v1-dataDomainTable" target="_blank">
+  See the table here
+</a>
+
+{/* <ClinicalLabTable /> */}
+
+#### NT-proBNP Reference Intervals
+
+| Age     | Female Range | Male Range |
+| ------- | ------------ | ---------- |
+| 0-2d    | 321-11987    | 321-11987  |
+| 3d-10d  | 263-5918     | 263-5918   |
+| 11d-1m  | 263-5918     | 263-5918   |
+| 2m-1y   | 37-646       | 37-646     |
+| 2y      | 39-413       | 39-413     |
+| 3y-6y   | 23-289       | 23-289     |
+| 7y-14y  | 0-157        | 0-157      |
+| 15y-18y | 0-158        | 0-158      |
+| 19y-39y | 0-160        | 0-79       |
+| 40y-44y | 0-162        | 0-72       |
+| 45y-54y | 0-141        | 0-87       |
+| 55y-64y | 0-226        | 0-88       |
+| 65y-    | 0-540        | 0-540      |
+
+#### Alkaline Phosphatase reference ranges
+
+| Age     | Female Range | Male Range |
+| ------- | ------------ | ---------- |
+| 0-9y    | 111-281      | 115-324    |
+| 10y-11y | 132-366      | 115-324    |
+| 12y-13y | 89-285       | 119-426    |
+| 14y-17y | 43-226       | 72-400     |
+| 18y-24y | 26-98        | 42-136     |
+| 25y-34y | 25-100       | 35-109     |
+| 35y-44y | 25-112       | 36-122     |
+| 45y-54y | 34-121       | 39-139     |
+| 55y-64y | 31-132       | 37-159     |
+| 65y-74y | 38-172       | 36-161     |
+| 75y-    | 49-199       | 52-227     |
+
+## Data Processing
+
+### File Format
+
+Data was exported from the RedCap Survey that was filled by clinical personnel into .csv format.
+
+**File organization is as follows**:
+
+```
+pilot_data_root
+└── clinical_data
+   └── measurement.csv
+```
+
+| Domain | Variable        | Data Capture       | Method | Data Standard/File Extension | Open Source vs. Protected Database? |
+| ------ | --------------- | ------------------ | ------ | ---------------------------- | ----------------------------------- |
+| Labs   | measurement.csv | device, then Azure | RedCap | .csv                         | Open source                         |
+
+### Data Standards
+
+#### OMOP
+
+The OMOP (Observational Medical Outcomes Partnership) data standard, developed by the Observational Health Data Sciences and Informatics (OHDSI) program, is a standardized framework designed to improve the quality, reliability, and comparability of observational healthcare data. The main goal of the OMOP standard is to enable the aggregation and analysis of healthcare data from diverse sources, such as electronic health records (EHRs), insurance claims, and registries, in a consistent and interoperable manner.
+
+Reference : https://ohdsi.github.io/CommonDataModel/
+
+#### File Processing
+
+The .csv file can be opened and processed using notebook application or any coding language example:( Python, R). Here is a snippet code to extract HbA1c.
+
+```python
+
+import pandas as pd
+
+# Load the CSV file
+git reset head# Replace 'your_file.csv' with the path to your CSV file
+
+# Replace 'HBA1C_IDENTIFIER' with the actual identifier for HbA1c in your dataset
+HBA1C_IDENTIFIER = 'HbA1c (%)'  # This should be the actual identifier used in your CSV
+
+# Filter the dataframe for rows where measurement_source_concept_id is HbA1c
+hba1c_df = df[df['measurement_source_value'] == HBA1C_IDENTIFIER]
+
+# Selecting only the necessary columns
+hba1c_df = hba1c_df[['person_id', 'value_as_number', 'measurement_source_value']]
+
+# Save the filtered data to a new CSV file
+hba1c_df.to_csv('hba1c.csv', index=False)
+
+print(‘ Data saved to hba1c.csv')
+
+```
+
+### Metadata and Example Outputs
+
+| Variable                      | Description                                 | Example 1                   | Example 2           |
+| ----------------------------- | ------------------------------------------- | --------------------------- | ------------------- |
+| measurement_id                | Unique identifier for the measurement       | 10769                       | 10770               |
+| person_id                     | Unique identifier for the person            | 1099                        | 1500                |
+| measurement_concept_id        | Concept ID for the type of measurement      | 3035995                     | 3004410             |
+| measurement_date              | Date of the measurement                     | 2023-11-30                  | 2023-07-27          |
+| measurement_datetime          | Date and time of the measurement            | 2023-11-30 00:00:00         | 2023-07-27 00:00:00 |
+| measurement_time              | Time of the measurement                     | 00:00:00                    | 00:00:00            |
+| measurement_type_concept_id   | Concept ID for the type of measurement      | 32856                       | 32856               |
+| operator_concept_id           | Concept ID for the operator of measurement  | 4172703                     | 4172703             |
+| value_as_number               | Numeric value of the measurement            | 65.0                        | 5.7                 |
+| value_as_concept_id           | Concept ID for the value of measurement     | 0                           | 0                   |
+| unit_concept_id               | Concept ID for the unit of measurement      | 0                           | 0                   |
+| range_low                     | Lower range of the measurement value        | 34.0                        | 4.0                 |
+| range_high                    | Higher range of the measurement value       | 139.0                       | 6.0                 |
+| provider_id                   | Unique identifier for the provider          | 0                           | 0                   |
+| visit_occurrence_id           | Unique identifier for the visit occurrence  | 0                           | 0                   |
+| visit_detail_id               | Unique identifier for the visit detail      | 0                           | 0                   |
+| measurement_source_value      | Source value of the measurement             | Alkaline Phosphatase (IU/L) | HbA1c (%)           |
+| measurement_source_concept_id | Concept ID for the measurement source value | 0                           | 0                   |
+| unit_source_value             | Source unit of the measurement              | IU/L                        | %                   |
+| unit_source_concept_id        | Concept ID for the unit source              | 0                           | 0                   |
+| value_source_value            | Source value for the measurement value      | 65                          | 5.7                 |
+| measurement_event_id          | Unique identifier for the measurement event | 0                           | 0                   |
+| meas_event_field_concept_id   | Concept ID for the measurement event field  | 0                           | 0                   |

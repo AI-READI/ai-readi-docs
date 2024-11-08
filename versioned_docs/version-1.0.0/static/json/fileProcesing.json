@@ -1,0 +1,132 @@
+[
+    {
+        "Metadata Element": "participant_id",
+        "Description": "Identification number of study participant",
+        "Example": "0000"
+    },
+    {
+        "Metadata Elements": "wrist_worn_on",
+        "Description": "Which wrist the fitness tracker was worn on by the participant",
+        "Example": "Left"
+    },
+    {
+        "Metadata Elements": "dominant_hand",
+        "Description": "Participants dominant hand",
+        "Example": "Right hand"
+    },
+    {
+        "Metadata Elements": "heartrate_filename",
+        "Description": "Filename containing participants heart rate data",
+        "Example": "/wearable_activity_monitor/heart_rate/garmin_vivosmart5/1043/0000_heartrate.json"
+    },
+    {
+        "Metadata Elements": "heartrate_record_count",
+        "Description": "Total number of heart rate measurements recorded",
+        "Example": "15780"
+    },
+    {
+        "Metadata Elements": "average_heartrate_bpm",
+        "Description": "Average heart rate during the recording period",
+        "Example": "79.35743649"
+    },
+    {
+        "Metadata Elements": "oxygen_saturation_filename",
+        "Description": "Filename containing participants oxygen saturation (SpO2) data",
+        "Example": "/wearable_activity_monitor/oxygen_saturation/garmin_vivosmart5/0000/0000_oxygensaturation.json"
+    },
+    {
+        "Metadata Elements": "oxygen_saturation_record_count",
+        "Description": "Total number of SpO2 measurements recorded",
+        "Example": "2094"
+    },
+    {
+        "Metadata Elements": "average_oxygen_saturation_pct",
+        "Description": "Average SpO2 during the recording period",
+        "Example": "91.71%"
+    },
+    {
+        "Metadata Elements": "stress_level_filename",
+        "Description": "Filename containing participants stress level data",
+        "Example": "/wearable_activity_monitor/stress/garmin_vivosmart5/0000/0000_stress.json"
+    },
+    {
+        "Metadata Elements": "stress_level_record_count",
+        "Description": "Total number of stress level measurements recorded",
+        "Example": "24659"
+    },
+    {
+        "Metadata Elements": "average_stress_level",
+        "Description": "Average stress levels during the recording period",
+        "Example": "15.37"
+    },
+    {
+        "Metadata Elements": "sleep_filename",
+        "Description": "Filename containing participants sleep data",
+        "Example": "/wearable_activity_monitor/sleep/garmin_vivosmart5/0000/0000_sleep.json"
+    },
+    {
+        "Metadata Elements": "sleep_record_count",
+        "Description": "Total number of sleep measurements recorded",
+        "Example": "12"
+    },
+    {
+        "Metadata Elements": "average_sleep_hours",
+        "Description": "Average sleep duration during the recording period",
+        "Example": "7.25"
+    },
+    {
+        "Metadata Elements": "respiratory_rate_filename",
+        "Description": "Filename containing participants respiratory rate data",
+        "Example": "/wearable_activity_monitor/respiratory_rate/garmin_vivosmart5/0000/0000_respiratoryrate.json"
+    },
+    {
+        "Metadata Elements": "respiratory_rate_record_count",
+        "Description": "Total number of respiratory rate measurements recorded",
+        "Example": "2164"
+    },
+    {
+        "Metadata Elements": "average_respiratory_rate_bpm",
+        "Description": "Average respiratory rate during the recording period",
+        "Example": "27.02"
+    },
+    {
+        "Metadata Elements": "physical_activity_filename",
+        "Description": "Filename containing participants physical activity data",
+        "Example": "/wearable_activity_monitor/physical_activity/garmin_vivosmart5/0000/0000_activity.json"
+    },
+    {
+        "Metadata Elements": "physical_activity_num_records",
+        "Description": "Total number of measurements recorded",
+        "Example": "5524"
+    },
+    {
+        "Metadata Elements": "average_daily_activity",
+        "Description": "Average number of steps during the recording period",
+        "Example": "7897.21"
+    },
+    {
+        "Metadata Elements": "active_calories_filename",
+        "Description": "Filename containing participants active calories data",
+        "Example": "/wearable_activity_monitor/physical_activity_calorie/garmin_vivosmart5/0000/0000_calorie.json"
+    },
+    {
+        "Metadata Elements": "active_calories_record_count",
+        "Description": "Total number of calorie measurements recorded",
+        "Example": "1773"
+    },
+    {
+        "Metadata Elements": "average_active_calories_kcal",
+        "Description": "Average number of calories burned during the recording period",
+        "Example": "194.11"
+    },
+    {
+        "Metadata Elements": "sensor_sampling_duration_days",
+        "Description": "How many days the participant wore the fitness tracker",
+        "Example": "12"
+    },
+    {
+        "Metadata Elements": "fitness_manufacturer_model",
+        "Description": "Model of the fitness tracker",
+        "Example": "Garmin Vivosmart 5"
+    }
+]

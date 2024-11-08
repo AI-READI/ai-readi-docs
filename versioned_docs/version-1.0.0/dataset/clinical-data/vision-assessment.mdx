@@ -1,0 +1,331 @@
+---
+sidebar_position: 6
+title: Vision Assessment
+---
+
+## Overview of Data Domain
+
+Vision assessment serves as a crucial indicator of retinal health in individuals with Type 2 diabetes. Prolonged exposure to high blood sugar levels, known as hyperglycemia, can lead to various complications within the eye, particularly affecting the delicate structures of the retina. As a result, individuals with diabetes are at an increased risk of developing diabetic retinopathy, a progressive eye disease that can result in vision impairment and, if left untreated, blindness. Besides this, fluctuation in blood glucose levels can lead to significant shifts in the refractive power, resulting in rapid changes in visual acuity and contrast sensitivity. Therefore, assessing vision is essential in diabetes management, as it provides valuable insights into the health of the retina and enables timely intervention to prevent or mitigate the progression of diabetic eye complications.
+
+In this study, vision is assessed using autorefraction, best corrected visual acuity and contrast sensitivity and below is a brief description of the measurement.
+
+## Variables included in Data Domain
+
+### Autorefraction
+
+Autorefraction is a non-invasive diagnostic test used during routine clinical examinations to measure an individual's refractive error. During the test, an automated instrument (**Topcon KR 800**) measures how light is focused on the back of the eye. Based on the size and shape of the reflections, the autorefractor automatically adjusts to achieve the correct focus, quantifying the eye's power in diopters. This measurement includes spherical and cylindrical corrections, along with the axis, for both the right and left eyes. Spherical value refers to the overall power of the eyeglass prescription, correcting nearsightedness or farsightedness. "Cylinder" and "axis" relate to astigmatism, a condition where the eye is shaped more like a football than a perfect sphere. The "cylinder" measures the degree of astigmatism, and the "axis" identifies its orientation.
+
+Limitations: When considering autorefraction, it's important to keep in mind potential inaccuracies in measuring refractive errors, particularly in individuals with specific eye conditions or irregularities like cataracts or corneal abnormalities. Additionally, autorefraction may not offer as precise results as subjective refraction, which relies on patient feedback for determining the best corrective lenses.
+
+All data were entered into a RedCap form titled BCVA, which is available in our full list of recording forms [here](../../static/files/REDCap%20surveys%20and%20forms.pdf).
+
+### Best Corrected Visual Acuity
+
+Best Corrected Visual acuity refers to the sharpest, clearest vision an individual can achieve with the best possible correction, i.e. using glasses or contact lenses. This measurement is important for assessing the overall quality of vision and is commonly used in eye examinations and vision assessments. Additionally, photopic and mesopic visual acuity testing is essential for assessing vision under different lighting conditions. Photopic conditions mimic bright, well-lit settings similar to daytime conditions, allowing for the evaluation of vision in optimal lighting. On the other hand, mesopic conditions simulate low-light environments, such as dusk or dimly lit rooms, which are common in everyday scenarios. By testing visual acuity in both photopic and mesopic conditions, healthcare professionals can assess how well individuals can see in different lighting situations, which is crucial for activities like driving at night or navigating dimly lit areas safely.
+
+The **M&S Technologies EVA** system is used to conduct BCVA tests under both Photopic and Mesopic conditions. The chart exclusively features letters, each bracketed by lines on all sides. During testing, subjects are prompted to read these letters displayed on a 12x20-inch touch screen monitor which is positioned 4 feet away, while wearing their own prescription spectacles or trial frames. All tests are conducted without dilation.
+
+**Photopic conditions**: A general occluder is used to test under monocular right eye and left eye conditions respectively. For example, the occluder is placed on the left eye to assess the right eye.
+
+**Mesopic conditions**: A neutral density filter is used to test under monocular right eye and left eye conditions respectively. For example, the neutral density filter is placed on the left eye to assess the left eye.
+
+All data were entered into REDCap under BCVA, which is available in our full list of recording forms [here](../../static/files/REDCap%20surveys%20and%20forms.pdf).
+
+Limitations: A caveat of Best Corrected Visual Acuity (BCVA) testing is that it primarily evaluates central vision sharpness and may not account for other critical aspects of visual function, including contrast sensitivity, depth perception, or peripheral vision. Consequently, BCVA may not provide a comprehensive assessment of overall visual abilities and functional vision. Additionally, BCVA testing might not detect subtle changes in vision that could affect daily activities, particularly in scenarios involving contrast or glare sensitivity.
+
+### Mars Letter Contrast Sensitivity
+
+Contrast sensitivity testing is a type of vision test that measures a person's ability to distinguish between light and dark contrasts, rather than simply testing visual acuity or sharpness. Photopic and mesopic contrast sensitivity testing evaluates how well an individual can see objects under varying lighting conditions and contrasts, which is important for tasks such as driving at night or reading in low-light environments. During testing, photopic conditions replicate well-lit environments, akin to daylight conditions, while mesopic conditions simulate low-light settings, such as twilight or dimly lit rooms.
+
+The **MARS Letter Contrast Sensitivity test (Perceptrix)** is a standardized test used for contrast sensitivity testing under both Photopic and Mesopic conditions. It consists of rows of letters with varying contrast levels, and subjects are instructed to read them left to right across each line on the chart. Testing is terminated either when the subject makes two consecutive errors or reaches the end of the chart. The log contrast sensitivity (log CS) values are recorded by subtracting 0.04 times the number of errors before the final correct letter from the log CS value at the final correct letter. If no consecutive errors are made, the last correctly identified letter is recorded. All testing is performed with appropriate near correction, i.e., reading glasses or trial frames with +2.00D lenses under undilated conditions.
+
+**Photopic conditions**: A general occluder is used to test under monocular right eye and left eye conditions respectively. For example, the occluder is placed on the left eye to assess the right eye.
+
+**Mesopic conditions**: A neutral density occluder along with a low luminance filter lens is used to test under monocular right eye and left eye conditions respectively. For example, the neutral density occluder and low illuminance filter lens is placed on the left eye to assess the left eye.
+
+All data were entered into RedCap under Photopic MARS or Mesopic MARS, which is available in our full list of recording forms [here](../../static/files/REDCap%20surveys%20and%20forms.pdf).
+
+Limitations of contrast sensitivity testing include its sensitivity to environmental factors like lighting conditions and potential biases introduced by the testing environment. Additionally, individual factors such as age, cognitive ability, and eye health can influence test results, impacting the accuracy and reliability of the assessment.
+
+## Data Processing
+
+### Autorefractor
+
+#### File Format
+
+The Autrefractor data from all subjects is stored in a .csv file, along with other RedCap measurements. A .csv file, short for Comma-Separated Values, is a commonly used file format for storing tabular data in plain text, where each line represents a row of data and each value within the row is separated by a comma.
+
+The file organization is as follows:
+
+```
+pilot_data_root
+└── clinical_data
+    └── measurement.csv
+```
+
+#### Data Standards
+
+BCVA data follows the OMOP Common Data Model. OMOP (Observational Medical Outcomes Partnership) is a collaborative effort focused on standardizing and analyzing healthcare data. Developed by the Observational Health Data Sciences and Informatics (OHDSI) community, OMOP provides a standardized data model, vocabulary, and analytics tools to enable large-scale analysis of real-world healthcare data.
+
+#### File Processing
+
+The .csv files are designed for easy opening in Python and/or Jupyter Notebooks. The BCVA data is organized per subject (person_id) and within each subject block i.e. ~30 rows, each row corresponds to a different measurement type (measurement_concept_id) for that subject.
+
+#### Metadata and Example Outputs
+
+| Data Element                  | Description                                                                                    | Example                |
+| ----------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------- |
+| measurement_id                | Identifier for the measurement record                                                          | 23                     |
+| person_id                     | Subject ID (serves as foreign key to the OMOP Persons table)                                   | 0000                   |
+| measurement_concept_id        | Concept identifier representing the type of measurement                                        | Refer to table below\* |
+| measurement_date              | Date of the measurement                                                                        | 2023-08-28             |
+| measurement_datetime          | Date and time of the measurement                                                               | 2023-08-28 00:00:00    |
+| measurement_time              | Time of the measurement                                                                        | blank                  |
+| measurement_type_concept_id   | Concept identifier representing the type of measurement                                        | 32862                  |
+| operator_concept_id           | Concept identifier representing the operator involved in the measurement                       | 0                      |
+| value_as_number               | Numeric value of the measurement                                                               | 170                    |
+| value_as_concept_id           | Concept identifier representing the value of the measurement                                   | 0                      |
+| unit_concept_id               | Concept identifier representing the unit of measurement                                        | 0                      |
+| range_low                     | Lower range of normal values for the measurement                                               | blank                  |
+| range_high                    | Upper range of normal values for the measurement                                               | blank                  |
+| provider_id                   | Identifier for the healthcare provider                                                         | blank                  |
+| visit_occurrence_id           | Identifier for the measurement visit                                                           | 0                      |
+| visit_detail_id               | Identifier for additional details about the visit                                              | 0                      |
+| measurement_source_value      | Original value in the source data representing the measurement                                 | Refer to table below\* |
+| measurement_source_concept_id | Concept identifier in the source data representing the measurement                             | 0                      |
+| unit_source_value             | Original value in the source data representing the unit of measurement                         | blank                  |
+| unit_source_concept_id        | Concept identifier in the source data representing the unit of measurement                     | 0                      |
+| value_source_value            | Original value in the source data representing the measurement value                           | blank                  |
+| measurement_event_id          | Identifier for the specific event associated with the measurement                              | 0                      |
+| meas_event_field_concept_id   | Concept identifier representing the specific field being measured within the measurement event | 0                      |
+
+\*Autorefractor values are stored in the following order: Right eye (OD) and Left eye (OS). For each eye, the spherical, cylindrical and axis value is recorded. For example:
+
+| Order | Measurement conditions                                            | measurement_source_value      | measurement_concept_id |
+| ----- | ----------------------------------------------------------------- | ----------------------------- | ---------------------- |
+| 1     | Spherical component of right eye (OD) autorefractor measurement   | OD - Autorefractor - Sphere   | 3000744                |
+| 2     | Cylindrical component of right eye (OD) autorefractor measurement | OD - Autorefractor - Cylinder | 3033346                |
+| 3     | Axis of right eye (OD) autorefractor measurement                  | OD - Autorefractor - Axis     | 3034190                |
+| 4     | Spherical component of left eye (OS) autorefractor measurement    | OS - Autorefractor - Sphere   | 3003500                |
+| 5     | Cylindrical component of left eye (OS) autorefractor measurement  | OS - Autorefractor - Cylinder | 3002343                |
+| 6     | Axis of left eye (OS) autorefractor measurement                   | OS - Autorefractor - Axis     | 3001254                |
+
+### Best Corrected Visual Acuity
+
+#### File format
+
+The BCVA data from all subjects is stored in a .csv file, along with other RedCap measurements. A .csv file, short for Comma-Separated Values, is a commonly used file format for storing tabular data in plain text, where each line represents a row of data and each value within the row is separated by a comma.
+
+The file organization is as follows:
+
+```
+pilot_data_root
+└── clinical_data
+    └── measurement.csv
+
+```
+
+#### Data Standards
+
+BCVA data follows the OMOP Common Data Model. OMOP (Observational Medical Outcomes Partnership) is a collaborative effort focused on standardizing and analyzing healthcare data. Developed by the Observational Health Data Sciences and Informatics (OHDSI) community, OMOP provides a standardized data model, vocabulary, and analytics tools to enable large-scale analysis of real-world healthcare data.
+
+#### File Processing
+
+The .csv files are designed for easy opening in Python and/or Jupyter Notebooks. The BCVA data is organized per subject (person_id) and within each subject block i.e. ~30 rows, each row corresponds to a different measurement type (measurement_concept_id) for that subject.
+
+#### Metadata and Example Outputs
+
+| Data Element                  | Description                                                                                    | Example                |
+| ----------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------- |
+| measurement_id                | Identifier for the measurement record                                                          | 23                     |
+| person_id                     | Subject ID (serves as foreign key to the OMOP Persons table)                                   | 0000                   |
+| measurement_concept_id        | Concept identifier representing the type of measurement                                        | Refer to table below\* |
+| measurement_date              | Date of the measurement                                                                        | 2023-08-28             |
+| measurement_datetime          | Date and time of the measurement                                                               | 2023-08-28 00:00:00    |
+| measurement_time              | Time of the measurement                                                                        | blank                  |
+| measurement_type_concept_id   | Concept identifier representing the type of measurement                                        | 32862                  |
+| operator_concept_id           | Concept identifier representing the operator involved in the measurement                       | 0                      |
+| value_as_number               | Numeric value of the measurement                                                               | 170                    |
+| value_as_concept_id           | Concept identifier representing the value of the measurement                                   | 0                      |
+| unit_concept_id               | Concept identifier representing the unit of measurement                                        | 0                      |
+| range_low                     | Lower range of normal values for the measurement                                               | blank                  |
+| range_high                    | Upper range of normal values for the measurement                                               | blank                  |
+| provider_id                   | Identifier for the healthcare provider                                                         | blank                  |
+| visit_occurrence_id           | Identifier for the measurement visit                                                           | 0                      |
+| visit_detail_id               | Identifier for additional details about the visit                                              | 0                      |
+| measurement_source_value      | Original value in the source data representing the measurement                                 | Refer to table below\* |
+| measurement_source_concept_id | Concept identifier in the source data representing the measurement                             | 0                      |
+| unit_source_value             | Original value in the source data representing the unit of measurement                         | blank                  |
+| unit_source_concept_id        | Concept identifier in the source data representing the unit of measurement                     | 0                      |
+| value_source_value            | Original value in the source data representing the measurement value                           | blank                  |
+| measurement_event_id          | Identifier for the specific event associated with the measurement                              | 0                      |
+| meas_event_field_concept_id   | Concept identifier representing the specific field being measured within the measurement event | 0                      |
+
+BCVA values are stored in this order: Right eye (OD) Photopic, Left eye (OS) Photopic, Right eye (OD) Mesopic, Left eye (OS) Mesopic. For each measurement, the value of the Snellen fraction, letter score and LogMAR BCVA is recorded. For example:
+
+| Order | Measurement conditions                   | measurement_source_value            | measurement_concept_id |
+| ----- | ---------------------------------------- | ----------------------------------- | ---------------------- |
+| 1     | Snellen fraction right eye (OD) Photopic | Snellen fraction - Photopic VA - OD | 2005200012             |
+| 2     | Snellen fraction left eye (OS) Photopic  | Snellen fraction - Photopic VA - OS | 2005200013             |
+| 3     | BCVA right eye (OD) Photopic             | VA Letter Score - Photopic VA - OD  | 2005200042             |
+| 4     | BCVA left eye (OS) Photopic              | VA Letter Score - Photopic VA - OS  | 2005200043             |
+| 5     | LogMAR score (OD) Photopic               | Photopic LogMAR OD Score            | 2005200052             |
+| 6     | LogMAR score (OS) Photopic               | Photopic LogMAR OS Score            | 2005200053             |
+| 7     | Snellen fraction right eye (OD) Mesopic  | Snellen fraction - Mesopic VA - OD  | 2005200054             |
+| 8     | Snellen fraction left eye (OS) Mesopic   | Snellen fraction - Mesopic VA - OS  | 2005200055             |
+| 9     | BCVA right eye (OD) Mesopic              | LLVA Letter Score - Mesopic VA - OD | 2005200056             |
+| 10    | BCVA left eye (OS) Mesopic               | LLVA Letter Score - Mesopic VA - OS | 2005200057             |
+| 11    | LogMAR score (OD) Mesopic                | Mesopic LogMAR OD Score             | 2005200336             |
+| 12    | LogMAR score (OS) Mesopic                | Mesopic LogMAR OS Score             | 2005200337             |
+
+### MARS Letter Contrast Sensitivity
+
+#### File format
+
+The contrast sensitivity (CS) data from all subjects is stored in .csv files, along with other RedCap measurements. A .csv file, short for Comma-Separated Values, is a commonly used file format for storing tabular data in plain text, where each line represents a row of data and each value within the row is separated by a comma.
+
+MARS contrast sensitivity data is split into 2 .csv files. The file organization is as follows:
+
+```
+pilot_data_root
+└── clinical_data
+    ├── measurement.csv
+    └── observation.csv
+```
+
+#### Data Standards
+
+Contrast Sensitivity data follows the OMOP Common data Model. [OMOP](https://www.ohdsi.org/data-standardization/) (Observational Medical Outcomes Partnership) is a collaborative effort focused on standardizing and analyzing healthcare data. Developed by the Observational Health Data Sciences and Informatics (OHDSI) community, OMOP provides a standardized data model, vocabulary, and analytics tools to enable large-scale analysis of real-world healthcare data.
+
+#### File Processing
+
+The .csv files are designed for easy opening in Python and/or Jupyter Notebooks. The measurement.csv data files comprises right eye and left eye LogMAR CS values for photopic and mesopic testing. The procedure_occurence.csv data files consist of the LogMAR value of final correct letter and number of missed letters prior to stopping. The observation.csv denotes the MARS form (Form 1 or Form 2) used to assess contrast sensitivity.
+
+#### Metadata and Example Outputs (measurement.csv)
+
+The measurement.csv is organized per subject (person_id) and within each subject block i.e. ~30 rows, each row corresponds to a different measurement type (measurement_concept_id) for that subject.
+
+| Data Element                  | Description                                                                                    | Example                |
+| ----------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------- |
+| measurement_id                | Identifier for the measurement record                                                          | 23                     |
+| person_id                     | Subject ID (serves as foreign key to the OMOP Persons table)                                   | 0000                   |
+| measurement_concept_id        | Concept identifier representing the type of measurement                                        | Refer to table below\* |
+| measurement_date              | Date of the measurement                                                                        | 2023-08-28             |
+| measurement_datetime          | Date and time of the measurement                                                               | 2023-08-28 00:00:00    |
+| measurement_time              | Time of the measurement                                                                        | blank                  |
+| measurement_type_concept_id   | Concept identifier representing the type of measurement                                        | 32862                  |
+| operator_concept_id           | Concept identifier representing the operator involved in the measurement                       | 0                      |
+| value_as_number               | Numeric value of the measurement                                                               | 1.4                    |
+| value_as_concept_id           | Concept identifier representing the value of the measurement                                   | 0                      |
+| unit_concept_id               | Concept identifier representing the unit of measurement                                        | 0                      |
+| range_low                     | Lower range of normal values for the measurement                                               | blank                  |
+| range_high                    | Upper range of normal values for the measurement                                               | blank                  |
+| provider_id                   | Identifier for the healthcare provider                                                         | blank                  |
+| visit_occurrence_id           | Identifier for the measurement visit                                                           | 0                      |
+| visit_detail_id               | Identifier for additional details about the visit                                              | 0                      |
+| measurement_source_value      | Original value in the source data representing the measurement                                 | Refer to table below\* |
+| measurement_source_concept_id | Concept identifier in the source data representing the measurement                             | 0                      |
+| unit_source_value             | Original value in the source data representing the unit of measurement                         | blank                  |
+| unit_source_concept_id        | Concept identifier in the source data representing the unit of measurement                     | 0                      |
+| value_source_value            | Original value in the source data representing the measurement value                           | blank                  |
+| measurement_event_id          | Identifier for the specific event associated with the measurement                              | 0                      |
+| meas_event_field_concept_id   | Concept identifier representing the specific field being measured within the measurement event | 0                      |
+
+\*LogMAR CS values are stored in the following order: Right eye (OD) Photopic, Left eye (OS) Photopic, Right eye (OD) Mesopic, Left eye (OS) Mesopic. Besides the log CS values, the value of the final correct letter and number of misses prior to stopping is recorded. The values are stored in this order: Right eye (OD) Photopic, Left eye (OS) Photopic, Right eye (OD) Mesopic, Left eye (OS) Mesopic. For example:
+
+<table>
+  <thead>
+    <tr>
+      <th>Order of Testing</th>
+      <th>Measurement conditions</th>
+      <th>measurement_source_value</th>
+      <th>measurement_concept_id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowSpan="3">1</td>
+      <td rowSpan="3">Right eye (OD) Photopic CS</td>
+      <td>OD: Value of final correct letter - Photopic, right eye</td>
+      <td>2005200338</td>
+    </tr>
+    <tr>
+      <td>OD: Number of misses prior to stopping - Photopic, right eye</td>
+      <td>2005200339</td>
+    </tr>
+    <tr>
+      <td>OD: Log Contrast Sensitivity - Photopic, right eye</td>
+      <td>2005200155</td>
+    </tr>
+    <tr>
+      <td rowSpan="3">2</td>
+      <td rowSpan="3">Left eye (OS) Photopic CS</td>
+      <td>OS: Value of final correct letter - Photopic, left eye</td>
+      <td>2005200340</td>
+    </tr>
+    <tr>
+      <td>OS: Number of misses prior to stopping - Photopic, left eye</td>
+      <td>2005200341</td>
+    </tr>
+    <tr>
+      <td>OS: Log Contrast Sensitivity - Photopic, left eye</td>
+      <td>2005200156</td>
+    </tr>
+    <tr>
+      <td rowSpan="3">3</td>
+      <td rowSpan="3">Right eye (OD) Mesopic CS</td>
+      <td>OD: Value of final correct letter - Mesopic, right eye</td>
+      <td>2005200486</td>
+    </tr>
+    <tr>
+      <td>OD: Number of misses prior to stopping - Mesopic, right eye</td>
+      <td>2005200487</td>
+    </tr>
+    <tr>
+      <td>OD: Log Contrast Sensitivity - Mesopic, right eye</td>
+      <td>2005200155</td>
+    </tr>
+    <tr>
+      <td rowSpan="3">4</td>
+      <td rowSpan="3">Left eye (OS) Mesopic CS</td>
+      <td>OS: Value of final correct letter - Mesopic, left eye</td>
+      <td>2005200488</td>
+    </tr>
+    <tr>
+      <td>OS: Number of misses prior to stopping - Mesopic, left eye</td>
+      <td>2005200489</td>
+    </tr>
+    <tr>
+      <td>OS: Log Contrast Sensitivity - Mesopic, left eye</td>
+      <td>2005200156</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Metadata and Example Outputs (observation.csv)
+
+The observation.csv data file is organized per subject (person_id) and within each subject block i.e. ~160 rows, each row corresponds to a different measurement type (observation_concept_id) for that subject.
+
+| Data Element                  | Description                                                  | Example                                                   |
+| ----------------------------- | ------------------------------------------------------------ | --------------------------------------------------------- |
+| observation_id                | ID number associated with the MoCA test                      | 114                                                       |
+| person_id                     | Subject ID (serves as foreign key to the OMOP Persons table) | 0000                                                      |
+| observation_concept_id        | OMOP Concept ID corresponding to the CS test                 | 40767451 (for Form)                                       |
+| observation_date              | Date of the CS test                                          | 2023-08-10                                                |
+| observation_datetime          | Datetime of the CS test                                      | 2023-08-10 00:00:00                                       |
+| observation_type_concept_id   | Concept ID for the type of measurement                       | 32862                                                     |
+| value_as_number               | CS test output as a number                                   | blank                                                     |
+| value_as_string               | CS test output as a string                                   | R [right eye] OR L [left eye]                             |
+| value_as_concept_id           | Concept ID for observed value                                | 45876703 [right eye] OR 45883829 [left eye]               |
+| qualifier_concept_id          | Concept ID for additional information                        | 0                                                         |
+| unit_concept_id               | Concept ID for the unit of measurement                       | 0                                                         |
+| provider_id                   | Identifier for healthcare provider                           | 0                                                         |
+| visit_occurrence_id           | Identifier for participant visit                             | 0                                                         |
+| visit_detail_id               | Additional visit details identifier                          | 0                                                         |
+| observation_source_value      | Source data representing observation value                   | OD Form 1 (eye) [right eye] OR OS Form 2 (eye) [left eye] |
+| observation_source_concept_id | Concept representing observation_source_value                | 0                                                         |
+| unit_source_value             | Value in source data for measurement unit                    | blank                                                     |
+| qualifier_source_value        | Value in source data for qualifier                           | blank                                                     |
+| value_source_value            | Source data value                                            | blank                                                     |
+| observation_event_id          | Observation event identifier                                 | 0                                                         |
+| obs_event_field_concept_id    | Observation event field concept                              | 0                                                         |

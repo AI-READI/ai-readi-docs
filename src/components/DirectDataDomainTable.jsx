@@ -3,10 +3,10 @@ import { useEffect } from 'react';
 function DirectDataDomainTable() {
   useEffect(() => {
     // Open OMOP Table in a new tab
-    window.open('/dataDomainTable', '_blank');
+    window.open('/v2-dataDomainTable', '_blank');
 
     // Redirect the current page to the documentation
-    window.location.replace('/docs/1/dataset/clinical-data/clinical-lab-tests');
+    window.location.replace('/docs/2/dataset/clinical-data/clinical-lab-tests');
   }, []);
 }
 

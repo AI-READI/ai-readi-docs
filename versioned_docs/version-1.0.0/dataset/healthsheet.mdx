@@ -1,0 +1,625 @@
+---
+sidebar_position: 2
+title: Healthsheet
+---
+
+## General information
+
+1. Provide a 2 sentence summary of this dataset.
+
+   The Artificial Intelligence Ready and Equitable Atlas for Diabetes Insights (AI-READI) is a dataset consisting of data collected from individuals with and without Type 2 Diabetes Mellitus (T2DM) and harmonized across 3 data collection sites. The composition of the dataset was designed with future studies using AI/Machine Learning in mind. This included recruitment sampling procedures aimed at achieving approximately equal distribution of participants across sex, race, and diabetes severity, as well as the design of a data acquisition protocol across multiple domains (survey data, phyftrainsical measurements, clinical data, imaging data, wearable device data, etc.) to enable downstream AI/ML analyses that may not be feasible with existing data sources such as claims or electronic health records data. The goal is to better understand salutogenesis (the pathway from disease to health) in T2DM. Some data that are not considered to be sensitive personal health data will be available to the public for download upon agreement with a license that defines how the data can be used. The full dataset will be accessible by entering into a data use agreement. The public dataset will include survey data, blood and urine lab results, fitness activity levels, clinical measurements (e.g. monofilament and cognitive function testing), retinal images, ECG, blood sugar levels, and home air quality. The data held under controlled access include 5-digit zip code, sex, race, ethnicity, genetic sequencing data, medications, past health records, and traffic and accident reports. Of note, the overall enrollment goal is to have balanced distribution between different racial groups. As enrollment is ongoing, the pilot data release and periodic updates to data releases may not have achieved balanced distribution across groups.
+
+2. Has the dataset been audited before? If yes, by whom and what are the results?
+
+   The dataset has not undergone any formal external audits. However, the dataset has been reviewed internally by AI-READI team members for quality checks and to ensure that no personally identifiable information was accidentally included.
+
+## Dataset versioning
+
+### Version
+
+A dataset will be considered to have a new version if there are major differences from a previous release. Some examples are a change in the number of patients/participants, or an increase in the data modalities covered.
+
+### Sub-versions
+
+A sub-version tends to apply smaller scale changes to a given version. Some datasets in healthcare are released without labels and predefined tasks, or will be later labeled by researchers for specific tasks and problems, to form sub-versions of the dataset.
+
+The following set of questions clarifies the information about the current (latest) version of the dataset. It is important to report the rationale for labeling the data in any of the versions and sub-versions that this datasheet addresses, funding resources, and motivations behind each released version of the dataset.
+
+1. Does the dataset get released as static versions or is it dynamically updated?
+
+   a. If static, how many versions of the dataset exist?
+
+   b. If dynamic, how frequently is the dataset updated?
+
+   The dataset gets released as static versions. This is the first version of the dataset and consists of data collected during the pilot data collection phase. After that, there are plans to release new versions of the dataset approximately once a year with additional data from participants who have been enrolled since the last dataset version release.
+
+2. Is this datasheet created for the original version of the dataset? If not, which version of the dataset is this datasheet for?
+
+   Yes, this datasheet is created for the first version of the dataset.
+
+3. Are there any datasheets created for any versions of this dataset?
+
+   No, there are no previous datasheets created, since this is the first version of the dataset.
+
+4. Does the current version/subversion of the dataset come with predefined task(s), labels, and recommended data splits (e.g., for training, development/validation, testing)? If yes, please provide a high-level description of the introduced tasks, data splits, and labeling, and explain the rationale behind them. Please provide the related links and references. If not, is there any resource (website, portal, etc.) to keep track of all defined tasks and/or associated label definitions? (please note that more detailed questions w.r.t labeling is provided in further sections)
+
+   See response to question #6 under “Labeling and subjectivity of labeling”.
+
+5. If the dataset has multiple versions, and this datasheet represents one of them, answer the following questions:
+
+   a. What are the characteristics that have been changed between different versions of the dataset?
+
+   b. Explain the motivation/rationale for creating the current version of the dataset.
+
+   c. Does this version have more subjects/patients represented in the data, or fewer?
+
+   d. Does this version of the dataset have extended data or new data from the same patients as the older versions? Were any patients, data fields, or data points removed? If so, why?
+
+   e. Do we expect more versions of the dataset to be released?
+
+   f. Is this datasheet for a version of the dataset? If yes, does this sub-version of the dataset introduce a new task, labeling, and/or recommended data splits? If the answer to any of these questions is yes, explain the rationale behind it.
+
+   g. Are you aware of any widespread version(s)/subversion(s) of the dataset? If yes, what is the addressed task, or application that is addressed?
+
+   N/A, since this is the first version of the dataset.
+
+## Motivation
+
+Reasons and motivations behind creating the dataset, including but not limited to funding interests.
+
+For any of the following questions, if a healthsheet has already been created for this dataset, then refer to those answers when filling in the below information.
+
+1. For what purpose was the dataset created? Was there a specific task in mind? Was there a specific gap that needed to be filled? Please provide a description.
+
+   The purpose for creating the dataset was to enable future generations of artificial intelligence/machine learning (AI/ML) research to provide critical insights into type 2 diabetes mellitus (T2DM), including salutogenic pathways to return to health. T2DM is a growing public health threat. Yet, the current understanding of T2DM, especially in the context of salutogenesis, is limited. Given the complexity of T2DM, AI-based approaches may help with improving our understanding but a key issue is the lack of data ready for training AI models. The AI-READI dataset is intended to fill this gap.
+
+2. What are the applications that the dataset is meant to address? (e.g., administrative applications, software applications, research)
+
+   The multi-modal dataset being collected is being gathered to facilitate downstream pseudotime manifolds and various applications in artificial intelligence.
+
+3. Are there any types of usage or applications that are discouraged from using this dataset? If so, why?
+
+   The AI READI dataset License imposes certain restrictions on the usage of the data. The restrictions are described in the License files available at [https://doi.org/10.5281/zenodo.10642459](https://doi.org/10.5281/zenodo.10642459). Briefly, the Licensee shall not: “(i) make clinical treatment decisions based on the Data, as it is intended solely as a research resource, or (ii) use or attempt to use the Data, alone or in concert with other information, to compromise or otherwise infringe the confidentiality of information on an individual person who is the source of any Data or any clinical data or biological sample from which Data has been generated (a 'Data Subject') and their right to privacy, to identify or contact any individual Data Subject or group of Data Subjects, to extract or extrapolate any identifying information about a Data Subject, to establish a particular Data Subject's membership in a particular group of persons, or otherwise to cause harm or injury to any Data Subject.”
+
+4. Who created this dataset (e.g., which team, research group), and on behalf of which entity (e.g., company, institution, organization)?
+
+   This dataset was created by members of the AI-READI project, hereby referred to as the AI-READI Consortium. Details about each member and their institutions are available on the project website at [https://aireadi.org](https://aireadi.org).
+
+5. Who funded the creation of the dataset? If there is an associated grant, please provide the name of the grantor and the grant name and number. If the funding institution differs from the research organization creating and managing the dataset, please state how.
+
+   The creation of the dataset was funded by the National Institutes of Health (NIH) through their Bridge2AI Program ([https://commonfund.nih.gov/bridge2ai](https://commonfund.nih.gov/bridge2ai)). The grant number is OT2ODO32644 and more information about the funding is available at [https://reporter.nih.gov/search/T-mv2dbzIEqp9V6UJjHpgw/project-details/10885481](https://reporter.nih.gov/search/T-mv2dbzIEqp9V6UJjHpgw/project-details/10885481). Note that the funding institution is not creating or managing the dataset. The dataset is created and managed by the awardees of the grant (c.f. answer to the previous question).
+
+6. What is the distribution of backgrounds and experience/expertise of the dataset curators/generators?
+
+   There is a wide range of experience within the project team, including senior, mid-career, and early career faculty members as well as clinical research coordinators, staff, and interns. They collectively cover many areas of expertise including clinical research, data collection, data management, data standards, bioinformatics, team science, and ethics, among others. Visit [https://aireadi.org/team](https://aireadi.org/team) for more information.
+
+## Data Composition
+
+What is the dataset made of? What are the modalities, and schema involved in creating the preliminary version of the dataset or following versions and subversions?
+
+### Instances
+
+Refers to the unit of interest. The unit might be different in the datasheet compared to the downstream use case: an instance might relate to a patient in the database, but will be used to provide predictions for specific events for that patient, treating each event as separate.
+
+1. What do the instances that comprise the dataset represent (e.g., documents, images, people, countries)? Are there multiple types of instances? Please provide a description.
+
+   Each instance represents an individual patient.
+
+2. How many instances are there in total (of each type, if appropriate) (breakdown based on schema, provide data stats)?
+
+   There are 204 instances in this current version of the dataset (version 1, released spring 2024).
+
+3. How many patients / subjects does this dataset represent? Answer this for both the preliminary dataset and the current version of the dataset.
+
+   See previous question.
+
+4. Does the dataset contain all possible instances or is it a sample (not necessarily random) of instances from a larger set? If the dataset is a sample, then what is the larger set? Is the sample representative of the larger set (e.g., geographic coverage)? If so, please describe how this representativeness was validated/verified. If it is not representative of the larger set, please describe why not (e.g., to cover a more diverse range of instances, because instances were withheld or unavailable). Answer this question for the preliminary version and the current version of the dataset in question.
+
+   The dataset contains all possible instances. More specifically, the dataset contains data from all participants who have been enrolled during the pilot data collection phase for AI-READI.
+
+5. What data modality does each patient data consist of? If the data is hierarchical, provide the modality details for all levels (e.g: text, image, physiological signal). Break down in all levels and specify the modalities and devices.
+
+   Multiple modalities of data are collected for each participant, including survey data, clinical data, retinal imaging data, environmental sensor data, continuous glucose monitor data, and wearable activity monitor data. These encompass tabular data, imaging data, and physiological signal/waveform data. There is no unstructured text data included in this dataset. The exact forms used for data collection in REDCap are available [here](../static/files/REDCap%20surveys%20and%20forms.pdf). Furthermore, all modalities, file formats, and devices are detailed in the dataset documentation at [https://docs.aireadi.org/](https://docs.aireadi.org/).
+
+6. What data does each instance consist of? “Raw” data (e.g., unprocessed text or images) or features? In either case, please provide a description.
+
+   Each instance consists of all of the data available for an individual participating in the study. See answer to question 5 for the data types associated with each instance.
+
+7. Is any information missing from individual instances? If so, please provide a description, explaining why this information is missing (e.g., because it was unavailable).
+
+   Yes, not all modalities are available for all participants. Some participants elected not to participate in some study elements. In a few cases, the data collection device did not have any stored results or was returned too late to retrieve the results (e.g. battery died, data was lost). In a few cases, there may have been a data collision at some point in the process and data has been lost.
+
+8. Are relationships between individual instances made explicit? (e.g., They are all part of the same clinical trial, or a patient has multiple hospital visits and each visit is one instance)? If so, please describe how these relationships are made explicit.
+
+   Yes - all instances are part of the same prospective data generation project (AI-READI). There is currently only one visit per participant.
+
+9. Are there any errors, sources of noise, or redundancies in the dataset? If so, please provide a description. (e.g., losing data due to battery failure, or in survey data subjects skip the question, radiological sources of noise).
+
+   In cases of survey data, skipped questions or incomplete responses are expected. In cases of using wearables, improper use, technical failure such as battery failure or system malfunction are expected. In cases of imaging data, patient uncooperation, noise that may obscure the images and technical failure such as system malfunction, and data transfer failures are expected.
+
+10. Is the dataset self-contained, or does it link to or otherwise rely on external resources (e.g., websites, other datasets)? If it links to or relies on external resources,
+
+    a. are there guarantees that they will exist, and remain constant, over time;
+
+    b. are there official archival versions of the complete dataset (i.e., including the external resources as they existed at the time the dataset was created);
+
+    c. are there any restrictions (e.g., licenses, fees) associated with any of the external resources that might apply to a future user? Please provide descriptions of all external resources and any restrictions associated with them, as well as links or other access points, as appropriate.
+
+    The dataset is self-contained but does rely on the dataset documentation for users requiring additional information about the provenance of the dataset. The documentation is available at [https://docs.aireadi.org](https://docs.aireadi.org). The documentation is shared under the CC-BY 4.0 license, so there are no restrictions associated with its use.
+
+11. Does the dataset contain data that might be considered confidential (e.g., data that is protected by legal privilege or by doctor-patient confidentiality, data that includes the content of individuals' non-public communications that is confidential)? If so, please provide a description.
+
+    No, the dataset does not contain data that might be considered confidential. No personally identifiable information is included in the dataset.
+
+12. Does the dataset contain data that, if viewed directly, might be offensive, insulting, threatening, or might otherwise pose any safety risk (such as psychological safety and anxiety)? If so, please describe why.
+
+    No
+
+13. If the dataset has been de-identified, were any measures taken to avoid the re-identification of individuals? Examples of such measures: removing patients with rare pathologies or shifting time stamps.
+
+    N/A
+
+14. Does the dataset contain data that might be considered sensitive in any way (e.g., data that reveals racial or ethnic origins, sexual orientations, religious beliefs, political opinions or union memberships, or locations; financial or health data; biometric or genetic data; forms of government identification, such as social security numbers; criminal history)? If so, please provide a description.
+
+    No, the public dataset will not contain data that is considered sensitive. However, the controlled access dataset will contain data regarding racial and ethnic origins, location (5-digit zip code), as well as motor vehicle accident reports.
+
+## Devices and Contextual Attributes in Data Collection
+
+1. For data that requires a device or equipment for collection or the context of the experiment, answer the following additional questions or provide relevant information based on the device or context that is used (for example)
+
+   a. If there was an MRI machine used, what is the MRI machine and model used?
+
+   b. If heart rate was measured what is the device for heart rate variation that is used?
+
+   c. If cortisol measurement is reported at multi site, provide details,
+
+   d. If smartphones were used to collect the data, provide the names of models.
+
+   e. And so on,..
+
+   The devices included in the study are as follows, and more details can be found at [https://docs.aireadi.org](https://docs.aireadi.org):
+
+   **Environmental sensor device**
+
+   Participants will be sent home with an environmental sensor (a custom-designed sensor unit called the LeeLab Anura), which they will use for 10 continuous days before returning the devices to the clinical research coordinators for data download.
+
+   **Continuous glucose monitor (Dexcom G6)**
+
+   The Dexcom G6 is a real-time, integrated continuous glucose monitoring system (iCGM) that directly monitors blood glucose levels without requiring finger sticks. It must be worn continuously in order to collect data.
+
+   **Wearable accelerometer (Physical activity monitor)**
+
+   The Garmin Vivosmart 5 Fitness Activity tracker will be used to measure data related to physical activity.
+
+   **Heart rate**
+
+   Heart rate can be read from EKG or blood pressure measurement devices.
+
+   **Blood pressure**
+
+   Blood pressure devices used for the study across the various data acquisition sites are: OMRON HEM 907XL Blood Pressure Monitor, Medline MDS4001 Automatic Digital Blood Pressure Monitor, and Welch Allyn 6000 series Vital signs monitor with Welch Allyn FlexiPort Reusable Blood Pressure Cuff.
+
+   **Visual acuity**
+
+   M&S Technologies EVA device to test visual acuity. The test is administered at a distance of 4 meters from a touch-screen monitor that is 12x20 inches. Participants will read letters from the screen. Photopic Conditions: No neutral density filters are used. A general occluder will be used for photopic testing. The participant wears their own prescription spectacles or trial frames. For Mesopic conditions, a neutral density (ND) filter will be used. The ND filter will either be a lens added to trial frames to reduce incoming light on the tested eye, OR a handheld occluder with a neutral density
+   filter (which we will designate as “ND-occluder) over the glasses will be used. The ND-occluder is different from a standard occluder and is used only for vision testing under mesopic conditions.
+
+   **Contrast sensitivity**
+
+   The MARS Letter Contrast Sensitivity test (Perceptrix) was conducted monocularly under both Photopic conditions (with a general occluder) and Mesopic conditions (using a Neutral Density occluder with a low luminance filter lens). The standardized order of MARS cards was as follows: Photopic OD, Photopic OS, Mesopic OD, and Mesopic OS. The background luminance of the charts fell within the range of 60 to 120 cd/m2, with an optimal level of 85 cd/m2. Illuminance was recommended to be between 189 to 377 lux, with an optimal level of 267 lux. While the designed viewing distance was 50 cm, it could vary between 40 to 59 cm. Patients were required to wear their appropriate near correction: reading glasses or trial frames with +2.00D lenses. All testing was carried out under undilated conditions. Patients were instructed to read the letter left to right across each line on the chart. Patients were encouraged to guess, even if they perceived the letters as too faint. Testing was terminated either when the patient made two consecutive errors or reached the end of the chart. The log contrast sensitivity (log CS) values were recorded by multiplying the number of errors prior to the final correct letter by 0.04 and subtracting the result from the log CS value at the final correct letter. If a patient reached the end of the chart without making two consecutive errors, the final correct letter was simply the last one correctly identified.
+
+   **Autorefraction**
+
+   KR 800 Auto Keratometer/Refractor.
+
+   **EKG**
+
+   Philips (manufacturer of Pagewriter TC30 Cardiograph)
+
+   **Lensometer**
+
+   Lensometer devices used at data acquisition sites across the study include: NIDEK LM-600P Auto Lensometer, Topcon-CL-200 computerized Lensometer, and Topcon-CL-300 computerized Lensometer
+
+   **Undilated fundus photography - Optomed Aurora**
+
+   The Optomed Aurora IQ is a handheld fundus camera that can take non-mydriatic images of the ocular fundus. It has a 50° field of view, 5 Mpix sensor, and high-contrast optical design. The camera is non-mydriatic, meaning it doesn't require the pupil to be dilated, so it can be used for detailed viewing of the retina. Images taken during the AI-READI visit, are undilated images taken in a dark room while a patient is sitting on a comfortable chair, laying back. As it becomes challenging to get a good view because of the patients not being dilated and the handheld nature of this imaging modality, the quality of the images vary from patient to patient and within the same patient.
+
+   **Dilated fundus photography - Eidon**
+
+   The iCare EIDON is a widefield TrueColor confocal fundus imaging system that can capture images up to 200°. It comes with multiple imaging modalities, including TrueColor, blue, red, Red-Free, and infrared confocal images. The system offers widefield, ultra-high-resolution imaging and the capability to image through cataract and media opacities. It operates without dilation (minimum pupil 2.5 mm) and provides the flexibility of both fully automated and fully manual modes. Additionally, the iCare EIDON features an all-in-one compact design, eliminating the need for an additional PC. AI READI images using EIDON include two main modalities: 1. Single Field Central IR/FAF 2. Smart Horizontal Mosaic. Imaging is done in fully automated mode in a dark room with the machine moving and positioning according to the patient's head aiming at optimizing the view and minimizing operator's involvement/operator induced noise.
+
+   **Spectralis HRA (Heidelberg Engineering)**
+
+   The Heidelberg Spectralis HRA+OCT is an ophthalmic imaging system that combines optical coherence tomography (OCT) with retinal angiography. It is a modular, upgradable platform that allows clinicians to configure it for their specific diagnostic workflow. It has the confocal scanning laser ophthalmoscope (cSLO) technology that not only offers documentation of clinical findings but also often highlights critical diagnostic details that are not visible on traditional clinical ophthalmoscopy. Since cSLO imaging minimizes the effects of light scatter, it can be used effectively even in patients with cataracts. For AI READI subjects, imaging is done in a dark room using the following modalities: ONH-RC, PPole-H, and OCTA of the macula. As the machine is operated by the imaging team and is not fully automated, quality issues may arise, which may lead to skipping this modality and missing data.
+
+   **Triton DRI OCT (Topcon Healthcare)**
+
+   The DRI OCT Triton is a device from Topcon Healthcare that combines swept-source OCT technology with multimodal fundus imaging. The DRI OCT Triton uses swept-source technology to visualize the deepest layers of the eye, including through cataracts. It also enhances visualization of outer retinal structures and deep pathologies. The DRI OCT Triton has a 1,050 nm wavelength light source and a non-mydriatic color fundus camera. AI READI imaging is done in a dark room with minimal intervention from the imager as the machine positioning is done automatically. This leads to higher quality images with minimal operator induced error. Imaging is done in 12.0X12.0 mm and 6.0X6.0 mm OCTA, and 12.0 mm X9.0 mmX6.0 mm 3D Horizontal and Radial scan modes.
+
+   **Maestro2 3D OCT (Topcon Healthcare)**
+
+   The Maestro2 is a robotic OCT and color fundus camera system from Topcon Healthcare. It can capture a 12 mm x 9 mm wide-field OCT scan that includes the macula and optic disc. The Maestro2 can also capture high-resolution non-mydriatic, true color fundus photography, OCT, and OCTA with a single button press. Imaging is done in a dark room and automatically with minimal involvement of the operator. Protocols include 12.0 mm X9.0 mm widefield, 6.0 mm X 6.0 mm 3D macula scan and 6.0 mm X 6.0 mm OCTA (scan rate: 50 kHz).
+
+   **FLIO (Heidelberg Engineering)**
+
+   Fluorescence Lifetime Imaging Ophthalmoscopy (FLIO) is an advanced imaging technique used in ophthalmology. It is a non-invasive method that provides valuable information about the metabolic and functional status of the retina. FLIO is based on the measurement of fluorescence lifetimes, which is the duration a fluorophore remains in its excited state before emitting a photon and returning to the ground state. FLIO utilizes this fluorescence lifetime information to capture and analyze the metabolic processes occurring in the retina. Different retinal structures and molecules exhibit distinct fluorescence lifetimes, allowing for the visualization of metabolic changes, cellular activity, and the identification of specific biomolecules. The imaging is done by an operator in a dark room analogous to a straightforward heidelberg spectralis OCT. However, as it takes longer than a usual spectralis OCT and exposes patients to uncomfortable levels of light, it is kept to be performed as the last modality of an AI READI visit. Because of this patients may not be at their best possible compliance.
+
+   **Cirrus 5000 Angioplex (Carl Zeiss Meditec)**
+
+   The Zeiss Cirrus 5000 Angioplex is a high-definition optical coherence tomography (OCT) system that offers non-invasive imaging of retinal microvasculature. The imaging is done in a dark room by an operator and it is pretty straightforward and analogous to what is done in the ophthalmology clinics on a day to day basis. Imaging protocols include 512 X 512 and 200 X 200 macula and ONH scans and also OCTA of the macula. Zeiss Cirrus 5000 also provides a 60-degree OCTA widefield view. 8x8mm single scans and 14x14mm automated OCTA montage allow for rapid peripheral assessment of the retina as well.
+
+   **Monofilament testing for peripheral neuropathy**
+
+   Monofilament test is a standard clinical test to monitor peripheral neuropathy in diabetic patients. It is done using a standard 10g monofilament applying pressure to different points on the plantar surface of the feet. If patients sense the monofilament, they confirm by saying “yes”; if patients do not sense the monofilament after it bends, they are considered to be insensate. When the sequence is completed, the insensate area is retested for confirmation. This sequence is further repeated randomly at each of the testing sites on each foot until results are obtained.The results are recorded on an iPad, Laptop, or a paper questionnaire and are directly added to the project's RedCap by the clinical research staff.
+
+   **Montreal Cognitive Assessment (MoCA)**
+
+   The Montreal Cognitive Assessment (MoCA) is a simple, in-office screening tool that helps detect mild cognitive impairment and early onset of dementia. The MoCA evaluates cognitive domains such as: Memory, Executive functioning, Attention, Language, Visuospatial, Orientation, Visuoconstructional skills, Conceptual thinking, Calculations. The MoCA generates a total score and six domain-specific index scores. The maximum score is 30, and anything below 24 is a sign of cognitive impairment. A final total score of 26 and above is considered normal. Some disadvantages of the MoCA include: Professionals require training to score the test, A person's level of education may affect the test, Socioeconomic factors may affect the test, People living with depression or other mental health issues may score similarly to those with mild dementia. AI READI research staff perform this test on an iPad using a pre-installed software (MoCA Duo app downloaded from the app store) that captures all the patients responses in an interactive manner.
+
+## Challenge in tests and confounding factors
+
+1. Which factors in the data might limit the generalization of potentially derived models? Is this information available as auxiliary labels for challenge tests? For instance:
+
+   a. Number and diversity of devices included in the dataset.
+
+   b. Data recording specificities, e.g., the view for a chest x-ray image.
+
+   c. Number and diversity of recording sites included in the dataset.
+
+   d. Distribution shifts over time.
+
+   While the AI-READI's cross-sectional database ultimately aims to achieve balance across race/ethnicity, biological sex, and diabetes presence and severity, the pilot study is not balanced across these parameters.
+
+   Three recording sites were strategically selected to achieve diverse recruitment: the University of Alabama at Birmingham (UAB), the University of California San Diego (UCSD), and the University of Washington (UW). The sites were chosen for geographic diversity across the United States and to ensure diverse representation across various racial and ethnic groups. Individuals from all demographic backgrounds were recruited at all 3 sites.
+
+   Factors influencing the generalization of derived models include the predominantly urban and hospital-based recruitment, which may not fully capture diverse cultural and socioeconomic backgrounds. The study cohort may not provide a comprehensive representation of the population, as it does not include other races/ethnicities such as Pacific Islanders and Native Americans.
+
+   Information on device make and model, including specific modalities like macula scans or wide scans during OCT, were documented to ensure repeatability. Moreover, the study included multiple devices for one measure to enhance generalizability and represent the diverse range of equipment utilized in clinical settings.
+
+2. What confounding factors might be present in the data?
+
+   a. Interactions between demographic or historically marginalized groups and data recordings, e.g., were women patients recorded in one site, and men in another?
+
+   b. Interactions between the labels and data recordings, e.g. were healthy patients recorded on one device and diseased patients on another?
+
+   Uniform data collection protocols were implemented for all subjects, irrespective of their race/ethnicity, biological sex, or diabetes severity, across all study sites. The selection of study sites was intended to ensure equitable representation and minimize the potential for sampling bias.
+
+## Collection and use of demographic information
+
+1. Does the dataset identify any demographic sub-populations (e.g., by age, gender, sex, ethnicity)?
+
+   No
+
+2. If no,
+
+   a. Is there any regulation that prevents demographic data collection in your study (for example, the country that the data is collected in)?
+
+   No
+
+   b. Are you employing methods to reduce the disparity of error rate between different demographic subgroups when demographic labels are unavailable? Please describe.
+
+   We are suggesting a split for training/validation/testing models that is aimed at reducing disparities in models developed using this dataset.
+
+## Pre-processing / de-identification
+
+1. Was there any pre-processing for the de-identification of the patients? Provide the answer for the preliminary and the current version of the dataset
+
+   N/A
+
+2. Was there any pre-processing for cleaning the data? Provide the answer for the preliminary and the current version of the dataset
+
+   There were several quality control measures used at the time of data entry/acquisition. For example, clinical data outside of expected min/max ranges were flagged in REDCap, which was visible in reports viewed by clinical research coordinators (CRCs) and Data Managers. Using these REDCap reports as guides, Data Managers and CRCs examined participant records and determined if an error was likely. Data were checked for the following and edited if errors were detected:
+
+   1. Credibility, based on range checks to determine if all responses fall within a prespecified reasonable range
+
+   2. Incorrect flow through prescribed skip patterns
+
+   3. Missing data that can be directly filed from other portions of an individual’ s record
+
+   4. The omission and/or duplication of records
+
+   Editing was only done under the guidance and approval of the site PI. If corrected data was available from elsewhere in the respondent’s answers, the error was corrected. If there was no logical or appropriate way to correct the data, the Data site PI reviewed the values and made decisions about whether those values should be removed from the data.
+
+   Once data were sent from each of the study sites to the central project team, additional processing steps were conducted in preparation for dissemination. For example, all data were mapped to standardized terminologies when possible, such as the Observational Medical Outcomes Partnership (OMOP) Common Data Model, a common data model for observational health data, and the Digital Imaging and Communications in Medicine (DICOM), a commonly used standard for medical imaging data. Details about the data processing approaches for each data domain/modality are described in the dataset documentation at https://docs.aireadi.org.
+
+3. Was the “raw” data (post de-identification) saved in addition to the preprocessed/cleaned data (e.g., to support unanticipated future uses)? If so, please provide a link or other access point to the “raw” data.
+
+   The raw data is saved and expected to be preserved by the AI-READI project at least for the duration of the project but is not anticipated to be shared outside the project team right now, because it has not been mapped to standardized terminologies and because the raw data may accidentally include personal health information or personally identifiable information (e.g. in free text fields). There is a possibility that raw data may be included in future releases of the controlled access dataset.
+
+4. Were instances excluded from the dataset at the time of preprocessing? If so, why? For example, instances related to patients under 18 might be discarded.
+
+   No data were excluded from the dataset at the time of preprocessing. However, regarding to study recruitment (i.e. ability to participate in the study), the following eligibility criteria were used:
+
+   Inclusion Criteria:
+
+   - Able to provide consent
+   - ≥ 40 years old
+   - Persons with or without type 2 diabetes
+   - Must speak and read English
+
+   Exclusion Criteria:
+
+   - Must not be pregnant
+   - Must not have gestational diabetes
+   - Must not have Type 1 diabetes
+
+5. If the dataset is a sample from a larger set, what was the sampling strategy (e.g., deterministic, probabilistic with specific sampling probabilities)? Answer this question for both the preliminary dataset and the current version of the dataset
+
+   N/A
+
+## Labeling and subjectivity of labeling
+
+### Labeling
+
+In medical domains, researchers usually take a dataset and appropriate it for a defined task. researchers may have their own guidance. It is important to know what the incentive of the original creators was, if there was a guideline or there is a guideline for the current version or sub-versions of the dataset?
+
+1. Is there an explicit label or target associated with each data instance? Please respond for both the preliminary dataset and the current version.
+
+   a. If yes:
+
+   1. What are the labels provided?
+
+   2. Who performed the labeling? For example, was the labeling done by a clinician, ML researcher, university or hospital?
+
+   b. What labeling strategy was used?
+
+   1. Gold standard label available in the data (e.g. cancers validated by biopsies)
+
+   2. Proxy label computed from available data:
+
+      1. Which label definition was used? (e.g. Acute Kidney Injury has multiple definitions)
+
+      2. Which tables and features were considered to compute the label?
+
+   3. Which proportion of the data has gold standard labels?
+
+   c. Human-labeled data
+
+   1. How many labellers were considered?
+
+   2. What is the demographic of the labellers? (countries of residence, of origin, number of years of experience, age, gender, race, ethnicity, …)
+
+   3. What guidelines did they follow?
+
+   4. How many labellers provide a label per instance?
+
+      If multiple labellers per instance:
+
+      1. What is the rater agreement? How was disagreement handled?
+      2. Are all labels provided, or summaries (e.g. maximum vote)?
+
+   5. Is there any subjective source of information that may lead to inconsistencies in the responses? (e.g: multiple people answering a survey having different interpretation of scales, multiple clinicians using scores, or notes)
+
+   6. On average, how much time was required to annotate each instance?
+
+   7. Were the raters compensated for their time? If so, by whom and what amount? What was the compensation strategy (e.g. fixed number of cases, compensated per hour, per cases per hour)?
+
+   No specific labeling was performed in the dataset, as the dataset is a hypothesis-agnostic dataset aimed at facilitating multiple potential downstream AI/ML applications.
+
+2. What are the human level performances in the applications that the dataset is supposed to address?
+
+   N/A
+
+3. Is the software used to preprocess/clean/label the instances available? If so, please provide a link or other access point.
+
+   N/A – no labeling was performed
+
+4. Is there any guideline that the future researchers are recommended to follow when creating new labels / defining new tasks?
+
+   No, we do not have formal guidelines in place.
+
+5. Are there recommended data splits (e.g., training, development/validation, testing)? Are there units of data to consider, whatever the task? If so, please provide a description of these splits, explaining the rationale behind them. Please provide the answer for both the preliminary dataset and the current version or any sub-version that is widely used.
+
+   The current version of the dataset comes with recommended data splits. Because sex, race, and ethnicity data are not being released with the public version of the dataset, the project team has prepared data splits into proportions (70%/15%/15%) that can be used for subsequent training/validation/testing where the validation and test sets are balanced for sex, race/ethnicity and diabetes status (with and without diabetes).
+
+6. Is there an explicit label or target associated with each data instance? Please respond for both the preliminary dataset and the current version.
+
+   a. If yes:
+
+   1. What are the labels provided?
+
+   2. Who performed the labeling? For example, was the labeling done by a clinician, ML researcher, university or hospital?
+
+   b. What labeling strategy was used?
+
+   1. Gold standard label available in the data (e.g. cancers validated by biopsies)
+
+   2. Proxy label computed from available data:
+
+      1. Which label definition was used? (e.g. Acute Kidney Injury has multiple definitions)
+
+      2. Which tables and features were considered to compute the label?
+
+   3. Which proportion of the data has gold standard labels?
+
+   c. Human-labeled data
+
+   1. How many labellers were considered?
+
+   2. What is the demographic of the labellers? (countries of residence, of origin, number of years of experience, age, gender, race, ethnicity, …)
+
+   3. What guidelines did they follow?
+
+   4. How many labellers provide a label per instance?
+
+      If multiple labellers per instance:
+
+      1. What is the rater agreement? How was disagreement handled?
+      2. Are all labels provided, or summaries (e.g. maximum vote)?
+
+   5. Is there any subjective source of information that may lead to inconsistencies in the responses? (e.g: multiple people answering a survey having different interpretation of scales, multiple clinicians using scores, or notes)
+
+   6. On average, how much time was required to annotate each instance?
+
+   7. Were the raters compensated for their time? If so, by whom and what amount? What was the compensation strategy (e.g. fixed number of cases, compensated per hour, per cases per hour)?
+
+   No specific labeling was performed in the dataset, as the dataset is a hypothesis-agnostic dataset aimed at facilitating multiple potential downstream AI/ML applications.
+
+7. What are the human level performances in the applications that the dataset is supposed to address?
+   N/A
+
+8. Is the software used to preprocess/clean/label the instances available? If so, please provide a link or other access point.
+   N/A – no labeling was performed
+9. Is there any guideline that the future researchers are recommended to follow when creating new labels / defining new tasks?
+   No, we do not have formal guidelines in place.
+
+10. Are there recommended data splits (e.g., training, development/validation, testing)? Are there units of data to consider, whatever the task? If so, please provide a description of these splits, explaining the rationale behind them. Please provide the answer for both the preliminary dataset and the current version or any sub-version that is widely used.
+
+    The current version of the dataset comes with recommended data splits. Because sex, race, and ethnicity data are not being released with the public version of the dataset, the project team has prepared data splits into proportions (70%/15%/15%) that can be used for subsequent training/validation/testing where the validation and test sets are balanced for sex, race/ethnicity and diabetes status (with and without diabetes).
+
+## Collection Process
+
+1. Were any REB/IRB approval (e.g., by an institutional review board or research ethics board) received? If so, please provide a description of these review processes, including the outcomes, as well as a link or other access point to any supporting documentation.
+
+   The initial IRB approval at the University of Washington was received on December 20, 2022. The initial approval letter can be found [here](../static/files/Approval_STUDY00016228_Lee_initial.pdf). Under FWA #00006878, the IRB approved activity for the AI-READI study from 12/16/2022 to 12/15/2023. A modification to the initial IRB application was filed on 5/5/2023 and approved on 5/10/2023. An annual renewal application to the IRB about the status and progress of the study is required and due within 90 days of expiration.
+
+2. How was the data associated with each instance acquired? Was the data directly observable (e.g., medical images, labs or vitals), reported by subjects (e.g., survey responses, pain levels, itching/burning sensations), or indirectly inferred/derived from other data (e.g., part-of-speech tags, model-based guesses for age or language)? If data was reported by subjects or indirectly inferred/derived from other data, was the data validated/verified? If so, please describe how.
+
+   The acquisition of data varied based on the domain; some data were directly observable (such as labs, vitals, and retinal imaging), whereas other data were reported by subjects (e.g. survey responses). Verification of data entry was performed when possible (e.g. cross-referencing entered medications with medications that were physically brought in or photographed by each study participant). Details for each data domain are available in [https://docs.aireadi.org](https://docs.aireadi.org).
+
+3. What mechanisms or procedures were used to collect the data (e.g., hardware apparatus or sensor, manual human curation, software program, software API)? How were these mechanisms or procedures validated? Provide the answer for all modalities and collected data. Has this information been changed through the process? If so, explain why.
+
+   The procedures for data collection and processing is available at [https://docs.aireadi.org](https://docs.aireadi.org).
+
+4. Who was involved in the data collection process (e.g., patients, clinicians, doctors, ML researchers, hospital staff, vendors, etc.) and how were they compensated (e.g., how much were contributors paid)?
+
+   Details about the AI-READI team members involved in the data collection process are available at [https://aireadi.org/team](https://aireadi.org/team). Their effort was supported by the National Institutes of Health award OT2OD032644 based on the percentage of effort contributed, and salaries which aligned with the funding guidelines at each site. Study subjects received a compensation of $200 for the study visit also through the grant funding.
+
+5. Over what timeframe was the data collected? Does this timeframe match the creation timeframe of the data associated with the instances (e.g., recent crawl of old news articles)? If not, please describe the timeframe in which the data associated with the instances was created.
+
+   The timeline for the overall project spans four years, encompassing one year dedicated to protocol development and training, and years 2-4 allocated for subject recruitment and data collection. Approximately 4% of participants are expected to undergo a follow-up examination in Year 4. The data collection process is specifically tailored to enable downstream pseudotime manifold analysis—an approach used to predict disease trajectories. This involves gathering and learning from complex, multimodal data from participants exhibiting varying disease severity, ranging from normal to insulin-dependent Type 2 Diabetes Mellitus (T2DM). The timeframe also allows for the collection of the highest number of subjects possible to ensure a balanced representation of racial and ethnic groups and mitigate biases in computer vision algorithms.
+
+   For this version of the dataset, the timeframe for data collection was July 18, 2023 to November 30, 2023.
+
+6. Does the dataset relate to people? If not, you may skip the remaining questions in this section.
+
+   Yes
+
+7. Did you collect the data from the individuals in question directly, or obtain it via third parties or other sources (e.g., hospitals, app company)?
+
+   The data was collected directly from participants across the three recruiting sites. Recruitment pools were identified by screening Electronic Health Records (EHR) for diabetes and prediabetes ICD-10 codes for all patients who have had an encounter with the sites' health systems within the past 2 years.
+
+8. Were the individuals in question notified about the data collection? If so, please describe (or show with screenshots or other information) how notice was provided, and provide a link or other access point to, or otherwise reproduce, the exact language of the notification itself.
+
+   Yes, each individual was aware of the data collection, as this was not passive data collection or secondary use of existing data, but rather active data collection directly from participants.
+
+9. Did the individuals in question consent to the collection and use of their data? If so, please describe (or show with screenshots or other information) how consent was requested and provided, and provide a link or other access point to, or otherwise reproduce, the exact language to which the individuals consented.
+
+   Informed consent to participate was required before participation in any part of the protocol (including questionnaires). Potential participants were given the option to read all consent documentation electronically (e-consent) before their visit and give their consent with an electronic signature without verbal communication with a clinical research coordinator. Participants may access e-consent documentation in REDCap and decide at that point they do not want to participate or would like additional information. The approved consent form for the principal project site University of Washington is available [here](../static/files/AI-READI%20Consent_Form_Standard_v2.0_Mod2%2017May2023_useforpilot.pdf). The other clinical sites had IRB reliance and used the same consent form, with minor institution-specific language incorporated depending on individual institutional requirements.
+
+10. If consent was obtained, were the consenting individuals provided with a mechanism to revoke their consent in the future or for certain uses? If so, please provide a description, as well as a link or other access point to the mechanism (if appropriate).
+
+    Participants were permitted to withdraw consent at any time and cease study participation. However, any data that had been shared or used up to that point would stay in the dataset. This is clearly communicated in the consent document.
+
+11. In which countries was the data collected?
+
+    USA
+
+12. Has an analysis of the potential impact of the dataset and its use on data subjects (e.g., a [data protection impact analysis](https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/accountability-and-governance/data-protection-impact-assessments/)) been conducted? If so, please provide a description of this analysis, including the outcomes, as well as a link or other access point to any supporting documentation.
+
+    No, a data protection impact analysis has not been conducted.
+
+## Inclusion Criteria-Accessibility in data collection
+
+1.  Is there any language-based communication with patients (e.g: English, French)? If yes, describe the choices of language(s) for communication. (for example, if there is an app used for communication, what are the language options?)
+
+    English language was used for communication with study participants.
+
+2.  What are the accessibility measurements and what aspects were considered when the study was designed and implemented?
+
+    Accessibility measurements were not specifically assessed. However, transportation assistance (rideshare services) was offered to study participants who endorsed barriers to transporting themselves to study visits.
+
+3.  If data is part of a clinical study, what are the inclusion criteria?
+
+    The eligibility criteria for the study were as follows:
+
+    Inclusion Criteria:
+
+    - Able to provide consent
+    - ≥ 40 years old
+    - Persons with or without type 2 diabetes
+    - Must speak and read English
+
+    Exclusion Criteria:
+
+    - Must not be pregnant
+    - Must not have gestational diabetes
+    - Must not have Type 1 diabetes
+
+## Uses
+
+1. Has the dataset been used for any tasks already? If so, please provide a description.
+
+   No
+
+2. Does using the dataset require the citation of the paper or any other forms of acknowledgement? If yes, is it easily accessible through google scholar or other repositories
+
+   Yes, use of the dataset requires citation to the resources specified in [https://docs.aireadi.org](https://docs.aireadi.org).
+
+3. Is there a repository that links to any or all papers or systems that use the dataset? If so, please provide a link or other access point. (besides Google scholar)
+
+   No
+
+4. Is there anything about the composition of the dataset or the way it was collected and preprocessed/cleaned/labeled that might impact future uses? For example, is there anything that a future user might need to know to avoid uses that could result in unfair treatment of individuals or groups (e.g., stereotyping, quality of service issues) or other undesirable harms (e.g., financial harms, legal risks) If so, please provide a description. Is there anything a future user could do to mitigate these undesirable harms?
+
+   No, to the extent of our knowledge, we do not currently anticipate any uses of the dataset that could result in unfair treatment or harm. However, there is a theoretical risk of future re-identification.
+
+5. Are there tasks for which the dataset should not be used? If so, please provide a description. (for example, dataset creators could recommend against using the dataset for considering immigration cases, as part of insurance policies)
+
+   This is answered in a prior question (see details regarding license terms).
+
+## Dataset Distribution
+
+1. Will the dataset be distributed to third parties outside of the entity (e.g., company, institution, organization) on behalf of which the dataset was created? If so, please provide a description.
+
+   The dataset will be distributed and be available for public use.
+
+2. How will the dataset be distributed (e.g., tarball on website, API, GitHub)? Does the dataset have a digital object identifier (DOI)?
+
+   The dataset will be available through the FAIRhub platform ([http://fairhub.io/](http://fairhub.io/)). The dataset’s DOI is [https://doi.org/10.60775/fairhub.1](https://doi.org/10.60775/fairhub.1)
+
+3. When was/will the dataset be distributed?
+
+   The dataset was distributed in April 2024.
+
+4. Assuming the dataset is available, will it be/is the dataset distributed under a copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)? If so, please describe this license and/or ToU, and provide a link or other access point to, or otherwise reproduce, any relevant licensing terms or ToU, as well as any fees associated with these restrictions.
+
+   We provide here the license file containing the terms for reusing the AI-READI dataset ([https://doi.org/10.5281/zenodo.10642459](https://doi.org/10.5281/zenodo.10642459)). These license terms were specifically tailored to enable reuse of the AI-READI dataset (and other clinical datasets) for commercial or research purpose while putting strong requirements around data usage, security, and secondary sharing to protect study participants, especially when data is reused for artificial intelligence (AI) and machine learning (ML) related applications.
+
+5. Have any third parties imposed IP-based or other restrictions on the data associated with the instances? If so, please describe these restrictions, and provide a link or other access point to, or otherwise reproduce, any relevant licensing terms, as well as any fees associated with these restrictions.
+
+   Refer to license ([https://doi.org/10.5281/zenodo.10642459](https://doi.org/10.5281/zenodo.10642459))
+
+6. Do any export controls or other regulatory restrictions apply to the dataset or to individual instances? If so, please describe these restrictions, and provide a link or other access point to, or otherwise reproduce, any supporting documentation.
+
+   Refer to license ([https://doi.org/10.5281/zenodo.10642459](https://doi.org/10.5281/zenodo.10642459))
+
+## Maintenance
+
+1. Who will be supporting/hosting/maintaining the dataset?
+
+   The AI-READI team will be supporting and maintaining the dataset. The dataset is hosted on FAIRhub through Microsoft Azure.
+
+2. How can the owner/curator/manager of the dataset be contacted (e.g., email address, forms, etc.)?
+
+   We refer to the README file included with the dataset for contact information.
+
+3. Is there an erratum? If so, please provide a link or other access point.
+
+   N/A
+
+4. Will the dataset be updated (e.g., to correct labeling errors, add new instances, delete instances)? If so, please describe how often, by whom, and how updates will be communicated to users (e.g., mailing list, GitHub)?
+
+   The dataset will not be updated. Rather, new versions of the dataset will be released with additional instances as more study participants complete the study visit.
+
+5. If the dataset relates to people, are there applicable limits on the retention of the data associated with the instances (e.g., were individuals in question told that their data would be retained for a fixed period of time and then deleted)? If so, please describe these limits and explain how they will be enforced.
+
+   There are no limits on the retention of the data associated with the instances.
+
+6. Will older versions of the dataset continue to be supported/hosted/maintained? If so, please describe how and for how long. If not, please describe how its obsolescence will be communicated to users.
+
+   N/A - This is the first version of the dataset. In the future, when there are newer versions released, the previous versions will continue to be available on FAIRhub.
+
+7. If others want to extend/augment/build on/contribute to the dataset, is there a mechanism for them to do so? If so, please provide a description. Will these contributions be validated/verified? If so, please describe how. If not, why not? Is there a process for communicating/distributing these contributions to other users? If so, please provide a description.
+
+   No, currently there is no mechanism for others to extend or augment the AI-READI dataset outside of those who are involved in the project.
