@@ -3,7 +3,7 @@ import React from 'react';
 import FilterableTable from 'react-filterable-table';
 // eslint-disable-next-line import/no-unresolved
 import BrowserOnly from '@docusaurus/BrowserOnly';
-import fileProcessing from '../../static/json/fileProcesing.json';
+import fileProcessing from '../../docs/static/json/fileProcesing.json';
 
 export default function ClinicalLabTable() {
   // Fields to show in the table, and what object properties in the data they bind to
