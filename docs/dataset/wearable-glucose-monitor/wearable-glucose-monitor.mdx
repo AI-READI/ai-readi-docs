@@ -291,28 +291,29 @@ More information can be found here:
       },
       "timezone": "PST"
     },
-    "body": [
-      {
-        "effective_time_frame": {
-          "time_interval": {
-            "start_date_time": "YYYY-MM-DDThh:mm:ssZ",
-            "end_date_time": "YYYY-MM-DDThh:mm:ssZ"
-          }
-        },
-        "cgm": [ ...list of observations],
-        "event_type": "event_type",
-        "source_device_id": "source_device_id",
-        "blood_glucose": {
-          "unit": "mg/dL",
-          "value": "val"
-        },
-        "transmitter_time": {
-          "unit": "long integer",
-          "value": "number"
-        },
-        "transmitter_id": "transmitter_id"
-      }
-    ]
+    "body": {
+      "cgm": [
+        {
+          "effective_time_frame": {
+            "time_interval": {
+              "start_date_time": "YYYY-MM-DDThh:mm:ssZ",
+              "end_date_time": "YYYY-MM-DDThh:mm:ssZ"
+            }
+          },
+          "event_type": "event_type",
+          "source_device_id": "source_device_id",
+          "blood_glucose": {
+            "unit": "mg/dL",
+            "value": "val"
+          },
+          "transmitter_time": {
+            "unit": "long integer",
+            "value": "number"
+          },
+          "transmitter_id": "transmitter_id"
+        }
+      ]
+    }
   }
   ```
 
