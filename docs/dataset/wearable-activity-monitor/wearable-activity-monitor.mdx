@@ -33,7 +33,7 @@ Respiration rate refers to the number of breaths a person takes per minute. It i
 
 ### Sleep
 
-During sleep, the [device](https://www.garmin.com/en-US/garmin-technology/health-science/sleep-tracking/) autonomously detects the user's sleep patterns and tracks movement throughout their typical sleep hours. Sleep-related metrics include **total sleep duration in hours**.
+During sleep, the [device](https://www.garmin.com/en-US/garmin-technology/health-science/sleep-tracking/) autonomously detects the user's sleep patterns and tracks movement throughout their typical sleep hours. Sleep-related metrics include **duration of sleep stages**.
 
 ### Stress
 
@@ -816,11 +816,8 @@ https://www.openmhealth.org/documentation/#/schema-docs/schema-library/schemas/o
 
 ```json
 {
-  "sleep_duration": {
-    "value": 7.5,
-    "unit": "h"
-  },
-  "effective_time_frame": {
+  "sleep_stage_state": "light",
+  "sleep_stage_time_frame": {
     "time_interval": {
       "start_date_time": "2016-02-05T20:35:00Z",
       "end_date_time": "2016-02-06T06:35:00Z"
@@ -846,11 +843,8 @@ The AIREADI JSON schema for Sleep is as follows:
   "body": {
     "sleep": [
       {
-        "sleep_duration": {
-          "value": 0,
-          "unit": "h"
-        },
-        "effective_time_frame": {
+        "sleep_stage_state": "light",
+        "sleep_stage_time_frame": {
           "time_interval": {
             "start_date_time": "YYYY-MM-DDThh:mm:ss",
             "end_date_time": "YYYY-MM-DDThh:mm:ss"
