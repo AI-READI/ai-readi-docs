@@ -67,12 +67,12 @@
     {
         "Metadata Elements": "sleep_record_count",
         "Description": "Total number of sleep measurements recorded",
-        "Example": "12"
+        "Example": "328"
     },
     {
         "Metadata Elements": "average_sleep_hours",
         "Description": "Average sleep duration during the recording period",
-        "Example": "7.25"
+        "Example": "0.28"
     },
     {
         "Metadata Elements": "respiratory_rate_filename",
@@ -95,9 +95,9 @@
         "Example": "/wearable_activity_monitor/physical_activity/garmin_vivosmart5/0000/0000_activity.json"
     },
     {
-        "Metadata Elements": "physical_activity_num_records",
+        "Metadata Elements": "physical_activity_num_days",
         "Description": "Total number of measurements recorded",
-        "Example": "5524"
+        "Example": "19"
     },
     {
         "Metadata Elements": "average_daily_activity",
