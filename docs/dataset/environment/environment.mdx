@@ -19,7 +19,7 @@ More information about the AS73411 11-channel multispectral digital sensor is av
 
 ### Particulate matter (pm)
 
-Measuring particulate matter involves quantifying the concentration of fine inhalable particles in the air, expressed as the count per cubic centimeter. This measurement is specific to the size of the particles with pm 1, pm 2.5, pm 4, and pm 10, representing diameters ranging from 0.3 to 1 um, 0.3 to 2.5 um, 0.3 to 4 um, and 0.3 to 10 um, respectively. Some common sources of PM10 include dust from roads, farms, dry riverbeds, construction sites, and mines.
+Measuring particulate matter involves quantifying the concentration of fine inhalable particles in the air, expressed as the micro gram per cubic centimeter. This measurement is specific to the size of the particles with pm 1, pm 2.5, pm 4, and pm 10, representing diameters ranging from 0.3 to 1 um, 0.3 to 2.5 um, 0.3 to 4 um, and 0.3 to 10 um, respectively. Some common sources of PM10 include dust from roads, farms, dry riverbeds, construction sites, and mines.
 
 [Here](https://sensirion.com/media/documents/6791EFA0/62A1F68F/Sensirion_Datasheet_Environmental_Node_SEN5x.pdf) is a document describing the SEN55 particle matter, temperature, humidity, VOC and NOx sensors.
 
@@ -129,10 +129,10 @@ Before issuing the device, the 3 digit unit number from the back of the sensor i
 | lch9          | Light level measurement: F8 center wavelength 680 nm  | float [0.000 to 1.000]  | Relative intensity              | 0.0253              |
 | lch10         | Light level measurement: Clear no filter              | float [0.000 to 1.000]  | Relative intensity              | 0.0474              |
 | lch11         | Light level measurement: NIR center wavelength 910 nm | float [0.000 to 1.000]  | Relative intensity              | 0.0203              |
-| pm1           | Concentration of particles sized 0.3 to 1.0 um        | uint16 [0 to 65536]     | count per cm^3                  | 2.72                |
-| pm2.5         | Concentration of particles sized 0.3 to 2.5 um        | uint16 [0 to 65536]     | count per cm^3                  | 3.32                |
-| pm4           | Concentration of particles sized 0.3 to 4.0 um        | uint16 [0 to 65536]     | count per cm^3                  | 3.54                |
-| pm10          | Concentration of particles sized 0.3 to 10.0 um       | uint16 [0 to 65536]     | count per cm^3                  | 3.80                |
+| pm1           | Concentration of particles sized 0.3 to 1.0 um        | uint16 [0 to 65536]     | ug/m3                           | 2.72                |
+| pm2.5         | Concentration of particles sized 0.3 to 2.5 um        | uint16 [0 to 65536]     | ug/m3                           | 3.32                |
+| pm4           | Concentration of particles sized 0.3 to 4.0 um        | uint16 [0 to 65536]     | ug/m3                           | 3.54                |
+| pm10          | Concentration of particles sized 0.3 to 10.0 um       | uint16 [0 to 65536]     | ug/m3                           | 3.80                |
 | hum           | Relative Humidity                                     | float [0.00 to 1.00]    | Percentage range 0 to 100%      | 49.95               |
 | temp          | Ambient room temperature measured by SEN55            | float [-10.00 to 50.00] | degrees C                       | 23.50               |
 | voc           | Volatile organic compound                             | integer [1 to 500]      | VOC Index points                | 5.00                |
