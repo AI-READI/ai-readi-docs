@@ -1,1 +1,12 @@
-{ "navigationFallback": { "rewrite": "/index.html", "exclude": ["/*.{ico,js,map,css}"] } }
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
+  },
+  "routes": [
+    {
+      "route": "/docs/future/*",
+      "redirect": "/"
+    }
+  ]
+}
