@@ -69,7 +69,7 @@ export default function OmopMappingTable() {
       inputFilterable: true,
     },
     {
-      name: 'Choices, Calculations, OR Slider Labels From REDCap CODEBOOK',
+      name: 'Choices_Calculations_OR_Slide_Labels_From_REDCap_CODEBOOK',
       displayName: 'Choices, Calculations, OR Slider Labels From REDCap CODEBOOK',
       inputFilterable: true,
     },
