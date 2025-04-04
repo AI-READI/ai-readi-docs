@@ -12,7 +12,7 @@ export default {
   // eslint-disable-next-line max-len
   tagline:
     // eslint-disable-next-line max-len
-    'Artificial Intelligence Ready and Equitable Atlas for Diabetes Insights',
+    'Artificial Intelligence Ready and Exploratory Atlas for Diabetes Insights',
   url: 'https://docs.aireadi.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
