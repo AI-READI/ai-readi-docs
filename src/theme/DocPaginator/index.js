@@ -27,7 +27,7 @@ export default function DocPaginatorWrapper(props) {
               target="_blank"
               rel="noreferrer"
             >
-              Example Notebooks
+              example notebooks
             </a>
             .
           </p>
