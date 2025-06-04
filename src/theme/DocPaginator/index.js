@@ -20,9 +20,13 @@ export default function DocPaginatorWrapper(props) {
 
       {showCustomSectionForDataset && (
         <div>
-          <p>
+          <p style={{ paddingTop: '8px' }}>
             You can explore the{' '}
-            <a href="https://github.com/AI-READI/ai-readi-notebooks" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/AI-READI/ai-readi-notebooks"
+              target="_blank"
+              rel="noreferrer"
+            >
               Example Notebooks
             </a>
             .
