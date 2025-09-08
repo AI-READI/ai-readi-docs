@@ -3,7 +3,33 @@ sidebar_position: 98
 title: Changelog
 ---
 
-All notable changes to this documentation will be documented in this file.
+All notable changes to this dataset will be documented in this file.
+
+## [3.0.0] - 2025-11-01
+
+### Identifier/Link
+
+https://doi.org/10.60775/fairhub.3
+
+## Added
+
+- Added 67 Redcap concepts
+- Added 0 MoCA concepts
+- Added 9 Labs concepts
+
+## Changed
+
+- Changed 25 MoCA concepts
+- Changed 111 Redcap concepts
+  - Reverted hip and waist circumference to established SNOMED concepts
+- Changed 0 MoCA concepts
+- Changed 3 Labs concepts
+
+## Removed
+
+- Removed 12 Redcap concepts
+- Removed 0 MoCA concepts
+- Removed 0 Labs concepts
 
 ## [2.0.0] - 2024-11-08
 

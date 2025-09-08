@@ -6,7 +6,7 @@ import styles from './HomepageFeatures.module.css';
 
 const StatsList = [
   {
-    heading: '1067',
+    heading: '2280',
     text: 'Participants from three data collection sites',
   },
   {
