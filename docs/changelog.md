@@ -13,6 +13,7 @@ https://doi.org/10.60775/fairhub.3
 
 ## Added
 
+- Data from 1213 additional participants has been added.
 - Added 67 Redcap concepts
 - Added 0 MoCA concepts
 - Added 9 Labs concepts
@@ -24,6 +25,12 @@ https://doi.org/10.60775/fairhub.3
   - Reverted hip and waist circumference to established SNOMED concepts
 - Changed 0 MoCA concepts
 - Changed 3 Labs concepts
+- Cardiac_ecg:
+  - Data previously assigned based on an error (e.g. a typo in the participant ID) has been re-assigned to the correct participant.
+  - Data without recognizable signals and with an error message that all 12 leads are missing has been removed. Where available, an alternate ECG from the same participant is included.
+- Environmental sensor:
+  - Data previously released with poorly formatted numeric fields has been revised to omit the row containing the invalid data.
+  - Data headers have been corrected to indicate that the units for the particle counts are in microgram per cubic meter ug/m3.
 
 ## Removed
 
