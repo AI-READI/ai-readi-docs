@@ -17,6 +17,8 @@ https://doi.org/10.60775/fairhub.3
 - Added 67 Redcap concepts
 - Added 0 MoCA concepts
 - Added 9 Labs concepts
+- **Wearable**: We updated the header of all Garmin JSON files (heart_rate, oxygen_saturation, physical_activity, physical_activity_calories, respiratory_rate, sleep, stress) to include a new "timezone" field indicating the local time zone for data collection. IDs in the 1**_ and 4_** ranges are mapped to Pacific Time, and IDs in the 7\*\*\* ranges are mapped to Central Time.
+- **Wearable and CGM**: We added sanity-check code to report the number of duplicates, the number of negative values, and potential formatting issues.
 
 ## Changed
 
@@ -25,6 +27,7 @@ https://doi.org/10.60775/fairhub.3
   - Reverted hip and waist circumference to established SNOMED concepts
 - Changed 0 MoCA concepts
 - Changed 3 Labs concepts
+- Changed the name of the field participant_id to person_id in the manifest.tsv files to match the use of person_id in the OMOP files. Example notebooks were also updated.
 - Cardiac_ecg:
   - Data previously assigned based on an error (e.g. a typo in the participant ID) has been re-assigned to the correct participant.
   - Data without recognizable signals and with an error message that all 12 leads are missing has been removed. Where available, an alternate ECG from the same participant is included.
