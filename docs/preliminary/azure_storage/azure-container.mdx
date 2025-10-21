@@ -1,0 +1,37 @@
+---
+sidebar_position: 6
+title: Azure Container Creation
+---
+
+### Create a Blob Storage Container
+
+At this point we now need a place to put the files. As the [Microsoft documentation](https://learn.microsoft.com/en-us/azure/storage/blobs/blob-containers-portal) states "Azure Blob Storage allows you to store large amounts of unstructured object data." This will be where the AI-READI files will be ultimately delivered. If you already have a container you can skip to the next step to [create a SAS token](./azure-token.mdx).
+
+1. In the Azure Portal, go to "Storage accounts" and click your storage account.
+2. In the left sidebar under "Data storage", click "Containers".
+
+<figure>
+  <img src="/img/azure/azure-container-1.png" />
+  <figcaption>Containers menu item</figcaption>
+</figure>
+
+3. Click "+ Add Container" tab.
+
+<figure>
+  <img src="/img/azure/azure-container-2.png" />
+  <figcaption>Tab to create container</figcaption>
+</figure>
+
+4. Set the container details
+
+- **Name**: Must be lowercase, no spaces.
+- **Public access level**: Select "Private (no anonymous access)".
+
+<figure>
+  <img src="/img/azure/azure-container-3.png" />
+  <figcaption>Tab to create container</figcaption>
+</figure>
+
+5. Click the "Create" button.
+
+**Note**: Save your Container Name along with the Storage Account name for use in the dataset request.
