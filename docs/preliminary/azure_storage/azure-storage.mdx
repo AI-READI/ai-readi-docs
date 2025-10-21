@@ -1,0 +1,55 @@
+---
+sidebar_position: 5
+title: Azure Storage Account Creation
+---
+
+### Create an Azure Storage Account
+
+Next, create an [Azure Storage Account](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview) that will house the storage container. Below is a summarized version of the [full documentation](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create). If you already have an Azure Storage Account you can [skip to creating the container](./azure-container.mdx).
+
+1. Log in to the Azure Portal: https://portal.azure.com
+2. Search for "Storage accounts" in the top search bar and click "+ Create".
+
+{' '}
+
+<figure>
+  <img src="/img/azure/azure-storage-1.png" />
+  <figcaption>Locate the Storage account item from the menu in the upper left</figcaption>
+</figure>
+
+3. Fill out the form:
+
+- **Subscription**: Select your plan.
+- **Resource group**: Use an existing one or create a new one.
+- **Storage account name**: Choose a globally unique, lowercase name.
+- **Region**: Choose a region closest to you.
+- **Performance**: Standard (default).
+- **Redundancy**: Locally-redundant storage (LRS) is recommended.
+
+<figure>
+  <img src="/img/azure/azure-storage-2.png" />
+  <figcaption>Form elements to complete</figcaption>
+</figure>
+
+4. Click "Review + create", then "Create".
+
+   **Note**: Take note of your Storage Account Name. You’ll need this when requesting the dataset.
+
+{' '}
+
+<figure>
+  <img src="/img/azure/azure-storage-3.png" />
+  <figcaption>Review the details</figcaption>
+</figure>
+<figure>
+  <img src="/img/azure/azure-storage-4.png" />
+  <figcaption>Overview while the storage account is created</figcaption>
+</figure>
+<figure>
+  <img src="/img/azure/azure-storage-5.png" />
+  <figcaption>Once complete you can go to the storage account</figcaption>
+</figure>
+<figure>
+  <img src="/img/azure/azure-container-1.png" />
+  <figcaption>Storage account home page</figcaption>
+</figure>
