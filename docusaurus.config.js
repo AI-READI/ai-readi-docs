@@ -37,9 +37,13 @@ export default {
               label: `1.0.0`,
               path: '1',
             },
-            current: {
+            '2.0.0': {
               label: `2.0.0`,
               path: '2',
+            },
+            current: {
+              label: `3.0.0`,
+              path: '3',
             },
           },
         },
