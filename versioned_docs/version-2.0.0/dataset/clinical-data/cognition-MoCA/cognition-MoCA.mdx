@@ -1,0 +1,159 @@
+---
+sidebar_position: 3
+title: Cognition/MoCA
+---
+
+## Overview of Data Domain
+
+### Montreal CogniÍtive Assessment (MoCA)
+
+The Montreal Cognitive Assessment (MOCA) is widely used as a screening tool to assess cognitive function. This validated method comprises diverse tasks targeting distinct cognitive domains, rendering it highly sensitive in detecting mild cognitive impairment. During assessment, subjects engage in tasks such as recalling word lists, drawing specific shapes, and following complex instructions. These tasks are all administered electronically using an iPad, with a maximum score of 30 points. A score below 24 indicates cognitive impairment, while a final total score of 26 and above is considered normal. Additionally, participants with 12 or fewer years of education are granted an additional point, thereby adjusting the results for varying education levels.
+
+### MOCA assess
+
+- Short-term memory
+- Visuospatial abilities
+- Executive functions
+- Attention, concentration, and working memory
+- Language
+- Orientation to time and place
+
+For more information about MOCA please click [here](https://mocacognition.com)
+
+Since individuals with type 2 diabetes are at a higher risk of developing cognitive impairments, MOCA plays a crucial role in helping researchers understand the relationship between Type 2 diabetes and cognitive health. For the AI-READI project, the study data is captured on the MoCAtest Duo App (on tablet) and is administered by trained Clinical Research Coordinators. The data is available in .csv format.
+
+Some limitations of the MoCA include the need for trained professionals to accurately score it, the potential influence of a person's education level and fluency in English on test outcomes, the impact of socioeconomic factors, and the similarity in scores between individuals with depression or other mental health issues and those with mild dementia.
+
+## Data Processing
+
+### File format
+
+The MoCA data from all subjects is stored in 2 .csv files, along with other RedCap measurements. A .csv file, short for Comma-Separated Values, is a commonly used file format for storing tabular data in plain text, where each line represents a row of data and each value within the row is separated by a comma.
+
+The file organization is as follows:
+
+```
+pilot_data_root
+└── clinical_data
+    └── measurement.csv
+    └── observation.csv
+```
+
+| Domain    | Variable                             | Method                      | Data Standard/ File Extension | Open Source vs. Protected Database? |
+| --------- | ------------------------------------ | --------------------------- | ----------------------------- | ----------------------------------- |
+| Cognition | Montreal Cognitive Assessment (MoCA) | on tablet; MoCAtest Duo App | .csv                          | Open Source                         |
+
+### Data Standards
+
+MoCA data follows the OMOP Common Data Model. [OMOP](https://www.ohdsi.org/data-standardization/) (Observational Medical Outcomes Partnership) is a collaborative effort focused on standardizing and analyzing healthcare data. Developed by the Observational Health Data Sciences and Informatics (OHDSI) community, OMOP provides a standardized data model, vocabulary, and analytics tools to enable large-scale analysis of real-world healthcare data.
+
+### File Processing
+
+The .csv files are designed for easy opening in Python and/or Jupyter Notebooks. The measurement.csv file contains the time taken to complete specific tasks and its scores whereas the observation.csv contains measurements such as total time taken to complete the test and total score.
+
+### Metadata and Example Outputs (measurement.csv)
+
+The MoCA data is organized per subject (person_id) and within each subject block i.e. ~30 rows, each row corresponds to a different measurement type (measurement_concept_id) for that subject.
+
+| Data Element                  | Description                                                                                    | Example             |
+| ----------------------------- | ---------------------------------------------------------------------------------------------- | ------------------- |
+| measurement_id                | ID number associated with the MoCA test                                                        | 23                  |
+| person_id                     | Subject ID (serves as foreign key to the OMOP Persons table)                                   | 0000                |
+| measurement_concept_id        | OMOP Concept ID corresponding to the MoCA test                                                 | \*Refer to table    |
+| measurement_date              | Date of the measurement                                                                        | 2023-08-28          |
+| measurement_datetime          | Date and time of the measurement                                                               | 2023-08-28 00:00:00 |
+| measurement_time              | Time of the measurement                                                                        | blank               |
+| measurement_type_concept_id   | Concept identifier representing the type of measurement                                        | 32880               |
+| operator_concept_id           | Concept identifier representing the operator involved in the measurement                       | 0                   |
+| value_as_number               | Numeric value of the measurement                                                               | 12                  |
+| value_as_concept_id           | Concept identifier representing the value of the measurement                                   | 0                   |
+| unit_concept_id               | Concept identifier representing the unit of measurement                                        | 0                   |
+| range_low                     | Lower range of normal values for the measurement                                               | blank               |
+| range_high                    | Upper range of normal values for the measurement                                               | blank               |
+| provider_id                   | Identifier for the healthcare provider                                                         | blank               |
+| visit_occurrence_id           | Identifier for the measurement visit                                                           | 0                   |
+| visit_detail_id               | Identifier for additional details about the visit                                              | 0                   |
+| measurement_source_value      | Original value in the source data representing the measurement                                 | \*Refer to table    |
+| measurement_source_concept_id | Concept identifier in the source data representing the measurement                             | 0                   |
+| unit_source_value             | Original value in the source data representing the unit of measurement                         | blank               |
+| unit_source_concept_id        | Concept identifier in the source data representing the unit of measurement                     | 0                   |
+| value_source_value            | Original value in the source data representing the measurement value                           | 12                  |
+| measurement_event_id          | Identifier for the specific event associated with the measurement                              | 0                   |
+| meas_event_field_concept_id   | Concept identifier representing the specific field being measured within the measurement event | 0                   |
+
+### MOCA Data Dictionary Table
+
+<a href="/cognitionMoCATable" target="_blank">
+  Details of this table can be found here
+</a>
+
+| Description                                                                                                                                                                               | measurement_source_value | measurement_concept_id |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | ---------------------- |
+| Trail drawings score                                                                                                                                                                      | trails_visuospatial_executive | 4165596                |
+| Time taken to do trails in seconds                                                                                                                                                        | trails_visuospatial_executive_time | 2005200344             |
+| Cube drawings score                                                                                                                                                                       | cube_visuospatial_executive | 2005200345             |
+| Time taken to do cube in seconds                                                                                                                                                          | cube_visuospatial_executive_time| 2005200346             |
+| Time taken to do clock in seconds                                                                                                                                                         | clock_visuospatial_executive_time | 2005200347             |
+| Animal name recall task                                                                                                                                                                   | naming    | 2005200348             |
+| time in seconds to perform the animal name recall task                                                                                                                                    | naming_time             | 2005200349             |
+| Words correctly repeated (1st trial)                                                                                                                                                      | memory_trial1           | 2005200350             |
+| Time in seconds to perform the above task.                                                                                                                                                | Memory_trial1_time     | 2005200351             |
+| Words correctly repeated (2nd trial)                                                                                                                                                      | memory_trial2          | 2005200352             |
+| Time in seconds to perform the above task.                                                                                                                                                | Memory_trial2_time       | 2005200353             |
+| Time in seconds to perform the above task.                                                                                                                                                | Digitspan_time        | 2005200354             |
+| Letter tapping score                                                                                                                                                                      | lettera               | 2005200355             |
+| Time in seconds to perform the above task.                                                                                                                                                | Lettera_time               | 2005200356             |
+| Serial 7 subtraction score                                                                                                                                                                | subtraction              | 2005200357             |
+| Time in seconds to perform the above task.                                                                                                                                                | Subtraction_time            | 2005200358             |
+| Repeats sentences II                                                                                                                                                                      | repetition               | 2005200359             |
+| Time in seconds to perform the above task.                                                                                                                                                | Repetition_time               | 2005200360            |
+| Maximal one-minute recall of words beginning with 'F'                                                                                                                                     | fluency_language                  | 2005200361            |
+| Time in seconds to perform the above task.                                                                                                                                                | Fluency_language_time             | 2005200362            |
+| MOCA abstraction                                                                                                                                                                          | moca_abstraction              | 2005200363             |
+| Time in seconds to perform the above task.                                                                                                                                                | Moca_abstraction_time               | 2005200364             |
+| MOCA delayed recall with no cue                                                                                                                                                           | delayed_recall_with_no_clue          | 2005200365            |
+| Time in seconds to perform the above task.                                                                                                                                                | Delayed_recall_with_no_clue_time           | 2005200366             |
+| MOCA orientation date, month, year, day, place, city                                                                                                                                      | moca_orientation              | 2005200367             |
+| Time in seconds to perform the above task.                                                                                                                                                | Moca_orientation_time               | 2005200368             |
+| pull down menu of 3-4 year age spans, age in years                                                                                                                                        | age_years_at_interview                | 2005200369             |
+| combined score of MOCA delayed recall with no cue, MOCA delayed recall category cue (not included in total score), MOCA delayed recall multiple choice cue ( not included in total score) | moca_combined_mis_score                | 2005200370             |
+
+
+### Metadata and Example Outputs (observation.csv)
+
+| Data Element                  | Description                                                  | Example             |
+| ----------------------------- | ------------------------------------------------------------ | ------------------- |
+| observation_id                | ID number associated with the MoCA test                      | 34                  |
+| person_id                     | Subject ID (serves as foreign key to the OMOP Persons table) | 0000                |
+| observation_concept_id        | OMOP Concept ID corresponding to the MoCA test               | \*Refer to table    |
+| observation_date              | Date of the MoCA test                                        | 2023-08-10          |
+| observation_datetime          | Date and time of the MoCA test                               | 2023-08-10 00:00:00 |
+| observation_type_concept_id   | Concept identifier representing the type of measurement      | 32880               |
+| value_as_number               | MoCA test output as a number                                 | 12.0                |
+| value_as_string               | MoCA test output as a string                                 | 12                  |
+| value_as_concept_id           | Concept identifier representing the observed value           | 0                   |
+| qualifier_concept_id          | Concept identifier representing additional information       | 0                   |
+| unit_concept_id               | Concept identifier representing the unit of measurement      | 0                   |
+| provider_id                   | Identifier for the healthcare provider                       | 0                   |
+| visit_occurrence_id           | Identifier for the participant visit                         | 0                   |
+| visit_detail_id               | Identifier for additional visit details                      | 0                   |
+| observation_source_value      | Source data representing the observation value               | \*Refer to table    |
+| observation_source_concept_id | Concept identifier representing the observation source value | 0                   |
+| unit_source_value             | Value in the source data for the measurement unit            | blank               |
+| qualifier_source_value        | Value in the source data for the qualifier                   | blank               |
+| value_source_value            | Source data value                                            | 12                  |
+| observation_event_id          | Observation event identifier                                 | 0                   |
+| obs_event_field_concept_id    | Observation event field concept                              | 0                   |
+
+| Measurements              | measurement_source_value | measurement_concept_id |
+| ----------------------------------- | ------------------------ | ---------------------- |
+| Date form completed                 | Test Upload Date         | 3006440                |
+| Clock drawing panel [GPCOG]         | Clock (3 points)         | 21492218               |
+| Digit span performance              | Digit Span               | 4153980                |
+| Years of education [#] - Reported   | Subject's Education      | 42528764               |
+| Time to complete survey             | Total Time               | 1988422                |
+| Montreal cognitive assessment score | Total Score              | 37174522               |
+
+## Additional resources
+
+**Consider starting with our example [Jupyter notebooks](https://github.com/AI-READI/ai-readi-notebooks)** to explore the dataset further.

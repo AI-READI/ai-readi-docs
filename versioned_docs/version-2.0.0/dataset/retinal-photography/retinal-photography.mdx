@@ -1,0 +1,430 @@
+---
+sidebar_position: 2
+title: Retinal photography
+---
+
+## Overview of Data Domain
+
+Retinal photography is a non-invasive procedure that photographs the posterior segment of an eye, also known as the fundus. It provides two-dimensional images of the fundus and can be performed with different filters of different wavelengths when an eye is undilated or dilated. The main structures that can be visualized inon a fundus photo are the optic nerve, macula, retinal vasculature, and central and peripheral retina. Fundus photography is used to record the condition of these structures to document the presence of abnormalities and monitor the changes over time.
+
+### Color fundus photography
+
+Color fundus photography is a direct visualization of the fundus in the form of color images.
+
+<figure>
+  <img src="/img/retinal-photography/fig1.png" />
+  <figcaption>
+    Figure 1: Normal fundus photographs of the right eye (A) and left eye (B).
+  </figcaption>
+</figure>
+
+Color fundus photography can capture various abnormalities in diabetic retinopathy, such as microaneurysms, retinal hemorrhages, cotton wool spots, hard or soft exudates, and neovascularization of the disc or the retina.
+
+<figure>
+  <img src="/img/retinal-photography/fig2.png" />
+  <figcaption>
+    Figure 2: Examples of lesions in diabetic retinopathy captured by color fundus photography.
+    Reference: Alyoubi WL, Abulkhair MF, Shalash WM. Diabetic Retinopathy Fundus Image
+    Classification and Lesions Localization System Using Deep Learning. Sensors. 2021; 21(11):3704.
+    https://doi.org/10.3390/s21113704
+  </figcaption>
+</figure>
+
+### Fundus autofluorescence photography
+
+Fundus autofluorescence photography (FAF) utilizes the intrinsic fluorescent nature of lipofuscin found in the retinal pigment epithelium (RPE) to generate images. Lipofuscin, a byproduct of photoreceptor outer segment breakdown in lysosomes, absorbs blue light and emits yellow-green light. By illuminating with a light source and capturing the emitted signals with a detector, an image is formed that serves as a lipofuscin density map, where brighter zones indicate higher lipofuscin concentration.
+
+In a normal fundus without retinal pathology, blood vessels and the optic nerve usually appear dark on FAF photos. With blue or green short-wavelength FAF, the fovea is usually visualized as a spot of hypo-autofluorescence due to the high concentration of light-absorbing xanthophyll pigment in this area. FAF has become an important tool for evaluating diseases that result in alterations of RPE or lipofuscin levels, such as in age-related macular degeneration and hereditary retinal diseases.
+
+<figure>
+  <img src="/img/retinal-photography/fig3.jpg" />
+  <figcaption>
+    Figure 3: Comparison of common imaging systems available for fundus autofluorescence. Images of
+    normal, healthy retina were obtained using the fundus camera with a Spaide filter (a), confocal
+    scanning laser ophthalmoscope (cSLO) (b), and Optos ultra-widefield systems (c). Reference:
+    Yung, M., Klufas, M.A. & Sarraf, D. Clinical applications of fundus autofluorescence in retinal
+    disease. Int J Retin Vitr 2, 12 (2016). https://doi.org/10.1186/s40942-016-0035-x
+  </figcaption>
+</figure>
+
+### Fundus infrared photography
+
+Compared to traditional color fundus photography and FAF, infrared imaging offers certain advantages. Infrared has a longer depth of penetration that can reach deeper subretinal layers. It produces a better vessel to background contrast which improves the detection of subretinal pathologies.
+
+Moreover, it removes the out-of-focus, scattered components of the reflected light, improving the quality of illumination. Infrared imaging has the potential to generate deeper visualization of the retina and detect pathologies even in the presence of media opacity such as hemorrhages and cataracts. It is routinely used during optical coherence tomography (OCT) imaging to visualize the structure of the optic nerve, retina, subretinal lesions, choroidal lesions, and choroidal neovascularization.
+
+_Reference: Ajaz A, Kumar DK. Infrared retinal images for flashless detection of macular edema. Sci Rep. 2020;10(1):14384. Published 2020 Sep 1. doi:10.1038/s41598-020-71010-0_
+
+## Overview of AI-READI Retinal Photography Data
+
+### Overview of available images
+
+| Manufacturer | Manufacturer's Model (device) | Anatomic Regions\*                        | Imaging Types\*                                           | Dilation |
+| ------------ | ----------------------------- | ----------------------------------------- | --------------------------------------------------------- | -------- |
+| Optomed      | Aurora                        | Macula, Optic Disc                        | Color Photography                                         | No       |
+| iCare        | Eidon                         | Macula, Nasal, Temporal Periphery, Mosaic | Color Photography, Infrared Reflectance, Autofluorescence | Yes      |
+| Topcon       | Maestro2                      | Macula, Wide Field                        | Color Photography, Infrared Reflectance                   | Yes      |
+| Topcon       | Triton                        | Macula, Optic Disc                        | Color Photography                                         | Yes      |
+| Heidelberg   | Spectralis                    | Macula, Optic Disc                        | Infrared Reflectance                                      | Yes      |
+
+\*More comprehensive details regarding each imaging file are available in the “manifest.tsv” file located within the retinal_photography folder.
+
+\*Based on the anatomic regions and Imaging types, images can be mapped to protocols that were given by the manufacturers, as shown in the table below.
+
+According to the AI-READI imaging protocols, the Triton device primarily captures color fundus photos (CFP) as retinal photography images. However, for two participants (4150 and 7111), infrared (IR) images were taken as retinal photography images. Since the data were usable, we included them in the dataset. Just a note: the majority of Triton retinal photography images are CFP.
+
+### Mapping of Anatomic Regions and Imaging Types to Manufacturers' Protocol Names
+
+<table>
+  <tr>
+    <th> Protocol Name</th>
+    <th> Anatomic Regions*</th>
+    <th> Width</th>
+    <th> Height</th>
+    <th> Number of frames</th>
+    <th> Notes</th>
+  </tr>
+  <tr>
+    <td> OptoMed-Disc centered-CFP</td>
+    <td> Optic Disc</td>
+    <td>Color Photography</td>
+    <td rowSpan="2">1776</td>
+    <td rowSpan="2"> 2368</td>
+    <td rowSpan="2">
+      One can differentiate between these two protocols by visually confirming the images where they
+      were centered
+    </td>
+  </tr>
+  <tr>
+    <td> OptoMed-Mac centered-CFP </td>
+    <td> Macula</td>
+    <td> Color Photography </td>
+  </tr>
+  <tr>
+    <td>Eidon-UWF Central-IR </td>
+    <td>Macula </td>
+    <td>Infrared Reflectance</td>
+    <td>3288</td>
+    <td> 3680</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> Eidon-UWF Central-FAF </td>
+    <td> Macula </td>
+    <td>Autofluorescence</td>
+    <td>3288</td>
+    <td>3680 </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> Eidon-UWF Central-CFP </td>
+    <td> Macula </td>
+    <td>Color Photography</td>
+    <td>3288</td>
+    <td>3680 </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> Eidon-UWF Nasal-CFP </td>
+    <td>Nasal </td>
+    <td>Color Photography</td>
+    <td>3288</td>
+    <td>3680 </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> Eidon-UWF Temporal-CFP</td>
+    <td>Temporal Periphery </td>
+    <td>Color Photography</td>
+    <td>3288</td>
+    <td>3680 </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> Eidon-Create Mosaic Image-CFP </td>
+    <td> Mosaic</td>
+    <td>Color Photography</td>
+    <td>varies</td>
+    <td>varies</td>
+    <td>Mosaic images are larger images created by multiple images.</td>
+  </tr>
+  <tr>
+    <td>Spectralis-ONH-RC-HR-OCT </td>
+    <td> Optic Disc</td>
+    <td>Infrared Reflectance</td>
+    <td> 1536</td>
+    <td>1536 </td>
+    <td>
+      IR images are from OCT scans. This OCT protocol produces OCT B scans and associated IR scans.
+    </td>
+  </tr>
+  <tr>
+    <td>Spectralis-PPole Mac-HR-61 lines-OCT </td>
+    <td> Macula</td>
+    <td>Infrared Reflectancee</td>
+    <td> 1536 or 768</td>
+    <td>1536 or 768 </td>
+    <td>
+      IR images are from OCT scans. This OCT protocol produces OCT B scans and associated IR scans.
+      Two versions of the protocols were used for the pilot but in the future 1536, and 1536 will be
+      used.
+    </td>
+  </tr>
+  <tr>
+    <td>Maestro2-3D Wide(H) 12x9-OCT </td>
+    <td> Wide Field</td>
+    <td>Color Photography</td>
+    <td>1958</td>
+    <td>2576 </td>
+    <td>
+      Color fundus scans are from OCT scans. This OCT protocol produces OCT B scans and associated
+      color fundus scans.
+    </td>
+  </tr>
+  <tr>
+    <td>Maestro2-3D Macula 6x6-OCT </td>
+    <td> Macula</td>
+    <td>Color Photography</td>
+    <td>1958</td>
+    <td>2576 </td>
+    <td>
+      Color fundus scans are from OCT scans. This OCT protocol produces OCT B scans and associated
+      color fundus scans.
+    </td>
+  </tr>
+  <tr>
+    <td>Maestro2-Mac 6x6-360x360-(rep3)-OCTA </td>
+    <td>Optic Disc </td>
+    <td>Color Photography</td>
+    <td>480</td>
+    <td>640 </td>
+    <td>
+      IR images are from OCTA scans. This OCTA protocol produces flow cube scans, segmentation
+      scans, en face scans, OCT B scans, and associated IR scans. 6 files have different dimensions
+      of 1958 (height), 2576 (width) and they are in color due to a change in imaging method.
+    </td>
+  </tr>
+  <tr>
+    <td>Triton-3D(H)+Radial 12x9-OCT </td>
+    <td>Macula, 6 x 6</td>
+    <td>Color Photography</td>
+    <td>1934</td>
+    <td>2576 </td>
+    <td>
+      Color fundus scans are from OCT scans. This OCT protocol produces OCT B scans and associated
+      color fundus scans.
+    </td>
+  </tr>
+  <tr>
+    <td>Triton-Macula 6x6-OCTA </td>
+    <td>Macula, 12 x 12</td>
+    <td>Color Photography</td>
+    <td>1934</td>
+    <td>2576 </td>
+    <td>
+      Color fundus scans are from OCTA scans. This OCTA protocol produces flow cube scans,
+      segmentation scans, en face scans, OCT B scans, and associated color fundus scans.
+    </td>
+  </tr>
+  <tr>
+    <td>Triton-Macula 12x12-OCTA </td>
+    <td>Color Photography</td>
+    <td>Color Photography</td>
+    <td>1934</td>
+    <td>2576 </td>
+    <td>
+      Color fundus scans are from OCTA scans. This OCTA protocol produces flow cube scans,
+      segmentation scans, en face scans, OCT B scans, and associated color fundus scans.
+    </td>
+  </tr>
+</table>
+
+\* More information on individual files, please refer to manifest.csv within the retinal_photography folder
+
+\* Note that all color photographs' photometric interpretation is YBR (YBR_FULL_422), which is primarily used with JPEG compressed bit streams or pixel data in an uncompressed format. This was defined by the manufacturers. To view color photographs in RGB using pydicom, please consider using their convert_color_space function (from YBR_FULL to RGB). They are automatically shown in intended color when using a viewer like MicroDicom.
+
+\* Note that retinal photographs from Spectralis, Maestro2, and Triton are associated with OCT or OCTA scans.
+
+\* Note that there are 6 color fundus photos generated from Maestro2-Mac 6x6-360x360-(rep3)-OCTA although the majority of them are IR images due to a change in methods. These photos are located with the IR images to organize files consistently based on the protocols.
+
+CFP - Color fundus photo, IR - Infrared reflectance, OCT - Optical coherence tomography, OCTA - Optical Coherence Tomography Angiography, UWF - Ultra-widefield
+
+## Example Images
+
+### Color fundus photographs of diabetic retinopathy acquired with the hand-held Optomed Aurora fundus camera.
+
+<figure>
+  <img src="/img/retinal-photography/fig4.jpg" />
+  <figcaption>
+    Figure 4: Fundus photographs (50°) of patients with (a) and without (b) signs of diabetic
+    retinopathy acquired with the hand-held Optomed Aurora fundus camera. Reference: Lupidi M,
+    Danieli L, Fruttini D, et al. Artificial intelligence in diabetic retinopathy screening:
+    clinical assessment using handheld fundus camera in a real-life setting. Acta Diabetol.
+    2023;60(8):1083-1088. doi:10.1007/s00592-023-02104-0.
+  </figcaption>
+</figure>
+
+### Color fundus photographs of diabetic retinopathy
+
+<figure>
+  <img src="/img/retinal-photography/fig5.jpg" />
+  <figcaption>
+    Figure 5: Color fundus photos show different stages of diabetic retinopathy (DR). (a) No DR. (b)
+    Mild non-proliferative DR. (c) Moderate non-proliferative DR. (d) Severe non-proliferative DR.
+    (e) Proliferative DR.
+  </figcaption>
+</figure>
+
+## Data Processing
+
+### File format
+
+The file format is in [DICOM (Digital Imaging and Communications in Medicine)](https://en.wikipedia.org/wiki/DICOM) format which is a technical standard for the digital storage and transmission of medical images and related information.
+
+### Data Standard
+
+For all files in retinal_photography folder, the exported files from the devices were formatted according to the NEMA DICOM standards on [Ophthalmic Photography 8 Bit Image](https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.41). The detailed information about the tags and values can be found in the hyperlink.
+All mandatory modules (M) were included, and within the mandatory modules, the tags that are categorized as [Type 1](https://dicom.nema.org/medical/dicom/current/output/chtml/part05/sect_7.4.html#:~:text=The%20Data%20Element%20Type%20of,only%20mandatory%20under%20certain%20conditions) (Tag and value both needed) and [Type 2](https://dicom.nema.org/medical/dicom/current/output/chtml/part05/sect_7.4.3.html) (Tag needed value can be empty) were evaluated and filled in accordingly.
+
+### File processing
+
+Files were processed to comply with the NEMA DICOM standards on [Ophthalmic Photography 8 Bit Image](https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.41) by removing, adding, and editing tags and values.
+
+Note that tags that are not listed in [Ophthalmic Photography 8 Bit Image IOD Modules](https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.41) and did not provide additional information are removed for consistency and clarity.
+
+In addition to ensuring files are NEMA compliant, further processing in the following was done to ensure consistency across the files:
+
+<table>
+  <tr>
+    <th>DICOM Tag Number </th>
+    <th> DICOM Tag Name</th>
+    <th> Values</th>
+    <th> Action, Rationale</th>
+  </tr>
+  <tr>
+    <td> (0010,0010) </td>
+    <td> Patient Name</td>
+    <td> Blank</td>
+    <td> Removal, Patient information</td>
+  </tr>
+  <tr>
+    <td> (0010,0030) </td>
+    <td> Patient Birth Date</td>
+    <td> Blank</td>
+    <td> Removal, Patient information</td>
+  </tr>
+  <tr>
+    <td> (0010,0040)</td>
+    <td> Patient Sex</td>
+    <td> A unified value of “M”</td>
+    <td> Removal, Patient information removed</td>
+  </tr>
+  <tr>
+    <td>(0008,0090)</td>
+    <td>Referring Physician Name </td>
+    <td> Blank</td>
+    <td> Removal, Unnecessary information and inconsistent across devices</td>
+  </tr>
+  <tr>
+    <td> (0020, 0010)</td>
+    <td> Study ID </td>
+    <td> Blank </td>
+    <td> Removal, Unnecessary information and inconsistent across devices</td>
+  </tr>
+  <tr>
+    <td> (0008, 0050)</td>
+    <td> Accession Number </td>
+    <td> Blank</td>
+    <td> Removal, Unnecessary information and inconsistent across devices</td>
+  </tr>
+  <tr>
+    <td> (0008, 0008)</td>
+    <td> Anatomic Region Sequence </td>
+    <td>
+      e.g., ORIGINAL, PRIMARY, , COLOR ORIGINAL, PRIMARY, , INFRARED ORIGINAL, PRIMARY, ,
+      AUTOFLUORESCENCE
+    </td>
+    <td> Removal, Unnecessary information and inconsistent across devices</td>
+  </tr>
+  <tr>
+    <td> (0020, 0020)</td>
+    <td>Patient Orientation</td>
+    <td> e.g., L, F </td>
+    <td>Harmonized, Consistency</td>
+  </tr>
+  <tr>
+    <td> (0008, 002A)</td>
+    <td>Acquisition Date Time </td>
+    <td>e.g., 20231011145705</td>
+    <td>Harmonized, Consistency</td>
+  </tr>
+  <tr>
+    <td> (0022, 0016)</td>
+    <td> Illumination Sequence </td>
+    <td>e.g., 410462008, SCT, Fine slit beam direct illumination</td>
+    <td rowSpan="3">
+      Harmonized, up-to-date information. Based on
+      [dicom.nema.org](https://dicom.nema.org/medical/dicom/current/output/chtml/part16/PS3.16.html).
+      DICOM PS3.16 2024b - Content Mapping Resource B.DCMR Context Groups (Normative)
+    </td>
+  </tr>
+  <tr>
+    <td>(0008, 2218)</td>
+    <td> Anatomic Region Sequence</td>
+    <td> e.g., 5665001, SCT, Retina </td>
+  </tr>
+  <tr>
+    <td>(0008, 2218)</td>
+    <td> Acquisition Device Type Code Sequence</td>
+    <td>e.g., 409898007, SCT, Fundus Camera</td>
+  </tr>
+  <tr>
+    <td>(0022, 000D)</td>
+    <td> Pupil Dilated</td>
+    <td> e.g., YES/NO </td>
+    <td> Addition, Missing value</td>
+  </tr>
+  <tr>
+    <td>(0022, 0058)</td>
+    <td> Mydriatic Agent Sequence </td>
+    <td>e.g., empty</td>
+    <td>Addition, Missing tag (tag is needed if Pupil Dilated is YES)</td>
+  </tr>
+  <tr>
+    <td>(0022, 000E)</td>
+    <td>Degree Of Dilation</td>
+    <td> e.g., empty </td>
+    <td> Addition, Missing tag (tag is needed if Pupil Dilated is YES)</td>
+  </tr>
+  <tr>
+    <td>(0028, 0030)</td>
+    <td> Pixel Spacing </td>
+    <td>e.g., 0.00634, 0.00634</td>
+    <td> Addition, Missing value</td>
+  </tr>
+  <tr>
+    <td>(0018, 1030)</td>
+    <td>Protocol Name</td>
+    <td> e.g., eidon central color retinal photography </td>
+    <td>Addition, Better information delivery</td>
+  </tr>
+</table>
+
+## Metadata Example
+
+| Attribute Name            | Tags         | Attribute Description                                                                    |
+| ------------------------- | ------------ | ---------------------------------------------------------------------------------------- |
+| Patient ID                | (0010, 0020) | Primary identifier for the patient.                                                      |
+| Image Type                | (0008, 0008) | Image identification characteristics.                                                    |
+| Manufacturer              | (0008, 0070) | Manufacturer of the device.                                                              |
+| Manufacturer's Model Name | (0008, 1090) | Manufacturer's model name of the device.                                                 |
+| Image Laterality          | (0020, 0062) | Laterality of object image examined.                                                     |
+| Pupil Dilated             | (0022, 000D) | Whether or not the patient's pupils were pharmacologically dilated for this acquisition. |
+| Samples Per Pixel         | (0028, 0002) | Number of samples (planes) in this image.                                                |
+| Number of Frames          | (0028, 0008) | Number of frames in a Multi-frame Image.                                                 |
+| Rows                      | (0028, 0010) | Number of rows in the image.                                                             |
+| Columns                   | (0028, 0011) | Number of columns in the image.                                                          |
+
+## Additional resources
+
+**Consider starting with our example [Jupyter notebooks](https://github.com/AI-READI/ai-readi-notebooks)** to explore the dataset further.
