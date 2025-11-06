@@ -2,12 +2,12 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
 
-import ClinicalLabTable from '../components/v2/ClinicalLabTable';
+import FileProcessingTable from '../components/FileProcessingTable';
 
-export default function DataDomainTable() {
+export default function fileProcessingTable() {
   return (
     <div>
-      <ClinicalLabTable />
+      <FileProcessingTable />
     </div>
   );
 }

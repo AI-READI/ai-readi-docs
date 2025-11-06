@@ -2,12 +2,12 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
 
-import ClinicalLabTable from '../components/v2/ClinicalLabTable';
+import MoCATable from '../components/v2/MoCATable';
 
-export default function DataDomainTable() {
+export default function OmopTable() {
   return (
     <div>
-      <ClinicalLabTable />
+      <MoCATable />
     </div>
   );
 }

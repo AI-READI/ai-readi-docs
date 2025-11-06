@@ -5,7 +5,7 @@ import FilterableTable from 'react-filterable-table';
 // eslint-disable-next-line import/no-unresolved
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
-import MappingsJSON from '../../docs/static/json/mappings.json';
+import MappingsJSON from '../../../versioned_docs/version-2.0.0/static/json/mappings.json';
 
 export default function OmopMappingTable() {
   const targetConceptIdRender = (props) => {
@@ -51,11 +51,6 @@ export default function OmopMappingTable() {
     {
       name: 'FIELD_ID_NUM',
       displayName: 'FIELD_ ID_NUM',
-      inputFilterable: true,
-    },
-    {
-      name: 'temp_Question_or_Answer',
-      displayName: 'temp_Question_or_Answer',
       inputFilterable: true,
     },
     {
@@ -142,11 +137,6 @@ export default function OmopMappingTable() {
     {
       name: 'value_as_concept_id',
       displayName: 'value_as_concept_id',
-      inputFilterable: true,
-    },
-    {
-      name: 'Choices_Calculations_OR_Slider_Labels',
-      displayName: 'Choices_Calculations_OR_Slider_Labels',
       inputFilterable: true,
     },
   ];
