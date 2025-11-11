@@ -11,17 +11,18 @@ All notable changes to this dataset will be documented in this file.
 
 https://doi.org/10.60775/fairhub.3
 
-## Added
+### Added
 
 - Data from 1213 additional participants has been added.
 - Added 67 Redcap concepts
 - Added 0 MoCA concepts
 - Added 9 Labs concepts
 - Added a “temp_Question_or_Answer” column in the combined REDCap and Labs mapping file to denote whether a mapping corresponded to a survey question or response option
-- **Wearable**: We updated the header of all Garmin JSON files (heart_rate, oxygen_saturation, physical_activity, physical_activity_calories, respiratory_rate, sleep, stress) to include a new "timezone" field indicating the local time zone for data collection. IDs in the 1**_ and 4_** ranges are mapped to Pacific Time, and IDs in the 7\*\*\* ranges are mapped to Central Time.
-- **Wearable and CGM**: We added sanity-check code to report the number of duplicates, the number of negative values, and potential formatting issues.
+- Added OCTA scans from Heidelberg Spectralis device
+- Wearable: We updated the header of all Garmin JSON files (heart_rate, oxygen_saturation, physical_activity, physical_activity_calories, respiratory_rate, sleep, stress) to include a new "timezone" field indicating the local time zone for data collection. IDs in the 1**_ and 4_** ranges are mapped to Pacific Time, and IDs in the 7\*\*\* ranges are mapped to Central Time.
+- Wearable and CGM: We added sanity-check code to report the number of duplicates, the number of negative values, and potential formatting issues.
 
-## Changed
+### Changed
 
 - Changed 25 MoCA concepts
 - Changed 111 Redcap concepts
@@ -30,14 +31,15 @@ https://doi.org/10.60775/fairhub.3
 - Changed 3 Labs concepts
 - Combined the separate REDCap and Labs mapping files into one file
 - Changed the name of the field participant_id to person_id in the manifest.tsv files to match the use of person_id in the OMOP files. Example notebooks were also updated.
-- Cardiac_ecg:
+- Cardiac ECG:
   - Data previously assigned based on an error (e.g. a typo in the participant ID) has been re-assigned to the correct participant.
   - Data without recognizable signals and with an error message that all 12 leads are missing has been removed. Where available, an alternate ECG from the same participant is included.
 - Environmental sensor:
   - Data previously released with poorly formatted numeric fields has been revised to omit the row containing the invalid data.
   - Data headers have been corrected to indicate that the units for the particle counts are in micrograms per cubic meter ug/m3.
+- License terms for reusing the AI-READI dataset has been updated
 
-## Removed
+### Removed
 
 - Removed 12 Redcap concepts
 - Removed 0 MoCA concepts
