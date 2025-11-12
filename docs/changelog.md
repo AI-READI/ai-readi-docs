@@ -5,7 +5,7 @@ title: Changelog
 
 All notable changes to this dataset will be documented in this file.
 
-## [3.0.0] - 2025-11-01
+## [3.0.0] - 2025-11-17
 
 ### Identifier/Link
 
@@ -19,8 +19,7 @@ https://doi.org/10.60775/fairhub.3
 - Added 9 Labs concepts
 - Added a “temp_Question_or_Answer” column in the combined REDCap and Labs mapping file to denote whether a mapping corresponded to a survey question or response option
 - Added OCTA scans from Heidelberg Spectralis device
-- Garmin: We updated the header of all Garmin JSON files (heart*rate, oxygen_saturation, physical_activity, physical_activity_calories, respiratory_rate, sleep, stress) to include a new "timezone" field indicating the local time zone for data collection. IDs in the 1\*\** and 4\_\*\* ranges are mapped to Pacific Time, and IDs in the 7\*\*\* ranges are mapped to Central Time.
-- Wearable and CGM: We added sanity-check code to report the number of duplicates, the number of negative values, and potential formatting issues.
+- Garmin: We updated the header of all Garmin JSON files (heart\*rate, oxygen_saturation, physical_activity, physical_activity_calories, respiratory_rate, sleep, stress) to include a new "timezone" field indicating the local time zone for data collection. IDs in the 1\*\*\* and 4\_\*\* ranges are mapped to Pacific Time, and IDs in the 7\*\*\* ranges are mapped to Central Time.
 
 ### Changed
 
@@ -49,7 +48,7 @@ https://doi.org/10.60775/fairhub.3
 
 ### Identifier/Link
 
-https://doi.org/10.60775/fairhub.2
+https://doi.org/10.60775/fairhub.3
 
 ### Added
 
