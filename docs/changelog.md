@@ -19,7 +19,7 @@ https://doi.org/10.60775/fairhub.3
 - Added 9 Labs concepts
 - Added a “temp_Question_or_Answer” column in the combined REDCap and Labs mapping file to denote whether a mapping corresponded to a survey question or response option
 - Added OCTA scans from Heidelberg Spectralis device
-- Wearable: We updated the header of all Garmin JSON files (heart_rate, oxygen_saturation, physical_activity, physical_activity_calories, respiratory_rate, sleep, stress) to include a new "timezone" field indicating the local time zone for data collection. IDs in the 1**_ and 4_** ranges are mapped to Pacific Time, and IDs in the 7\*\*\* ranges are mapped to Central Time.
+- Garmin: We updated the header of all Garmin JSON files (heart*rate, oxygen_saturation, physical_activity, physical_activity_calories, respiratory_rate, sleep, stress) to include a new "timezone" field indicating the local time zone for data collection. IDs in the 1\*\** and 4\_\*\* ranges are mapped to Pacific Time, and IDs in the 7\*\*\* ranges are mapped to Central Time.
 - Wearable and CGM: We added sanity-check code to report the number of duplicates, the number of negative values, and potential formatting issues.
 
 ### Changed
