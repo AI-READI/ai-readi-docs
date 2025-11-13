@@ -163,7 +163,7 @@ export default function OmopMappingTable() {
             fields={fields}
             noRecordsMessage="No match found."
             noFilteredRecordsMessage="No match found."
-            pageSizes={[10, 30, 50, 100, 200, 1695]}
+            pageSizes={[10, 30, 50, 100, 200, 1828]}
             pageSize={10}
           />
         </div>
