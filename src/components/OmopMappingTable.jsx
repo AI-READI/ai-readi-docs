@@ -130,6 +130,16 @@ export default function OmopMappingTable() {
       inputFilterable: true,
     },
     {
+      name: 'MODIFIER',
+      displayName: 'MODIFIER',
+      inputFilterable: true,
+    },
+    {
+      name: 'value_as_concept_id',
+      displayName: 'value_as_concept_id',
+      inputFilterable: true,
+    },
+    {
       name: 'qualifier_concept_id',
       displayName: 'qualifier_concept_id',
       inputFilterable: true,
@@ -137,11 +147,6 @@ export default function OmopMappingTable() {
     {
       name: 'qualifier_source_value',
       displayName: 'qualifier_source_value',
-      inputFilterable: true,
-    },
-    {
-      name: 'value_as_concept_id',
-      displayName: 'value_as_concept_id',
       inputFilterable: true,
     },
     {
