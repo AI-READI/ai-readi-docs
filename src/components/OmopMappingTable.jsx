@@ -74,11 +74,6 @@ export default function OmopMappingTable() {
       inputFilterable: true,
     },
     {
-      name: 'Choices_Calculations_OR_Slide_Labels_From_REDCap_CODEBOOK',
-      displayName: 'Choices, Calculations, OR Slider Labels From REDCap CODEBOOK',
-      inputFilterable: true,
-    },
-    {
       name: 'TARGET_CONCEPT_ID',
       displayName: 'TARGET_ CONCEPT_ID',
       inputFilterable: true,
@@ -110,13 +105,13 @@ export default function OmopMappingTable() {
       inputFilterable: true,
     },
     {
-      name: 'TARGET_STANDARD_CONCEPT',
-      displayName: 'TARGET_ STANDARD _CONCEPT',
+      name: 'TARGET_CONCEPT_CODE',
+      displayName: 'TARGET_ CONCEPT_CODE',
       inputFilterable: true,
     },
     {
-      name: 'TARGET_CONCEPT_CODE',
-      displayName: 'TARGET_ CONCEPT_CODE',
+      name: 'TARGET_STANDARD_CONCEPT',
+      displayName: 'TARGET_ STANDARD _CONCEPT',
       inputFilterable: true,
     },
     {
