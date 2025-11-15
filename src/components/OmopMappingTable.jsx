@@ -54,6 +54,11 @@ export default function OmopMappingTable() {
       inputFilterable: true,
     },
     {
+      name: 'temp_Question_or_Answer',
+      displayName: 'temp_Question_or_Answer',
+      inputFilterable: true,
+    },
+    {
       name: 'SRC_CODE',
       displayName: 'SRC_CODE',
       inputFilterable: true,
@@ -66,11 +71,6 @@ export default function OmopMappingTable() {
     {
       name: 'SRC_CD_DESCRIPTION',
       displayName: 'SRC_CD_ DESCRIPTION',
-      inputFilterable: true,
-    },
-    {
-      name: 'Choices_Calculations_OR_Slide_Labels_From_REDCap_CODEBOOK',
-      displayName: 'Choices, Calculations, OR Slider Labels From REDCap CODEBOOK',
       inputFilterable: true,
     },
     {
@@ -105,13 +105,13 @@ export default function OmopMappingTable() {
       inputFilterable: true,
     },
     {
-      name: 'TARGET_STANDARD_CONCEPT',
-      displayName: 'TARGET_ STANDARD _CONCEPT',
+      name: 'TARGET_CONCEPT_CODE',
+      displayName: 'TARGET_ CONCEPT_CODE',
       inputFilterable: true,
     },
     {
-      name: 'TARGET_CONCEPT_CODE',
-      displayName: 'TARGET_ CONCEPT_CODE',
+      name: 'TARGET_STANDARD_CONCEPT',
+      displayName: 'TARGET_ STANDARD _CONCEPT',
       inputFilterable: true,
     },
     {
@@ -125,6 +125,16 @@ export default function OmopMappingTable() {
       inputFilterable: true,
     },
     {
+      name: 'MODIFIER',
+      displayName: 'MODIFIER',
+      inputFilterable: true,
+    },
+    {
+      name: 'value_as_concept_id',
+      displayName: 'value_as_concept_id',
+      inputFilterable: true,
+    },
+    {
       name: 'qualifier_concept_id',
       displayName: 'qualifier_concept_id',
       inputFilterable: true,
@@ -135,8 +145,8 @@ export default function OmopMappingTable() {
       inputFilterable: true,
     },
     {
-      name: 'value_as_concept_id',
-      displayName: 'value_as_concept_id',
+      name: 'Choices_Calculations_OR_Slider_Labels',
+      displayName: 'Choices_Calculations_OR_Slider_Labels',
       inputFilterable: true,
     },
   ];
@@ -153,7 +163,7 @@ export default function OmopMappingTable() {
             fields={fields}
             noRecordsMessage="No match found."
             noFilteredRecordsMessage="No match found."
-            pageSizes={[10, 30, 50, 100, 200, 1695]}
+            pageSizes={[10, 30, 50, 100, 200, 1828]}
             pageSize={10}
           />
         </div>

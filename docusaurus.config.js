@@ -37,9 +37,13 @@ export default {
               label: `1.0.0`,
               path: '1',
             },
-            current: {
+            '2.0.0': {
               label: `2.0.0`,
               path: '2',
+            },
+            current: {
+              label: `3.0.0`,
+              path: '3',
             },
           },
         },
@@ -82,7 +86,7 @@ export default {
             position: 'right',
           },
           {
-            href: '/docs/2/contact',
+            href: '/docs/3/contact',
             label: 'Contact Us',
             position: 'right',
           },
@@ -96,7 +100,7 @@ export default {
             items: [
               {
                 label: 'Changelog',
-                to: '/docs/2/changelog',
+                to: '/docs/3/changelog',
               },
             ],
           },

@@ -6,7 +6,7 @@ import styles from './HomepageFeatures.module.css';
 
 const StatsList = [
   {
-    heading: '1067',
+    heading: '2280',
     text: 'Participants from three data collection sites',
   },
   {
@@ -14,12 +14,12 @@ const StatsList = [
     text: `Data modalities collected`,
   },
   {
-    heading: '165,051',
+    heading: '358,999',
     text: 'Total number of data files',
   },
 
   {
-    heading: '2.01',
+    heading: '3.87',
     text: `TB dataset size`,
   },
 ];
@@ -71,7 +71,7 @@ export default function HomepageFeatures() {
           </h1>
 
           <p className="snapshot mb-12 text-xl font-medium text-slate-600">
-            Key numbers from the current version of the dataset (v2.0.0)
+            Key numbers from the current version of the dataset (v3.0.0)
           </p>
 
           <div className={styles.stat}>
