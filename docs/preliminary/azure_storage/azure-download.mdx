@@ -1,0 +1,145 @@
+---
+sidebar_position: 6
+title: Download from Azure Storage
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+:::info[A word of caution]
+
+The download process will take some time. **_Ensure you have adequate storage to receive the dataset and a stable internet connection during the download_**. You may choose to copy the files to your preferred cloud storage provider instead of downloading them to your local machine.
+
+:::
+
+Once the dataset is ready for download you will receive an email instructing you to view the details of your dataset. Once you log in you will see instructions for downloading your files from the Azure Blob Storage Container. You will need to use a tool to download the files. There are several tools available. Here are a few we recommend.
+
+### AzCopy
+
+[AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) is a command-line utility designed for copying data to and from Azure Blob, File, and Table storage.
+
+### RClone
+
+[RClone](https://rclone.org/) is a command-line program to manage files on cloud storage. It supports a wide range of cloud storage providers, including Azure Blob Storage.
+
+### Azure Storage Explorer
+
+[Azure Storage Explorer](https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer) is a free tool from Microsoft that allows you to easily manage your Azure Storage resources.
+
+## Downloading the Files
+
+Once you have selected and set up your preferred tool, you will need to set up a [SAS URL](./azure-token) with the _Read_ and _List_ privileges at a minimum and container details to download your files. Follow the instructions specific to the tool you are using to authenticate with the SAS URL and download the files from the Azure Blob Storage Container.
+
+<Tabs>
+  <TabItem value="azcopy" label="AzCopy">
+    ### AzCopy Example
+
+    Detailed instructions on AzCopy, its installation, and use are available from the Official Microsoft Documentation Below is a brief summary of steps you'll need to accomplish your download:
+
+    1. Visit the AzCopy documentation page and download the compressed `azcopy` executable for your respective operating system. These executables are available as compressed zip files for Windows/Mac users and Tarball files for Linux users.
+
+    2. Extract the contents of the compressed executable in a known location on your local machine's drive.
+
+        - Windows and Mac users can use built-in zip file applications or use 3rd-party applications like 7zip for this
+        - For linux users, please see documentation for your specific distro for instructions on decompressing the provided tarball
+        - Possible locations for this are: in your home directory; in your machine's C:/ or binary directory
+        - For ease of use, consider adding the fully-qualified path to the AzCopy directory to your system PATH. If you choose not to do this you will need to execute any AzCopy commands from the directory where AzCopy is installed.
+
+    3. Open a terminal or powershell instance and execute the following (or similar):
+
+        ```
+        azcopy copy "https://youraccount.blob.core.windows.net/yourcontainer?...[SAS Token]..." /
+            "C:\local\path" /
+            --recursive=true
+        ```
+
+    4. Where the https URL is the SAS URI you obtained from the portal and "C:\local\path" is the local path on your target machine.
+
+    5. Please allow time for the download to complete. Depending on the amount of data you selected, this will take several hours.
+
+  </TabItem>
+  <TabItem value="rclone" label="RClone">
+        ### RClone Example
+
+        1. Rclone is available for Download as a single executable. Download the executable specific to operating system and follow the [installation instructions] to install rclone.
+
+        2. Next you'll need to configure your connection to the Fairhub Portal Azure Blob Storage. Open your terminal or command line program of choice and run:
+
+            ```
+            rclone config
+            ```
+
+            then follow the download instructions . For authentication you will be using the Shared Access Signature URL that you just obtained above; be sure to leave the `account` and `key` configuration options blank and fill in the `sas_url`. Remember the name you give to the Azure Blob Storage configuration, as you will need it in subsequent steps.
+
+        3. Once Azure Blob Storage configuration is complete, you can either use it for download to your local user system or you can configure an additional connection to any other cloud storage provider. For example, to configure a connection to AWS S3 or a cloud storage provider that is compatible with AWS S3 Backend, follow configuration instructions .
+
+        4. Once your configuration is complete, you can download your requested materials by issuing the following command:
+
+            ```
+            rclone copy example-azure-config-name:blob-container-name path/to/local/directory
+            ```
+
+            Or, for transfer to other cloud storage providers:
+
+            ```
+            rclone copy example-azure-config-name:blob-container-name example-destination-provider-config-name:path/to/directory
+            ```
+
+        5. Please allow time for the download to complete. Depending on the amount of data you selected, this could take several hours.
+
+  </TabItem>
+  <TabItem label="Azure Storage Explorer" value="storage-explorer">
+        ### Azure Storage Explorer
+
+        Once you have installed Azure Storage Explorer you can set up the connection to your storage container.
+
+        1. Expand the tree menu under the Explore frame and right click on "Storage Accounts"
+
+            Click **"Connect to Azure Storage ..."** to select your storage resource.
+
+            <figure>
+                <img src="/img/azure/explorer/storage-explorer-1.png" />
+                <figcaption></figcaption>
+            </figure>
+
+
+        2. Select **Blob container or directory**
+            <figure>
+                <img src="/img/azure/explorer/storage-explorer-2.png" />
+                <figcaption></figcaption>
+            </figure>
+
+        3. Choose the **Shared access signature URL (SAS)** connection option.
+            <figure>
+                <img src="/img/azure/explorer/storage-explorer-3.png" />
+            </figure>
+
+        4. Paste in the **Blob container or directory SAS URL** input a [SAS URL](./azure-token.mdx) that has at a minimum the Read and List privileges. This will start with `https`. By default it will use the container name for the Display name. Optionally, provide a memorable **Display name**.
+            <figure>
+                <img src="/img/azure/explorer/storage-explorer-4.png" />
+            </figure>
+
+        5. Review the summary and click "Connect" if the details are correct.
+            <figure>
+                <img src="/img/azure/explorer/storage-explorer-5.png" />
+            </figure>
+
+        6. You can now browse the container. The top level will contain a file created when you verified the connection with fairhub.io and a folder name with your request identifier.
+            <figure>
+                <img src="/img/azure/explorer/storage-explorer-7.png" />
+                <figcaption></figcaption>
+            </figure>
+
+        7. Inside the request folder you see the dataset folder and a CSV which contains md5 hashes for all files in your request.
+            <figure>
+                <img src="/img/azure/explorer/storage-explorer-8.png" />
+                <figcaption></figcaption>
+            </figure>
+        8. Within the dataset folder you will find all the data types requested along with high level AI-READI metadata. You can either choose to download all data or select one or more folders to download. Then click the Download button to start the process.
+            <figure>
+                <img src="/img/azure/explorer/storage-explorer-9.png" />
+                <figcaption></figcaption>
+            </figure>
+
+  </TabItem>
+</Tabs>
