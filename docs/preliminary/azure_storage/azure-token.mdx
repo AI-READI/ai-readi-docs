@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 5
 title: Azure Container SAS Token Generation
 description: Instructions for generating a SAS token for an Azure Blob Storage container.
 ---
@@ -40,7 +40,11 @@ Now that we have a Storage Account and a Blob Container, create a Shared Access 
 
    _`sp=w&st=2025-06-02T23:28:30Z&se=2025-07-04T07:28:30Z&spr=https&sv=2024-11-04&sr=c sig=KBj2FOV...`_
 
-**Important**: Only submit the SAS token (do not include the full SAS URL).
+:::info
+
+Only submit the SAS token (do not include the full SAS URL which starts with `https`).
+
+:::
 
 ### Final Checklist
 
