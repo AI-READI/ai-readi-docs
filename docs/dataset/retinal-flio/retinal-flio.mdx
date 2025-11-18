@@ -20,7 +20,9 @@ To get the best FLIO data, it is crucial to maximize the number of photons recor
 
 For data analysis, areas of interest are divided into bins to reduce noise and provide quantitative measures. Examples are binning macular, foveal, and pathologic areas. Another useful binning approach in ophthalmology is using a standard Early Treatment Diabetic Retinopathy Study (ETDRS) grid. After defining the bins, the mean fluorescence lifetime (τm) can be calculated from a 3-exponential approximation of the fundus autofluorescence decays. The τm then can be compared between the bins themselves or across groups of patients using statistical methods. Furthermore, τm can be calculated, overlaid, and plotted on a heatmap to get an image representation of the analysis, allowing visual evaluation of the morphology and distribution of areas with certain pathologies.
 
-The analysis can be done using available software, including SPCImage (Becker & Hickl GmbH, Berlin, Germany), FluoFit (PicoQuant GmbH, Berlin, Germany), SymPhoTime (PicoQuant GmbH, Berlin, Germany), LifExplorer (Heidelberg Engineering, Heidelberg, Germany), MATLAB, FLIO reader (ARTORG Center for Biomedical Engineering Research, Bern, Switzerland), FLIMX (Biophotonics and Imaging Laboratory at the University of Tübingen, Tübingen, Germany). The analysis can also be conducted using available Python libraries: FLIMLib and FLIMfit.
+The file extension used by the device is “.SDT”, which can be analyzed using available software, including SPCImage (Becker & Hickl GmbH, Berlin, Germany), FluoFit (PicoQuant GmbH, Berlin, Germany), SymPhoTime (PicoQuant GmbH, Berlin, Germany), LifExplorer (Heidelberg Engineering, Heidelberg, Germany), MATLAB, FLIO reader (ARTORG Center for Biomedical Engineering Research, Bern, Switzerland), FLIMX (Biophotonics and Imaging Laboratory at the University of Tübingen, Tübingen, Germany). The analysis can also be conducted using available Python libraries: FLIMLib and FLIMfit.
+
+It is important to note that in the AI-READI project, FLIO files are shared as DICOM files, which contain all the information presented in the original “.SDT” files. However, they are not accepted by the mentioned softwares. Another consideration is the fact that the Instrument Response Function (IRF) -which is crucial to use in the analysis- varies across different FLIO camera heads. This means that FLIO data acquired using different camera heads (across and within organizations) may not be readily comparable without accounting for site-specific differences and varying IRF values. The manufacturer provides IRF values for each camera serial number, and we have presented it in the DICOM file using the following Tag: “0073,100D”
 
 ## Overview of AI-READI Retinal Photography Data
 
@@ -141,6 +143,7 @@ DICOM Tags and values **(this represents a subset of the available tags)**
 | 0073100A | Processed frames                      | 1580                   |
 | 0073100B | Number of Valid Photons Per Frame     | 185184                 |
 | 0073100C | Number of Invalid Photons Per Frame   | 0                      |
+| 0073100D | Instrument Response Function (IRF)    | 64                     |
 | 00750010 | Group Information                     | FLIO SDT information   |
 | 00751001 | Model Serial Number                   | 3F0406                 |
 | 00751002 | Measurement Mode                      | 9                      |
