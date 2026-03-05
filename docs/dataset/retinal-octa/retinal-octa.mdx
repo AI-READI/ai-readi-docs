@@ -243,6 +243,19 @@ Initially exported files were fda files. They were first converted to DICOM file
 
 ### File Processing
 
+:::info
+
+Please be aware that Spectralis OCTA scans have different orientation compared to other devices (e.g., cirrus, maestro2, triton)
+
+For structural_oct, enface, flow_cube, files that have spectralis_mac_20x20_hs_octa in the name, the following transformation can be applied to orient the scan the same was as other devices (e.g., cirrus, maestro2, triton)
+
+```python
+import pydicom
+dcm = pydicom.dcmread("..filepath")
+array = dcm.pixel_array
+array = array[::-1]
+```
+:::
 Files were processed to comply with the NEMA DICOM standards listed above through removing, adding, editing tags and values.
 
 Note that tags that are not listed in NEMA DICOM standards listed above and did not provide additional information are removed for consistency and clarity.
