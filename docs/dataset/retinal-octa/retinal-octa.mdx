@@ -54,36 +54,57 @@ Considering that slabs are mainly defined by automatically segmented retinal lay
   <tr>
     <th>Manufacturer </th>
     <th>Manufacturer's Model (device) </th>
-    <th> Protocol Name</th>
-    <th> Anatomic Regions</th>
-    <th> Imaging</th>
-    <th> Notes</th>
+    <th>Protocol Name</th>
+    <th>Anatomic Regions</th>
+    <th>Imaging</th>
+    <th>Notes</th>
   </tr>
   <tr>
-    <td> Topcon</td>
-    <td> Maestro2</td>
-    <td> Maestro2-Mac 6x6-360x360-(rep3)-OCTA</td>
-    <td> Macula, 6 x 6</td>
-    <td> OCTA</td>
-    <td rowSpan="3">
-      Each OCTA scan produces: 1 reference retinal photography file (IR or color photo) 1 OCT
-      (structural scan) file, 2 flow cube files (processed and raw data), 1 heightmap segmentation
-      file, 4 en face images
+    <td>Topcon</td>
+    <td>Maestro2</td>
+    <td>Maestro2-Mac 6x6-360x360-(rep3)-OCTA</td>
+    <td>Macula, 6 x 6</td>
+    <td>OCTA</td>
+    <td rowSpan="6">
+      Depending on the device, each OCTA scan produces: 1 reference retinal photography file
+      (IR or color photo), 1 OCT (structural scan) file, 1 flow cube files, 1-2 heightmap
+      segmentation file, 3-7 en face images
     </td>
   </tr>
   <tr>
-    <td> Topcon </td>
-    <td> Triton</td>
-    <td> Triton-Macula 6x6-OCTA</td>
-    <td> Macula, 6 x 6</td>
-    <td> OCTA</td>
+    <td>Topcon </td>
+    <td>Triton</td>
+    <td>Triton-Macula 6x6-OCTA</td>
+    <td>Macula, 6 x 6</td>
+    <td>OCTA</td>
   </tr>
   <tr>
-    <td> Topcon </td>
-    <td> Triton</td>
+    <td>Topcon </td>
+    <td>Triton</td>
     <td>Triton-Macula 12x12-OCTA </td>
     <td>Macula, 12 x 12 </td>
-    <td> OCTA</td>
+    <td>OCTA</td>
+  </tr>
+  <tr>
+    <td>Zeiss </td>
+    <td>Cirrus</td>
+    <td>Cirrus-Macula 6x6-OCTA </td>
+    <td>Macula, 6 x 6 </td>
+    <td>OCTA</td>
+  </tr>
+  <tr>
+    <td>Zeiss </td>
+    <td>Cirrus</td>
+    <td>Cirrus-Disc 6x6-OCTA </td>
+    <td>Optic Disc, 6 x 6</td>
+    <td>OCTA</td>
+  </tr>
+  <tr>
+    <td>Heidelberg </td>
+    <td>Spectralis</td>
+    <td>Spec-Mac-20x20-HS-512 lines-OCTA</td>
+    <td>Macula, 20 x 20</td>
+    <td>OCTA</td>
   </tr>
 </table>
 
@@ -94,29 +115,57 @@ Considering that slabs are mainly defined by automatically segmented retinal lay
 <table>
   <tr>
     <th>Protocol Name </th>
-    <th> Height</th>
-    <th> Width</th>
-    <th> Number of frames</th>
-    <th> Notes</th>
+    <th>Height</th>
+    <th>Width</th>
+    <th>Number of frames</th>
+    <th>Notes</th>
   </tr>
   <tr>
-    <td> Maestro2-Mac 6x6-360x360-(rep3)-OCTA</td>
-    <td> 885</td>
-    <td> 360</td>
-    <td> 360</td>
-    <td rowSpan="3"> 2 flow cube files (flow cube and flow cube raw data) per OCTA scan</td>
+    <td>Maestro2-Mac 6x6-360x360-(rep3)-OCTA</td>
+    <td>885</td>
+    <td>360</td>
+    <td>360</td>
+    <td></td>
   </tr>
   <tr>
-    <td> Triton-Macula 6x6-OCTA </td>
-    <td> 992</td>
-    <td> 320</td>
-    <td> 320</td>
+    <td>Triton-Macula 6x6-OCTA </td>
+    <td>992</td>
+    <td>320</td>
+    <td>320</td>
+    <td></td>
+
   </tr>
   <tr>
-    <td> Triton-Macula 12x12-OCTA </td>
-    <td> 992</td>
+    <td>Triton-Macula 12x12-OCTA </td>
+    <td>992</td>
     <td>512</td>
-    <td> 512</td>
+    <td>512</td>
+    <td></td>
+
+  </tr>
+  <tr>
+    <td>Cirrus-Macula 6x6-OCTA</td>
+    <td>1024</td>
+    <td>350</td>
+    <td>350</td>
+    <td></td>
+
+  </tr>
+  <tr>
+    <td>Cirrus-Disc 6x6-OCTA </td>
+    <td>1024</td>
+    <td>350</td>
+    <td>350</td>
+    <td></td>
+
+  </tr>
+  <tr>
+    <td>Spec-Mac-20x20-HS-512 lines-OCTA </td>
+    <td>496</td>
+    <td>512</td>
+    <td>512</td>
+    <td></td>
+
   </tr>
 </table>
 
@@ -137,19 +186,42 @@ Considering that slabs are mainly defined by automatically segmented retinal lay
     <td>360</td>
     <td>360</td>
     <td>9</td>
-    <td rowSpan="3"> 1 segmentation file per OCTA scan</td>
+    <td></td>
   </tr>
   <tr>
     <td>Triton-Macula 6x6-OCTA</td>
     <td>320</td>
     <td>320</td>
     <td>10</td>
+    <td></td>
   </tr>
   <tr>
     <td>Triton-Macula 12x12-OCTA</td>
     <td>512</td>
     <td>512</td>
     <td>10</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Cirrus-Macula 6x6-OCTA</td>
+    <td>350</td>
+    <td>350</td>
+    <td>2</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Cirrus-Disc 6x6-OCTA</td>
+    <td>350</td>
+    <td>350</td>
+    <td>2</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Spec-Mac-20x20-HS-512 lines-OCTA</td>
+    <td>512</td>
+    <td>512</td>
+    <td>11</td>
+    <td></td>
   </tr>
 </table>
 
@@ -161,22 +233,44 @@ Considering that slabs are mainly defined by automatically segmented retinal lay
     <th>Height</th>
     <th>Width</th>
     <th>Notes</th>
+
+  </tr>
+  <tr>
+    <td>Cirrus-Macula 6x6-OCTA</td>
+    <td>1024</td>
+    <td>1024</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Cirrus-Disc 6x6-OCTA</td>
+    <td>1024</td>
+    <td>1024</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Spec-Mac-20x20-HS-512 lines-OCTA</td>
+    <td>512</td>
+    <td>512</td>
+    <td>some files have less rows</td>
+
   </tr>
   <tr>
     <td>Maestro2-Mac 6x6-360x360-(rep3)-OCTA</td>
-    <td>720</td>
-    <td>720</td>
-    <td rowSpan="3"> 4 en face files per OCTA scan</td>
+    <td>360</td>
+    <td>360</td>
+    <td></td>
   </tr>
   <tr>
     <td>Triton-Macula 6x6-OCTA</td>
-    <td>640</td>
-    <td>640</td>
+    <td>320</td>
+    <td>320</td>
+    <td></td>
   </tr>
   <tr>
     <td>Triton-Macula 12x12-OCTA</td>
-    <td>1024</td>
-    <td>1024</td>
+    <td>512</td>
+    <td>512</td>
+    <td></td>
   </tr>
 </table>
 

@@ -66,6 +66,7 @@ _Reference: Ajaz A, Kumar DK. Infrared retinal images for flashless detection of
 | Topcon       | Maestro2                      | Macula, Wide Field                        | Color Photography, Infrared Reflectance                   | Yes      |
 | Topcon       | Triton                        | Macula, Optic Disc                        | Color Photography                                         | Yes      |
 | Heidelberg   | Spectralis                    | Macula, Optic Disc                        | Infrared Reflectance                                      | Yes      |
+| Zeiss        | Cirrus                        | Macula, Optic Disc                        | Infrared Reflectance                                      | Yes      |
 
 \*More comprehensive details regarding each imaging file are available in the “manifest.tsv” file located within the retinal_photography folder.
 
@@ -79,18 +80,18 @@ According to the AI-READI imaging protocols, the Triton device primarily capture
   <tr>
     <th> Protocol Name</th>
     <th> Anatomic Regions*</th>
-    <th> Width</th>
+    <th> Imaging Types</th>
     <th> Height</th>
-    <th> Number of frames</th>
+    <th> Width</th>
     <th> Notes</th>
   </tr>
   <tr>
     <td> OptoMed-Disc centered-CFP</td>
     <td> Optic Disc</td>
     <td>Color Photography</td>
-    <td rowSpan="2">1776</td>
-    <td rowSpan="2"> 2368</td>
-    <td rowSpan="2">
+    <td>1776</td>
+    <td>2368</td>
+    <td>
       One can differentiate between these two protocols by visually confirming the images where they
       were centered
     </td>
@@ -99,13 +100,17 @@ According to the AI-READI imaging protocols, the Triton device primarily capture
     <td> OptoMed-Mac centered-CFP </td>
     <td> Macula</td>
     <td> Color Photography </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+
   </tr>
   <tr>
     <td>Eidon-UWF Central-IR </td>
     <td>Macula </td>
     <td>Infrared Reflectance</td>
-    <td>3288</td>
-    <td> 3680</td>
+    <td> 3288</td>
+    <td>3680</td>
     <td> </td>
   </tr>
   <tr>
@@ -115,6 +120,7 @@ According to the AI-READI imaging protocols, the Triton device primarily capture
     <td>3288</td>
     <td>3680 </td>
     <td> </td>
+
   </tr>
   <tr>
     <td> Eidon-UWF Central-CFP </td>
@@ -161,7 +167,7 @@ According to the AI-READI imaging protocols, the Triton device primarily capture
   <tr>
     <td>Spectralis-PPole Mac-HR-61 lines-OCT </td>
     <td> Macula</td>
-    <td>Infrared Reflectancee</td>
+    <td>Infrared Reflectance</td>
     <td> 1536 or 768</td>
     <td>1536 or 768 </td>
     <td>
@@ -235,6 +241,71 @@ According to the AI-READI imaging protocols, the Triton device primarily capture
     <td>
       Color fundus scans are from OCTA scans. This OCTA protocol produces flow cube scans,
       segmentation scans, en face scans, OCT B scans, and associated color fundus scans.
+    </td>
+  </tr>
+  <tr>
+    <td>Cirrus-Mac Cube-512x128-OCT</td>
+    <td>Macula</td>
+    <td>Infrared Reflectance</td>
+    <td>664</td>
+    <td>512 </td>
+    <td>
+      IR images are from OCTA scans. This OCTA protocol produces flow cube scans, segmentation
+      scans, en face scans, OCT B scans, and associated IR scans. 6 files have different
+      dimensions of 1958 (height), 2576 (width) and they are in color due to a change in
+      imaging method.
+    </td>
+  </tr>
+  <tr>
+    <td>Cirrus-Disc Cube-200x200-OCT</td>
+    <td>Optic Disc</td>
+    <td>Infrared Reflectance</td>
+    <td>664</td>
+    <td>512 </td>
+    <td>
+      IR images are from OCTA scans. This OCTA protocol produces flow cube scans, segmentation
+      scans, en face scans, OCT B scans, and associated IR scans. 6 files have different
+      dimensions of 1958 (height), 2576 (width) and they are in color due to a change in
+      imaging method.
+    </td>
+  </tr>
+    <tr>
+    <td>Cirrus-Macula 6x6-OCTA</td>
+    <td>Macula</td>
+    <td>Infrared Reflectance</td>
+    <td>664</td>
+    <td>512 </td>
+    <td>
+      IR images are from OCTA scans. This OCTA protocol produces flow cube scans, segmentation
+      scans, en face scans, OCT B scans, and associated IR scans. 6 files have different
+      dimensions of 1958 (height), 2576 (width) and they are in color due to a change in
+      imaging method.
+    </td>
+  </tr>
+    <tr>
+    <td>Cirrus-Disc 6x6-OCTA</td>
+    <td>Optic Disc</td>
+    <td>Infrared Reflectance</td>
+    <td>664</td>
+    <td>512 </td>
+    <td>
+      IR images are from OCTA scans. This OCTA protocol produces flow cube scans, segmentation
+      scans, en face scans, OCT B scans, and associated IR scans. 6 files have different
+      dimensions of 1958 (height), 2576 (width) and they are in color due to a change in
+      imaging method.
+    </td>
+  </tr>
+    <tr>
+    <td>Spec-Mac-20x20-HS-512 lines-OCTA </td>
+    <td>Macula, 20 x 20</td>
+    <td>Infrared Reflectance</td>
+    <td>768</td>
+    <td>768 </td>
+    <td>
+      IR images are from OCTA scans. This OCTA protocol produces flow cube scans, segmentation
+      scans, en face scans, OCT B scans, and associated IR scans. 6 files have different
+      dimensions of 1958 (height), 2576 (width) and they are in color due to a change in
+      imaging method.
     </td>
   </tr>
 </table>
