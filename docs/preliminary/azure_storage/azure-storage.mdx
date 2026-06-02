@@ -7,6 +7,16 @@ title: Azure Storage Account Creation
 
 Next, create an [Azure Storage Account](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview) that will house the storage container. Below is a summarized version of the [full documentation](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create). If you already have an Azure Storage Account you can [skip to creating the container](./azure-container.mdx).
 
+**To minimize Azure Storage costs:**
+- **When creating the storage account:**
+    - The **HOT** storage tier is the default behavior; we recommend **NOT** changing this tier
+    - Indicate Locally redundant storage only
+    - Create the storage account in your geographic region to prevent intra-regional fees
+- **Download as soon as the data is ready:** from the same region or a Virtual Machine in the same region, to avoid intra-region egress fees.
+- **Delete the storage container/account** once you have downloaded your watermarked data to stop further storage charges - storage fees accrue per GB per Month.
+- **Take advantage of the free 100 GB egress tier** - if you can split the download into multiple days, you'll still stay within the free quota for the first 100 GB each month.
+- **Monitor with Azure Cost Management** to verify that no unexpected operations (e.g. extra reads) are generating additional transaction fees.
+
 1. Log in to the Azure Portal: https://portal.azure.com
 2. Search for "Storage accounts" in the top search bar and click "+ Create".
 
@@ -22,9 +32,9 @@ Next, create an [Azure Storage Account](https://learn.microsoft.com/en-us/azure/
 - **Subscription**: Select your plan.
 - **Resource group**: Use an existing one or create a new one.
 - **Storage account name**: Choose a globally unique, lowercase name.
-- **Region**: Choose a region closest to you.
+- **Region**: Choose a region closest to you to prevent intra-regional fees.
 - **Performance**: Standard (default).
-- **Redundancy**: Locally-redundant storage (LRS) is recommended.
+- **Redundancy**: Indicate locally-redundant storage (LRS) only.
 
 <figure>
   <img src="/img/azure/azure-storage-2.png" />
