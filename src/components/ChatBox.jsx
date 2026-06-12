@@ -1,11 +1,11 @@
 /* eslint-disable react/no-array-index-key */
 import { useState, useRef, useEffect } from 'react';
 import MessageContent from './messageContent';
-import chat from '../../api/chat';
+import chat, { cancelRequest } from '../../api/chat';
 
 const suggestedQuestions = [
   'How do I download the dataset?',
-  'What data modalities are included?',
+  'What is AI-READI dataset',
   'What is the dataset license?',
 ];
 
@@ -42,9 +42,24 @@ function ChatBox() {
     setInput('');
     setIsLoading(true);
 
-    const answer = await chat(trimmed);
+    setMessages((prev) => [...prev, { role: 'assistant', content: '' }]);
 
-    setMessages((prev) => [...prev, { role: 'assistant', content: answer }]);
+    const final = await chat(trimmed, (partial) => {
+      setMessages((prev) => {
+        const copy = [...prev];
+        copy[copy.length - 1] = { role: 'assistant', content: partial };
+        return copy;
+      });
+    });
+    if (final === null) {
+      setMessages((prev) => prev.slice(0, -1));
+    } else {
+      setMessages((prev) => {
+        const copy = [...prev];
+        copy[copy.length - 1] = { role: 'assistant', content: final };
+        return copy;
+      });
+    }
     setIsLoading(false);
   }
 
@@ -167,16 +182,6 @@ function ChatBox() {
               </div>
             ))}
 
-            {isLoading && (
-              <div className="flex justify-start">
-                <div className="flex items-center gap-1.5 rounded-2xl rounded-bl-sm px-4 py-3 bg-gray-100">
-                  <span className="inline-block h-2 w-2 rounded-full bg-sky-600 animate-bounce" />
-                  <span className="inline-block h-2 w-2 rounded-full bg-sky-600 animate-bounce [animation-delay:150ms]" />
-                  <span className="inline-block h-2 w-2 rounded-full bg-sky-600 animate-bounce [animation-delay:300ms]" />
-                </div>
-              </div>
-            )}
-
             {messages.length === 1 && !isLoading && (
               <div className="mt-2 flex flex-col gap-2">
                 <p className="text-md font-medium text-gray-500 m-0">Try asking:</p>
@@ -210,25 +215,38 @@ function ChatBox() {
               className="flex-1 rounded-xl border border-gray-200 px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-sky-600 bg-white text-gray-800"
             />
             <button
-              onClick={() => sendMessage()}
-              disabled={!input.trim() || isLoading}
+              onClick={() => (isLoading ? cancelRequest() : sendMessage())}
+              disabled={!isLoading && !input.trim()}
               className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-sky-600 text-white border-none cursor-pointer disabled:opacity-40"
-              aria-label="Send message"
+              aria-label={isLoading ? 'Cancel request' : 'Send message'}
             >
-              <svg
-                width="16"
-                height="16"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2.5}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
-                />
-              </svg>
+              {isLoading ? (
+                <svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                >
+                  <rect x="6" y="6" width="12" height="12" rx="2" />
+                </svg>
+              ) : (
+                <svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+                  />
+                </svg>
+              )}
             </button>
           </div>
           <p className="mt-2 text-center text-[10px] text-gray-400 m-0">
