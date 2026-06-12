@@ -27,9 +27,12 @@ function ChatBox() {
   const inputRef = useRef(null);
 
   useEffect(() => {
-    localStorage.setItem('chat-messages', JSON.stringify(messages));
+    try {
+      localStorage.setItem('chat-messages', JSON.stringify(messages));
+    } catch {
+      /* ignore */
+    }
   }, [messages]);
-
   useEffect(() => {
     if (isOpen) inputRef.current?.focus();
   }, [isOpen]);
