@@ -5,6 +5,27 @@ title: Changelog
 
 All notable changes to this dataset will be documented in this file.
 
+## [4.0.0] - 2026-11-01
+
+### Identifier/Link
+
+https://doi.org/10.60775/fairhub.5
+
+### Added
+
+- Data from 1768 additional participants has been added.
+- Retinal OCT:
+  - New Radial OCT files have been added under the Structural OCT modality
+- Retinal Photography:
+  - New Radial OCT files have been added under the Infrared photography modality
+
+### Changed
+
+- Retinal OCT:
+  - Modified 3DT radial OCT Radial protocol assignment rule based on a protocol name
+- Retinal Photography:
+  - Modified 3DT radial OCT Radial protocol assignment rule based on a protocol name
+
 ## [3.0.0] - 2025-11-17
 
 ### Identifier/Link
