@@ -14,12 +14,12 @@ const StatsList = [
     text: `Data modalities collected`,
   },
   {
-    heading: '356,343',
+    heading: '704,822',
     text: 'Total number of data files',
   },
 
   {
-    heading: '8.02',
+    heading: '8.28',
     text: `TB dataset size`,
   },
 ];
@@ -59,9 +59,17 @@ export default function HomepageFeatures() {
           >
             This is the documentation for the AI-READI dataset called &quot;Flagship Dataset of Type
             2 Diabetes from the AI-READI Project&quot;. AI-READI is one of the data generation
-            project of the National Institutes of Health funded Bridge2AI Program. One of the major
-            goals of AI-READI is to collect and share a multimodal, AI-ready dataset for studying
-            salutogenesis in Type 2 Diabetes Mellitus.
+            projects of the National Institutes of Health funded{' '}
+            <a
+              href="https://commonfund.nih.gov/bridge2ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              Bridge2AI Program
+            </a>
+            . One of the major goals of AI-READI is to collect and share a multimodal, AI-ready
+            dataset for studying salutogenesis in Type 2 Diabetes Mellitus.
           </p>
         </div>
 
