@@ -1,6 +1,6 @@
 [
     {
-        "Metadata Element": "participant_id",
+        "Metadata Element": "person_id",
         "Description": "Identification number of study participant",
         "Example": "0000"
     },
