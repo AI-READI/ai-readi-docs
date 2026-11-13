@@ -2,7 +2,7 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
 
-import MoCATable from '../components/MoCATable';
+import MoCATable from '../components/v3/MoCATable';
 
 export default function OmopTable() {
   return (
