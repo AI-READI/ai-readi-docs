@@ -5,6 +5,39 @@ title: Changelog
 
 All notable changes to this dataset will be documented in this file.
 
+## [4.0.0] - 2026-11-25
+
+### Identifier/Link
+
+https://doi.org/10.60775/fairhub.5
+
+### Added
+
+- Data from 1768 additional participants has been added.
+- Retinal OCT:
+  - New Radial OCT files have been added under the Structural OCT modality
+- Retinal Photography:
+  - New Radial OCT files have been added under the Infrared photography modality
+- temp_Question_or_Answer column can be set to Question, Answer, or Unit to see the subsets.
+- Measurement concept data element Unit lookup table added: https://github.com/AI-READI/DataElementMaps/blob/main/redCapDataDictionaryWithExtension/value-set-mapping-common/scripts/unit_concept_lookup_extended.csv
+- AI-READI custom concepts submitted to OHDSI vocabulary working group are organized by three groups: AI-READI survey constructs, vision care terms, and MoCA terms. https://github.com/AI-READI/DataElementMaps/tree/main/redCapDataDictionaryWithExtension/OHDSI-vocabulary-request/AI-READI-Vocabulary
+- Link to AI-READI EHR data harmonization pipeline: https://github.com/AI-READI/ai-readi_cohort_ehr_data_acquisition
+- OMOP Survey -Lab test results and units lookup table is here: DataElementMaps/redCapDataDictionaryWithExtension/value-set-mapping-common/scripts/unit_concept_lookup_extended.csv at main · AI-READI/DataElementMaps
+
+### Changed
+
+- Retinal OCT:
+  - Modified 3DT radial OCT Radial protocol assignment rule based on a protocol name
+- Retinal Photography:
+  - Modified 3DT radial OCT Radial protocol assignment rule based on a protocol name
+- Concept Map Release version 1.8.8: https://zenodo.org/records/24042231
+- All of the changes to 4.0.0 release are logged here: https://github.com/AI-READI/DataElementMaps/blob/main/CHANGELOG.md
+- Separate data element maps from lab, survey, vision and MoCA terms are all merged into one CSV file. This csv file is the public version.
+- Dietscore Map_to_omop=No, map to omop flag is set to No
+- Concept map public version - https://github.com/AI-READI/DataElementMaps/blob/main/redCapDataDictionaryWithExt ension/value-set-mapping-common/\_ai_readi_redcap_value_set_mapping_map2omop_open_source_public_version.csv
+- AI-READI custom concepts submitted to OHDSI Vocabulary working group is kept here: https://github.com/AI-READI/DataElementMaps/blob/main/redCapDataDictionaryWithExtension/OHDSI-vocabulary-request/concept_manual.csv
+- Custom concepts by vocabulary sub-groups: DataElementMaps/redCapDataDictionaryWithExtension/OHDSI-vocabulary-request/AI-READI-Vocabulary at main · AI-READI/DataElementMaps
+
 ## [3.0.0] - 2025-11-17
 
 ### Identifier/Link

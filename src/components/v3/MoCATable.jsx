@@ -5,7 +5,7 @@ import FilterableTable from 'react-filterable-table';
 // eslint-disable-next-line import/no-unresolved
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
-import MoCA from '../../docs/static/json/moCA.json';
+import MoCA from '../../../versioned_docs/version-3.0.0/static/json/moCA.json';
 
 export default function StructureTable() {
   // Fields to show in the table, and what object properties in the data they bind to

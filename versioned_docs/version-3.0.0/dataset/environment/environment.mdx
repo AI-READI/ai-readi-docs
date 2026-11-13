@@ -1,0 +1,147 @@
+---
+sidebar_position: 6
+title: Data processing
+---
+
+## Overview of Data Domain
+
+Environmental sensors are devices designed to detect and measure various environmental parameters such as temperature, humidity, air quality, and light intensity. Research indicates that environmental factors play a significant role in health outcomes, yet most of these studies have focused on outdoor conditions at a broad city or regional scale. They often overlook the critical aspect of the individual's home environment.
+
+In the AI-READI study, a custom-designed sensor unit (LeeLab Anura) was utilized to obtain environmental sensor data from each subject's home for a period of 10 days. Clinical research coordinators provided the subjects with the device along with take-home instructions to place the device in an area frequently used. Upon return, the subject was asked to make a note of the location of the environmental sensor. The sensor then recorded particulate matter counts (PM 1.0, 2.5, 4, and 10), temperature, relative humidity, volatile organic compounds (VOCs), nitrogen oxides (NO and NO2), and 11 multi-spectral light intensity measurements.
+
+## Variables included in Data Domain
+
+### Light levels (lch)
+
+Light level measurement for environmental sensors assesses the intensity of illumination in an environment, providing data on brightness or darkness to inform on conditions ranging from dimly lit interiors to bright outdoor spaces. Relative intensity is the unit of measurement used and it indicates the strength of light signals detected by sensors relative to a reference point or standard. This measurement is also conducted across different wavelengths, including 415nm, 445nm, 480 nm, 515nm, 555nm, 590 nm, 630 nm, and 680 nm and 910 nm, providing insights into variations in light levels across various wavelengths.
+
+More information about the AS73411 11-channel multispectral digital sensor is available [here](https://sensirion.com/media/documents/6791EFA0/62A1F68F/Sensirion_Datasheet_Environmental_Node_SEN5x.pdf).
+
+### Particulate matter (pm)
+
+Measuring particulate matter involves quantifying the concentration of fine inhalable particles in the air, expressed as the micro gram per cubic meter. This measurement is specific to the size of the particles with pm 1, pm 2.5, pm 4, and pm 10, representing diameters ranging from 0.3 to 1 um, 0.3 to 2.5 um, 0.3 to 4 um, and 0.3 to 10 um, respectively. Some common sources of PM10 include dust from roads, farms, dry riverbeds, construction sites, and mines.
+
+[Here](https://sensirion.com/media/documents/6791EFA0/62A1F68F/Sensirion_Datasheet_Environmental_Node_SEN5x.pdf) is a document describing the SEN55 particle matter, temperature, humidity, VOC and NOx sensors.
+
+### Temperature (temp)
+
+Temperature quantifies the level of warmth or coolness within a substance or surroundings. The environmental sensor measures the ambient temperature of its surroundings, typically reported in degrees celsius.
+
+### Humidity (hum)
+
+Humidity indicates the amount of water vapor in the air, reflecting an environment's moisture level. The measured variable is relative humidity, expressed as a percentage, which indicates the current amount of water vapor compared to the maximum it can hold at that temperature. A relative humidity of 100% indicates that the air is fully saturated and cannot hold any more moisture.
+
+### Volatile Organic Compound (voc)
+
+Volatile Organic Compounds (VOCs) are a group of organic chemicals that easily evaporate into the air at room temperature. They are emitted from common foods such as wine, cheese, vinegar, salad dressings, and bananas. Non-food sources include paints, cleaning products, furniture, and building materials.
+The environmental sensor measures VOC levels and assigns a VOC Index. It assesses the current VOC status relative to recent history in a room, akin to our nose adjusting to air changes. Using a 24-hour moving average as a baseline, the VOC Index detects variations in VOC levels. This index ranges from 0 (low or none noticeable) to a maximum of 500.
+For additional information, please refer to https://sensirion.com/resource/application_note/voc_index.
+
+### Nitrogen Oxide (nox)
+
+NOx measurement involves quantifying nitrogen oxides (specifically nitrogen dioxide (NO2) and nitric oxide (NO)) levels in the atmosphere or specific environments. At home, NOx primarily originates from combustion processes, including gas stoves, gas water heaters, and wood-burning fireplaces.The environmental sensor measures NOx levels and assigns a NOX Index, calculated similarly to a VOC index. This index ranges from 0 (low or none noticeable) to a maximum of 500.
+
+[Here](https://sensirion.com/media/documents/9F289B95/6294DFFC/Info_Note_NOx_Index.pdf) is an additional document describing the SEN55 sensor, focusing on the NOx measurement.
+
+**Limitations of environment sensor**: The sensor's placement by participants in different locations introduces uncertainty regarding its representation of typical daily environments.
+
+### Additional resources
+
+[This](https://www.adafruit.com/product/5188) document describes the real time clock (RTC) used in the environmental sensor.
+
+## Data Processing
+
+### File format
+
+The data files utilize the ASCII format and adheres to the NASA [Earth Science Data Standard (ESDS)](https://www.earthdata.nasa.gov/esdis/esco/standards-and-practices/ascii-file-format-guidelines-for-earth-science-data), which specifies the construction of self-documenting tabular data files. The files are designed for easy opening in Python, particularly with libraries like pandas.
+
+FIle organization is as follows:
+
+```
+pilot_data_root
+└── environment
+    ├── manifest.tsv
+    └── environmental_sensor
+        └── leelab_anura
+            ├── 0001
+            │   └── 0001_ENV.csv
+            └── 0002
+                ├── 0002_ENV.csv
+                └── ... etc.
+```
+
+### Data Standards
+
+The environmental sensor data complies with the Earth Science Data Systems file format guidelines authored by NASA. The data is stored in ASCII format, which is divided into two main sections: a header section and a body section. Each line in the header section starts with a '#' symbol, followed by the body section, which lists field names followed by rows of observations. This file format is designed to be self-documenting, with the header section containing detailed descriptions of variables and additional information to help users understand the file.
+
+In addition:
+
+- The header section's first line specifies the number of header lines, allowing automated tools to easily determine the number of lines to skip.
+
+  - Example: `# header_lines: 45`
+
+- All header lines adhere to the format `# info_field_name: value`, enabling automated tools to parse these lines effectively and extract both the field name and its value. The only exception to the use of `':'` is the line that details the timestamp fields.
+- Lines in the body section do not start with a `#` symbol
+- Data lines in the body are comma-separated, facilitating easy data parsing and analysis
+
+Links to information on ESDS file formats:
+
+- NASA EarthData ESDS Program general information: https://www.earthdata.nasa.gov/esdis/esco/standards-and-practices/ascii-file-format-guidelines-for-earth-science-data
+- PDF of the ESDS file format: [ESDS-RFC-027v1.1 - ASCII File Format Guidelines for Earth Science Data](https://www.earthdata.nasa.gov/sites/default/files/imported/ESDS-RFC-027v1.1.pdf)
+
+### File Processing
+
+Before issuing the device, the 3 digit unit number from the back of the sensor is documented in the “serial number” section of the REDCap "Device Distribution" form. Upon receiving the returned device, the date of receipt along with the location of the sensor at home are recorded in the "Device Return" REDCap form. Data is then extracted from the SD card from the environmental sensor and uploaded onto Fair Data Innovations hub ([fairhub.io](http://fairhub.io)). Fairhub.io is a user-friendly platform designed for securely uploading and managing research data, facilitating collaboration among researchers and ensuring compliance with FAIR data principles.
+
+- On power up, the VOC and NOx sensors initially report NaN and then numerical values stabilize over the following hour. The NaN values have been retained in the data to enable researchers to consider these startup events.
+- In the event a row of data shows indications of a data save error (too few values, improper timestamp), that row of data has been removed.
+
+### Metadata and Example Outputs
+
+| Metadata element               | Description (value)                                 | Example value                                                      |
+| ------------------------------ | --------------------------------------------------- | ------------------------------------------------------------------ |
+| participant_id                 | Participant study ID number                         | 1005                                                               |
+| modality                       | Measurement domain                                  | environmental_sensor                                               |
+| env_sensor_filepath            | Participant filename containing data                | /environment/ environmental_sensor/ leelab_anura/1001/1001_ENV.csv |
+| sensor_location                | Location of the sensor in participants home         | Dining room                                                        |
+| number_of_observations         | Total number of measurements recorded               | 173314                                                             |
+| sensor_sampling_extent_in_days | Number of days during which the sensor sampled data | 10.0                                                               |
+| sensor_id                      | Code number of the sensor used                      | 97C93EA630B1438F                                                   |
+| manufacturer                   | Name of manufacturer                                | Leelab                                                             |
+
+### Data structure
+
+| Data element                  | Description (value)                    | Example value                                                                                                                     |
+| ----------------------------- | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| meta_sensor_sampling_interval | Sampling interval of the sensor        | 5                                                                                                                                 |
+| number_of_data_columns        | Total number of data elements recorded | 22                                                                                                                                |
+| data_column_list:             | List of data fields                    | ts, lch0, lch1, lch2, lch3, lch6, lch7, lch8, lch9, lch10, lch11, pm1, pm2.5, pm4, pm10, hum, temp, voc, nox, screen, ff, inttemp |
+
+| Data Elements | Description                                           | Data type               | Units                           | Example value       |
+| ------------- | ----------------------------------------------------- | ----------------------- | ------------------------------- | ------------------- |
+| ts            | Time stamp (study range 2023 through 2007)            | UTC YYYY-MM-DD hh:mm:ss | seconds                         | 2023-08-16 23:36:39 |
+| lch0          | Light level measurement:F1 center wavelength 415 nm   | float [0.000 to 1.000]  | Relative intensity              | 0.0027              |
+| lch1          | Light level measurement: F2 center wavelength 445 nm  | float [0.000 to 1.000]  | Relative intensity              | 0.0040              |
+| lch2          | Light level measurement:F3 center wavelength 480 nm   | float [0.000 to 1.000]  | Relative intensity              | 0.0059              |
+| lch3          | Light level measurement:F4 center wavelength 515 nm   | float [0.000 to 1.000]  | Relative intensity              | 0.0080              |
+| lch6          | Light level measurement:F5 center wavelength 555 nm   | float [0.000 to 1.000]  | Relative intensity              | 0.0102              |
+| lch7          | Light level measurement:F6 center wavelength 590 nm   | float [0.000 to 1.000]  | Relative intensity              | 0.0107              |
+| lch8          | Light level measurement:F7 center wavelength 630 nm   | float [0.000 to 1.000]  | Relative intensity              | 0.0138              |
+| lch9          | Light level measurement: F8 center wavelength 680 nm  | float [0.000 to 1.000]  | Relative intensity              | 0.0253              |
+| lch10         | Light level measurement: Clear no filter              | float [0.000 to 1.000]  | Relative intensity              | 0.0474              |
+| lch11         | Light level measurement: NIR center wavelength 910 nm | float [0.000 to 1.000]  | Relative intensity              | 0.0203              |
+| pm1           | Concentration of particles sized 0.3 to 1.0 um        | uint16 [0 to 65536]     | ug/m3                           | 2.72                |
+| pm2.5         | Concentration of particles sized 0.3 to 2.5 um        | uint16 [0 to 65536]     | ug/m3                           | 3.32                |
+| pm4           | Concentration of particles sized 0.3 to 4.0 um        | uint16 [0 to 65536]     | ug/m3                           | 3.54                |
+| pm10          | Concentration of particles sized 0.3 to 10.0 um       | uint16 [0 to 65536]     | ug/m3                           | 3.80                |
+| hum           | Relative Humidity                                     | float [0.00 to 1.00]    | Percentage range 0 to 100%      | 49.95               |
+| temp          | Ambient room temperature measured by SEN55            | float [-10.00 to 50.00] | degrees C                       | 23.50               |
+| voc           | Volatile organic compound                             | integer [1 to 500]      | VOC Index points                | 5.00                |
+| nox           | NO and NO2                                            | integer [1 to 500]      | NOx Index points                | 0.00                |
+| screen        | State of the measurement screen                       | boolean [0 to 1]        | 0-screen is off; 1-screen is on | 0                   |
+| ff            | Flicker detection                                     | integer [0 to 2000]     | Hz                              | 1                   |
+| inttemp       | Internal case temperature measured on the RTC board   | float [0.00 to FF.FF    | degrees C                       | 23.50               |
+
+## Additional resources
+
+**Consider starting with our example [Jupyter notebooks](https://github.com/AI-READI/ai-readi-notebooks)** to explore the dataset further.
