@@ -1,0 +1,80 @@
+---
+sidebar_position: 2
+title: Peripheral Neuropathy / Monofilament Testing
+---
+
+## Overview of Data Domain
+
+### Monofilament Test
+
+The monofilament test, also known as the Semmes-Weinstein monofilament test, is widely utilized as a clinical assessment tool for evaluating tactile sensitivity and detecting peripheral neuropathy (nerve damage of the extremities). During the test, a small, flexible nylon filament is applied to the sole of the feet (sites A, B and C), exerting a predetermined amount of pressure. The patient is then asked to report whether they feel the sensation. By recording the responses, healthcare providers identify areas of reduced sensitivity, which may indicate nerve damage. Scoring eight correct responses out of ten applications is typically considered normal. If a patient responds correctly to one to seven applications, it indicates reduced sensation, while no correct responses suggest absent sensation.
+
+The tests are administered by trained Clinical Research Coordinators, who record the results using an iPad, laptop, or paper questionnaire, directly inputting them into the project's REDCap.
+
+A drawback of the monofilament test is its subjective nature, as it relies on the subject's response to the sensation rather than providing objective measurements. Additionally, variations in the application of pressure by the healthcare provider may affect the consistency and reliability of the results.
+
+## Data Processing
+
+### File format
+
+Peripheral neuropathy data collected during the test is entered directly into the REDCap form titled “Monofilament” using an iPad or laptop. Subsequently, data from all subjects is stored in a .csv file, along with other RedCap measurements. A .csv file, short for Comma-Separated Values, is a commonly used file format for storing tabular data in plain text, where each line represents a row of data and each value within the row is separated by a comma.
+
+The file organization is as follows:
+
+```
+pilot_data_root
+└── clinical_data
+    └── measurement.csv
+```
+
+| Domain                | Variable          | Method                   | Data Standard/ File Extension | Open Source vs. Protected Database? |
+| --------------------- | ----------------- | ------------------------ | ----------------------------- | ----------------------------------- |
+| Peripheral neuropathy | Monofilament test | CRC- administered REDCap | .csv                          | Open Source                         |
+
+### Data Standards
+
+MoCA data follows the OMOP Common Data Model. [OMOP](https://www.ohdsi.org/data-standardization/) (Observational Medical Outcomes Partnership) is a collaborative effort focused on standardizing and analyzing healthcare data. Developed by the Observational Health Data Sciences and Informatics (OHDSI) community, OMOP provides a standardized data model, vocabulary, and analytics tools to enable large-scale analysis of real-world healthcare data.
+
+### File Processing
+
+The .csv files are designed for easy opening in Python and/or Jupyter Notebooks. The data is organized per subject (person_id) and within each subject block i.e. ~30 rows, each row corresponds to a different measurement type (measurement_concept_id) for that subject.
+
+### Metadata and Example Outputs
+
+| Data Elements                 | Description                                                                                    | Example                                 |
+| ----------------------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------- |
+| measurement_id                | Identifier for the measurement record                                                          | 23                                      |
+| person_id                     | Subject ID (serves as foreign key to the OMOP Persons table)                                   | 0000                                    |
+| measurement_concept_id        | Concept identifier representing the type of measurement                                        | **4047085 (for peripheral neuropathy)** |
+| measurement_date              | Date of the measurement                                                                        | 2023-08-28                              |
+| measurement_datetime          | Date and time of the measurement                                                               | 2023-08-28 00:00:00                     |
+| measurement_time              | Time of the measurement                                                                        | blank                                   |
+| measurement_type_concept_id   | Concept identifier representing the type of measurement                                        | 32862                                   |
+| operator_concept_id           | Concept identifier representing the operator involved in the measurement                       | 0                                       |
+| value_as_number               | Numeric value of the measurement                                                               | 0                                       |
+| value_as_concept_id           | Concept identifier representing the value of the measurement                                   | 0                                       |
+| unit_concept_id               | Concept identifier representing the unit of measurement                                        | 0                                       |
+| range_low                     | Lower range of normal values for the measurement                                               | blank                                   |
+| range_high                    | Upper range of normal values for the measurement                                               | blank                                   |
+| provider_id                   | Identifier for the healthcare provider                                                         | 0                                       |
+| visit_occurrence_id           | Identifier for the measurement visit                                                           | 0                                       |
+| visit_detail_id               | Identifier for additional details about the visit                                              | 0                                       |
+| measurement_source_value      | Original value in the source data representing the measurement                                 | Refer to the table below\*              |
+| measurement_source_concept_id | Concept identifier in the source data representing the measurement                             | 0                                       |
+| unit_source_value             | Original value in the source data representing the unit of measurement                         | blank                                   |
+| unit_source_concept_id        | Concept identifier in the source data representing the unit of measurement                     | 0                                       |
+| value_source_value            | Original value in the source data representing the measurement value                           | 0                                       |
+| measurement_event_id          | Identifier for the specific event associated with the measurement                              | 0                                       |
+| meas_event_field_concept_id   | Concept identifier representing the specific field being measured within the measurement event | 0                                       |
+
+\*Peripheral Neuropathy values are stored for individual Right and Left foot. For each foot, the number of sites felt are recorded. For example:
+
+| Order of Testing | Measurement conditions                  | measurement_source_value : (measured value) | measurement_concept_id |
+| ---------------- | --------------------------------------- | ------------------------------------------- | ---------------------- |
+| 1                | Right Foot: Number of correct responses | Right Foot - Felt: (10.0)                   | 2005200159             |
+| 2                | Left Foot: Number of correct responses  | Left Foot - Felt: (8.0)                     | 2005200161             |
+
+
+## Additional resources
+
+**Consider starting with our example [Jupyter notebooks](https://github.com/AI-READI/ai-readi-notebooks)** to explore the dataset further.

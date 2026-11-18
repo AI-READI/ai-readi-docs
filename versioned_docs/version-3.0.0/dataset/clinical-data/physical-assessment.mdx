@@ -1,0 +1,172 @@
+---
+sidebar_position: 2
+title: Physical Assessment
+---
+
+## Overview of Data Domain
+
+Several measurements were recorded by the research coordinators during the study visit. The list of variables is included below along with an associated description for each.
+
+## Variables included in Data Domain
+
+### Height
+
+Assessment of height (statue) is conducted by direct measurement of the length from the bottom of the feet to the highest point of the head.Height is recorded to the nearest tenth of a centimeter (cm).
+
+Measurement_source_value: `Height (cm)`
+
+### Weight
+
+Participants are asked to stand still on the scale with both feet even and flat. Weight is recorded to the nearest tenth of a kilogram (kg).
+
+Measurement_source_value: `Weight (kg)`
+
+### Body Mass Index (BMI)
+
+https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm
+
+Body mass index (BMI) is a measure of body fat based on height and weight that applies to adults (20 years and older). BMI is a useful measure of overweight and obesity. The higher your BMI, the higher your risk for certain diseases such as heart disease, high blood pressure, type 2 diabetes, gallstones, breathing problems and certain cancers.
+
+Although BMI can be used for most men and women, it does have some limits:
+
+- It may overestimate body fat in athletes and others who have a muscular build
+- It may underestimate body fat in older persons and others who have lost muscles.
+
+```
+BMI(metric) = weight in kilograms ÷ (2 x (height in meters))
+```
+
+BMI categories:
+
+- Underweight = &lt;18.5
+- Normal weight = 18.5 - 24.9
+- Overweight = 25 - 29.9
+- Obesity = BMI of 30 or greater
+
+Measurement_source_value: `BMI`
+
+### Waist Circumference (WC)
+
+https://www.nhlbi.nih.gov/health/educational/lose_wt/risk.htm
+
+Measuring waist circumference helps screen for possible health risks that come with overweight and obesity. If most of the fat is around the waist rather than at the hips, this increases risk for heart disease and type 2 diabetes. This risk goes up with a waist size that is greater than 35 inches for women or greater than 40 inches for men. To correctly measure the waist, our research coordinators will guide the participants to stand and place a tape measure around the middle, just above the hip bones. The waist will be measured just after you breathe out. Waist circumference is recorded to the nearest tenth of a cm.
+
+Measurement_source_value: `Waist Circumference (cm)`
+
+### Hip Circumference (HC)
+
+https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/hip-circumference
+
+Measure hip circumference at the widest point, usually at the top of the hip bone. Hip circumference is recorded to the nearest tenth of a cm.
+
+Measurement_source_value: `Hip Circumference (cm)`
+
+### Waist to Hip Ratio
+
+https://www.healthline.com/health/waist-to-hip-ratio
+
+The waist to hip ratio (waist circumference÷hip circumference) is an additional screening and monitoring parameter. A waist to hip ratio of less than 0.85 for men and less than 0.75 for women is considered excellent and is associated with low risk. A waist to hip ratio of 1 or higher is associated with increased risk.
+
+Measurement_source_value: `Waist to Hip Ratio (WHR)`
+
+### Heart Rate
+
+Heart rate assessment involves monitoring the frequency of heartbeats per minute, which is a key indicator of cardiac efficiency. In adults, the standard heart rate range is 60 to 100 beats per minute (bpm). This metric is recorded in beats per minute (bpm). The heart rate can be determined through manual palpation at a pulse site or by employing an electronic heart rate monitoring device. Interpreting heart rate requires consideration of the individual's age and physical fitness, as variations from the normal range may suggest cardiac anomalies. [MayoClinic](https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979)
+
+Method of Collection: Automatic (Oscillometric) Device
+
+Measurement_source_value: `Heart Rate (bpm)`
+
+### Blood Pressure
+
+Blood pressure is measured as systolic over diastolic mm Hg. Normal blood pressure is below 120/80 mm Hg. Readings from 120-129/80 indicate elevated blood pressure, while 130-139/80-89 suggests stage 1 hypertension. Readings 140/90 mm Hg or higher indicate stage 2 hypertension. A measurement exceeding 180/120 mm Hg is a hypertensive crisis requiring emergency medical attention. Regular monitoring and lifestyle adjustments or medication may be necessary for managing blood pressure levels. [MayoClinic](https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/in-depth/blood-pressure/art-20050982)
+
+Method of Collection: Automatic (Oscillometric) Device
+
+- Measurement_source_value: `Systolic (mmHg)`
+- Measurement_source_value `Diastolic (mmHg)`
+
+## Data Processing
+
+### File Format
+
+Data was exported from the RedCap Survey that was filled by clinical personnel into .csv format.
+
+**File organization is as follows:**
+
+```
+pilot_data_root
+└── clinical_data
+    └── measurement.csv
+```
+
+| Domain              | Variable        | Method             | Data Capture | Data Standard/ File Extension | Open Source vs. Protected Database? |
+| ------------------- | --------------- | ------------------ | ------------ | ----------------------------- | ----------------------------------- |
+| Physical Assessment | measurement.csv | device, then Azure | RedCap       | .csv                          | Open source                         |
+
+### Data Standards
+
+#### OMOP
+
+The OMOP (Observational Medical Outcomes Partnership) data standard, developed by the Observational Health Data Sciences and Informatics (OHDSI) program, is a standardized framework designed to improve the quality, reliability, and comparability of observational healthcare data. The main goal of the OMOP standard is to enable the aggregation and analysis of healthcare data from diverse sources, such as electronic health records (EHRs), insurance claims, and registries, in a consistent and interoperable manner.
+
+Reference : https://ohdsi.github.io/CommonDataModel/
+
+### File Processing
+
+The .csv file can be opened and processed using notebook application or any coding language example:( Python, R). Here is a python snippet code to extract height.
+
+```python
+import pandas as pd
+
+# Load the CSV file
+df = pd.read_csv('measurement.csv')  # Ensure the file name is correctly specified
+
+# Replace 'HEIGHT_IDENTIFIER' with the actual identifier for Height in your dataset
+HEIGHT_IDENTIFIER = 'Height (cm)'  # This should be the actual identifier used in your CSV
+
+# Filter the dataframe for rows where measurement_source_value is Height
+height_df = df[df['measurement_source_value'] == HEIGHT_IDENTIFIER]
+
+# Selecting only the necessary columns
+# Assuming 'person_id' and 'value_as_number' represent the individual and their height
+height_df = height_df[['person_id', 'value_as_number', 'measurement_source_value']]
+
+# Save the filtered data to a new CSV file
+height_df.to_csv('height_cm.csv', index=False)
+
+print('Data saved to height_cm.csv')
+```
+
+### Metadata and Example Outputs
+
+| Variable                      | Description                                 | Example 1           | Example 2           |
+| ----------------------------- | ------------------------------------------- | ------------------- | ------------------- |
+| measurement_id                | Unique identifier for the measurement       | 13                  | 12                  |
+| person_id                     | Unique identifier for the person            | 1029                | 1023                |
+| measurement_concept_id        | Concept ID for the measurement              | 4245997             | 3025315             |
+| measurement_date              | Date of the measurement                     | 2023-08-28          | 2023-08-28          |
+| measurement_datetime          | Date and time of the measurement            | 2023-08-28 00:00:00 | 2023-08-28 00:00:00 |
+| measurement_time              | Time of the measurement                     | (can be empty)      | (can be empty)      |
+| measurement_type_concept_id   | Concept ID for the type of measurement      | 32862               | 32862               |
+| operator_concept_id           | Concept ID for the operator of measurement  | 0                   | 0                   |
+| value_as_number               | Numeric value of the measurement            | 48.2                | 150                 |
+| value_as_concept_id           | Concept ID for the value of measurement     | 0                   | 0                   |
+| unit_concept_id               | Concept ID for the unit of measurement      | 0                   | 0                   |
+| range_low                     | Lower range of the measurement value        | (can be empty)      | (can be empty)      |
+| range_HIGH                    | Higher range of the measurement value       | (can be empty)      | (can be empty)      |
+| provider_id                   | Unique identifier for the provider          | 0                   | 0                   |
+| visit_occurrence_id           | Unique identifier for the visit occurrence  | 0                   | 0                   |
+| visit_detail_id               | Unique identifier for the visit detail      | 0                   | 0                   |
+| measurement_source_value      | Source value of the measurement             | BMI                 | Weight (Kg)         |
+| measurement_source_concept_id | Concept ID for the measurement source value | 0                   | 0                   |
+| unit_source_value             | Source unit of the measurement              | (can be empty)      | (can be empty)      |
+| unit_source_concept_id        | Concept ID for the unit source              | 0                   | 0                   |
+| value_source_value            | Source value for the measurement value      | (can be empty)      | (can be empty)      |
+| measurement_event_id          | Unique identifier for the measurement event | 0                   | 0                   |
+| meas_event_field_concept_id   | Concept ID for the measurement event field  | 0                   | 0                   |
+
+
+## Additional resources
+
+**Consider starting with our example [Jupyter notebooks](https://github.com/AI-READI/ai-readi-notebooks)** to explore the dataset further.
