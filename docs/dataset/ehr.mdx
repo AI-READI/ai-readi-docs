@@ -51,14 +51,47 @@ The following OMOP CDM tables are populated:
 
 The EHR data extraction and ETL process followed guidelines provided to participating sites by the AI-READI project. The EHR ETL guidelines are available on GitHub: [AI-READI EHR ETL Guidelines](https://github.com/AI-READI/ai-readi_cohort_ehr_data_acquisition/blob/main/ETL_guidelines.md). De-identified EHR data in OMOP format was collected for AI-READI participants with available EHR records, spanning a 10-year look-back period. For information on how to cite the AI-READI EHR data, see the [citation file](https://github.com/AI-READI/ai-readi_cohort_ehr_data_acquisition/blob/main/CITATION.cff) in the AI-READI EHR data acquisition repository.
 
-## AI-READI Survey Datasets in OMOP
+
+## Data Harmonization: Cross-Site Inconsistencies Identified and Resolved
+
+We addressed two easy-to-miss issues in multi-site OMOP data before preparing the release dataset: domain misplacement across clinical tables and vocabulary version differences between partners. We corrected both through unified-vocabulary remapping and domain-based routing.
+
+- **Vocabulary harmonization.**
+
+  Data partners submitted data mapped under different OMOP vocabulary versions, so the same source code could resolve to different concept IDs, standard concepts, or domains across sites. To remove these differences, all sites' records were re-mapped using a single, unified version of the vocabulary tables (Athena release: **v5.0 29-AUG-26** ). Source codes were re-resolved against this one version, and the "Maps to" relationships and domain assignments came only from it. As a result, concept IDs and domain routing are consistent across all partners.
+- **Domain correction and standard concept remapping**
+
+  The site submitted OMOP CDM data with records placed across the wrong clinical domain tables. We corrected this by re-deriving each record's destination from the vocabulary rather than trusting the site's table placement.
+
+
+
+
+## Caveats to using Electronic Health Records (EHR) Data
+
+EHR data in AI-READI should be interpreted as documentation of healthcare encounters rather than as a complete record of participant health. Each participant’s EHR data are collected only from the health system of the site where they participated in the AI-READI study; care received from doctors, clinics, hospitals, pharmacies, or other providers outside that health system is not included. The presence of a condition, medication, procedure, or measurement reflects what was documented in that site’s record, not necessarily a complete account of the participant’s health history. Likewise, the absence of an EHR record does not mean that a condition or event did not occur; it may have been diagnosed, treated, or recorded elsewhere.
+
+Users should also be aware that EHR data may contain coding discrepancies, duplicate records, missing values, outdated or deprecated codes, and diagnoses that are historical, provisional, or recorded to rule out a condition rather than to confirm it. EHR documentation may also differ from what participants reported in AI-READI surveys. Such discrepancies are expected in real-world clinical data and should be interpreted in context. EHR data should therefore be treated as one component of the broader AI-READI multimodal dataset, not as a complete clinical record.
+
+Users should pay particular attention to units of measure. Because each site extracted its own data, the same laboratory test or clinical measurement may be recorded in different units at different sites. In some records the unit may be missing (unit_concept_id = 0) or recorded only as free text with spelling or formatting variations (unit_source_value). Before conducting cross-site or aggregate analyses, users should review the unit associated with each measurement and convert values to a consistent unit.
+
+EHR data are most informative when used together with other AI-READI data modalities, such as survey responses, retinal imaging, continuous glucose monitoring, wearable and environmental sensor data, and laboratory and clinical measurements collected at the study visit. These sources provide complementary information about participants’ health and care over time. Users should interpret EHR-derived variables cautiously, considering the clinical context, the timing of each record relative to the AI-READI study visit, and the source of each record before drawing conclusions. For additional guidance on analyzing and interpreting observational health data in the OMOP Common Data Model, see The Book of OHDSI (https://ohdsi.github.io/TheBookOfOhdsi/).
+
+When users request access to the AI-READI EHR dataset, additional documentation on known dataset-specific limitations will be available.
+
+The link to the EHR data harmonization source code is placed in the following GitHub location.
+
+- Link to AI-READI EHR data harmonization pipeline: https://github.com/AI-READI/ai-readi_cohort_ehr_data_acquisition
+
+## Considerations for linking AI-READI EHR and Survey Datasets in OMOP
+
+The following are considerations when comparing and/or linking the AI-READI OMOP EHR datasets with the AI-READI OMOP Survey Datasets.
 
 ### Survey Waist-to-hip ratio values
 
 When linking both Survey Datasets in OMOP CDM format and EHR datasets in OMOP CDM format you may find following items about the data:
 
 - There are waist-to-hip ratio values that seem out of range. They were left alone because we have no other way to independently verify what is correct as they were entered via the REDCap Survey without a paper trail documentation.
-- The visit dates referred to date values outside of the enrollment periods that were found  are fixed if they were dates  imported into REDCap for MoCA and lab testing. But if they came through data entry error, we were not able to fix those.
+- Any visit dates values that were found to be outside of the enrollment period were corrected if they were dates imported into REDCap for MoCA and lab testing. But if they were attributed to data entry error, we were not able to correct those date values.
 
 ### Participants not found the EHR datasets, but present in the Survey Dataset
 
@@ -74,7 +107,7 @@ Autorefraction sphere values of about −27 D were found in one eye of three par
 
 The site confirmed one value (−27.75 D) against the paper printout from the device. That measurement was repeated four times because it was so high. The site expects the other two values to be correct as well, but has not yet checked them against the source.The values are kept as recorded. They are within the range of the device, and they reflect rare, real cases of high anisometropia rather than data entry errors.
 
-### Survey Measurement units (unit_concept_id = 0)
+### Survey Measurement units (`unit_concept_id = 0`)
 
 In some omop_survey.measurement rows, unit_concept_id is 0 even though the measurement has a unit. The unit can be filled from unit_concept_lookup.csv (`redCapDataDictionaryWithExtension/value-set-mapping-common/scripts/`), which the AI-READI concept map produces. The table gives one unit per REDCap measurement field: join the measurement’s field name (the SRC_CODE of the map’s Question row, e.g. import_potassium) to lookup_key where key_type = 'field', and take unit_concept_id and unit_source_value from the lookup. When a field isn’t in the lookup, the raw unit text can be matched instead, after trimming spaces, on key_type = 'string'. Each key appears once, so the join never adds rows. Measurement fields with no unit by design (visual acuity, contrast sensitivity and monofilament) aren’t in the lookup and correctly keep unit_concept_id = 0. Ready-to-run scripts are in the same folder:
 
@@ -82,45 +115,3 @@ In some omop_survey.measurement rows, unit_concept_id is 0 even though the measu
 - 03_left_join_unit_lookup_template.sql adds the join;
 - 05_check_no_fanout.sql checks that the join added no rows;
 - 06_check_units_after_etl.sql checks the units after the ETL re-run.
-
-## Caveats to using Electronic Health Records (EHR) Data
-
-EHR data in AI-READI should be interpreted as documentation of healthcare encounters rather than as a complete record of participant health. Each participant’s EHR data are collected only from the health system of the site where they participated in the AI-READI study; care received from doctors, clinics, hospitals, pharmacies, or other providers outside that health system is not included. The presence of a condition, medication, procedure, or measurement reflects what was documented in that site’s record, not necessarily a complete account of the participant’s health history. Likewise, the absence of an EHR record does not mean that a condition or event did not occur; it may have been diagnosed, treated, or recorded elsewhere.
-
-Users should also be aware that EHR data may contain coding discrepancies, duplicate records, missing values, outdated or deprecated codes, and diagnoses that are historical, provisional, or recorded to rule out a condition rather than to confirm it. EHR documentation may also differ from what participants reported in AI-READI surveys. Such discrepancies are expected in real-world clinical data and should be interpreted in context. EHR data should therefore be treated as one component of the broader AI-READI multimodal dataset, not as a complete clinical record.
-
-
-Users should pay particular attention to units of measure. Because each site extracted its own data, the same laboratory test or clinical measurement may be recorded in different units at different sites. In some records the unit may be missing (unit_concept_id = 0) or recorded only as free text with spelling or formatting variations (unit_source_value). Before conducting cross-site or aggregate analyses, users should review the unit associated with each measurement and convert values to a consistent unit.
-
-EHR data are most informative when used together with other AI-READI data modalities, such as survey responses, retinal imaging, continuous glucose monitoring, wearable and environmental sensor data, and laboratory and clinical measurements collected at the study visit. These sources provide complementary information about participants’ health and care over time. Users should interpret EHR-derived variables cautiously, considering the clinical context, the timing of each record relative to the AI-READI study visit, and the source of each record before drawing conclusions. For additional guidance on analyzing and interpreting observational health data in the OMOP Common Data Model, see _The Book of OHDSI_ ([https://ohdsi.github.io/TheBookOfOhdsi/](https://ohdsi.github.io/TheBookOfOhdsi/).
-
-When users request access to the AI-READI EHR dataset, additional documentation on known dataset-specific limitations will be available.
-
-The link to the EHR data harmonization source code is placed in the following GitHub location.
-
-- Link to AI-READI EHR data harmonization pipeline: [https://github.com/AI-READI/ai-readi_cohort_ehr_data_acquisition](https://github.com/AI-READI/ai-readi_cohort_ehr_data_acquisition)
-
-## Concept Map V1.8.9
-
-The value-set mappings that transform AI-READI REDCap survey, vision care, and cognitive assessment (MoCA) data elements into standard concepts in the OMOP Common Data Model (CDM v5.3.1).
-
-- Link to Concept Map used to map the AI-READI Survey Questionnaires to OMOP concepts are found in [AI-READI GitHub: v1.8.9](https://github.com/AI-READI/DataElementMaps/blob/main/redCapDataDictionaryWithExtension/value-set-mapping-common/_ai_readi_redcap_value_set_mapping_common.csv)
-
-  **SSSOM and LinkML versions of the concept map**
-
-  The concept map is also published in two standard, machine-readable formats. Both are generated from value-set-mapping-common/_ai_readi_redcap_value_set_mapping_common.csv by scripts/generate_linkml_sssom.py, and rebuilt with every map release. The CSV remains the source of truth, so don’t edit the generated files by hand.
-
-  - SSSOM (Simple Standard for Sharing Ontological Mappings), in sssom/:
-    - each row is one mapping, from a REDCap question or answer (subject_id = `AIREADI_REDCAP:<FORM_NAME>.<SRC_CODE>[.<SRC_CODE_ID>]) to an OMOP concept (object_id = OMOP:<concept_id>`);
-    - he mapping predicate (skos:exactMatch, skos:closeMatch, skos:broadMatch …) comes from the map, and every row has the justification semapv:ManualMappingCuration;
-    - OMOP extension columns (target_domain_id, target_vocabulary_id, value_as_concept_id, qualifier_concept_id) keep what an ETL needs;
-    - rows without a target concept or predicate are listed in `*_sssom_incomplete_rows.csv`;
-    - the metadata and CURIE prefixes are in the .sssom.yaml file;
-    - use it to share, compare or merge mappings with SSSOM tools (e.g. sssom-py) and other mapping sets.
-  - LinkML (Linked Data Modeling Language), in linkml/:
-    - a schema (*_schema.yaml) describes the 26 map columns as a typed data model;
-    - the full map is the instance data (*_data.yaml), with a summary of counts in *_summary.md;
-    - use it to validate the map against the schema, or convert it to JSON Schema, JSON-LD/RDF or other formats with the LinkML tools.
-
-  - The custom concepts defined for the AI-READI Concept Map are checked in [here](https://github.com/AI-READI/DataElementMaps/blob/main/redCapDataDictionaryWithExtension/OHDSI-vocabulary-request/concept_manual.csv). The files in [this folder](https://github.com/AI-READI/DataElementMaps/tree/main/redCapDataDictionaryWithExtension/OHDSI-vocabulary-request/AI-READI-Vocabulary) hold the same AI-READI Extension custom concepts, organized into three subgroups: survey, vision care, and Montreal Cognitive Assessment (MoCA) terms. Together they contain exactly the 419 concepts and 428 relationship rows of the main files. These custom terms were submitted to the OHDSI Vocabulary Working Group on October 2, 2025 ([issue #1176](https://github.com/OHDSI/Vocabulary-v5.0/issues/1176)); the submitted files are kept unchanged in [AIREADi_OMOP_Vocabulary_Request/](https://github.com/AI-READI/DataElementMaps/tree/main/AIREADi_OMOP_Vocabulary_Request). The current vocabulary, including its deprecated concepts, is described in the [README](https://github.com/AI-READI/DataElementMaps/tree/main/redCapDataDictionaryWithExtension/OHDSI-vocabulary-request), and the differences from the submitted version are listed in the [AI-READI-Vocabulary README](https://github.com/AI-READI/DataElementMaps/blob/main/redCapDataDictionaryWithExtension/OHDSI-vocabulary-request/AI-READI-Vocabulary/README.md#frozen-october-2025-submission).
-

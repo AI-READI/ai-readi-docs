@@ -1,0 +1,29 @@
+---
+sidebar_position: 8
+title: Concept Map
+---
+
+## Concept Map Used to Map AI-READI Survey Data to OMOP
+
+The value-set mappings that transform AI-READI REDCap survey, vision care, and cognitive assessment (MoCA) data elements into standard concepts in the OMOP Common Data Model (CDM v5.3.1).
+
+- Link to Concept Map used to map the AI-READI Survey Questionnaires to OMOP concepts are found in [AI-READI GitHub: v1.8.9](https://github.com/AI-READI/DataElementMaps/blob/main/redCapDataDictionaryWithExtension/value-set-mapping-common/_ai_readi_redcap_value_set_mapping_common.csv)
+
+**SSSOM and LinkML versions of the concept map**
+
+ The concept map is also published in two standard, machine-readable formats. Both are generated from value-set-mapping-common/_ai_readi_redcap_value_set_mapping_common.csv by scripts/generate_linkml_sssom.py, and rebuilt with every map release. The CSV remains the source of truth, so don’t edit the generated files by hand.
+
+  - SSSOM (Simple Standard for Sharing Ontological Mappings), in sssom/:
+    - each row is one mapping, from a REDCap question or answer (subject_id = `AIREADI_REDCAP:<FORM_NAME>.<SRC_CODE>[.<SRC_CODE_ID>]) to an OMOP concept (object_id = OMOP:<concept_id>`);
+    - he mapping predicate (skos:exactMatch, skos:closeMatch, skos:broadMatch …) comes from the map, and every row has the justification semapv:ManualMappingCuration;
+    - OMOP extension columns (target_domain_id, target_vocabulary_id, value_as_concept_id, qualifier_concept_id) keep what an ETL needs;
+    - rows without a target concept or predicate are listed in `*_sssom_incomplete_rows.csv`;
+    - the metadata and CURIE prefixes are in the .sssom.yaml file;
+    - use it to share, compare or merge mappings with SSSOM tools (e.g. sssom-py) and other mapping sets.
+  - LinkML (Linked Data Modeling Language), in linkml/:
+    - a schema (*_schema.yaml) describes the 26 map columns as a typed data model;
+    - the full map is the instance data (*_data.yaml), with a summary of counts in *_summary.md;
+    - use it to validate the map against the schema, or convert it to JSON Schema, JSON-LD/RDF or other formats with the LinkML tools.
+
+  - The custom concepts defined for the AI-READI Concept Map are checked in [here](https://github.com/AI-READI/DataElementMaps/blob/main/redCapDataDictionaryWithExtension/OHDSI-vocabulary-request/concept_manual.csv). The files in [this folder](https://github.com/AI-READI/DataElementMaps/tree/main/redCapDataDictionaryWithExtension/OHDSI-vocabulary-request/AI-READI-Vocabulary) hold the same AI-READI Extension custom concepts, organized into three subgroups: survey, vision care, and Montreal Cognitive Assessment (MoCA) terms. Together they contain exactly the 419 concepts and 428 relationship rows of the main files. These custom terms were submitted to the OHDSI Vocabulary Working Group on October 2, 2025 ([issue #1176](https://github.com/OHDSI/Vocabulary-v5.0/issues/1176)); the submitted files are kept unchanged in [AIREADi_OMOP_Vocabulary_Request/](https://github.com/AI-READI/DataElementMaps/tree/main/AIREADi_OMOP_Vocabulary_Request). The current vocabulary, including its deprecated concepts, is described in the [README](https://github.com/AI-READI/DataElementMaps/tree/main/redCapDataDictionaryWithExtension/OHDSI-vocabulary-request), and the differences from the submitted version are listed in the [AI-READI-Vocabulary README](https://github.com/AI-READI/DataElementMaps/blob/main/redCapDataDictionaryWithExtension/OHDSI-vocabulary-request/AI-READI-Vocabulary/README.md#frozen-october-2025-submission).
+
