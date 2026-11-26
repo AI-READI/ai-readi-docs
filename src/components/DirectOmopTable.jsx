@@ -6,7 +6,7 @@ function DirectOmopTable() {
     window.open('/v4-omopAndClinicalTable', '_blank');
 
     // Redirect the current page to the documentation
-    window.location.replace('/docs/4/dataset/clinical-data/OMOP-Clinical-Data-Structure');
+    window.location.replace('/docs/4/dataset/clinical-omop-data/OMOP-Clinical-Data-Structure');
   }, []);
 }
 
